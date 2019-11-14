@@ -1,0 +1,88 @@
+table.flipscroll{
+	width: 400px;
+}
+table.flipscroll th {
+	text-align: left;
+}
+
+table.flipscroll td {
+	text-align: center;
+}
+
+table.flipscroll td:first-child{
+	text-align: left;
+}
+
+@media only screen and (max-width: 84rem) {
+	table.flipscroll  table { 
+		width: 100%; 
+		border-collapse: collapse; 
+		border-spacing: 0; 
+	}
+ 
+	table.flipscroll  th,	td { 
+		margin: 0; 
+		vertical-align: top; 
+	}
+	table.flipscroll  th { 
+		text-align: left; 
+		margin-bottom: 0.138rem;
+	}
+	
+	table.flipscroll table { 
+		display: block; 
+		position: relative; 
+		width: 100%; 
+	}
+
+	table.flipscroll thead { 
+		display: block; 
+		float: left; 
+	}
+	
+	table.flipscroll  tbody { 
+		display: block; 
+		width: auto; 
+		position: relative; 
+		overflow-x: auto; 
+		white-space: nowrap; 
+	}
+
+	table.flipscroll  thead tr { 
+		display: block; 
+	}
+
+	table.flipscroll  th { 
+		display: block; 
+		text-align: right; 
+	}
+
+	table.flipscroll  tbody tr { 
+		display: inline-block; 
+		vertical-align: top; 
+	}
+
+	table.flipscroll  td { 
+		display: block; 
+		min-height: 1.25em; 
+		text-align: left; 
+	}
+ 
+	table.flipscroll  th { 
+		border-bottom: 0; 
+		border-left: 0; 
+	}
+	table.flipscroll  td { 
+		border-left: 0; 
+		border-right: 0; 
+		border-bottom: 0; 
+	}
+
+	table.flipscroll  tbody tr { 
+		border-left: 1px solid #babcbf; 
+	}
+
+	table.flipscroll th:last-child, td:last-child { 
+		border-bottom: 1px solid #babcbf; 
+	}
+}

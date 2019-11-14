@@ -1,0 +1,7 @@
+
+/* fixed the first two rows*/
+.employee thead tr th
+{
+    position: sticky;
+    top: -33px;
+}

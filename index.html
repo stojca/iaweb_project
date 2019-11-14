@@ -1,0 +1,2016 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<meta charset="UTF-8"/>
+
+<!-- for css3 media queries to work properly on mobile devices-->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Responsive Tables - G4</title>
+
+<!-- Copyright © 2019 Keith Andrews -->
+<meta name="dcterms.rightsHolder" content="Copyright © 2019 Keith Andrews"/>
+
+<link rel="stylesheet" href="rslidy.min.css"/>
+<link rel="stylesheet" href="slides-keith.css"/>
+<link rel="stylesheet" href="flipscroll.css"/>
+<link rel="stylesheet" href="highlight.css"/>
+<link rel="stylesheet" href="hoverAction.css"/>
+<link rel="stylesheet" href="report.css"/>
+<link rel="stylesheet" href="toList.css"/>
+<link rel="stylesheet" href="tablesaw.css">
+<link rel="stylesheet" href="horizontalscroll.css">
+<link rel="stylesheet" href="stojca.css">
+<link rel="stylesheet" href="fixed-table.css">
+<link rel="stylesheet" href="collapserow.css">
+<link rel="stylesheet" href="resizecolumns.css">
+<link rel="stylesheet" href="highlightcolumn.css">
+
+<script src="fixed-table.js"></script>
+<script src="tablesaw.js"></script>
+<script src="tablesaw-init.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="rslidy.min.js"></script>
+</head>
+
+
+<body>
+
+
+<section class="titleslide">
+<h1>Responsive Tables</h1>
+
+<h2>Mirza Kabiljagic, Stefan Rajinovic, Aleksandar Stojicic, Into Gabriel Mendoza</h2>
+
+
+<div id="location">
+<p>
+Thu 12 November 2019
+</p>
+</div>
+
+</section>
+
+<section>
+<h1>HTML 5 Tables</h1>
+
+<p>
+Usage of HTML tables is recommended for data which normally belongs to a grid. 
+</p>
+
+<p>
+It consists of following tags:
+</p>
+<ul class="compact">
+<li> <'table'> - Main tag which defines what comes in the table</li> 
+<li> <'tr'> - Tag which defines rows inside the table </li>
+<li> <'td'> - Tag which defines the data inside the table </li>
+</ul>
+
+</section>
+
+<section>
+<h1>Good Table Design</h1>
+
+<p>
+What to look out for:
+</p>
+<ul>
+<li>
+<p>
+<span class="li-intro">Expandable areas</span>
+</p>
+</li>
+
+<li>
+<p>
+<span class="li-intro">Popup data on hover</span>
+</p>
+</li>
+
+<li>
+<p>
+<span class="li-intro">Highlighting color</span>
+</p>
+</li>
+
+
+</section>
+
+
+
+<section>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("#report tr:odd").addClass("odd");
+	$("#report tr:not(.odd)").hide();
+	$("#report tr:first-child").show();
+
+	$("#report tr.odd").click(function () {
+		var trToToggle = $(this).next("tr");
+		$("#report tr:not(.odd)").not(trToToggle).hide();
+		$("#report tr:first-child").show();
+		$(trToToggle).toggle();
+		$(this).find(".arrow").toggleClass("up");
+	});
+})
+</script>
+
+
+<h1>Type of Table</h1>
+<p>
+Expandable areas
+</p>
+<table id="report">
+	<thead>
+		<tr>
+			<th title="Field #1">Car</th>
+			<th title="Field #2">Manufacturer</th>
+			<th title="Field #3">Engine Size</th>
+			<th title="Field #4">Cylinders</th>
+			<th title="Field #5">Horsepower</th>
+			<th title="Field #6">Torque</th>
+			<th title="Field #7">Compresion Ratio</th>
+			<th title="Field #8">Miles per gallon</th>
+			<th title="Field #9">Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2019 Acura RDX</td>
+			<td>Acura</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">272</td>
+			<td align="right">280</td>
+			<td>9.8:1</td>
+			<td align="right">28</td>
+			<td>€33,600.00</td>
+		</tr>
+		<tr>
+			<td colspan="5">
+					<h4>Additional information about the car</h4>
+	
+				<ul>
+					<li><a href="https://en.wikipedia.org/wiki/Acura_RDX">Acura RDX</a>
+					</li>
+					<li><a href="https://www.acura.ca/rdx">Acura RDX official webpage</a>
+					</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>2019 Genesis G70</td>
+			<td>Genesis</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">252</td>
+			<td align="right">260</td>
+			<td>10.0:1</td>
+			<td align="right">22</td>
+			<td>€31,300.00</td>
+		</tr>
+		<tr>
+				<td colspan="5">
+						<h4>Additional information about the car</h4>
+		
+					<ul>
+						<li><a href="https://www.genesis.com/us/en/2019/genesis-g70.html">Genesis G70</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
+		<tr>
+			<td>2019 Honda Passport</td>
+			<td>Honda</td>
+			<td>3.50L</td>
+			<td align="right">6</td>
+			<td align="right">280</td>
+			<td align="right">262</td>
+			<td>11.5:1</td>
+			<td align="right">21</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+				<td colspan="5">
+						<h4>Additional information about the car</h4>
+		
+					<ul>
+						<li><a href="https://automobiles.honda.com/passport">Honda Passport</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
+		<tr>
+			<td>2020 Mercedes-Benz GLE 450</td>
+			<td>Mercedes-Benz</td>
+			<td>3.00L</td>
+			<td align="right">4</td>
+			<td align="right">362</td>
+			<td align="right">369</td>
+			<td>10.5:1</td>
+			<td align="right">22</td>
+			<td>€54,900.00</td>
+		</tr>
+		<tr>
+				<td colspan="5">
+						<h4>Additional information about the car</h4>
+		
+					<ul>
+						<li><a href="https://www.mbusa.com/en/vehicles/model/gle/suv/gle450w4">MB GLE 450</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
+		<tr>
+			<td>2019 Ram 1500</td>
+			<td>Ram</td>
+			<td>5.70L</td>
+			<td align="right">8</td>
+			<td align="right">395</td>
+			<td align="right">410</td>
+			<td>11.3:1</td>
+			<td align="right">23</td>
+			<td>€28,600.00</td>
+		</tr>
+		<tr>
+				<td colspan="5">
+						<h4>Additional information about the car</h4>
+		
+					<ul>
+						<li><a href="https://www.ramtrucks.com/ram-1500.html">RAM 1500</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
+		<tr>
+			<td>2019 Toyota Rav4</td>
+			<td>Toyota</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">219</td>
+			<td align="right">184</td>
+			<td>13.0:1</td>
+			<td align="right">39</td>
+			<td>€22,900.00</td>
+		</tr>
+		<tr>
+				<td colspan="5">
+						<h4>Additional information about the car</h4>
+		
+					<ul>
+						<li><a href="https://www.toyota.at/new-cars/rav4/index.json?gclid=EAIaIQobChMI5Lm3zofi5QIVVvhRCh370A93EAAYASAAEgIBvvD_BwE">Toyota RAV4</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
+	</tbody>
+</table>
+
+
+
+
+</section>
+
+
+<section>
+<h1>Popup Data on Hover</h1>
+<table class="hoverAction">
+	<thead>
+		<tr>
+			<th title="Field #1">Car</th>
+			<th title="Field #2">Manufacturer</th>
+			<th title="Field #3">Engine Size</th>
+			<th title="Field #4">Cylinders</th>
+			<th title="Field #5">Horsepower</th>
+			<th title="Field #6">Torque</th>
+			<th title="Field #7">Compresion Ratio</th>
+			<th title="Field #8">Miles per gallon</th>
+			<th title="Field #9">Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="open-bext">2019 Acura RDX </td>
+			<td>Acura</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">272</td>
+			<td align="right">280</td>
+			<td>9.8:1</td>
+			<td align="right">28</td>
+			<td>€33,600.00</td>
+		</tr>
+		<tr class="detail" style="display: none">
+			<td>content will come here
+			</td>
+		</tr>
+		<tr>
+			<td>2019 Ford Ranger</td>
+			<td>Ford</td>
+			<td>2.30L</td>
+			<td align="right">4</td>
+			<td align="right">270</td>
+			<td align="right">310</td>
+			<td>10.0:1</td>
+			<td align="right">21</td>
+			<td>€21,800.00</td>
+		</tr>
+		<tr>
+			<td>2019 Genesis G70</td>
+			<td>Genesis</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">252</td>
+			<td align="right">260</td>
+			<td>10.0:1</td>
+			<td align="right">22</td>
+			<td>€31,300.00</td>
+		</tr>
+		<tr>
+			<td>2019 GMC Sierra 1500</td>
+			<td>GMC</td>
+			<td>4.03L</td>
+			<td align="right">6</td>
+			<td align="right">285</td>
+			<td align="right">305</td>
+			<td>11.0:1</td>
+			<td align="right">16</td>
+			<td>€26,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Honda Passport</td>
+			<td>Honda</td>
+			<td>3.50L</td>
+			<td align="right">6</td>
+			<td align="right">280</td>
+			<td align="right">262</td>
+			<td>11.5:1</td>
+			<td align="right">21</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Jaguar I-Pace</td>
+			<td>Jaguar</td>
+			<td>0.00L</td>
+			<td align="right">0</td>
+			<td align="right">394</td>
+			<td align="right">513</td>
+			<td>0.0:1</td>
+			<td align="right">0</td>
+			<td>€62,400.00</td>
+		</tr>
+		<tr>
+			<td>2020 Mercedes-Benz GLE 450</td>
+			<td>Mercedes-Benz</td>
+			<td>3.00L</td>
+			<td align="right">4</td>
+			<td align="right">362</td>
+			<td align="right">369</td>
+			<td>10.5:1</td>
+			<td align="right">22</td>
+			<td>€54,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Nissan Altima</td>
+			<td>Nissan</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">188</td>
+			<td align="right">180</td>
+			<td>8.0:1</td>
+			<td align="right">32</td>
+			<td>€21,500.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ram 1500</td>
+			<td>Ram</td>
+			<td>5.70L</td>
+			<td align="right">8</td>
+			<td align="right">395</td>
+			<td align="right">410</td>
+			<td>11.3:1</td>
+			<td align="right">23</td>
+			<td>€28,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Subaru Ascent</td>
+			<td>Subaru</td>
+			<td>2.40L</td>
+			<td align="right">4</td>
+			<td align="right">260</td>
+			<td align="right">277</td>
+			<td>10.6:1</td>
+			<td align="right">22</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Toyota Rav4</td>
+			<td>Toyota</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">219</td>
+			<td align="right">184</td>
+			<td>13.0:1</td>
+			<td align="right">39</td>
+			<td>€22,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Volvo XC40</td>
+			<td>Volvo</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">248</td>
+			<td align="right">258</td>
+			<td>10.8:1</td>
+			<td align="right">26</td>
+			<td>€30,300.00</td>
+		</tr>
+	</tbody>
+</table>
+</section>
+
+
+
+
+
+<section>
+<h1>Highlighting Color</h1>
+
+<table class="highlight">
+	<thead>
+		<tr>
+			<th title="Field #1">Car</th>
+			<th title="Field #2">Manufacturer</th>
+			<th title="Field #3">Engine Size</th>
+			<th title="Field #4">Cylinders</th>
+			<th title="Field #5">Horsepower</th>
+			<th title="Field #6">Torque</th>
+			<th title="Field #7">Compresion Ratio</th>
+			<th title="Field #8">Miles per gallon</th>
+			<th title="Field #9">Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2019 Acura RDX</td>
+			<td>Acura</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">272</td>
+			<td align="right">280</td>
+			<td>9.8:1</td>
+			<td align="right">28</td>
+			<td>€33,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ford Ranger</td>
+			<td>Ford</td>
+			<td>2.30L</td>
+			<td align="right">4</td>
+			<td align="right">270</td>
+			<td align="right">310</td>
+			<td>10.0:1</td>
+			<td align="right">21</td>
+			<td>€21,800.00</td>
+		</tr>
+		<tr>
+			<td>2019 Genesis G70</td>
+			<td>Genesis</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">252</td>
+			<td align="right">260</td>
+			<td>10.0:1</td>
+			<td align="right">22</td>
+			<td>€31,300.00</td>
+		</tr>
+		<tr>
+			<td>2019 GMC Sierra 1500</td>
+			<td>GMC</td>
+			<td>4.03L</td>
+			<td align="right">6</td>
+			<td align="right">285</td>
+			<td align="right">305</td>
+			<td>11.0:1</td>
+			<td align="right">16</td>
+			<td>€26,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Honda Passport</td>
+			<td>Honda</td>
+			<td>3.50L</td>
+			<td align="right">6</td>
+			<td align="right">280</td>
+			<td align="right">262</td>
+			<td>11.5:1</td>
+			<td align="right">21</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Jaguar I-Pace</td>
+			<td>Jaguar</td>
+			<td>0.00L</td>
+			<td align="right">0</td>
+			<td align="right">394</td>
+			<td align="right">513</td>
+			<td>0.0:1</td>
+			<td align="right">0</td>
+			<td>€62,400.00</td>
+		</tr>
+		<tr>
+			<td>2020 Mercedes-Benz GLE 450</td>
+			<td>Mercedes-Benz</td>
+			<td>3.00L</td>
+			<td align="right">4</td>
+			<td align="right">362</td>
+			<td align="right">369</td>
+			<td>10.5:1</td>
+			<td align="right">22</td>
+			<td>€54,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Nissan Altima</td>
+			<td>Nissan</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">188</td>
+			<td align="right">180</td>
+			<td>8.0:1</td>
+			<td align="right">32</td>
+			<td>€21,500.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ram 1500</td>
+			<td>Ram</td>
+			<td>5.70L</td>
+			<td align="right">8</td>
+			<td align="right">395</td>
+			<td align="right">410</td>
+			<td>11.3:1</td>
+			<td align="right">23</td>
+			<td>€28,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Subaru Ascent</td>
+			<td>Subaru</td>
+			<td>2.40L</td>
+			<td align="right">4</td>
+			<td align="right">260</td>
+			<td align="right">277</td>
+			<td>10.6:1</td>
+			<td align="right">22</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Toyota Rav4</td>
+			<td>Toyota</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">219</td>
+			<td align="right">184</td>
+			<td>13.0:1</td>
+			<td align="right">39</td>
+			<td>€22,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Volvo XC40</td>
+			<td>Volvo</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">248</td>
+			<td align="right">258</td>
+			<td>10.8:1</td>
+			<td align="right">26</td>
+			<td>€30,300.00</td>
+		</tr>
+	</tbody>
+</table>
+
+</section>
+
+
+
+
+
+<section>
+<h1>Responsive Tables</h1>
+
+<ol>
+<li>
+<span class="li-intro">Adapting web site layout with respect to the screen resolution</span>
+</li>
+<li>
+<span class="li-intro">Columns and rows can be repositioned, resized, collapsed, minimized..</span>
+</li>
+<li>
+<span class="li-intro">Different techniques: </span>
+<ol>
+<li> Hidden Column </li>
+<li> Static Left Table Headers with Horizontal Scrolling </li>
+<li> Horizontal Scroll</li>
+<li> Fixed Header</li>
+<!--<li> Vertical Scroll</li>-->
+<li> Flip Scroll</li>
+<li> Resize Columns</li>
+<li> Collapse to List</li>
+<li> Sortable</li>
+</ol>
+</li>
+</ol>
+</section>
+
+
+
+
+
+
+<section>
+<h1>Hidden Column</h1>
+<html>
+<script>
+function show_hide_column(col_no, do_show) {
+    var rows = document.getElementById('id_of_table').rows;
+    
+    for (var row = 0; row < rows.length; row++) {
+        var cols = rows[row].cells;
+        if (col_no >= 0 && col_no < cols.length) {
+            cols[col_no].style.display = do_show ? '' : 'none';
+        }
+    }
+}
+</script>
+<table id='id_of_table' border=1>
+	<thead>
+		<tr>
+			<th title="Field #1">Car</th>
+			<th title="Field #2">Manufacturer</th>
+			<th title="Field #3">Engine Size</th>
+			<th title="Field #4">Cylinders</th>
+			<th title="Field #5">Horsepower</th>
+			<th title="Field #6">Torque</th>
+			<th title="Field #7">Compresion Ratio</th>
+			<th title="Field #8">Miles per gallon</th>
+			<th title="Field #9">Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2019 Acura RDX</td>
+			<td>Acura</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">272</td>
+			<td align="right">280</td>
+			<td>9.8:1</td>
+			<td align="right">28</td>
+			<td>€33,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ford Ranger</td>
+			<td>Ford</td>
+			<td>2.30L</td>
+			<td align="right">4</td>
+			<td align="right">270</td>
+			<td align="right">310</td>
+			<td>10.0:1</td>
+			<td align="right">21</td>
+			<td>€21,800.00</td>
+		</tr>
+		<tr>
+			<td>2019 Genesis G70</td>
+			<td>Genesis</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">252</td>
+			<td align="right">260</td>
+			<td>10.0:1</td>
+			<td align="right">22</td>
+			<td>€31,300.00</td>
+		</tr>
+		<tr>
+			<td>2019 GMC Sierra 1500</td>
+			<td>GMC</td>
+			<td>4.03L</td>
+			<td align="right">6</td>
+			<td align="right">285</td>
+			<td align="right">305</td>
+			<td>11.0:1</td>
+			<td align="right">16</td>
+			<td>€26,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Honda Passport</td>
+			<td>Honda</td>
+			<td>3.50L</td>
+			<td align="right">6</td>
+			<td align="right">280</td>
+			<td align="right">262</td>
+			<td>11.5:1</td>
+			<td align="right">21</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Jaguar I-Pace</td>
+			<td>Jaguar</td>
+			<td>0.00L</td>
+			<td align="right">0</td>
+			<td align="right">394</td>
+			<td align="right">513</td>
+			<td>0.0:1</td>
+			<td align="right">0</td>
+			<td>€62,400.00</td>
+		</tr>
+		<tr>
+			<td>2020 Mercedes-Benz GLE 450</td>
+			<td>Mercedes-Benz</td>
+			<td>3.00L</td>
+			<td align="right">4</td>
+			<td align="right">362</td>
+			<td align="right">369</td>
+			<td>10.5:1</td>
+			<td align="right">22</td>
+			<td>€54,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Nissan Altima</td>
+			<td>Nissan</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">188</td>
+			<td align="right">180</td>
+			<td>8.0:1</td>
+			<td align="right">32</td>
+			<td>€21,500.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ram 1500</td>
+			<td>Ram</td>
+			<td>5.70L</td>
+			<td align="right">8</td>
+			<td align="right">395</td>
+			<td align="right">410</td>
+			<td>11.3:1</td>
+			<td align="right">23</td>
+			<td>€28,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Subaru Ascent</td>
+			<td>Subaru</td>
+			<td>2.40L</td>
+			<td align="right">4</td>
+			<td align="right">260</td>
+			<td align="right">277</td>
+			<td>10.6:1</td>
+			<td align="right">22</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Toyota Rav4</td>
+			<td>Toyota</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">219</td>
+			<td align="right">184</td>
+			<td>13.0:1</td>
+			<td align="right">39</td>
+			<td>€22,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Volvo XC40</td>
+			<td>Volvo</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">248</td>
+			<td align="right">258</td>
+			<td>10.8:1</td>
+			<td align="right">26</td>
+			<td>€30,300.00</td>
+		</tr>
+	</tbody>
+</table>
+<form>
+  Enter column no: <input type='text' name=col_no><br>
+  <input type='button' onClick='javascript:show_hide_column(col_no.value, true);' value='show'>
+  <input type='button' onClick='javascript:show_hide_column(col_no.value, false);' value='hide'>
+</form>
+
+
+</html>
+
+</section>
+
+
+<section>
+<h1>Static Left Table Headers with Horizontal Scrolling</h1>
+<html>
+<script>
+var smallBreak = 800; // Your small screen breakpoint in pixels
+var columns = $('.dataTable tr').length;
+var rows = $('.dataTable th').length;
+
+$(document).ready(shapeTable());
+$(window).resize(function() {
+    shapeTable();
+});
+
+function shapeTable() {
+    if ($(window).width() < smallBreak) {
+        for (i=0;i < rows; i++) {
+            var maxHeight = $('.dataTable th:nth-child(' + i + ')').outerHeight();
+            for (j=0; j < columns; j++) {
+                if ($('.dataTable tr:nth-child(' + j + ') td:nth-child(' + i + ')').outerHeight() > maxHeight) {
+                    maxHeight = $('.dataTable tr:nth-child(' + j + ') td:nth-child(' + i + ')').outerHeight();
+                }
+              	if ($('.dataTable tr:nth-child(' + j + ') td:nth-child(' + i + ')').prop('scrollHeight') > $('.dataTable tr:nth-child(' + j + ') td:nth-child(' + i + ')').outerHeight()) {
+                    maxHeight = $('.dataTable tr:nth-child(' + j + ') td:nth-child(' + i + ')').prop('scrollHeight');
+                }
+            }
+            for (j=0; j < columns; j++) {
+                $('.dataTable tr:nth-child(' + j + ') td:nth-child(' + i + ')').css('height',maxHeight);
+                $('.dataTable th:nth-child(' + i + ')').css('height',maxHeight);
+            }
+        }
+    } else {
+        $('.dataTable td, .dataTable th').removeAttr('style');
+    }
+}
+</script>
+<table class="dataTable">
+	<thead>
+		<tr>
+			<th title="Field #1">Car</th>
+			<th title="Field #2">Manufacturer</th>
+			<th title="Field #3">Engine Size</th>
+			<th title="Field #4">Cylinders</th>
+			<th title="Field #5">Horsepower</th>
+			<th title="Field #6">Torque</th>
+			<th title="Field #7">Compresion Ratio</th>
+			<th title="Field #8">Miles per gallon</th>
+			<th title="Field #9">Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2019 Acura RDX</td>
+			<td>Acura</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">272</td>
+			<td align="right">280</td>
+			<td>9.8:1</td>
+			<td align="right">28</td>
+			<td>€33,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ford Ranger</td>
+			<td>Ford</td>
+			<td>2.30L</td>
+			<td align="right">4</td>
+			<td align="right">270</td>
+			<td align="right">310</td>
+			<td>10.0:1</td>
+			<td align="right">21</td>
+			<td>€21,800.00</td>
+		</tr>
+		<tr>
+			<td>2019 Genesis G70</td>
+			<td>Genesis</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">252</td>
+			<td align="right">260</td>
+			<td>10.0:1</td>
+			<td align="right">22</td>
+			<td>€31,300.00</td>
+		</tr>
+		<tr>
+			<td>2019 GMC Sierra 1500</td>
+			<td>GMC</td>
+			<td>4.03L</td>
+			<td align="right">6</td>
+			<td align="right">285</td>
+			<td align="right">305</td>
+			<td>11.0:1</td>
+			<td align="right">16</td>
+			<td>€26,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Honda Passport</td>
+			<td>Honda</td>
+			<td>3.50L</td>
+			<td align="right">6</td>
+			<td align="right">280</td>
+			<td align="right">262</td>
+			<td>11.5:1</td>
+			<td align="right">21</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Jaguar I-Pace</td>
+			<td>Jaguar</td>
+			<td>0.00L</td>
+			<td align="right">0</td>
+			<td align="right">394</td>
+			<td align="right">513</td>
+			<td>0.0:1</td>
+			<td align="right">0</td>
+			<td>€62,400.00</td>
+		</tr>
+		<tr>
+			<td>2020 Mercedes-Benz GLE 450</td>
+			<td>Mercedes-Benz</td>
+			<td>3.00L</td>
+			<td align="right">4</td>
+			<td align="right">362</td>
+			<td align="right">369</td>
+			<td>10.5:1</td>
+			<td align="right">22</td>
+			<td>€54,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Nissan Altima</td>
+			<td>Nissan</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">188</td>
+			<td align="right">180</td>
+			<td>8.0:1</td>
+			<td align="right">32</td>
+			<td>€21,500.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ram 1500</td>
+			<td>Ram</td>
+			<td>5.70L</td>
+			<td align="right">8</td>
+			<td align="right">395</td>
+			<td align="right">410</td>
+			<td>11.3:1</td>
+			<td align="right">23</td>
+			<td>€28,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Subaru Ascent</td>
+			<td>Subaru</td>
+			<td>2.40L</td>
+			<td align="right">4</td>
+			<td align="right">260</td>
+			<td align="right">277</td>
+			<td>10.6:1</td>
+			<td align="right">22</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Toyota Rav4</td>
+			<td>Toyota</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">219</td>
+			<td align="right">184</td>
+			<td>13.0:1</td>
+			<td align="right">39</td>
+			<td>€22,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Volvo XC40</td>
+			<td>Volvo</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">248</td>
+			<td align="right">258</td>
+			<td>10.8:1</td>
+			<td align="right">26</td>
+			<td>€30,300.00</td>
+		</tr>
+	</tbody>
+</table>
+</html>
+</section>
+
+<section>
+	<h1>Horizontal Scroll</h1>
+		<div id="table-scroll" class="table-scroll">
+			<div class="table-wrap">
+				<table class="main-table">
+					<thead>
+					<tr>
+						<th class="fixed-side" title="Field #1">Car</th>
+						<th scope="col" title="Field #2">Manufacturer</th>
+						<th scope="col" title="Field #3">Engine Size</th>
+						<th scope="col" title="Field #4">Cylinders 4</th>
+						<th scope="col" title="Field #5">Horsepower</th>
+						<th scope="col" title="Field #6">Torque</th>
+						<th scope="col" title="Field #7">Compresion Ratio</th>
+						<th scope="col" title="Field #8">Miles per gallon</th>
+						<th scope="col" title="Field #9">Price</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td class="fixed-side">2019 Acura RDX</td>
+						<td>Acura</td>
+						<td>2.00L</td>
+						<td align="right">4</td>
+						<td align="right">272</td>
+						<td align="right">280</td>
+						<td>9.8:1</td>
+						<td align="right">28</td>
+						<td>€33,600.00</td>
+					</tr>
+					<tr>
+						<td class="fixed-side">2019 Ford Ranger</td>
+						<td>Ford</td>
+						<td>2.30L</td>
+						<td align="right">4</td>
+						<td align="right">270</td>
+						<td align="right">310</td>
+						<td>10.0:1</td>
+						<td align="right">21</td>
+						<td>€21,800.00</td>
+					</tr>
+					<tr>
+						<td class="fixed-side">2019 Genesis G70</td>
+						<td>Genesis</td>
+						<td>2.00L</td>
+						<td align="right">4</td>
+						<td align="right">252</td>
+						<td align="right">260</td>
+						<td>10.0:1</td>
+						<td align="right">22</td>
+						<td>€31,300.00</td>
+					</tr>
+					<tr>
+						<td class="fixed-side"> 2019 GMC Sierra 1500</td>
+						<td>GMC</td>
+						<td>4.03L</td>
+						<td align="right">6</td>
+						<td align="right">285</td>
+						<td align="right">305</td>
+						<td>11.0:1</td>
+						<td align="right">16</td>
+						<td>€26,600.00</td>
+					</tr>
+					<tr>
+						<td class="fixed-side">2019 Honda Passport</td>
+						<td>Honda</td>
+						<td>3.50L</td>
+						<td align="right">6</td>
+						<td align="right">280</td>
+						<td align="right">262</td>
+						<td>11.5:1</td>
+						<td align="right">21</td>
+						<td>€28,700.00</td>
+					</tr>
+					<tr>
+						<td class="fixed-side">2019 Jaguar I-Pace</td>
+						<td>Jaguar</td>
+						<td>0.00L</td>
+						<td align="right">0</td>
+						<td align="right">394</td>
+						<td align="right">513</td>
+						<td>0.0:1</td>
+						<td align="right">0</td>
+						<td>€62,400.00</td>
+					</tr>
+					<tr>
+						<td class="fixed-side">2020 Mercedes-Benz GLE 450</td>
+						<td>Mercedes-Benz</td>
+						<td>3.00L</td>
+						<td align="right">4</td>
+						<td align="right">362</td>
+						<td align="right">369</td>
+						<td>10.5:1</td>
+						<td align="right">22</td>
+						<td>€54,900.00</td>
+					</tr>
+					<tr>
+						<td class="fixed-side">2019 Nissan Altima</td>
+						<td>Nissan</td>
+						<td>2.50L</td>
+						<td align="right">4</td>
+						<td align="right">188</td>
+						<td align="right">180</td>
+						<td>8.0:1</td>
+						<td align="right">32</td>
+						<td>€21,500.00</td>
+					</tr>
+					<tr>
+						<td class="fixed-side">2019 Ram 1500</td>
+						<td>Ram</td>
+						<td>5.70L</td>
+						<td align="right">8</td>
+						<td align="right">395</td>
+						<td align="right">410</td>
+						<td>11.3:1</td>
+						<td align="right">23</td>
+						<td>€28,600.00</td>
+					</tr>
+					<tr>
+						<td class="fixed-side">2019 Subaru Ascent</td>
+						<td>Subaru</td>
+						<td>2.40L</td>
+						<td align="right">4</td>
+						<td align="right">260</td>
+						<td align="right">277</td>
+						<td>10.6:1</td>
+						<td align="right">22</td>
+						<td>€28,700.00</td>
+					</tr>
+					<tr>
+						<td class="fixed-side">2019 Toyota Rav4</td>
+						<td>Toyota</td>
+						<td>2.50L</td>
+						<td align="right">4</td>
+						<td align="right">219</td>
+						<td align="right">184</td>
+						<td>13.0:1</td>
+						<td align="right">39</td>
+						<td>€22,900.00</td>
+					</tr>
+					<tr>
+						<td class="fixed-side">2019 Volvo XC40</td>
+						<td>Volvo</td>
+						<td>2.00L</td>
+						<td align="right">4</td>
+						<td align="right">248</td>
+						<td align="right">258</td>
+						<td>10.8:1</td>
+						<td align="right">26</td>
+						<td>€30,300.00</td>
+					</tr>
+					</tbody>
+				</table>
+	
+			</div>
+	
+		</div>
+	
+		<script>
+			// requires jquery library
+			jQuery(document).ready(function() {
+				jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');
+			});
+	
+		</script>
+	</section>
+
+
+
+
+
+
+<section>
+
+<h1>Fixed Header</h1>
+<table class="table table-bordered employee" id="employee1" style='font-size:80% ;table-layout:fixed;width:100%;' cellspacing="0">
+        <thead class="thead-light">
+	<thead>
+		<tr>
+			<th title="Field #1">Car</th>
+			<th title="Field #2">Manufacturer</th>
+			<th title="Field #3">Engine Size</th>
+			<th title="Field #4">Cylinders</th>
+			<th title="Field #5">Horsepower</th>
+			<th title="Field #6">Torque</th>
+			<th title="Field #7">Compresion Ratio</th>
+			<th title="Field #8">Miles per gallon</th>
+			<th title="Field #9">Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2019 Acura RDX</td>
+			<td>Acura</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">272</td>
+			<td align="right">280</td>
+			<td>9.8:1</td>
+			<td align="right">28</td>
+			<td>€33,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ford Ranger</td>
+			<td>Ford</td>
+			<td>2.30L</td>
+			<td align="right">4</td>
+			<td align="right">270</td>
+			<td align="right">310</td>
+			<td>10.0:1</td>
+			<td align="right">21</td>
+			<td>€21,800.00</td>
+		</tr>
+		<tr>
+			<td>2019 Genesis G70</td>
+			<td>Genesis</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">252</td>
+			<td align="right">260</td>
+			<td>10.0:1</td>
+			<td align="right">22</td>
+			<td>€31,300.00</td>
+		</tr>
+		<tr>
+			<td>2019 GMC Sierra 1500</td>
+			<td>GMC</td>
+			<td>4.03L</td>
+			<td align="right">6</td>
+			<td align="right">285</td>
+			<td align="right">305</td>
+			<td>11.0:1</td>
+			<td align="right">16</td>
+			<td>€26,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Honda Passport</td>
+			<td>Honda</td>
+			<td>3.50L</td>
+			<td align="right">6</td>
+			<td align="right">280</td>
+			<td align="right">262</td>
+			<td>11.5:1</td>
+			<td align="right">21</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Jaguar I-Pace</td>
+			<td>Jaguar</td>
+			<td>0.00L</td>
+			<td align="right">0</td>
+			<td align="right">394</td>
+			<td align="right">513</td>
+			<td>0.0:1</td>
+			<td align="right">0</td>
+			<td>€62,400.00</td>
+		</tr>
+		<tr>
+			<td>2020 Mercedes-Benz GLE 450</td>
+			<td>Mercedes-Benz</td>
+			<td>3.00L</td>
+			<td align="right">4</td>
+			<td align="right">362</td>
+			<td align="right">369</td>
+			<td>10.5:1</td>
+			<td align="right">22</td>
+			<td>€54,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Nissan Altima</td>
+			<td>Nissan</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">188</td>
+			<td align="right">180</td>
+			<td>8.0:1</td>
+			<td align="right">32</td>
+			<td>€21,500.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ram 1500</td>
+			<td>Ram</td>
+			<td>5.70L</td>
+			<td align="right">8</td>
+			<td align="right">395</td>
+			<td align="right">410</td>
+			<td>11.3:1</td>
+			<td align="right">23</td>
+			<td>€28,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Subaru Ascent</td>
+			<td>Subaru</td>
+			<td>2.40L</td>
+			<td align="right">4</td>
+			<td align="right">260</td>
+			<td align="right">277</td>
+			<td>10.6:1</td>
+			<td align="right">22</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Toyota Rav4</td>
+			<td>Toyota</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">219</td>
+			<td align="right">184</td>
+			<td>13.0:1</td>
+			<td align="right">39</td>
+			<td>€22,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Volvo XC40</td>
+			<td>Volvo</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">248</td>
+			<td align="right">258</td>
+			<td>10.8:1</td>
+			<td align="right">26</td>
+			<td>€30,300.00</td>
+		</tr>
+	</tbody>
+</table>
+</section>
+
+
+
+<!--<section>-->
+
+<!--		<h1>Vertical Scroll</h1>-->
+<!--		<div id="fixed-table-container" class="fixed-table-container">-->
+<!--		<table>-->
+<!--			<thead>-->
+<!--				<tr>-->
+<!--					<th title="Field #1">Car</th>-->
+<!--					<th title="Field #2">Manufacturer</th>-->
+<!--					<th title="Field #3">Engine Size</th>-->
+<!--					<th title="Field #4">Cylinders</th>-->
+<!--					<th title="Field #5">Horsepower</th>-->
+<!--					<th title="Field #6">Torque</th>-->
+<!--					<th title="Field #7">Compresion Ratio</th>-->
+<!--					<th title="Field #8">Miles per gallon</th>-->
+<!--					<th title="Field #9">Price</th>-->
+<!--				</tr>-->
+<!--			</thead>-->
+<!--			<tbody>-->
+<!--				<tr>-->
+<!--					<td>2019 Acura RDX</td>-->
+<!--					<td>Acura</td>-->
+<!--					<td>2.00L</td>-->
+<!--					<td align="right">4</td>-->
+<!--					<td align="right">272</td>-->
+<!--					<td align="right">280</td>-->
+<!--					<td>9.8:1</td>-->
+<!--					<td align="right">28</td>-->
+<!--					<td>€33,600.00</td>-->
+<!--				</tr>-->
+<!--				<tr>-->
+<!--					<td>2019 Ford Ranger</td>-->
+<!--					<td>Ford</td>-->
+<!--					<td>2.30L</td>-->
+<!--					<td align="right">4</td>-->
+<!--					<td align="right">270</td>-->
+<!--					<td align="right">310</td>-->
+<!--					<td>10.0:1</td>-->
+<!--					<td align="right">21</td>-->
+<!--					<td>€21,800.00</td>-->
+<!--				</tr>-->
+<!--				<tr>-->
+<!--					<td>2019 Genesis G70</td>-->
+<!--					<td>Genesis</td>-->
+<!--					<td>2.00L</td>-->
+<!--					<td align="right">4</td>-->
+<!--					<td align="right">252</td>-->
+<!--					<td align="right">260</td>-->
+<!--					<td>10.0:1</td>-->
+<!--					<td align="right">22</td>-->
+<!--					<td>€31,300.00</td>-->
+<!--				</tr>-->
+<!--				<tr>-->
+<!--					<td>2019 GMC Sierra 1500</td>-->
+<!--					<td>GMC</td>-->
+<!--					<td>4.03L</td>-->
+<!--					<td align="right">6</td>-->
+<!--					<td align="right">285</td>-->
+<!--					<td align="right">305</td>-->
+<!--					<td>11.0:1</td>-->
+<!--					<td align="right">16</td>-->
+<!--					<td>€26,600.00</td>-->
+<!--				</tr>-->
+<!--				<tr>-->
+<!--					<td>2019 Honda Passport</td>-->
+<!--					<td>Honda</td>-->
+<!--					<td>3.50L</td>-->
+<!--					<td align="right">6</td>-->
+<!--					<td align="right">280</td>-->
+<!--					<td align="right">262</td>-->
+<!--					<td>11.5:1</td>-->
+<!--					<td align="right">21</td>-->
+<!--					<td>€28,700.00</td>-->
+<!--				</tr>-->
+<!--				<tr>-->
+<!--					<td>2019 Jaguar I-Pace</td>-->
+<!--					<td>Jaguar</td>-->
+<!--					<td>0.00L</td>-->
+<!--					<td align="right">0</td>-->
+<!--					<td align="right">394</td>-->
+<!--					<td align="right">513</td>-->
+<!--					<td>0.0:1</td>-->
+<!--					<td align="right">0</td>-->
+<!--					<td>€62,400.00</td>-->
+<!--				</tr>-->
+<!--				<tr>-->
+<!--					<td>2020 Mercedes-Benz GLE 450</td>-->
+<!--					<td>Mercedes-Benz</td>-->
+<!--					<td>3.00L</td>-->
+<!--					<td align="right">4</td>-->
+<!--					<td align="right">362</td>-->
+<!--					<td align="right">369</td>-->
+<!--					<td>10.5:1</td>-->
+<!--					<td align="right">22</td>-->
+<!--					<td>€54,900.00</td>-->
+<!--				</tr>-->
+<!--				<tr>-->
+<!--					<td>2019 Nissan Altima</td>-->
+<!--					<td>Nissan</td>-->
+<!--					<td>2.50L</td>-->
+<!--					<td align="right">4</td>-->
+<!--					<td align="right">188</td>-->
+<!--					<td align="right">180</td>-->
+<!--					<td>8.0:1</td>-->
+<!--					<td align="right">32</td>-->
+<!--					<td>€21,500.00</td>-->
+<!--				</tr>-->
+<!--				<tr>-->
+<!--					<td>2019 Ram 1500</td>-->
+<!--					<td>Ram</td>-->
+<!--					<td>5.70L</td>-->
+<!--					<td align="right">8</td>-->
+<!--					<td align="right">395</td>-->
+<!--					<td align="right">410</td>-->
+<!--					<td>11.3:1</td>-->
+<!--					<td align="right">23</td>-->
+<!--					<td>€28,600.00</td>-->
+<!--				</tr>-->
+<!--				<tr>-->
+<!--					<td>2019 Subaru Ascent</td>-->
+<!--					<td>Subaru</td>-->
+<!--					<td>2.40L</td>-->
+<!--					<td align="right">4</td>-->
+<!--					<td align="right">260</td>-->
+<!--					<td align="right">277</td>-->
+<!--					<td>10.6:1</td>-->
+<!--					<td align="right">22</td>-->
+<!--					<td>€28,700.00</td>-->
+<!--				</tr>-->
+<!--				<tr>-->
+<!--					<td>2019 Toyota Rav4</td>-->
+<!--					<td>Toyota</td>-->
+<!--					<td>2.50L</td>-->
+<!--					<td align="right">4</td>-->
+<!--					<td align="right">219</td>-->
+<!--					<td align="right">184</td>-->
+<!--					<td>13.0:1</td>-->
+<!--					<td align="right">39</td>-->
+<!--					<td>€22,900.00</td>-->
+<!--				</tr>-->
+<!--				<tr>-->
+<!--					<td>2019 Volvo XC40</td>-->
+<!--					<td>Volvo</td>-->
+<!--					<td>2.00L</td>-->
+<!--					<td align="right">4</td>-->
+<!--					<td align="right">248</td>-->
+<!--					<td align="right">258</td>-->
+<!--					<td>10.8:1</td>-->
+<!--					<td align="right">26</td>-->
+<!--					<td>€30,300.00</td>-->
+<!--				</tr>-->
+<!--			</tbody>-->
+<!--		</table>-->
+<!--	</div>-->
+<!--	<script>-->
+<!--			var fixedTable1 = fixTable(document.getElementById('fixed-table-container'));-->
+<!--			</script>-->
+<!--</section>-->
+
+
+<section>
+<h1>Flip Scroll</h1>
+<html>
+<table class="flipscroll">
+	<thead>
+		<tr>
+			<th title="Field #1">Car</th>
+			<th title="Field #2">Manufacturer</th>
+			<th title="Field #3">Engine Size</th>
+			<th title="Field #4">Cylinders</th>
+			<th title="Field #5">Horsepower</th>
+			<th title="Field #6">Torque</th>
+			<th title="Field #7">Compresion Ratio</th>
+			<th title="Field #8">Miles per gallon</th>
+			<th title="Field #9">Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2019 Acura RDX</td>
+			<td>Acura</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">272</td>
+			<td align="right">280</td>
+			<td>9.8:1</td>
+			<td align="right">28</td>
+			<td>€33,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ford Ranger</td>
+			<td>Ford</td>
+			<td>2.30L</td>
+			<td align="right">4</td>
+			<td align="right">270</td>
+			<td align="right">310</td>
+			<td>10.0:1</td>
+			<td align="right">21</td>
+			<td>€21,800.00</td>
+		</tr>
+		<tr>
+			<td>2019 Genesis G70</td>
+			<td>Genesis</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">252</td>
+			<td align="right">260</td>
+			<td>10.0:1</td>
+			<td align="right">22</td>
+			<td>€31,300.00</td>
+		</tr>
+		<tr>
+			<td>2019 GMC Sierra 1500</td>
+			<td>GMC</td>
+			<td>4.03L</td>
+			<td align="right">6</td>
+			<td align="right">285</td>
+			<td align="right">305</td>
+			<td>11.0:1</td>
+			<td align="right">16</td>
+			<td>€26,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Honda Passport</td>
+			<td>Honda</td>
+			<td>3.50L</td>
+			<td align="right">6</td>
+			<td align="right">280</td>
+			<td align="right">262</td>
+			<td>11.5:1</td>
+			<td align="right">21</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Jaguar I-Pace</td>
+			<td>Jaguar</td>
+			<td>0.00L</td>
+			<td align="right">0</td>
+			<td align="right">394</td>
+			<td align="right">513</td>
+			<td>0.0:1</td>
+			<td align="right">0</td>
+			<td>€62,400.00</td>
+		</tr>
+		<tr>
+			<td>2020 Mercedes-Benz GLE 450</td>
+			<td>Mercedes-Benz</td>
+			<td>3.00L</td>
+			<td align="right">4</td>
+			<td align="right">362</td>
+			<td align="right">369</td>
+			<td>10.5:1</td>
+			<td align="right">22</td>
+			<td>€54,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Nissan Altima</td>
+			<td>Nissan</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">188</td>
+			<td align="right">180</td>
+			<td>8.0:1</td>
+			<td align="right">32</td>
+			<td>€21,500.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ram 1500</td>
+			<td>Ram</td>
+			<td>5.70L</td>
+			<td align="right">8</td>
+			<td align="right">395</td>
+			<td align="right">410</td>
+			<td>11.3:1</td>
+			<td align="right">23</td>
+			<td>€28,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Subaru Ascent</td>
+			<td>Subaru</td>
+			<td>2.40L</td>
+			<td align="right">4</td>
+			<td align="right">260</td>
+			<td align="right">277</td>
+			<td>10.6:1</td>
+			<td align="right">22</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Toyota Rav4</td>
+			<td>Toyota</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">219</td>
+			<td align="right">184</td>
+			<td>13.0:1</td>
+			<td align="right">39</td>
+			<td>€22,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Volvo XC40</td>
+			<td>Volvo</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">248</td>
+			<td align="right">258</td>
+			<td>10.8:1</td>
+			<td align="right">26</td>
+			<td>€30,300.00</td>
+		</tr>
+	</tbody>
+</table>
+</html>
+</section>
+
+<section>
+	<h1>Resize Columns</h1>
+	<html lang="en">
+	<table class="collapserow">
+	<thead>
+		<tr>
+			<th title="Field #1"><div class = "resizecell">Car</div></th>
+			<th title="Field #2"><div class = "resizecell">Manufacturer</div></th>
+			<th title="Field #3"><div class = "resizecell">Engine Size</div></th>
+			<th title="Field #4"><div class = "resizecell">Cylinders</div></th>
+			<th title="Field #5"><div class = "resizecell">Horsepower</div></th>
+			<th title="Field #6"><div class = "resizecell">Torque</div></th>
+			<th title="Field #7"><div class = "resizecell">Compresion Ratio</div></th>
+			<th title="Field #8"><div class = "resizecell">Miles per gallon</div></th>
+			<th title="Field #9"><div class = "resizecell">Price</div></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2019 Acura RDX</td>
+			<td>Acura</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">272</td>
+			<td align="right">280</td>
+			<td>9.8:1</td>
+			<td align="right">28</td>
+			<td>€33,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ford Ranger</td>
+			<td>Ford</td>
+			<td>2.30L</td>
+			<td align="right">4</td>
+			<td align="right">270</td>
+			<td align="right">310</td>
+			<td>10.0:1</td>
+			<td align="right">21</td>
+			<td>€21,800.00</td>
+		</tr>
+		<tr>
+			<td>2019 Genesis G70</td>
+			<td>Genesis</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">252</td>
+			<td align="right">260</td>
+			<td>10.0:1</td>
+			<td align="right">22</td>
+			<td>€31,300.00</td>
+		</tr>
+		<tr>
+			<td>2019 GMC Sierra 1500</td>
+			<td>GMC</td>
+			<td>4.03L</td>
+			<td align="right">6</td>
+			<td align="right">285</td>
+			<td align="right">305</td>
+			<td>11.0:1</td>
+			<td align="right">16</td>
+			<td>€26,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Honda Passport</td>
+			<td>Honda</td>
+			<td>3.50L</td>
+			<td align="right">6</td>
+			<td align="right">280</td>
+			<td align="right">262</td>
+			<td>11.5:1</td>
+			<td align="right">21</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Jaguar I-Pace</td>
+			<td>Jaguar</td>
+			<td>0.00L</td>
+			<td align="right">0</td>
+			<td align="right">394</td>
+			<td align="right">513</td>
+			<td>0.0:1</td>
+			<td align="right">0</td>
+			<td>€62,400.00</td>
+		</tr>
+		<tr>
+			<td>2020 Mercedes-Benz GLE 450</td>
+			<td>Mercedes-Benz</td>
+			<td>3.00L</td>
+			<td align="right">4</td>
+			<td align="right">362</td>
+			<td align="right">369</td>
+			<td>10.5:1</td>
+			<td align="right">22</td>
+			<td>€54,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Nissan Altima</td>
+			<td>Nissan</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">188</td>
+			<td align="right">180</td>
+			<td>8.0:1</td>
+			<td align="right">32</td>
+			<td>€21,500.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ram 1500</td>
+			<td>Ram</td>
+			<td>5.70L</td>
+			<td align="right">8</td>
+			<td align="right">395</td>
+			<td align="right">410</td>
+			<td>11.3:1</td>
+			<td align="right">23</td>
+			<td>€28,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Subaru Ascent</td>
+			<td>Subaru</td>
+			<td>2.40L</td>
+			<td align="right">4</td>
+			<td align="right">260</td>
+			<td align="right">277</td>
+			<td>10.6:1</td>
+			<td align="right">22</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Toyota Rav4</td>
+			<td>Toyota</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">219</td>
+			<td align="right">184</td>
+			<td>13.0:1</td>
+			<td align="right">39</td>
+			<td>€22,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Volvo XC40</td>
+			<td>Volvo</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">248</td>
+			<td align="right">258</td>
+			<td>10.8:1</td>
+			<td align="right">26</td>
+			<td>€30,300.00</td>
+		</tr>
+	</tbody>
+</table>
+	</html>
+</section>
+
+<section>
+<h1>Collapse to List</h1>
+<html>
+<table role="table" class="toList">
+	<thead role="rowgroup">
+		<tr role="row">
+			<th title="Field #1"role="columnheader">Car</th>
+			<th title="Field #2"role="columnheader">Manufacturer</th>
+			<th title="Field #3"role="columnheader">Engine Size</th>
+			<th title="Field #4"role="columnheader">Cylinders</th>
+			<th title="Field #5"role="columnheader">Horsepower</th>
+			<th title="Field #6"role="columnheader">Torque</th>
+			<th title="Field #7"role="columnheader">Compresion Ratio</th>
+			<th title="Field #8"role="columnheader">Miles per gallon</th>
+			<th title="Field #9" role="columnheader">Price</th>
+		</tr>
+	</thead>
+	<tbody role="rowgroup">
+		<tr role="row">
+			<td role="cell">2019 Acura RDX</td>
+			<td role="cell">Acura</td>
+			<td role="cell">2.00L</td>
+			<td role="cell" align="right">4</td>
+			<td role="cell" align="right">272</td>
+			<td role="cell" align="right">280</td>
+			<td role="cell">9.8:1</td>
+			<td role="cell" align="right">28</td>
+			<td role="cell">€33,600.00</td>
+		</tr>
+		<tr role="row">
+			<td role="cell">2019 Subaru Ascent</td>
+			<td role="cell">Subaru</td>
+			<td role="cell">2.40L</td>
+			<td align="right" role="cell">4</td>
+			<td align="right" role="cell">260</td>
+			<td align="right"role="cell">277</td>
+			<td>10.6:1</td>
+			<td align="right"role="cell">22</td>
+			<td role="cell">€28,700.00</td>
+		</tr>
+		<tr role="row">
+			<td role="cell">2019 Toyota Rav4</td>
+			<td role="cell">Toyota</td>
+			<td role="cell">2.50L</td>
+			<td role="cell" align="right">4</td>
+			<td role="cell" align="right">219</td>
+			<td role="cell" align="right">184</td>
+			<td role="cell">13.0:1</td>
+			<td role="cell" align="right">39</td>
+			<td role="cell">€22,900.00</td>
+		</tr>
+		<tr role="row">
+			<td role="cell">2019 Volvo XC40</td>
+			<td role="cell">Volvo</td>
+			<td role="cell">2.00L</td>
+			<td role="cell" align="right">4</td>
+			<td role="cell" align="right">248</td>
+			<td role="cell" align="right">258</td>
+			<td role="cell">10.8:1</td>
+			<td role="cell" align="right">26</td>
+			<td role="cell">€30,300.00</td>
+		</tr>
+	</tbody>
+</table>
+</html>
+</section>
+
+<section>
+	<h1>Sortable</h1>
+	<table data-tablesaw-sortable>
+	<thead>
+		<tr>
+			<th title="Field #1" data-tablesaw-sortable-col data-tablesaw-sortable-default-col>Car</th>
+			<th title="Field #2" data-tablesaw-sortable-col>Manufacturer</th>
+			<th title="Field #3" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Engine Size</th>
+			<th title="Field #4" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Cylinders</th>
+			<th title="Field #5" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Horsepower</th>
+			<th title="Field #6" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Torque</th>
+			<th title="Field #7" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Compresion Ratio</th>
+			<th title="Field #8" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Miles per gallon</th>
+			<th title="Field #9" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2019 Acura RDX</td>
+			<td>Acura</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">272</td>
+			<td align="right">280</td>
+			<td>9.8:1</td>
+			<td align="right">28</td>
+			<td>€33,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ford Ranger</td>
+			<td>Ford</td>
+			<td>2.30L</td>
+			<td align="right">4</td>
+			<td align="right">270</td>
+			<td align="right">310</td>
+			<td>10.0:1</td>
+			<td align="right">21</td>
+			<td>€21,800.00</td>
+		</tr>
+		<tr>
+			<td>2019 Genesis G70</td>
+			<td>Genesis</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">252</td>
+			<td align="right">260</td>
+			<td>10.0:1</td>
+			<td align="right">22</td>
+			<td>€31,300.00</td>
+		</tr>
+		<tr>
+			<td>2019 GMC Sierra 1500</td>
+			<td>GMC</td>
+			<td>4.03L</td>
+			<td align="right">6</td>
+			<td align="right">285</td>
+			<td align="right">305</td>
+			<td>11.0:1</td>
+			<td align="right">16</td>
+			<td>€26,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Honda Passport</td>
+			<td>Honda</td>
+			<td>3.50L</td>
+			<td align="right">6</td>
+			<td align="right">280</td>
+			<td align="right">262</td>
+			<td>11.5:1</td>
+			<td align="right">21</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Jaguar I-Pace</td>
+			<td>Jaguar</td>
+			<td>0.00L</td>
+			<td align="right">0</td>
+			<td align="right">394</td>
+			<td align="right">513</td>
+			<td>0.0:1</td>
+			<td align="right">0</td>
+			<td>€62,400.00</td>
+		</tr>
+		<tr>
+			<td>2020 Mercedes-Benz GLE 450</td>
+			<td>Mercedes-Benz</td>
+			<td>3.00L</td>
+			<td align="right">4</td>
+			<td align="right">362</td>
+			<td align="right">369</td>
+			<td>10.5:1</td>
+			<td align="right">22</td>
+			<td>€54,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Nissan Altima</td>
+			<td>Nissan</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">188</td>
+			<td align="right">180</td>
+			<td>8.0:1</td>
+			<td align="right">32</td>
+			<td>€21,500.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ram 1500</td>
+			<td>Ram</td>
+			<td>5.70L</td>
+			<td align="right">8</td>
+			<td align="right">395</td>
+			<td align="right">410</td>
+			<td>11.3:1</td>
+			<td align="right">23</td>
+			<td>€28,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Subaru Ascent</td>
+			<td>Subaru</td>
+			<td>2.40L</td>
+			<td align="right">4</td>
+			<td align="right">260</td>
+			<td align="right">277</td>
+			<td>10.6:1</td>
+			<td align="right">22</td>
+			<td>€28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Toyota Rav4</td>
+			<td>Toyota</td>
+			<td>2.50L</td>
+			<td align="right">4</td>
+			<td align="right">219</td>
+			<td align="right">184</td>
+			<td>13.0:1</td>
+			<td align="right">39</td>
+			<td>€22,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Volvo XC40</td>
+			<td>Volvo</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">248</td>
+			<td align="right">258</td>
+			<td>10.8:1</td>
+			<td align="right">26</td>
+			<td>€30,300.00</td>
+		</tr>
+	</tbody>
+	</table>
+</section>
+
+
+
+</body>
+</html>

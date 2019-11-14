@@ -1,0 +1,18 @@
+table.increaseHover {
+  table-layout:fixed;
+  margin:auto;
+
+  }
+  table.increaseHover td {
+  background: center no-repeat;
+  transition:0.25s;
+  box-shadow:inset 0 0 0 2px;
+  }
+  table.increaseHover td:hover {
+  background-size:  100% 100%;
+  transform:scale(1.1,1.4);
+  transform-origin:center;
+  }
+  table.increaseHover body {
+  text-align:center;
+  }
