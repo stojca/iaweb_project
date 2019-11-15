@@ -18,10 +18,9 @@
 <link rel="stylesheet" href="highlight.css"/>
 <link rel="stylesheet" href="hoverAction.css"/>
 <link rel="stylesheet" href="report.css"/>
-<link rel="stylesheet" href="toList.css"/>
 <link rel="stylesheet" href="tablesaw.css">
 <link rel="stylesheet" href="horizontalscroll.css">
-<link rel="stylesheet" href="stojca.css">
+<link rel="stylesheet" href="fixedHeader.css">
 <link rel="stylesheet" href="fixed-table.css">
 <link rel="stylesheet" href="collapserow.css">
 <link rel="stylesheet" href="resizecolumns.css">
@@ -66,6 +65,11 @@ It consists of following tags:
 <li> <'table'> - Main tag which defines what comes in the table</li> 
 <li> <'tr'> - Tag which defines rows inside the table </li>
 <li> <'td'> - Tag which defines the data inside the table </li>
+<li> <'th'> - Tag which defines a header cell in the </li>
+<li> <'thead'> - Tag which groups header content in the table </li>
+<li> <'tbody'> - Tag which groups body content in the table </li>
+<li> <'tfoot'> - Tag which groups footer content in the table  </li>
+
 </ul>
 
 </section>
@@ -85,7 +89,7 @@ What to look out for:
 
 <li>
 <p>
-<span class="li-intro">Popup data on hover</span>
+<span class="li-intro">Hover action</span>
 </p>
 </li>
 
@@ -120,10 +124,7 @@ $(document).ready(function(){
 </script>
 
 
-<h1>Type of Table</h1>
-<p>
-Expandable areas
-</p>
+<h1>Expandable Areas</h1>
 <table id="report">
 	<thead>
 		<tr>
@@ -277,7 +278,7 @@ Expandable areas
 
 
 <section>
-<h1>Popup Data on Hover</h1>
+<h1>Hover Action</h1>
 <table class="hoverAction">
 	<thead>
 		<tr>
@@ -610,22 +611,16 @@ Expandable areas
 <span class="li-intro">Different techniques: </span>
 <ol>
 <li> Hidden Column </li>
-<li> Static Left Table Headers with Horizontal Scrolling </li>
 <li> Horizontal Scroll</li>
 <li> Fixed Header</li>
 <!--<li> Vertical Scroll</li>-->
 <li> Flip Scroll</li>
 <li> Resize Columns</li>
-<li> Collapse to List</li>
 <li> Sortable</li>
 </ol>
 </li>
 </ol>
 </section>
-
-
-
-
 
 
 <section>
@@ -801,194 +796,6 @@ function show_hide_column(col_no, do_show) {
 
 </html>
 
-</section>
-
-
-<section>
-<h1>Static Left Table Headers with Horizontal Scrolling</h1>
-<html>
-<script>
-var smallBreak = 800; // Your small screen breakpoint in pixels
-var columns = $('.dataTable tr').length;
-var rows = $('.dataTable th').length;
-
-$(document).ready(shapeTable());
-$(window).resize(function() {
-    shapeTable();
-});
-
-function shapeTable() {
-    if ($(window).width() < smallBreak) {
-        for (i=0;i < rows; i++) {
-            var maxHeight = $('.dataTable th:nth-child(' + i + ')').outerHeight();
-            for (j=0; j < columns; j++) {
-                if ($('.dataTable tr:nth-child(' + j + ') td:nth-child(' + i + ')').outerHeight() > maxHeight) {
-                    maxHeight = $('.dataTable tr:nth-child(' + j + ') td:nth-child(' + i + ')').outerHeight();
-                }
-              	if ($('.dataTable tr:nth-child(' + j + ') td:nth-child(' + i + ')').prop('scrollHeight') > $('.dataTable tr:nth-child(' + j + ') td:nth-child(' + i + ')').outerHeight()) {
-                    maxHeight = $('.dataTable tr:nth-child(' + j + ') td:nth-child(' + i + ')').prop('scrollHeight');
-                }
-            }
-            for (j=0; j < columns; j++) {
-                $('.dataTable tr:nth-child(' + j + ') td:nth-child(' + i + ')').css('height',maxHeight);
-                $('.dataTable th:nth-child(' + i + ')').css('height',maxHeight);
-            }
-        }
-    } else {
-        $('.dataTable td, .dataTable th').removeAttr('style');
-    }
-}
-</script>
-<table class="dataTable">
-	<thead>
-		<tr>
-			<th title="Field #1">Car</th>
-			<th title="Field #2">Manufacturer</th>
-			<th title="Field #3">Engine Size</th>
-			<th title="Field #4">Cylinders</th>
-			<th title="Field #5">Horsepower</th>
-			<th title="Field #6">Torque</th>
-			<th title="Field #7">Compresion Ratio</th>
-			<th title="Field #8">Miles per gallon</th>
-			<th title="Field #9">Price</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>2019 Acura RDX</td>
-			<td>Acura</td>
-			<td>2.00L</td>
-			<td align="right">4</td>
-			<td align="right">272</td>
-			<td align="right">280</td>
-			<td>9.8:1</td>
-			<td align="right">28</td>
-			<td>€33,600.00</td>
-		</tr>
-		<tr>
-			<td>2019 Ford Ranger</td>
-			<td>Ford</td>
-			<td>2.30L</td>
-			<td align="right">4</td>
-			<td align="right">270</td>
-			<td align="right">310</td>
-			<td>10.0:1</td>
-			<td align="right">21</td>
-			<td>€21,800.00</td>
-		</tr>
-		<tr>
-			<td>2019 Genesis G70</td>
-			<td>Genesis</td>
-			<td>2.00L</td>
-			<td align="right">4</td>
-			<td align="right">252</td>
-			<td align="right">260</td>
-			<td>10.0:1</td>
-			<td align="right">22</td>
-			<td>€31,300.00</td>
-		</tr>
-		<tr>
-			<td>2019 GMC Sierra 1500</td>
-			<td>GMC</td>
-			<td>4.03L</td>
-			<td align="right">6</td>
-			<td align="right">285</td>
-			<td align="right">305</td>
-			<td>11.0:1</td>
-			<td align="right">16</td>
-			<td>€26,600.00</td>
-		</tr>
-		<tr>
-			<td>2019 Honda Passport</td>
-			<td>Honda</td>
-			<td>3.50L</td>
-			<td align="right">6</td>
-			<td align="right">280</td>
-			<td align="right">262</td>
-			<td>11.5:1</td>
-			<td align="right">21</td>
-			<td>€28,700.00</td>
-		</tr>
-		<tr>
-			<td>2019 Jaguar I-Pace</td>
-			<td>Jaguar</td>
-			<td>0.00L</td>
-			<td align="right">0</td>
-			<td align="right">394</td>
-			<td align="right">513</td>
-			<td>0.0:1</td>
-			<td align="right">0</td>
-			<td>€62,400.00</td>
-		</tr>
-		<tr>
-			<td>2020 Mercedes-Benz GLE 450</td>
-			<td>Mercedes-Benz</td>
-			<td>3.00L</td>
-			<td align="right">4</td>
-			<td align="right">362</td>
-			<td align="right">369</td>
-			<td>10.5:1</td>
-			<td align="right">22</td>
-			<td>€54,900.00</td>
-		</tr>
-		<tr>
-			<td>2019 Nissan Altima</td>
-			<td>Nissan</td>
-			<td>2.50L</td>
-			<td align="right">4</td>
-			<td align="right">188</td>
-			<td align="right">180</td>
-			<td>8.0:1</td>
-			<td align="right">32</td>
-			<td>€21,500.00</td>
-		</tr>
-		<tr>
-			<td>2019 Ram 1500</td>
-			<td>Ram</td>
-			<td>5.70L</td>
-			<td align="right">8</td>
-			<td align="right">395</td>
-			<td align="right">410</td>
-			<td>11.3:1</td>
-			<td align="right">23</td>
-			<td>€28,600.00</td>
-		</tr>
-		<tr>
-			<td>2019 Subaru Ascent</td>
-			<td>Subaru</td>
-			<td>2.40L</td>
-			<td align="right">4</td>
-			<td align="right">260</td>
-			<td align="right">277</td>
-			<td>10.6:1</td>
-			<td align="right">22</td>
-			<td>€28,700.00</td>
-		</tr>
-		<tr>
-			<td>2019 Toyota Rav4</td>
-			<td>Toyota</td>
-			<td>2.50L</td>
-			<td align="right">4</td>
-			<td align="right">219</td>
-			<td align="right">184</td>
-			<td>13.0:1</td>
-			<td align="right">39</td>
-			<td>€22,900.00</td>
-		</tr>
-		<tr>
-			<td>2019 Volvo XC40</td>
-			<td>Volvo</td>
-			<td>2.00L</td>
-			<td align="right">4</td>
-			<td align="right">248</td>
-			<td align="right">258</td>
-			<td>10.8:1</td>
-			<td align="right">26</td>
-			<td>€30,300.00</td>
-		</tr>
-	</tbody>
-</table>
-</html>
 </section>
 
 <section>
@@ -1788,73 +1595,6 @@ function shapeTable() {
 	</tbody>
 </table>
 	</html>
-</section>
-
-<section>
-<h1>Collapse to List</h1>
-<html>
-<table role="table" class="toList">
-	<thead role="rowgroup">
-		<tr role="row">
-			<th title="Field #1"role="columnheader">Car</th>
-			<th title="Field #2"role="columnheader">Manufacturer</th>
-			<th title="Field #3"role="columnheader">Engine Size</th>
-			<th title="Field #4"role="columnheader">Cylinders</th>
-			<th title="Field #5"role="columnheader">Horsepower</th>
-			<th title="Field #6"role="columnheader">Torque</th>
-			<th title="Field #7"role="columnheader">Compresion Ratio</th>
-			<th title="Field #8"role="columnheader">Miles per gallon</th>
-			<th title="Field #9" role="columnheader">Price</th>
-		</tr>
-	</thead>
-	<tbody role="rowgroup">
-		<tr role="row">
-			<td role="cell">2019 Acura RDX</td>
-			<td role="cell">Acura</td>
-			<td role="cell">2.00L</td>
-			<td role="cell" align="right">4</td>
-			<td role="cell" align="right">272</td>
-			<td role="cell" align="right">280</td>
-			<td role="cell">9.8:1</td>
-			<td role="cell" align="right">28</td>
-			<td role="cell">€33,600.00</td>
-		</tr>
-		<tr role="row">
-			<td role="cell">2019 Subaru Ascent</td>
-			<td role="cell">Subaru</td>
-			<td role="cell">2.40L</td>
-			<td align="right" role="cell">4</td>
-			<td align="right" role="cell">260</td>
-			<td align="right"role="cell">277</td>
-			<td>10.6:1</td>
-			<td align="right"role="cell">22</td>
-			<td role="cell">€28,700.00</td>
-		</tr>
-		<tr role="row">
-			<td role="cell">2019 Toyota Rav4</td>
-			<td role="cell">Toyota</td>
-			<td role="cell">2.50L</td>
-			<td role="cell" align="right">4</td>
-			<td role="cell" align="right">219</td>
-			<td role="cell" align="right">184</td>
-			<td role="cell">13.0:1</td>
-			<td role="cell" align="right">39</td>
-			<td role="cell">€22,900.00</td>
-		</tr>
-		<tr role="row">
-			<td role="cell">2019 Volvo XC40</td>
-			<td role="cell">Volvo</td>
-			<td role="cell">2.00L</td>
-			<td role="cell" align="right">4</td>
-			<td role="cell" align="right">248</td>
-			<td role="cell" align="right">258</td>
-			<td role="cell">10.8:1</td>
-			<td role="cell" align="right">26</td>
-			<td role="cell">€30,300.00</td>
-		</tr>
-	</tbody>
-</table>
-</html>
 </section>
 
 <section>
