@@ -1,0 +1,27 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'survey.blg'
+[19] biber:315> INFO - === Do Nov  7, 2019, 16:43:16
+[36] Biber.pm:371> INFO - Reading 'survey.bcf'
+[97] Biber.pm:889> INFO - Found 64 citekeys in bib section 0
+[113] Biber.pm:4093> INFO - Processing section 0
+[126] Biber.pm:4254> INFO - Looking for bibtex format file 'writing.bib' for section 0
+[129] bibtex.pm:1512> INFO - LaTeX decoding ...
+[173] bibtex.pm:1329> INFO - Found BibTeX data source 'writing.bib'
+[299] Biber.pm:4254> INFO - Looking for bibtex format file 'presentations.bib' for section 0
+[300] bibtex.pm:1512> INFO - LaTeX decoding ...
+[307] bibtex.pm:1329> INFO - Found BibTeX data source 'presentations.bib'
+[325] Biber.pm:4254> INFO - Looking for bibtex format file 'latex.bib' for section 0
+[326] bibtex.pm:1512> INFO - LaTeX decoding ...
+[342] bibtex.pm:1329> INFO - Found BibTeX data source 'latex.bib'
+[418] Biber.pm:4254> INFO - Looking for bibtex format file 'kandrews.bib' for section 0
+[420] bibtex.pm:1512> INFO - LaTeX decoding ...
+[440] bibtex.pm:1329> INFO - Found BibTeX data source 'kandrews.bib'
+[473] Biber.pm:4254> INFO - Looking for bibtex format file 'ivis.bib' for section 0
+[473] bibtex.pm:1512> INFO - LaTeX decoding ...
+[476] bibtex.pm:1329> INFO - Found BibTeX data source 'ivis.bib'
+[566] UCollate.pm:68> INFO - Overriding locale 'en' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[566] UCollate.pm:68> INFO - Overriding locale 'en' defaults 'variable = shifted' with 'variable = non-ignorable'
+[566] Biber.pm:3921> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en'
+[566] Biber.pm:3927> INFO - No sort tailoring available for locale 'en'
+[632] bbl.pm:636> INFO - Writing 'survey.bbl' with encoding 'UTF-8'
+[672] bbl.pm:739> INFO - Output to survey.bbl
