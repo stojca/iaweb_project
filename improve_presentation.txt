@@ -1,0 +1,56 @@
+Bigger text font size
+
+HTML 5 table
+    Don't use word tag. Use element                           ---> done
+    Td defines data cells inside a row     ---> done
+    Th defines a data cell inside thead row  ---> done
+    Restructure to have nested stuff. (th after thead) ---> done
+
+Good table design
+    Get rid of bold bullets ---> done
+
+Expandae Areas
+    "If you have additional info, do this"
+    It's good table design
+
+Highlighting Color
+    "Assuming user has a pointing device"
+
+Good Table Design
+    Expandable areas: on hover action
+    Hover action: tap
+    Highlighting Color: highlighting cell on hover action
+    + Alternate row highlighting (row colors interlacing)
+    Sorting isn't responsive. It's good table design.
+    Numbers should be right-aligned.
+    Numbers with decimal are aligned with decimal point. ---> done
+    Number symbols can go in header. ---> done
+
+Responsive Tables
+    Get rid of bold bullets
+    For bullet 2.: Something about the logic about how resize itself is build into the table. Browser doesn't choose different size tables but rather table resizes itself according to screen size.
+
+Hidden column
+    Usually you have an overlay of which columns to show/hide.
+    Make responsive
+
+Fixed header
+    Show table embedded between text
+
+Resize Columns
+    Becomes User Resizeable Columns
+    Making resizing 'button' more visible
+
+
+Show table HTML code.
+For each technique:
+    Show table
+    Then CSS (main part)
+    They must all be responsive
+    URL reference (adapted from) (underneath table)
+
+css-tricks.com/responsive-data-table-roundout/
+
+Syntax highlighting: prismjs
+
+Long Two Column (instead of collapse list)
