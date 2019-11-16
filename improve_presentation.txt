@@ -21,8 +21,8 @@ Good Table Design
     Hover action: tap
     Highlighting Color: highlighting cell on hover action
     + Alternate row highlighting (row colors interlacing)
-    Sorting isn't responsive. It's good table design.
-    Numbers should be right-aligned.
+    Sorting isn't responsive. It's good table design. ---> done
+    Numbers should be right-aligned. ---> done
     Numbers with decimal are aligned with decimal point. ---> done
     Number symbols can go in header. ---> done
 
@@ -35,7 +35,7 @@ Hidden column
     Make responsive
 
 Fixed header
-    Show table embedded between text
+    Show table embedded between text  ---> done
 
 Resize Columns
     Becomes User Resizeable Columns

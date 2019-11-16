@@ -15,7 +15,9 @@
     border-collapse:separate;
     border-spacing:0;
 }
+
 .table-scroll th, .table-scroll td {
+    width: auto;
     padding:5px 10px;
     border:1px solid #000;
     background:#fff;
@@ -47,3 +49,14 @@
     visibility:visible;
 }
 .clone thead, .clone tfoot{background:transparent;}
+
+
+
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    background:white;
+}
