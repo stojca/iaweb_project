@@ -45,16 +45,33 @@
 <section class="titleslide">
 <h1>Responsive Tables</h1>
 
-<h2>Mirza Kabiljagic, Stefan Rajinovic, Aleksandar Stojicic, Into Gabriel Mendoza</h2>
+<h2>Mirza Kabiljagic, Stefan Rajinovic, Aleksandar Stojicic, Inti Gabriel Mendoza</h2>
 
 
 <div id="location">
 <p>
-Thu 12 November 2019
+Thu 19 November 2019
 </p>
 </div>
 
 </section>
+
+
+<section>
+<h1>Overview </h1>
+
+<ul class="compact">
+<li> HTML Tables</li>
+<li> Good Table Design </li>
+<li> Responsive Tables </li>
+<li> Techniques </li>
+
+
+
+</ul>
+
+</section>
+
 
 <section>
 <h1>HTML 5 Tables</h1>
@@ -67,13 +84,13 @@ Usage of HTML tables is recommended for data which normally belongs to a grid.
 It consists of following elements:
 </p>
 <ul class="compact">
-<li> <'table'> - Main element which defines what comes in the table</li>
-<li> <'tr'> - Element which defines rows inside the table </li>
-<li> <'thead'> - Element which groups header content in the table </li>
-<li> <'th'> - Element which defines a data cell inside thead row</li>
-<li> <'tbody'> - Element which groups body content in the table </li>
-<li> <'td'> - Element which defines data cells inside a row </li>
-<li> <'tfoot'> - Element which groups footer content in the table  </li>
+<li> <xmp><table></xmp> Main element which defines what comes in the table</li>
+<li> <xmp><tr></xmp> Element which defines rows inside the table </li>
+<li> <xmp><thead></xmp> Element which groups header content in the table </li>
+<li> <xmp><th></xmp> Element which defines a data cell inside thead row</li>
+<li> <xmp><tbody></xmp> Element which groups body content in the table </li>
+<li> <xmp><td></xmp> Element which defines data cells inside a row </li>
+<li> <xmp><tfoot></xmp> Element which groups footer content in the table  </li>
 
 </ul>
 
@@ -773,13 +790,13 @@ $(document).ready(function(){
 
 <ol>
 <li>
-<span class="li-intro">Adapting web site layout with respect to the screen resolution</span>
+<span>Table resizes itself according to screen size</span>
 </li>
 <li>
-<span class="li-intro">Columns and rows can be repositioned, resized, collapsed, minimized..</span>
+<span>Columns and rows can be repositioned, resized, collapsed, minimized..</span>
 </li>
 <li>
-<span class="li-intro">Different techniques: </span>
+<span>Different techniques: </span>
 <ol>
 <li> Hidden Column </li>
 <li> Horizontal Scroll</li>
@@ -793,6 +810,61 @@ $(document).ready(function(){
 </ol>
 </section>
 
+
+
+<section>
+<h1>HTML Table in our Examples</h1>
+<pre><code style="background: #FAEBD7">
+<xmp>
+	<table>
+	<thead>
+		<tr>
+			<th title="Field #1">Car</th>
+			<th title="Field #2">Manufacturer</th>
+			<th title="Field #3">Engine Size(L)</th>
+			<th title="Field #4">Cylinders</th>
+			<th title="Field #5">Horsepower</th>
+			<th title="Field #6">Torque</th>
+			<th title="Field #7">Compresion Ratio</th>
+			<th title="Field #8">Miles per gallon</th>
+			<th title="Field #9">Price(€)</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2019 Acura RDX</td>
+			<td>Acura</td>
+			<td style="text-align: right">2.0</td>
+			<td style="text-align: right">4</td>
+			<td style="text-align: right">272</td>
+			<td style="text-align: right">280</td>
+			<td style="text-align: right">9.8:1</td>
+			<td style="text-align: right">28</td>
+			<td style="text-align: right">33,600.00</td>
+		</tr>
+		<tr>
+			<td colspan="5">
+					<h4>Additional information about the car</h4>
+	
+				<ul>
+					<li><a href="https://en.wikipedia.org/wiki/Acura_RDX">Acura RDX</a>
+					</li>
+					<li><a href="https://www.acura.ca/rdx">Acura RDX official webpage</a>
+					</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+		...
+		<tr>
+		...
+
+    <tbody>
+
+  </table>
+  </xmp>
+</code></pre>
+</section>
 
 <section>
 <h1>Hidden Column</h1>
@@ -1136,11 +1208,13 @@ function show_hide_column(col_no, do_show) {
 		</script>
 
 	<div>
-		<p><a href="https://codepen.io/paulobrien/pen/gWoVzN">https://codepen.io/paulobrien/pen/gWoVzN</a></p>
+		<br>
+		<p>References: <a href="https://codepen.io/paulobrien/pen/gWoVzN">https://codepen.io/paulobrien/pen/gWoVzN</a></p>
 	</div>
 </section>
 
 <section>
+<h1>Horizontal Scroll Code</h1>
 <pre><code style="background: #FAEBD7">
 	//css
 	.table-scroll table {
@@ -1330,11 +1404,13 @@ function show_hide_column(col_no, do_show) {
 	</table>
 </div>
 	<div>
-		<p><a href="https://mdbootstrap.com/support/angular/fixed-header-and-scrollable-body-in-table-in-html-angular/">https://mdbootstrap.com/support/angular/fixed-header-and-scrollable-body-in-table-in-html-angular/</a></p>
+		<br>
+		<p>References: <a href="https://mdbootstrap.com/support/angular/fixed-header-and-scrollable-body-in-table-in-html-angular/">https://mdbootstrap.com/support/angular/fixed-header-and-scrollable-body-in-table-in-html-angular/</a></p>
 	</div>
 </section>
 
 <section>
+<h1>Fixed Header Code </h1>
 <pre><code style="background: #FAEBD7">
 	//css
 	.fixedHeader tbody {
