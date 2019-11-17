@@ -2,48 +2,48 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
 <head>
-	<meta charset="UTF-8"/>
+<meta charset="UTF-8"/>
 
-	<!-- for css3 media queries to work properly on mobile devices-->
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- for css3 media queries to work properly on mobile devices-->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-	<title>Responsive Tables - G4</title>
+<title>Responsive Tables - G4</title>
 
-	<!-- Copyright © 2019 Keith Andrews -->
-	<meta name="dcterms.rightsHolder" content="Copyright © 2019 Keith Andrews"/>
+<!-- Copyright © 2019 Keith Andrews -->
+<meta name="dcterms.rightsHolder" content="Copyright © 2019 Keith Andrews"/>
 
-	<link rel="stylesheet" href="rslidy.min.css"/>
-	<link rel="stylesheet" href="slides-keith.css"/>
-	<link rel="stylesheet" href="flipscroll.css"/>
-	<link rel="stylesheet" href="highlight.css"/>
-	<link rel="stylesheet" href="hoverAction.css"/>
-	<link rel="stylesheet" href="report.css"/>
-	<!--<link rel="stylesheet" href="tablesaw.css"> -->
-	<link rel="stylesheet" href="node_modules/tablesaw/dist/tablesaw.css">
-	<link rel="stylesheet" href="horizontalscroll.css">
-	<link rel="stylesheet" href="fixedHeader.css">
-	<link rel="stylesheet" href="fixed-table.css">
-	<link rel="stylesheet" href="collapserow.css">
-	<link rel="stylesheet" href="resizecolumns.css">
-	<link rel="stylesheet" href="highlightcolumn.css">
-	<link rel="stylesheet" href="test.css">
-	<link rel="stylesheet" href="alternate.css">
+<link rel="stylesheet" href="rslidy.min.css"/>
+<link rel="stylesheet" href="slides-keith.css"/>
+<link rel="stylesheet" href="flipscroll.css"/>
+<link rel="stylesheet" href="highlight.css"/>
+<link rel="stylesheet" href="hoverAction.css"/>
+<link rel="stylesheet" href="report.css"/>
+<!--<link rel="stylesheet" href="tablesaw.css"> -->
+<link rel="stylesheet" href="node_modules/tablesaw/dist/tablesaw.css">
+<link rel="stylesheet" href="horizontalscroll.css">
+<link rel="stylesheet" href="fixedHeader.css">
+<link rel="stylesheet" href="fixed-table.css">
+<link rel="stylesheet" href="collapserow.css">
+<link rel="stylesheet" href="resizecolumns.css">
+<link rel="stylesheet" href="highlightcolumn.css">
+<link rel="stylesheet" href="test.css">
+<link rel="stylesheet" href="alternate.css">
 
 
-	<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
 
-	<script src="fixed-table.js"></script>
-	<!--<script src="tablesaw.js"></script>
-    <script src="tablesaw-init.js"></script>-->
-	<script src="node_modules/tablesaw/dist/tablesaw.js"></script>
-	<script src="node_modules/tablesaw/dist/tablesaw-init.js"></script>
+<script src="fixed-table.js"></script>
+<!--<script src="tablesaw.js"></script>
+<script src="tablesaw-init.js"></script>-->
+<script src="node_modules/tablesaw/dist/tablesaw.js"></script>
+<script src="node_modules/tablesaw/dist/tablesaw-init.js"></script>
 
-	<script src="rslidy.min.js"></script>
+<script src="rslidy.min.js"></script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script type="text/javascript"  src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
-	<script type="text/javascript"  src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript"  src="horizontalscroll.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript"  src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript"  src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript"  src="horizontalscroll.js"></script>
 </head>
 
 
@@ -51,101 +51,101 @@
 
 
 <section class="titleslide">
-	<h1>Responsive Tables</h1>
+<h1>Responsive Tables</h1>
 
-	<h2>Mirza Kabiljagic, Stefan Rajinovic, Aleksandar Stojicic, Inti Gabriel Mendoza</h2>
-
-
-	<div id="location">
-		<p>
-			Thu 19 November 2019
-		</p>
-	</div>
-
-</section>
+<h2>Mirza Kabiljagic, Stefan Rajinovic, Aleksandar Stojicic, Inti Gabriel Mendoza</h2>
 
 
-<section>
-	<h1>Overview </h1>
-
-	<ul class="compact">
-		<li> HTML Tables</li>
-		<li> Good Table Design </li>
-		<li> Responsive Tables </li>
-		<li> Techniques </li>
-
-
-
-	</ul>
+<div id="location">
+<p>
+Thu 19 November 2019
+</p>
+</div>
 
 </section>
 
 
 <section>
-	<h1>HTML 5 Tables</h1>
+<h1>Overview </h1>
 
+<ul class="compact">
+<li> HTML Tables</li>
+<li> Good Table Design </li>
+<li> Responsive Tables </li>
+<li> Techniques </li>
+
+
+
+</ul>
+
+</section>
+
+
+<section>
+<h1>HTML 5 Tables</h1>
+
+<p>
+Usage of HTML tables is recommended for data which normally belongs to a grid.
+</p>
+
+<p>
+It consists of following elements:
+</p>
+<ul class="compact">
+<li> <xmp><table></xmp> Main element which defines what comes in the table</li>
+<li> <xmp><tr></xmp> Element which defines rows inside the table </li>
+<li> <xmp><thead></xmp> Element which groups header content in the table </li>
+<li> <xmp><th></xmp> Element which defines a data cell inside thead row</li>
+<li> <xmp><tbody></xmp> Element which groups body content in the table </li>
+<li> <xmp><td></xmp> Element which defines data cells inside a row </li>
+<li> <xmp><tfoot></xmp> Element which groups footer content in the table  </li>
+
+</ul>
+
+</section>
+
+<section>
+<h1>Good Table Design</h1>
+
+<p>
+What to look out for:
+</p>
+<ul>
+<li>
+<p>
+<span>Expandable areas</span>
+</p>
+</li>
+
+<li>
+<p>
+<span>Hover action</span>
+</p>
+</li>
+
+<li>
+<p>
+<span>Sortable</span>
+</p>
+</li>
+
+<li>
 	<p>
-		Usage of HTML tables is recommended for data which normally belongs to a grid.
+		<span>Highlighting color</span>
 	</p>
+</li>
 
+<li>
 	<p>
-		It consists of following elements:
+		<span>Alternate row highlighting</span>
 	</p>
-	<ul class="compact">
-		<li> <xmp><table></xmp> Main element which defines what comes in the table</li>
-		<li> <xmp><tr></xmp> Element which defines rows inside the table </li>
-		<li> <xmp><thead></xmp> Element which groups header content in the table </li>
-		<li> <xmp><th></xmp> Element which defines a data cell inside thead row</li>
-		<li> <xmp><tbody></xmp> Element which groups body content in the table </li>
-		<li> <xmp><td></xmp> Element which defines data cells inside a row </li>
-		<li> <xmp><tfoot></xmp> Element which groups footer content in the table  </li>
+</li>
 
-	</ul>
-
-</section>
-
-<section>
-	<h1>Good Table Design</h1>
-
+<li>
 	<p>
-		What to look out for:
+		<span>Sorting</span>
 	</p>
-	<ul>
-		<li>
-			<p>
-				<span>Expandable areas</span>
-			</p>
-		</li>
-
-		<li>
-			<p>
-				<span>Hover action</span>
-			</p>
-		</li>
-
-		<li>
-			<p>
-				<span>Sortable</span>
-			</p>
-		</li>
-
-		<li>
-			<p>
-				<span>Highlighting color</span>
-			</p>
-		</li>
-
-		<li>
-			<p>
-				<span>Alternate row highlighting</span>
-			</p>
-		</li>
-
-		<li>
-			<p>
-				<span>Sorting</span>
-			</p>
-		</li>
+</li>
 
 </section>
 
@@ -153,27 +153,27 @@
 
 <section>
 
-	<script type="text/javascript">
-        $(document).ready(function(){
+<script type="text/javascript">
+$(document).ready(function(){
 
-            $("#report tr:odd").addClass("odd");
-            $("#report tr:not(.odd)").hide();
-            $("#report tr:first-child").show();
+	$("#report tr:odd").addClass("odd");
+	$("#report tr:not(.odd)").hide();
+	$("#report tr:first-child").show();
 
-            $("#report tr.odd").click(function () {
-                var trToToggle = $(this).next("tr");
-                $("#report tr:not(.odd)").not(trToToggle).hide();
-                $("#report tr:first-child").show();
-                $(trToToggle).toggle();
-                $(this).find(".arrow").toggleClass("up");
-            });
-        })
-	</script>
+	$("#report tr.odd").click(function () {
+		var trToToggle = $(this).next("tr");
+		$("#report tr:not(.odd)").not(trToToggle).hide();
+		$("#report tr:first-child").show();
+		$(trToToggle).toggle();
+		$(this).find(".arrow").toggleClass("up");
+	});
+})
+</script>
 
 
-	<h1>Expandable Areas</h1>
-	<table id="report" class="fixedHeader">
-		<thead>
+<h1>Expandable Areas</h1>
+<table id="report" class="fixedHeader">
+	<thead>
 		<tr>
 			<th title="Field #1">Car</th>
 			<th title="Field #2">Manufacturer</th>
@@ -185,8 +185,8 @@
 			<th title="Field #8">Miles per gallon</th>
 			<th title="Field #9">Price(€)</th>
 		</tr>
-		</thead>
-		<tbody>
+	</thead>
+	<tbody>
 		<tr>
 			<td>2019 Acura RDX</td>
 			<td>Acura</td>
@@ -200,7 +200,7 @@
 		</tr>
 		<tr>
 			<td colspan="5">
-				<h4>Additional information about the car</h4>
+					<h4>Additional information about the car</h4>
 
 				<ul>
 					<li><a href="https://en.wikipedia.org/wiki/Acura_RDX">Acura RDX</a>
@@ -222,15 +222,15 @@
 			<td style="text-align: right">31,300.00</td>
 		</tr>
 		<tr>
-			<td colspan="5">
-				<h4>Additional information about the car</h4>
+				<td colspan="5">
+						<h4>Additional information about the car</h4>
 
-				<ul>
-					<li><a href="https://www.genesis.com/us/en/2019/genesis-g70.html">Genesis G70</a>
-					</li>
-				</ul>
-			</td>
-		</tr>
+					<ul>
+						<li><a href="https://www.genesis.com/us/en/2019/genesis-g70.html">Genesis G70</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
 		<tr>
 			<td>2019 Honda Passport</td>
 			<td>Honda</td>
@@ -243,15 +243,15 @@
 			<td style="text-align: right">28,700.00</td>
 		</tr>
 		<tr>
-			<td colspan="5">
-				<h4>Additional information about the car</h4>
+				<td colspan="5">
+						<h4>Additional information about the car</h4>
 
-				<ul>
-					<li><a href="https://automobiles.honda.com/passport">Honda Passport</a>
-					</li>
-				</ul>
-			</td>
-		</tr>
+					<ul>
+						<li><a href="https://automobiles.honda.com/passport">Honda Passport</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
 		<tr>
 			<td>2020 Mercedes-Benz GLE 450</td>
 			<td>Mercedes-Benz</td>
@@ -264,15 +264,15 @@
 			<td>54,900.00</td>
 		</tr>
 		<tr>
-			<td colspan="5">
-				<h4>Additional information about the car</h4>
+				<td colspan="5">
+						<h4>Additional information about the car</h4>
 
-				<ul>
-					<li><a href="https://www.mbusa.com/en/vehicles/model/gle/suv/gle450w4">MB GLE 450</a>
-					</li>
-				</ul>
-			</td>
-		</tr>
+					<ul>
+						<li><a href="https://www.mbusa.com/en/vehicles/model/gle/suv/gle450w4">MB GLE 450</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
 		<tr>
 			<td>2019 Ram 1500</td>
 			<td>Ram</td>
@@ -285,15 +285,15 @@
 			<td style="text-align: right">28,600.00</td>
 		</tr>
 		<tr>
-			<td colspan="5">
-				<h4>Additional information about the car</h4>
+				<td colspan="5">
+						<h4>Additional information about the car</h4>
 
-				<ul>
-					<li><a href="https://www.ramtrucks.com/ram-1500.html">RAM 1500</a>
-					</li>
-				</ul>
-			</td>
-		</tr>
+					<ul>
+						<li><a href="https://www.ramtrucks.com/ram-1500.html">RAM 1500</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
 		<tr>
 			<td>2019 Toyota Rav4</td>
 			<td>Toyota</td>
@@ -306,30 +306,30 @@
 			<td style="text-align: right">22,900.00</td>
 		</tr>
 		<tr>
-			<td colspan="5">
-				<h4>Additional information about the car</h4>
+				<td colspan="5">
+						<h4>Additional information about the car</h4>
 
-				<ul>
-					<li><a href="https://www.toyota.at/new-cars/rav4/index.json?gclid=EAIaIQobChMI5Lm3zofi5QIVVvhRCh370A93EAAYASAAEgIBvvD_BwE">Toyota RAV4</a>
-					</li>
-				</ul>
-			</td>
-		</tr>
-		</tbody>
-	</table>
-	<div>
-		<br>
-		<p>References: <a href="https://alligator.io/css/collapsible/">https://alligator.io/css/collapsible/	</a></p>
-	</div>
+					<ul>
+						<li><a href="https://www.toyota.at/new-cars/rav4/index.json?gclid=EAIaIQobChMI5Lm3zofi5QIVVvhRCh370A93EAAYASAAEgIBvvD_BwE">Toyota RAV4</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
+	</tbody>
+</table>
+<div>
+	<br>
+	<p>References: <a href="https://alligator.io/css/collapsible/">https://alligator.io/css/collapsible/	</a></p>
+</div>
 
 
 </section>
 
 
 <section>
-	<h1>Hover Action</h1>
-	<table class="hoverAction fixedHeader ">
-		<thead>
+<h1>Hover Action</h1>
+<table class="hoverAction fixedHeader ">
+	<thead>
 		<tr>
 			<th title="Field #1">Car</th>
 			<th title="Field #2">Manufacturer</th>
@@ -341,8 +341,8 @@
 			<th title="Field #8">Miles per gallon</th>
 			<th title="Field #9">Price(€)</th>
 		</tr>
-		</thead>
-		<tbody>
+	</thead>
+	<tbody>
 		<tr>
 			<td class="open-bext">2019 Acura RDX </td>
 			<td>Acura</td>
@@ -403,12 +403,12 @@
 			<td style="text-align: right">28,700.00</td>
 		</tr>
 
-		</tbody>
-	</table>
-	<div>
-		<p> References: <a href="https://stackoverflow.com/questions/34381343/how-to-onmouseover-enlarge-a-table-cell-to-the-size-of-its-background-image">https://stackoverflow.com/questions/34381343/how-to-onmouseover-enlarge-a-table-cell-to-the-size-of-its-background-image
-		</a>	</p>
-	</div>
+	</tbody>
+</table>
+<div>
+	<p> References: <a href="https://stackoverflow.com/questions/34381343/how-to-onmouseover-enlarge-a-table-cell-to-the-size-of-its-background-image">https://stackoverflow.com/questions/34381343/how-to-onmouseover-enlarge-a-table-cell-to-the-size-of-its-background-image
+	</a>	</p>
+</div>
 
 </section>
 
@@ -495,10 +495,10 @@
 </section>
 
 <section>
-	<h1>Highlighting Color</h1>
-	<p>Assuming user has a pointing device</p>
-	<table class="highlight fixedHeader">
-		<thead>
+<h1>Highlighting Color</h1>
+<p>Assuming user has a pointing device</p>
+<table class="highlight fixedHeader">
+	<thead>
 		<tr>
 			<th title="Field #1">Car</th>
 			<th title="Field #2">Manufacturer</th>
@@ -510,8 +510,8 @@
 			<th title="Field #8">Miles per gallon</th>
 			<th title="Field #9">Price(€)</th>
 		</tr>
-		</thead>
-		<tbody>
+	</thead>
+	<tbody>
 		<tr>
 			<td>2019 Acura RDX</td>
 			<td>Acura</td>
@@ -644,12 +644,12 @@
 			<td style="text-align: right">26</td>
 			<td>30,300.00</td>
 		</tr>
-		</tbody>
-	</table>
-	<div>
-		<br>
-		<p>References: <a href="https://css-tricks.com/simple-css-row-column-highlighting/"> https://css-tricks.com/simple-css-row-column-highlighting/</a></p>
-	</div>
+	</tbody>
+</table>
+<div>
+	<br>
+	<p>References: <a href="https://css-tricks.com/simple-css-row-column-highlighting/"> https://css-tricks.com/simple-css-row-column-highlighting/</a></p>
+</div>
 </section>
 
 
@@ -658,190 +658,190 @@
 
 	<table class="fixedHeader alt">
 		<thead>
-		<tr>
-			<th title="Field #1">Car</th>
-			<th title="Field #2">Manufacturer</th>
-			<th title="Field #3">Engine Size(L)</th>
-			<th title="Field #4">Cylinders</th>
-			<th title="Field #5">Horsepower</th>
-			<th title="Field #6">Torque</th>
-			<th title="Field #7">Compresion Ratio</th>
-			<th title="Field #8">Miles per gallon</th>
-			<th title="Field #9">Price(€)</th>
-		</tr>
+			<tr>
+				<th title="Field #1">Car</th>
+				<th title="Field #2">Manufacturer</th>
+				<th title="Field #3">Engine Size(L)</th>
+				<th title="Field #4">Cylinders</th>
+				<th title="Field #5">Horsepower</th>
+				<th title="Field #6">Torque</th>
+				<th title="Field #7">Compresion Ratio</th>
+				<th title="Field #8">Miles per gallon</th>
+				<th title="Field #9">Price(€)</th>
+			</tr>
 		</thead>
 		<tbody>
-		<tr>
-			<td>2019 Acura RDX</td>
-			<td>Acura</td>
-			<td style="text-align: right">2.0</td>
-			<td style="text-align: right">4</td>
-			<td style="text-align: right">272</td>
-			<td style="text-align: right">280</td>
-			<td style="text-align: right">9.8:1</td>
-			<td style="text-align: right">28</td>
-			<td style="text-align: right">33,600.00</td>
-		</tr>
-		<tr>
-			<td>2019 Ford Ranger</td>
-			<td>Ford</td>
-			<td style="text-align: right">2.3</td>
-			<td style="text-align: right">4</td>
-			<td style="text-align: right">270</td>
-			<td style="text-align: right">310</td>
-			<td style="text-align: right">10.0:1</td>
-			<td style="text-align: right">21</td>
-			<td style="text-align: right">21,800.00</td>
-		</tr>
-		<tr>
-			<td>2019 Genesis G70</td>
-			<td>Genesis</td>
-			<td style="text-align: right">2.0</td>
-			<td style="text-align: right">4</td>
-			<td style="text-align: right">252</td>
-			<td style="text-align: right">260</td>
-			<td style="text-align: right">10.0:1</td>
-			<td style="text-align: right">22</td>
-			<td style="text-align: right">31,300.00</td>
-		</tr>
-		<tr>
-			<td>2019 GMC Sierra 1500</td>
-			<td>GMC</td>
-			<td style="text-align: right">4.0</td>
-			<td style="text-align: right">6</td>
-			<td style="text-align: right">285</td>
-			<td style="text-align: right">305</td>
-			<td style="text-align: right">11.0:1</td>
-			<td style="text-align: right">16</td>
-			<td style="text-align: right">26,600.00</td>
-		</tr>
-		<tr>
-			<td>2019 Honda Passport</td>
-			<td>Honda</td>
-			<td style="text-align: right">3.5</td>
-			<td style="text-align: right">6</td>
-			<td style="text-align: right">280</td>
-			<td style="text-align: right">262</td>
-			<td style="text-align: right">11.5:1</td>
-			<td style="text-align: right">21</td>
-			<td style="text-align: right">28,700.00</td>
-		</tr>
-		<tr>
-			<td>2019 Jaguar I-Pace</td>
-			<td>Jaguar</td>
-			<td style="text-align: right">0.0</td>
-			<td style="text-align: right">0</td>
-			<td style="text-align: right">394</td>
-			<td style="text-align: right">513</td>
-			<td style="text-align: right">0.0:1</td>
-			<td style="text-align: right">0</td>
-			<td style="text-align: right">62,400.00</td>
-		</tr>
-		<tr>
-			<td>2020 Mercedes-Benz GLE 450</td>
-			<td>Mercedes-Benz</td>
-			<td style="text-align: right">3.0</td>
-			<td style="text-align: right">4</td>
-			<td style="text-align: right">362</td>
-			<td style="text-align: right">369</td>
-			<td style="text-align: right">10.5:1</td>
-			<td style="text-align: right">22</td>
-			<td>54,900.00</td>
-		</tr>
-		<tr>
-			<td>2019 Nissan Altima</td>
-			<td>Nissan</td>
-			<td style="text-align: right">2.5</td>
-			<td style="text-align: right">4</td>
-			<td style="text-align: right">188</td>
-			<td style="text-align: right">180</td>
-			<td style="text-align: right">8.0:1</td>
-			<td style="text-align: right">32</td>
-			<td style="text-align: right">21,500.00</td>
-		</tr>
-		<tr>
-			<td>2019 Ram 1500</td>
-			<td>Ram</td>
-			<td style="text-align: right">5.7</td>
-			<td style="text-align: right">8</td>
-			<td style="text-align: right">395</td>
-			<td style="text-align: right">410</td>
-			<td style="text-align: right">11.3:1</td>
-			<td style="text-align: right">23</td>
-			<td style="text-align: right">28,600.00</td>
-		</tr>
-		<tr>
-			<td>2019 Subaru Ascent</td>
-			<td>Subaru</td>
-			<td style="text-align: right">2.4</td>
-			<td style="text-align: right">4</td>
-			<td style="text-align: right">260</td>
-			<td style="text-align: right">277</td>
-			<td style="text-align: right">10.6:1</td>
-			<td style="text-align: right">22</td>
-			<td style="text-align: right">28,700.00</td>
-		</tr>
-		<tr>
-			<td>2019 Toyota Rav4</td>
-			<td>Toyota</td>
-			<td style="text-align: right">2.5</td>
-			<td style="text-align: right">4</td>
-			<td style="text-align: right">219</td>
-			<td style="text-align: right">184</td>
-			<td style="text-align: right">13.0:1</td>
-			<td style="text-align: right">39</td>
-			<td style="text-align: right">22,900.00</td>
-		</tr>
-		<tr>
-			<td>2019 Volvo XC40</td>
-			<td>Volvo</td>
-			<td style="text-align: right">2.0</td>
-			<td style="text-align: right">4</td>
-			<td style="text-align: right">248</td>
-			<td style="text-align: right">258</td>
-			<td style="text-align: right">10.8:1</td>
-			<td style="text-align: right">26</td>
-			<td>30,300.00</td>
-		</tr>
+			<tr>
+				<td>2019 Acura RDX</td>
+				<td>Acura</td>
+				<td style="text-align: right">2.0</td>
+				<td style="text-align: right">4</td>
+				<td style="text-align: right">272</td>
+				<td style="text-align: right">280</td>
+				<td style="text-align: right">9.8:1</td>
+				<td style="text-align: right">28</td>
+				<td style="text-align: right">33,600.00</td>
+			</tr>
+			<tr>
+				<td>2019 Ford Ranger</td>
+				<td>Ford</td>
+				<td style="text-align: right">2.3</td>
+				<td style="text-align: right">4</td>
+				<td style="text-align: right">270</td>
+				<td style="text-align: right">310</td>
+				<td style="text-align: right">10.0:1</td>
+				<td style="text-align: right">21</td>
+				<td style="text-align: right">21,800.00</td>
+			</tr>
+			<tr>
+				<td>2019 Genesis G70</td>
+				<td>Genesis</td>
+				<td style="text-align: right">2.0</td>
+				<td style="text-align: right">4</td>
+				<td style="text-align: right">252</td>
+				<td style="text-align: right">260</td>
+				<td style="text-align: right">10.0:1</td>
+				<td style="text-align: right">22</td>
+				<td style="text-align: right">31,300.00</td>
+			</tr>
+			<tr>
+				<td>2019 GMC Sierra 1500</td>
+				<td>GMC</td>
+				<td style="text-align: right">4.0</td>
+				<td style="text-align: right">6</td>
+				<td style="text-align: right">285</td>
+				<td style="text-align: right">305</td>
+				<td style="text-align: right">11.0:1</td>
+				<td style="text-align: right">16</td>
+				<td style="text-align: right">26,600.00</td>
+			</tr>
+			<tr>
+				<td>2019 Honda Passport</td>
+				<td>Honda</td>
+				<td style="text-align: right">3.5</td>
+				<td style="text-align: right">6</td>
+				<td style="text-align: right">280</td>
+				<td style="text-align: right">262</td>
+				<td style="text-align: right">11.5:1</td>
+				<td style="text-align: right">21</td>
+				<td style="text-align: right">28,700.00</td>
+			</tr>
+			<tr>
+				<td>2019 Jaguar I-Pace</td>
+				<td>Jaguar</td>
+				<td style="text-align: right">0.0</td>
+				<td style="text-align: right">0</td>
+				<td style="text-align: right">394</td>
+				<td style="text-align: right">513</td>
+				<td style="text-align: right">0.0:1</td>
+				<td style="text-align: right">0</td>
+				<td style="text-align: right">62,400.00</td>
+			</tr>
+			<tr>
+				<td>2020 Mercedes-Benz GLE 450</td>
+				<td>Mercedes-Benz</td>
+				<td style="text-align: right">3.0</td>
+				<td style="text-align: right">4</td>
+				<td style="text-align: right">362</td>
+				<td style="text-align: right">369</td>
+				<td style="text-align: right">10.5:1</td>
+				<td style="text-align: right">22</td>
+				<td>54,900.00</td>
+			</tr>
+			<tr>
+				<td>2019 Nissan Altima</td>
+				<td>Nissan</td>
+				<td style="text-align: right">2.5</td>
+				<td style="text-align: right">4</td>
+				<td style="text-align: right">188</td>
+				<td style="text-align: right">180</td>
+				<td style="text-align: right">8.0:1</td>
+				<td style="text-align: right">32</td>
+				<td style="text-align: right">21,500.00</td>
+			</tr>
+			<tr>
+				<td>2019 Ram 1500</td>
+				<td>Ram</td>
+				<td style="text-align: right">5.7</td>
+				<td style="text-align: right">8</td>
+				<td style="text-align: right">395</td>
+				<td style="text-align: right">410</td>
+				<td style="text-align: right">11.3:1</td>
+				<td style="text-align: right">23</td>
+				<td style="text-align: right">28,600.00</td>
+			</tr>
+			<tr>
+				<td>2019 Subaru Ascent</td>
+				<td>Subaru</td>
+				<td style="text-align: right">2.4</td>
+				<td style="text-align: right">4</td>
+				<td style="text-align: right">260</td>
+				<td style="text-align: right">277</td>
+				<td style="text-align: right">10.6:1</td>
+				<td style="text-align: right">22</td>
+				<td style="text-align: right">28,700.00</td>
+			</tr>
+			<tr>
+				<td>2019 Toyota Rav4</td>
+				<td>Toyota</td>
+				<td style="text-align: right">2.5</td>
+				<td style="text-align: right">4</td>
+				<td style="text-align: right">219</td>
+				<td style="text-align: right">184</td>
+				<td style="text-align: right">13.0:1</td>
+				<td style="text-align: right">39</td>
+				<td style="text-align: right">22,900.00</td>
+			</tr>
+			<tr>
+				<td>2019 Volvo XC40</td>
+				<td>Volvo</td>
+				<td style="text-align: right">2.0</td>
+				<td style="text-align: right">4</td>
+				<td style="text-align: right">248</td>
+				<td style="text-align: right">258</td>
+				<td style="text-align: right">10.8:1</td>
+				<td style="text-align: right">26</td>
+				<td>30,300.00</td>
+			</tr>
 		</tbody>
 	</table>
 	<div>
 		<br>
 		<p>References: <a href="	https://www.w3.org/Style/Examples/007/evenodd.en.html">	https://www.w3.org/Style/Examples/007/evenodd.en.html		</a></p>
 	</div>
-</section>
+	</section>
 
 <section>
-	<h1>Responsive Tables</h1>
+<h1>Responsive Tables</h1>
 
-	<ol>
-		<li>
-			<span>Table resizes itself according to screen size</span>
-		</li>
-		<li>
-			<span>Columns and rows can be repositioned, resized, collapsed, minimized..</span>
-		</li>
-		<li>
-			<span>Different techniques: </span>
-			<ol>
-				<li> Hidden Column </li>
-				<li> Horizontal Scroll</li>
-				<li> Fixed Header</li>
-				<li> Pagination</li>
-				<li> Flip Scroll</li>
-				<li> Resize Columns</li>
-				<li> Long Two Collumn</li>
+<ol>
+<li>
+<span>Table resizes itself according to screen size</span>
+</li>
+<li>
+<span>Columns and rows can be repositioned, resized, collapsed, minimized..</span>
+</li>
+<li>
+<span>Different techniques: </span>
+<ol>
+<li> Hidden Column </li>
+<li> Horizontal Scroll</li>
+<li> Fixed Header</li>
+<li> Pagination</li>
+<li> Flip Scroll</li>
+<li> Resize Columns</li>
+<li> Long Two Collumn</li>
 
-			</ol>
-		</li>
-	</ol>
+</ol>
+</li>
+</ol>
 </section>
 
 
 
 <section>
-	<h1>HTML Table in our Examples</h1>
-	<pre><code style="background: #FAEBD7">
+<h1>HTML Table in our Examples</h1>
+<pre><code style="background: #FAEBD7">
 <xmp>
 	<table>
 	<thead>
@@ -894,162 +894,162 @@
 </section>
 
 <section>
-	<h1>Hidden Column - Selected by user</h1>
-	<div class="tablesaw-overflow">
-		<table data-tablesaw-mode="columntoggle">
-			<thead>
-			<tr>
-				<th data-tablesaw-priority="persist">Car</th>
-				<th data-tablesaw-priority="0">Manufacturer</th>
-				<th data-tablesaw-priority="1">Engine Size(L)</th>
-				<th data-tablesaw-priority="2">Cylinders</th>
-				<th data-tablesaw-priority="3">Horsepower</th>
-				<th data-tablesaw-priority="4">Torque</th>
-				<th data-tablesaw-priority="5">Compresion Ratio</th>
-				<th data-tablesaw-priority="6">Miles per gallon</th>
-				<th data-tablesaw-priority="7">Price(€)</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<td>2019 Acura RDX</td>
-				<td>Acura</td>
-				<td style="text-align: right">2.0</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">272</td>
-				<td style="text-align: right">280</td>
-				<td style="text-align: right">9.8:1</td>
-				<td style="text-align: right">28</td>
-				<td style="text-align: right">33,600.00</td>
-			</tr>
-			<tr>
-				<td>2019 Ford Ranger</td>
-				<td>Ford</td>
-				<td style="text-align: right">2.3</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">270</td>
-				<td style="text-align: right">310</td>
-				<td style="text-align: right">10.0:1</td>
-				<td style="text-align: right">21</td>
-				<td style="text-align: right">21,800.00</td>
-			</tr>
-			<tr>
-				<td>2019 Genesis G70</td>
-				<td>Genesis</td>
-				<td style="text-align: right">2.0</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">252</td>
-				<td style="text-align: right">260</td>
-				<td style="text-align: right">10.0:1</td>
-				<td style="text-align: right">22</td>
-				<td style="text-align: right">31,300.00</td>
-			</tr>
-			<tr>
-				<td>2019 GMC Sierra 1500</td>
-				<td>GMC</td>
-				<td style="text-align: right">4.0</td>
-				<td style="text-align: right">6</td>
-				<td style="text-align: right">285</td>
-				<td style="text-align: right">305</td>
-				<td style="text-align: right">11.0:1</td>
-				<td style="text-align: right">16</td>
-				<td style="text-align: right">26,600.00</td>
-			</tr>
-			<tr>
-				<td>2019 Honda Passport</td>
-				<td>Honda</td>
-				<td style="text-align: right">3.5</td>
-				<td style="text-align: right">6</td>
-				<td style="text-align: right">280</td>
-				<td style="text-align: right">262</td>
-				<td style="text-align: right">11.5:1</td>
-				<td style="text-align: right">21</td>
-				<td style="text-align: right">28,700.00</td>
-			</tr>
-			<tr>
-				<td>2019 Jaguar I-Pace</td>
-				<td>Jaguar</td>
-				<td style="text-align: right">0.0</td>
-				<td style="text-align: right">0</td>
-				<td style="text-align: right">394</td>
-				<td style="text-align: right">513</td>
-				<td style="text-align: right">0.0:1</td>
-				<td style="text-align: right">0</td>
-				<td style="text-align: right">62,400.00</td>
-			</tr>
-			<tr>
-				<td>2020 Mercedes-Benz GLE 450</td>
-				<td>Mercedes-Benz</td>
-				<td style="text-align: right">3.0</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">362</td>
-				<td style="text-align: right">369</td>
-				<td style="text-align: right">10.5:1</td>
-				<td style="text-align: right">22</td>
-				<td>54,900.00</td>
-			</tr>
-			<tr>
-				<td>2019 Nissan Altima</td>
-				<td>Nissan</td>
-				<td style="text-align: right">2.5</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">188</td>
-				<td style="text-align: right">180</td>
-				<td style="text-align: right">8.0:1</td>
-				<td style="text-align: right">32</td>
-				<td style="text-align: right">21,500.00</td>
-			</tr>
-			<tr>
-				<td>2019 Ram 1500</td>
-				<td>Ram</td>
-				<td style="text-align: right">5.7</td>
-				<td style="text-align: right">8</td>
-				<td style="text-align: right">395</td>
-				<td style="text-align: right">410</td>
-				<td style="text-align: right">11.3:1</td>
-				<td style="text-align: right">23</td>
-				<td style="text-align: right">28,600.00</td>
-			</tr>
-			<tr>
-				<td>2019 Subaru Ascent</td>
-				<td>Subaru</td>
-				<td style="text-align: right">2.4</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">260</td>
-				<td style="text-align: right">277</td>
-				<td style="text-align: right">10.6:1</td>
-				<td style="text-align: right">22</td>
-				<td style="text-align: right">28,700.00</td>
-			</tr>
-			<tr>
-				<td>2019 Toyota Rav4</td>
-				<td>Toyota</td>
-				<td style="text-align: right">2.5</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">219</td>
-				<td style="text-align: right">184</td>
-				<td style="text-align: right">13.0:1</td>
-				<td style="text-align: right">39</td>
-				<td style="text-align: right">22,900.00</td>
-			</tr>
-			<tr>
-				<td>2019 Volvo XC40</td>
-				<td>Volvo</td>
-				<td style="text-align: right">2.0</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">248</td>
-				<td style="text-align: right">258</td>
-				<td style="text-align: right">10.8:1</td>
-				<td style="text-align: right">26</td>
-				<td>30,300.00</td>
-			</tr>
-			</tbody>
-		</table>
-	</div>
-	<br>
-	<p>References: <a href="https://github.com/filamentgroup/tablesaw#column-toggle-mode">Tablesaw, Column Toggle Mode</a></p>
-	<div>
-	</div>
+<h1>Hidden Column - Selected by user</h1>
+<div class="tablesaw-overflow">
+<table data-tablesaw-mode="columntoggle">
+	<thead>
+		<tr>
+			<th data-tablesaw-priority="persist">Car</th>
+			<th data-tablesaw-priority="0">Manufacturer</th>
+			<th data-tablesaw-priority="1">Engine Size(L)</th>
+			<th data-tablesaw-priority="2">Cylinders</th>
+			<th data-tablesaw-priority="3">Horsepower</th>
+			<th data-tablesaw-priority="4">Torque</th>
+			<th data-tablesaw-priority="5">Compresion Ratio</th>
+			<th data-tablesaw-priority="6">Miles per gallon</th>
+			<th data-tablesaw-priority="7">Price(€)</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2019 Acura RDX</td>
+			<td>Acura</td>
+			<td style="text-align: right">2.0</td>
+			<td style="text-align: right">4</td>
+			<td style="text-align: right">272</td>
+			<td style="text-align: right">280</td>
+			<td style="text-align: right">9.8:1</td>
+			<td style="text-align: right">28</td>
+			<td style="text-align: right">33,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ford Ranger</td>
+			<td>Ford</td>
+			<td style="text-align: right">2.3</td>
+			<td style="text-align: right">4</td>
+			<td style="text-align: right">270</td>
+			<td style="text-align: right">310</td>
+			<td style="text-align: right">10.0:1</td>
+			<td style="text-align: right">21</td>
+			<td style="text-align: right">21,800.00</td>
+		</tr>
+		<tr>
+			<td>2019 Genesis G70</td>
+			<td>Genesis</td>
+			<td style="text-align: right">2.0</td>
+			<td style="text-align: right">4</td>
+			<td style="text-align: right">252</td>
+			<td style="text-align: right">260</td>
+			<td style="text-align: right">10.0:1</td>
+			<td style="text-align: right">22</td>
+			<td style="text-align: right">31,300.00</td>
+		</tr>
+		<tr>
+			<td>2019 GMC Sierra 1500</td>
+			<td>GMC</td>
+			<td style="text-align: right">4.0</td>
+			<td style="text-align: right">6</td>
+			<td style="text-align: right">285</td>
+			<td style="text-align: right">305</td>
+			<td style="text-align: right">11.0:1</td>
+			<td style="text-align: right">16</td>
+			<td style="text-align: right">26,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Honda Passport</td>
+			<td>Honda</td>
+			<td style="text-align: right">3.5</td>
+			<td style="text-align: right">6</td>
+			<td style="text-align: right">280</td>
+			<td style="text-align: right">262</td>
+			<td style="text-align: right">11.5:1</td>
+			<td style="text-align: right">21</td>
+			<td style="text-align: right">28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Jaguar I-Pace</td>
+			<td>Jaguar</td>
+			<td style="text-align: right">0.0</td>
+			<td style="text-align: right">0</td>
+			<td style="text-align: right">394</td>
+			<td style="text-align: right">513</td>
+			<td style="text-align: right">0.0:1</td>
+			<td style="text-align: right">0</td>
+			<td style="text-align: right">62,400.00</td>
+		</tr>
+		<tr>
+			<td>2020 Mercedes-Benz GLE 450</td>
+			<td>Mercedes-Benz</td>
+			<td style="text-align: right">3.0</td>
+			<td style="text-align: right">4</td>
+			<td style="text-align: right">362</td>
+			<td style="text-align: right">369</td>
+			<td style="text-align: right">10.5:1</td>
+			<td style="text-align: right">22</td>
+			<td>54,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Nissan Altima</td>
+			<td>Nissan</td>
+			<td style="text-align: right">2.5</td>
+			<td style="text-align: right">4</td>
+			<td style="text-align: right">188</td>
+			<td style="text-align: right">180</td>
+			<td style="text-align: right">8.0:1</td>
+			<td style="text-align: right">32</td>
+			<td style="text-align: right">21,500.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ram 1500</td>
+			<td>Ram</td>
+			<td style="text-align: right">5.7</td>
+			<td style="text-align: right">8</td>
+			<td style="text-align: right">395</td>
+			<td style="text-align: right">410</td>
+			<td style="text-align: right">11.3:1</td>
+			<td style="text-align: right">23</td>
+			<td style="text-align: right">28,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Subaru Ascent</td>
+			<td>Subaru</td>
+			<td style="text-align: right">2.4</td>
+			<td style="text-align: right">4</td>
+			<td style="text-align: right">260</td>
+			<td style="text-align: right">277</td>
+			<td style="text-align: right">10.6:1</td>
+			<td style="text-align: right">22</td>
+			<td style="text-align: right">28,700.00</td>
+		</tr>
+		<tr>
+			<td>2019 Toyota Rav4</td>
+			<td>Toyota</td>
+			<td style="text-align: right">2.5</td>
+			<td style="text-align: right">4</td>
+			<td style="text-align: right">219</td>
+			<td style="text-align: right">184</td>
+			<td style="text-align: right">13.0:1</td>
+			<td style="text-align: right">39</td>
+			<td style="text-align: right">22,900.00</td>
+		</tr>
+		<tr>
+			<td>2019 Volvo XC40</td>
+			<td>Volvo</td>
+			<td style="text-align: right">2.0</td>
+			<td style="text-align: right">4</td>
+			<td style="text-align: right">248</td>
+			<td style="text-align: right">258</td>
+			<td style="text-align: right">10.8:1</td>
+			<td style="text-align: right">26</td>
+			<td>30,300.00</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<br>
+<p>References: <a href="https://github.com/filamentgroup/tablesaw#column-toggle-mode">Tablesaw, Column Toggle Mode</a></p>
+<div>
+</div>
 
 </section>
 
@@ -1057,6 +1057,204 @@
 	<h1>Horizontal Scroll</h1>
 	<div class="horizontalscroll">
 		<table class="rtable rtable--flip"">
+			<thead>
+				<tr>
+					<th title="Field #1">Car</th>
+					<th title="Field #2">Manufacturer</th>
+					<th title="Field #3">Engine Size(L)</th>
+					<th title="Field #4">Cylinders</th>
+					<th title="Field #5">Horsepower</th>
+					<th title="Field #6">Torque</th>
+					<th title="Field #7">Compresion Ratio</th>
+					<th title="Field #8">Miles per gallon</th>
+					<th title="Field #9">Price(€)</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>2019 Acura RDX</td>
+					<td>Acura</td>
+					<td style="text-align: right">2.0</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">272</td>
+					<td style="text-align: right">280</td>
+					<td style="text-align: right">9.8:1</td>
+					<td style="text-align: right">28</td>
+					<td style="text-align: right">33,600.00</td>
+				</tr>
+				<tr>
+					<td>2019 Ford Ranger</td>
+					<td>Ford</td>
+					<td style="text-align: right">2.3</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">270</td>
+					<td style="text-align: right">310</td>
+					<td style="text-align: right">10.0:1</td>
+					<td style="text-align: right">21</td>
+					<td style="text-align: right">21,800.00</td>
+				</tr>
+				<tr>
+					<td>2019 Genesis G70</td>
+					<td>Genesis</td>
+					<td style="text-align: right">2.0</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">252</td>
+					<td style="text-align: right">260</td>
+					<td style="text-align: right">10.0:1</td>
+					<td style="text-align: right">22</td>
+					<td style="text-align: right">31,300.00</td>
+				</tr>
+				<tr>
+					<td>2019 GMC Sierra 1500</td>
+					<td>GMC</td>
+					<td style="text-align: right">4.0</td>
+					<td style="text-align: right">6</td>
+					<td style="text-align: right">285</td>
+					<td style="text-align: right">305</td>
+					<td style="text-align: right">11.0:1</td>
+					<td style="text-align: right">16</td>
+					<td style="text-align: right">26,600.00</td>
+				</tr>
+				<tr>
+					<td>2019 Honda Passport</td>
+					<td>Honda</td>
+					<td style="text-align: right">3.5</td>
+					<td style="text-align: right">6</td>
+					<td style="text-align: right">280</td>
+					<td style="text-align: right">262</td>
+					<td style="text-align: right">11.5:1</td>
+					<td style="text-align: right">21</td>
+					<td style="text-align: right">28,700.00</td>
+				</tr>
+				<tr>
+					<td>2019 Jaguar I-Pace</td>
+					<td>Jaguar</td>
+					<td style="text-align: right">0.0</td>
+					<td style="text-align: right">0</td>
+					<td style="text-align: right">394</td>
+					<td style="text-align: right">513</td>
+					<td style="text-align: right">0.0:1</td>
+					<td style="text-align: right">0</td>
+					<td style="text-align: right">62,400.00</td>
+				</tr>
+				<tr>
+					<td>2020 Mercedes-Benz GLE 450</td>
+					<td>Mercedes-Benz</td>
+					<td style="text-align: right">3.0</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">362</td>
+					<td style="text-align: right">369</td>
+					<td style="text-align: right">10.5:1</td>
+					<td style="text-align: right">22</td>
+					<td>54,900.00</td>
+				</tr>
+				<tr>
+					<td>2019 Nissan Altima</td>
+					<td>Nissan</td>
+					<td style="text-align: right">2.5</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">188</td>
+					<td style="text-align: right">180</td>
+					<td style="text-align: right">8.0:1</td>
+					<td style="text-align: right">32</td>
+					<td style="text-align: right">21,500.00</td>
+				</tr>
+				<tr>
+					<td>2019 Ram 1500</td>
+					<td>Ram</td>
+					<td style="text-align: right">5.7</td>
+					<td style="text-align: right">8</td>
+					<td style="text-align: right">395</td>
+					<td style="text-align: right">410</td>
+					<td style="text-align: right">11.3:1</td>
+					<td style="text-align: right">23</td>
+					<td style="text-align: right">28,600.00</td>
+				</tr>
+				<tr>
+					<td>2019 Subaru Ascent</td>
+					<td>Subaru</td>
+					<td style="text-align: right">2.4</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">260</td>
+					<td style="text-align: right">277</td>
+					<td style="text-align: right">10.6:1</td>
+					<td style="text-align: right">22</td>
+					<td style="text-align: right">28,700.00</td>
+				</tr>
+				<tr>
+					<td>2019 Toyota Rav4</td>
+					<td>Toyota</td>
+					<td style="text-align: right">2.5</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">219</td>
+					<td style="text-align: right">184</td>
+					<td style="text-align: right">13.0:1</td>
+					<td style="text-align: right">39</td>
+					<td style="text-align: right">22,900.00</td>
+				</tr>
+				<tr>
+					<td>2019 Volvo XC40</td>
+					<td>Volvo</td>
+					<td style="text-align: right">2.0</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">248</td>
+					<td style="text-align: right">258</td>
+					<td style="text-align: right">10.8:1</td>
+					<td style="text-align: right">26</td>
+					<td>30,300.00</td>
+				</tr>
+				</tbody>
+			</table>
+	</div>
+
+
+	<div>
+		<br>
+		<p>References: <a href="https://dbushell.com/2016/03/04/css-only-responsive-tables/">https://dbushell.com/2016/03/04/css-only-responsive-tables/</a></p>
+	</div>
+</section>
+
+<section>
+<h1>Horizontal Scroll Code</h1>
+<pre><code style="background: #FAEBD7">
+	//css
+	.table-scroll table {
+		width:100%;
+		margin:auto;
+		border-collapse:separate; //seperate borders
+		border-spacing:0; //distance between borders
+	}
+
+	.table-scroll th, .table-scroll td {
+		width: auto;
+		padding:5px 10px;
+		white-space:nowrap;//sequences of whitespace will collapse into a single whitespace
+		vertical-align:top;
+	}
+
+	.clone th, .clone td {
+		visibility:hidden
+	}
+
+	.clone tbody th {
+		visibility:visible;
+	}
+	.clone .fixed-side {
+		visibility:visible;
+	}
+
+	jQuery(document).ready(function() {
+				jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone'); //change context of jquery object
+	});
+</code></pre>
+</section>
+
+<section>
+
+<h1>Fixed Header</h1>
+<div class="fixedHeader">
+	<table>
+
 		<thead>
 		<tr>
 			<th title="Field #1">Car</th>
@@ -1204,206 +1402,8 @@
 			<td>30,300.00</td>
 		</tr>
 		</tbody>
-		</table>
-	</div>
-
-
-	<div>
-		<br>
-		<p>References: <a href="https://dbushell.com/2016/03/04/css-only-responsive-tables/">https://dbushell.com/2016/03/04/css-only-responsive-tables/</a></p>
-	</div>
-</section>
-
-<section>
-	<h1>Horizontal Scroll Code</h1>
-	<pre><code style="background: #FAEBD7">
-	//css
-	.table-scroll table {
-		width:100%;
-		margin:auto;
-		border-collapse:separate; //seperate borders
-		border-spacing:0; //distance between borders
-	}
-
-	.table-scroll th, .table-scroll td {
-		width: auto;
-		padding:5px 10px;
-		white-space:nowrap;//sequences of whitespace will collapse into a single whitespace
-		vertical-align:top;
-	}
-
-	.clone th, .clone td {
-		visibility:hidden
-	}
-
-	.clone tbody th {
-		visibility:visible;
-	}
-	.clone .fixed-side {
-		visibility:visible;
-	}
-
-	jQuery(document).ready(function() {
-				jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone'); //change context of jquery object
-	});
-</code></pre>
-</section>
-
-<section>
-
-	<h1>Fixed Header</h1>
-	<div class="fixedHeader">
-		<table>
-
-			<thead>
-			<tr>
-				<th title="Field #1">Car</th>
-				<th title="Field #2">Manufacturer</th>
-				<th title="Field #3">Engine Size(L)</th>
-				<th title="Field #4">Cylinders</th>
-				<th title="Field #5">Horsepower</th>
-				<th title="Field #6">Torque</th>
-				<th title="Field #7">Compresion Ratio</th>
-				<th title="Field #8">Miles per gallon</th>
-				<th title="Field #9">Price(€)</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<td>2019 Acura RDX</td>
-				<td>Acura</td>
-				<td style="text-align: right">2.0</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">272</td>
-				<td style="text-align: right">280</td>
-				<td style="text-align: right">9.8:1</td>
-				<td style="text-align: right">28</td>
-				<td style="text-align: right">33,600.00</td>
-			</tr>
-			<tr>
-				<td>2019 Ford Ranger</td>
-				<td>Ford</td>
-				<td style="text-align: right">2.3</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">270</td>
-				<td style="text-align: right">310</td>
-				<td style="text-align: right">10.0:1</td>
-				<td style="text-align: right">21</td>
-				<td style="text-align: right">21,800.00</td>
-			</tr>
-			<tr>
-				<td>2019 Genesis G70</td>
-				<td>Genesis</td>
-				<td style="text-align: right">2.0</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">252</td>
-				<td style="text-align: right">260</td>
-				<td style="text-align: right">10.0:1</td>
-				<td style="text-align: right">22</td>
-				<td style="text-align: right">31,300.00</td>
-			</tr>
-			<tr>
-				<td>2019 GMC Sierra 1500</td>
-				<td>GMC</td>
-				<td style="text-align: right">4.0</td>
-				<td style="text-align: right">6</td>
-				<td style="text-align: right">285</td>
-				<td style="text-align: right">305</td>
-				<td style="text-align: right">11.0:1</td>
-				<td style="text-align: right">16</td>
-				<td style="text-align: right">26,600.00</td>
-			</tr>
-			<tr>
-				<td>2019 Honda Passport</td>
-				<td>Honda</td>
-				<td style="text-align: right">3.5</td>
-				<td style="text-align: right">6</td>
-				<td style="text-align: right">280</td>
-				<td style="text-align: right">262</td>
-				<td style="text-align: right">11.5:1</td>
-				<td style="text-align: right">21</td>
-				<td style="text-align: right">28,700.00</td>
-			</tr>
-			<tr>
-				<td>2019 Jaguar I-Pace</td>
-				<td>Jaguar</td>
-				<td style="text-align: right">0.0</td>
-				<td style="text-align: right">0</td>
-				<td style="text-align: right">394</td>
-				<td style="text-align: right">513</td>
-				<td style="text-align: right">0.0:1</td>
-				<td style="text-align: right">0</td>
-				<td style="text-align: right">62,400.00</td>
-			</tr>
-			<tr>
-				<td>2020 Mercedes-Benz GLE 450</td>
-				<td>Mercedes-Benz</td>
-				<td style="text-align: right">3.0</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">362</td>
-				<td style="text-align: right">369</td>
-				<td style="text-align: right">10.5:1</td>
-				<td style="text-align: right">22</td>
-				<td>54,900.00</td>
-			</tr>
-			<tr>
-				<td>2019 Nissan Altima</td>
-				<td>Nissan</td>
-				<td style="text-align: right">2.5</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">188</td>
-				<td style="text-align: right">180</td>
-				<td style="text-align: right">8.0:1</td>
-				<td style="text-align: right">32</td>
-				<td style="text-align: right">21,500.00</td>
-			</tr>
-			<tr>
-				<td>2019 Ram 1500</td>
-				<td>Ram</td>
-				<td style="text-align: right">5.7</td>
-				<td style="text-align: right">8</td>
-				<td style="text-align: right">395</td>
-				<td style="text-align: right">410</td>
-				<td style="text-align: right">11.3:1</td>
-				<td style="text-align: right">23</td>
-				<td style="text-align: right">28,600.00</td>
-			</tr>
-			<tr>
-				<td>2019 Subaru Ascent</td>
-				<td>Subaru</td>
-				<td style="text-align: right">2.4</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">260</td>
-				<td style="text-align: right">277</td>
-				<td style="text-align: right">10.6:1</td>
-				<td style="text-align: right">22</td>
-				<td style="text-align: right">28,700.00</td>
-			</tr>
-			<tr>
-				<td>2019 Toyota Rav4</td>
-				<td>Toyota</td>
-				<td style="text-align: right">2.5</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">219</td>
-				<td style="text-align: right">184</td>
-				<td style="text-align: right">13.0:1</td>
-				<td style="text-align: right">39</td>
-				<td style="text-align: right">22,900.00</td>
-			</tr>
-			<tr>
-				<td>2019 Volvo XC40</td>
-				<td>Volvo</td>
-				<td style="text-align: right">2.0</td>
-				<td style="text-align: right">4</td>
-				<td style="text-align: right">248</td>
-				<td style="text-align: right">258</td>
-				<td style="text-align: right">10.8:1</td>
-				<td style="text-align: right">26</td>
-				<td>30,300.00</td>
-			</tr>
-			</tbody>
-		</table>
-	</div>
+	</table>
+</div>
 	<div>
 		<br>
 		<p>References: <a href="https://mdbootstrap.com/support/angular/fixed-header-and-scrollable-body-in-table-in-html-angular/">https://mdbootstrap.com/support/angular/fixed-header-and-scrollable-body-in-table-in-html-angular/</a></p>
@@ -1411,8 +1411,8 @@
 </section>
 
 <section>
-	<h1>Fixed Header Code </h1>
-	<pre><code style="background: #FAEBD7">
+<h1>Fixed Header Code </h1>
+<pre><code style="background: #FAEBD7">
 	//css
 	.fixedHeader tbody {
 		display: block;
@@ -1431,7 +1431,7 @@
 
 <section>
 
-	<h1>Pagination</h1>
+<h1>Pagination</h1>
 
 	<div class="table-responsive">
 		<table id="myTable" class="display table" width="100%">
@@ -1610,10 +1610,10 @@
 </section>
 
 <section>
-	<h1>Flip Scroll</h1>
-	<html>
-	<table class="flipscroll">
-		<thead>
+<h1>Flip Scroll</h1>
+<html>
+<table class="flipscroll">
+	<thead>
 		<tr>
 			<th title="Field #1">Car</th>
 			<th title="Field #2">Manufacturer</th>
@@ -1625,8 +1625,8 @@
 			<th title="Field #8">Miles per gallon</th>
 			<th title="Field #9">Price(€)</th>
 		</tr>
-		</thead>
-		<tbody>
+	</thead>
+	<tbody>
 		<tr>
 			<td>2019 Acura RDX</td>
 			<td>Acura</td>
@@ -1759,16 +1759,16 @@
 			<td style="text-align: right">26</td>
 			<td>30,300.00</td>
 		</tr>
-		</tbody>
-	</table>
-	</html>
+	</tbody>
+</table>
+</html>
 </section>
 
 <section>
 	<h1>Resize Columns</h1>
 	<html lang="en">
 	<table class="collapserow">
-		<thead>
+	<thead>
 		<tr>
 			<th title="Field #1"><div class = "resizecell">Car</div></th>
 			<th title="Field #2"><div class = "resizecell">Manufacturer</div></th>
@@ -1780,8 +1780,8 @@
 			<th title="Field #8"><div class = "resizecell">Miles per gallon</div></th>
 			<th title="Field #9"><div class = "resizecell">Price(€)</div></th>
 		</tr>
-		</thead>
-		<tbody>
+	</thead>
+	<tbody>
 		<tr>
 			<td>2019 Acura RDX</td>
 			<td>Acura</td>
@@ -1914,126 +1914,126 @@
 			<td style="text-align: right">26</td>
 			<td>30,300.00</td>
 		</tr>
-		</tbody>
-	</table>
+	</tbody>
+</table>
 	</html>
 </section>
 <section>
 	<h1>Long Two Collumn</h1>
 	<table role="table" class="test">
 		<thead role="rowgroup">
-		<tr role="row">
-			<th role="columnheader">Car</th>
-			<th role="columnheader">Manufacturer</th>
-			<th role="columnheader">Engine Size(L)</th>
-			<th role="columnheader">Cylinders</th>
-			<th role="columnheader">Horsepower</th>
-			<th role="columnheader">Torque</th>
-			<th role="columnheader">Compresion Ratio</th>
-			<th role="columnheader">Miles per gallon</th>
-			<th role="columnheader">Price(€)</th>
-		</tr>
+			<tr role="row">
+				<th role="columnheader">Car</th>
+				<th role="columnheader">Manufacturer</th>
+				<th role="columnheader">Engine Size(L)</th>
+				<th role="columnheader">Cylinders</th>
+				<th role="columnheader">Horsepower</th>
+				<th role="columnheader">Torque</th>
+				<th role="columnheader">Compresion Ratio</th>
+				<th role="columnheader">Miles per gallon</th>
+				<th role="columnheader">Price(€)</th>
+			</tr>
 		</thead>
 		<tbody role="rowgroup">
-		<tr role="row">
-			<td role="cell" >2019 Acura RDX </td>
-			<td role="cell" >Acura</td>
-			<td role="cell" style="text-align: right">2.0</td>
-			<td role="cell" style="text-align: right">4</td>
-			<td role="cell" style="text-align: right">272</td>
-			<td role="cell" style="text-align: right">280</td>
-			<td role="cell" style="text-align: right">9.8:1</td>
-			<td role="cell" style="text-align: right">28</td>
-			<td role="cell" style="text-align: right">33,600.00</td>
-		</tr>
-		<tr>
-			<td role="cell" >2019 Ford Ranger</td>
-			<td role="cell"  >Ford</td>
-			<td role="cell" style="text-align: right">2.3</td>
-			<td role="cell" style="text-align: right">4</td>
-			<td role="cell" style="text-align: right">270</td>
-			<td role="cell" style="text-align: right">310</td>
-			<td role="cell" style="text-align: right">10.0:1</td>
-			<td role="cell" style="text-align: right">21</td>
-			<td role="cell" style="text-align: right">21,800.00</td>
-		</tr>
-		<tr>
-			<td>2019 Jaguar I-Pace</td>
-			<td>Jaguar</td>
-			<td role="cell" style="text-align: right">0.0</td>
-			<td role="cell" style="text-align: right">0</td>
-			<td role="cell" style="text-align: right">394</td>
-			<td role="cell" style="text-align: right">513</td>
-			<td role="cell" style="text-align: right">0.0:1</td>
-			<td role="cell" style="text-align: right">0</td>
-			<td role="cell" style="text-align: right">62,400.00</td>
-		</tr>
-		<tr>
-			<td>2020 Mercedes-Benz GLE 450</td>
-			<td>Mercedes-Benz</td>
-			<td role="cell" style="text-align: right">3.0</td>
-			<td role="cell" style="text-align: right">4</td>
-			<td role="cell" style="text-align: right">362</td>
-			<td role="cell" style="text-align: right">369</td>
-			<td role="cell" style="text-align: right">10.5:1</td>
-			<td role="cell" style="text-align: right">22</td>
-			<td>54,900.00</td>
-		</tr>
-		<tr>
-			<td>2019 Nissan Altima</td>
-			<td>Nissan</td>
-			<td role="cell" style="text-align: right">2.5</td>
-			<td role="cell" style="text-align: right">4</td>
-			<td role="cell" style="text-align: right">188</td>
-			<td role="cell" style="text-align: right">180</td>
-			<td role="cell" style="text-align: right">8.0:1</td>
-			<td role="cell" style="text-align: right">32</td>
-			<td role="cell" style="text-align: right">21,500.00</td>
-		</tr>
-		<tr>
-			<td>2019 Ram 1500</td>
-			<td>Ram</td>
-			<td role="cell" style="text-align: right">5.7</td>
-			<td role="cell" style="text-align: right">8</td>
-			<td role="cell" style="text-align: right">395</td>
-			<td role="cell" style="text-align: right">410</td>
-			<td role="cell" style="text-align: right">11.3:1</td>
-			<td role="cell" style="text-align: right">23</td>
-			<td role="cell" style="text-align: right">28,600.00</td>
-		</tr>
-		<tr>
-			<td>2019 Subaru Ascent</td>
-			<td>Subaru</td>
-			<td role="cell" style="text-align: right">2.4</td>
-			<td role="cell" style="text-align: right">4</td>
-			<td role="cell" style="text-align: right">260</td>
-			<td role="cell"  style="text-align: right">277</td>
-			<td role="cell" style="text-align: right">10.6:1</td>
-			<td role="cell" style="text-align: right">22</td>
-			<td role="cell" style="text-align: right">28,700.00</td>
-		</tr>
-		<tr>
-			<td>2019 Toyota Rav4</td>
-			<td>Toyota</td>
-			<td role="cell" style="text-align: right">2.5</td>
-			<td role="cell" style="text-align: right">4</td>
-			<td role="cell" style="text-align: right">219</td>
-			<td role="cell" style="text-align: right">184</td>
-			<td role="cell" style="text-align: right">13.0:1</td>
-			<td role="cell" style="text-align: right">39</td>
-			<td role="cell" style="text-align: right">22,900.00</td>
-		</tr>
-		<tr>
-			<td>2019 Volvo XC40</td>
-			<td>Volvo</td>
-			<td role="cell" style="text-align: right">2.0</td>
-			<td role="cell" style="text-align: right">4</td>
-			<td role="cell" style="text-align: right">248</td>
-			<td role="cell" style="text-align: right">258</td>
-			<td role="cell" style="text-align: right">10.8:1</td>
-			<td role="cell" style="text-align: right">26</td>
-			<td>30,300.00</td>
-		</tr>
+			<tr role="row">
+				<td role="cell" >2019 Acura RDX </td>
+				<td role="cell" >Acura</td>
+				<td role="cell" style="text-align: right">2.0</td>
+				<td role="cell" style="text-align: right">4</td>
+				<td role="cell" style="text-align: right">272</td>
+				<td role="cell" style="text-align: right">280</td>
+				<td role="cell" style="text-align: right">9.8:1</td>
+				<td role="cell" style="text-align: right">28</td>
+				<td role="cell" style="text-align: right">33,600.00</td>
+			</tr>
+			<tr>
+				<td role="cell" >2019 Ford Ranger</td>
+				<td role="cell"  >Ford</td>
+				<td role="cell" style="text-align: right">2.3</td>
+				<td role="cell" style="text-align: right">4</td>
+				<td role="cell" style="text-align: right">270</td>
+				<td role="cell" style="text-align: right">310</td>
+				<td role="cell" style="text-align: right">10.0:1</td>
+				<td role="cell" style="text-align: right">21</td>
+				<td role="cell" style="text-align: right">21,800.00</td>
+			</tr>
+			<tr>
+				<td>2019 Jaguar I-Pace</td>
+				<td>Jaguar</td>
+				<td role="cell" style="text-align: right">0.0</td>
+				<td role="cell" style="text-align: right">0</td>
+				<td role="cell" style="text-align: right">394</td>
+				<td role="cell" style="text-align: right">513</td>
+				<td role="cell" style="text-align: right">0.0:1</td>
+				<td role="cell" style="text-align: right">0</td>
+				<td role="cell" style="text-align: right">62,400.00</td>
+			</tr>
+			<tr>
+				<td>2020 Mercedes-Benz GLE 450</td>
+				<td>Mercedes-Benz</td>
+				<td role="cell" style="text-align: right">3.0</td>
+				<td role="cell" style="text-align: right">4</td>
+				<td role="cell" style="text-align: right">362</td>
+				<td role="cell" style="text-align: right">369</td>
+				<td role="cell" style="text-align: right">10.5:1</td>
+				<td role="cell" style="text-align: right">22</td>
+				<td>54,900.00</td>
+			</tr>
+			<tr>
+				<td>2019 Nissan Altima</td>
+				<td>Nissan</td>
+				<td role="cell" style="text-align: right">2.5</td>
+				<td role="cell" style="text-align: right">4</td>
+				<td role="cell" style="text-align: right">188</td>
+				<td role="cell" style="text-align: right">180</td>
+				<td role="cell" style="text-align: right">8.0:1</td>
+				<td role="cell" style="text-align: right">32</td>
+				<td role="cell" style="text-align: right">21,500.00</td>
+			</tr>
+			<tr>
+				<td>2019 Ram 1500</td>
+				<td>Ram</td>
+				<td role="cell" style="text-align: right">5.7</td>
+				<td role="cell" style="text-align: right">8</td>
+				<td role="cell" style="text-align: right">395</td>
+				<td role="cell" style="text-align: right">410</td>
+				<td role="cell" style="text-align: right">11.3:1</td>
+				<td role="cell" style="text-align: right">23</td>
+				<td role="cell" style="text-align: right">28,600.00</td>
+			</tr>
+			<tr>
+				<td>2019 Subaru Ascent</td>
+				<td>Subaru</td>
+				<td role="cell" style="text-align: right">2.4</td>
+				<td role="cell" style="text-align: right">4</td>
+				<td role="cell" style="text-align: right">260</td>
+				<td role="cell"  style="text-align: right">277</td>
+				<td role="cell" style="text-align: right">10.6:1</td>
+				<td role="cell" style="text-align: right">22</td>
+				<td role="cell" style="text-align: right">28,700.00</td>
+			</tr>
+			<tr>
+				<td>2019 Toyota Rav4</td>
+				<td>Toyota</td>
+				<td role="cell" style="text-align: right">2.5</td>
+				<td role="cell" style="text-align: right">4</td>
+				<td role="cell" style="text-align: right">219</td>
+				<td role="cell" style="text-align: right">184</td>
+				<td role="cell" style="text-align: right">13.0:1</td>
+				<td role="cell" style="text-align: right">39</td>
+				<td role="cell" style="text-align: right">22,900.00</td>
+			</tr>
+			<tr>
+				<td>2019 Volvo XC40</td>
+				<td>Volvo</td>
+				<td role="cell" style="text-align: right">2.0</td>
+				<td role="cell" style="text-align: right">4</td>
+				<td role="cell" style="text-align: right">248</td>
+				<td role="cell" style="text-align: right">258</td>
+				<td role="cell" style="text-align: right">10.8:1</td>
+				<td role="cell" style="text-align: right">26</td>
+				<td>30,300.00</td>
+			</tr>
 
 		</tbody>
 	</table>
@@ -2042,9 +2042,9 @@
 		</a>	</p>
 	</div>
 
-</section>
+	</section>
 
-<section>
+	<section>
 		<pre><code style="background: #FAEBD7">
 	@media
 	  only screen
@@ -2091,7 +2091,7 @@
 		}
 
 		</code></pre>
-</section>
+		</section>
 
 </body>
 </html>
