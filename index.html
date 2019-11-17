@@ -25,7 +25,6 @@
 <link rel="stylesheet" href="collapserow.css">
 <link rel="stylesheet" href="resizecolumns.css">
 <link rel="stylesheet" href="highlightcolumn.css">
-
 <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
 
 <script src="fixed-table.js"></script>
@@ -36,6 +35,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript"  src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript"  src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript"  src="horizontalscroll.js"></script>
 </head>
 
 
@@ -962,172 +962,161 @@ function show_hide_column(col_no, do_show) {
 
 <section>
 	<h1>Horizontal Scroll</h1>
-		<div id="table-scroll" class="table-scroll">
-			<div class="table-wrap">
-				<table class="main-table table-scroll">
-					<thead>
-					<tr>
-						<th class="fixed-side" title="Field #1">Car</th>
-						<th scope="col" title="Field #2">Manufacturer</th>
-						<th scope="col" title="Field #3">Engine Size(L)</th>
-						<th scope="col" title="Field #4">Cylinders 4</th>
-						<th scope="col" title="Field #5">Horsepower</th>
-						<th scope="col" title="Field #6">Torque</th>
-						<th scope="col" title="Field #7">Compresion Ratio</th>
-						<th scope="col" title="Field #8">Miles per gallon</th>
-						<th scope="col" title="Field #9">Price(€)</th>
-					</tr>
-					</thead>
-					<tbody>
-					<tr>
-						<td class="fixed-side">2019 Acura RDX</td>
-						<td>Acura</td>
-						<td style="text-align: right">2.0</td>
-						<td style="text-align: right">4</td>
-						<td style="text-align: right">272</td>
-						<td style="text-align: right">280</td>
-						<td style="text-align: right">9.8:1</td>
-						<td style="text-align: right">28</td>
-						<td style="text-align: right">33,600.00</td>
-					</tr>
-					<tr>
-						<td class="fixed-side">2019 Ford Ranger</td>
-						<td>Ford</td>
-						<td style="text-align: right">2.3</td>
-						<td style="text-align: right">4</td>
-						<td style="text-align: right">270</td>
-						<td style="text-align: right">310</td>
-						<td style="text-align: right">10.0:1</td>
-						<td style="text-align: right">21</td>
-						<td style="text-align: right">21,800.00</td>
-					</tr>
-					<tr>
-						<td class="fixed-side">2019 Genesis G70</td>
-						<td>Genesis</td>
-						<td style="text-align: right">2.0</td>
-						<td style="text-align: right">4</td>
-						<td style="text-align: right">252</td>
-						<td style="text-align: right">260</td>
-						<td style="text-align: right">10.0:1</td>
-						<td style="text-align: right">22</td>
-						<td style="text-align: right">31,300.00</td>
-					</tr>
-					<tr>
-						<td class="fixed-side"> 2019 GMC Sierra 1500</td>
-						<td>GMC</td>
-						<td style="text-align: right">4.0</td>
-						<td style="text-align: right">6</td>
-						<td style="text-align: right">285</td>
-						<td style="text-align: right">305</td>
-						<td style="text-align: right">11.0:1</td>
-						<td style="text-align: right">16</td>
-						<td style="text-align: right">26,600.00</td>
-					</tr>
-					<tr>
-						<td class="fixed-side">2019 Honda Passport</td>
-						<td>Honda</td>
-						<td style="text-align: right">3.5</td>
-						<td style="text-align: right">6</td>
-						<td style="text-align: right">280</td>
-						<td style="text-align: right">262</td>
-						<td style="text-align: right">11.5:1</td>
-						<td style="text-align: right">21</td>
-						<td style="text-align: right">28,700.00</td>
-					</tr>
-					<tr>
-						<td class="fixed-side">2019 Jaguar I-Pace</td>
-						<td>Jaguar</td>
-						<td style="text-align: right">0.0</td>
-						<td style="text-align: right">0</td>
-						<td style="text-align: right">394</td>
-						<td style="text-align: right">513</td>
-						<td style="text-align: right">0.0:1</td>
-						<td style="text-align: right">0</td>
-						<td style="text-align: right">62,400.00</td>
-					</tr>
-					<tr>
-						<td class="fixed-side">2020 Mercedes-Benz GLE 450</td>
-						<td>Mercedes-Benz</td>
-						<td style="text-align: right">3.0</td>
-						<td style="text-align: right">4</td>
-						<td style="text-align: right">362</td>
-						<td style="text-align: right">369</td>
-						<td style="text-align: right">10.5:1</td>
-						<td style="text-align: right">22</td>
-						<td>54,900.00</td>
-					</tr>
-					<tr>
-						<td class="fixed-side">2019 Nissan Altima</td>
-						<td>Nissan</td>
-						<td style="text-align: right">2.5</td>
-						<td style="text-align: right">4</td>
-						<td style="text-align: right">188</td>
-						<td style="text-align: right">180</td>
-						<td style="text-align: right">8.0:1</td>
-						<td style="text-align: right">32</td>
-						<td style="text-align: right">21,500.00</td>
-					</tr>
-					<tr>
-						<td class="fixed-side">2019 Ram 1500</td>
-						<td>Ram</td>
-						<td style="text-align: right">5.7</td>
-						<td style="text-align: right">8</td>
-						<td style="text-align: right">395</td>
-						<td style="text-align: right">410</td>
-						<td style="text-align: right">11.3:1</td>
-						<td style="text-align: right">23</td>
-						<td style="text-align: right">28,600.00</td>
-					</tr>
-					<tr>
-						<td class="fixed-side">2019 Subaru Ascent</td>
-						<td>Subaru</td>
-						<td style="text-align: right">2.4</td>
-						<td style="text-align: right">4</td>
-						<td style="text-align: right">260</td>
-						<td style="text-align: right">277</td>
-						<td style="text-align: right">10.6:1</td>
-						<td style="text-align: right">22</td>
-						<td style="text-align: right">28,700.00</td>
-					</tr>
-					<tr>
-						<td class="fixed-side">2019 Toyota Rav4</td>
-						<td>Toyota</td>
-						<td style="text-align: right">2.5</td>
-						<td style="text-align: right">4</td>
-						<td style="text-align: right">219</td>
-						<td style="text-align: right">184</td>
-						<td style="text-align: right">13.0:1</td>
-						<td style="text-align: right">39</td>
-						<td style="text-align: right">22,900.00</td>
-					</tr>
-					<tr>
-						<td class="fixed-side">2019 Volvo XC40</td>
-						<td>Volvo</td>
-						<td style="text-align: right">2.0</td>
-						<td style="text-align: right">4</td>
-						<td style="text-align: right">248</td>
-						<td style="text-align: right">258</td>
-						<td style="text-align: right">10.8:1</td>
-						<td style="text-align: right">26</td>
-						<td>30,300.00</td>
-					</tr>
-					</tbody>
-				</table>
-
-			</div>
-
-		</div>
-
-		<script>
-			// requires jquery library
-			jQuery(document).ready(function() {
-				jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');
-			});
-
-		</script>
-
+	<div class="horizontalscroll">
+		<table class="rtable rtable--flip"">
+			<thead>
+				<tr>
+					<th title="Field #1">Car</th>
+					<th title="Field #2">Manufacturer</th>
+					<th title="Field #3">Engine Size(L)</th>
+					<th title="Field #4">Cylinders</th>
+					<th title="Field #5">Horsepower</th>
+					<th title="Field #6">Torque</th>
+					<th title="Field #7">Compresion Ratio</th>
+					<th title="Field #8">Miles per gallon</th>
+					<th title="Field #9">Price(€)</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>2019 Acura RDX</td>
+					<td>Acura</td>
+					<td style="text-align: right">2.0</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">272</td>
+					<td style="text-align: right">280</td>
+					<td style="text-align: right">9.8:1</td>
+					<td style="text-align: right">28</td>
+					<td style="text-align: right">33,600.00</td>
+				</tr>
+				<tr>
+					<td>2019 Ford Ranger</td>
+					<td>Ford</td>
+					<td style="text-align: right">2.3</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">270</td>
+					<td style="text-align: right">310</td>
+					<td style="text-align: right">10.0:1</td>
+					<td style="text-align: right">21</td>
+					<td style="text-align: right">21,800.00</td>
+				</tr>
+				<tr>
+					<td>2019 Genesis G70</td>
+					<td>Genesis</td>
+					<td style="text-align: right">2.0</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">252</td>
+					<td style="text-align: right">260</td>
+					<td style="text-align: right">10.0:1</td>
+					<td style="text-align: right">22</td>
+					<td style="text-align: right">31,300.00</td>
+				</tr>
+				<tr>
+					<td>2019 GMC Sierra 1500</td>
+					<td>GMC</td>
+					<td style="text-align: right">4.0</td>
+					<td style="text-align: right">6</td>
+					<td style="text-align: right">285</td>
+					<td style="text-align: right">305</td>
+					<td style="text-align: right">11.0:1</td>
+					<td style="text-align: right">16</td>
+					<td style="text-align: right">26,600.00</td>
+				</tr>
+				<tr>
+					<td>2019 Honda Passport</td>
+					<td>Honda</td>
+					<td style="text-align: right">3.5</td>
+					<td style="text-align: right">6</td>
+					<td style="text-align: right">280</td>
+					<td style="text-align: right">262</td>
+					<td style="text-align: right">11.5:1</td>
+					<td style="text-align: right">21</td>
+					<td style="text-align: right">28,700.00</td>
+				</tr>
+				<tr>
+					<td>2019 Jaguar I-Pace</td>
+					<td>Jaguar</td>
+					<td style="text-align: right">0.0</td>
+					<td style="text-align: right">0</td>
+					<td style="text-align: right">394</td>
+					<td style="text-align: right">513</td>
+					<td style="text-align: right">0.0:1</td>
+					<td style="text-align: right">0</td>
+					<td style="text-align: right">62,400.00</td>
+				</tr>
+				<tr>
+					<td>2020 Mercedes-Benz GLE 450</td>
+					<td>Mercedes-Benz</td>
+					<td style="text-align: right">3.0</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">362</td>
+					<td style="text-align: right">369</td>
+					<td style="text-align: right">10.5:1</td>
+					<td style="text-align: right">22</td>
+					<td>54,900.00</td>
+				</tr>
+				<tr>
+					<td>2019 Nissan Altima</td>
+					<td>Nissan</td>
+					<td style="text-align: right">2.5</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">188</td>
+					<td style="text-align: right">180</td>
+					<td style="text-align: right">8.0:1</td>
+					<td style="text-align: right">32</td>
+					<td style="text-align: right">21,500.00</td>
+				</tr>
+				<tr>
+					<td>2019 Ram 1500</td>
+					<td>Ram</td>
+					<td style="text-align: right">5.7</td>
+					<td style="text-align: right">8</td>
+					<td style="text-align: right">395</td>
+					<td style="text-align: right">410</td>
+					<td style="text-align: right">11.3:1</td>
+					<td style="text-align: right">23</td>
+					<td style="text-align: right">28,600.00</td>
+				</tr>
+				<tr>
+					<td>2019 Subaru Ascent</td>
+					<td>Subaru</td>
+					<td style="text-align: right">2.4</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">260</td>
+					<td style="text-align: right">277</td>
+					<td style="text-align: right">10.6:1</td>
+					<td style="text-align: right">22</td>
+					<td style="text-align: right">28,700.00</td>
+				</tr>
+				<tr>
+					<td>2019 Toyota Rav4</td>
+					<td>Toyota</td>
+					<td style="text-align: right">2.5</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">219</td>
+					<td style="text-align: right">184</td>
+					<td style="text-align: right">13.0:1</td>
+					<td style="text-align: right">39</td>
+					<td style="text-align: right">22,900.00</td>
+				</tr>
+				<tr>
+					<td>2019 Volvo XC40</td>
+					<td>Volvo</td>
+					<td style="text-align: right">2.0</td>
+					<td style="text-align: right">4</td>
+					<td style="text-align: right">248</td>
+					<td style="text-align: right">258</td>
+					<td style="text-align: right">10.8:1</td>
+					<td style="text-align: right">26</td>
+					<td>30,300.00</td>
+				</tr>
+				</tbody>
+			</table>
+	</div>
+	
+	
 	<div>
-		<p><a href="https://codepen.io/paulobrien/pen/gWoVzN">https://codepen.io/paulobrien/pen/gWoVzN</a></p>
+		<p><a href="https://codepen.io/dbushell/pen/wGaamR">https://codepen.io/dbushell/pen/wGaamR</a></p>
 	</div>
 </section>
 
