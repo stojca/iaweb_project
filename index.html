@@ -26,6 +26,14 @@
 <link rel="stylesheet" href="collapserow.css">
 <link rel="stylesheet" href="resizecolumns.css">
 <link rel="stylesheet" href="highlightcolumn.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link type="text/css" media="screen" rel="stylesheet" href="responsive-tables.css" />
+<script type="text/javascript" src="responsive-tables.js"></script>
+<link rel="stylesheet" href="smart.default.css" type="text/css" />
+<script type="text/javascript" src="smart.element.js"></script>
+<script type="text/javascript" src="smart.elements.js"></script>
+
 <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
 
 <script src="fixed-table.js"></script>
@@ -168,18 +176,19 @@ $(document).ready(function(){
 
 
 <h1>Expandable Areas</h1>
+	
 <table id="report">
 	<thead>
 		<tr>
-			<th title="Field #1">Car</th>
-			<th title="Field #2">Manufacturer</th>
-			<th title="Field #3">Engine Size(L)</th>
-			<th title="Field #4">Cylinders</th>
-			<th title="Field #5">Horsepower</th>
-			<th title="Field #6">Torque</th>
-			<th title="Field #7">Compresion Ratio</th>
-			<th title="Field #8">Miles per gallon</th>
-			<th title="Field #9">Price(€)</th>
+			<th scope="col" title="Field #1">Car</th>
+			<th scope="col" title="Field #2">Manufacturer</th>
+			<th scope="col" title="Field #3">Engine Size(L)</th>
+			<th scope="col" title="Field #4">Cylinders</th>
+			<th scope="col" title="Field #5">Horsepower</th>
+			<th scope="col" title="Field #6">Torque</th>
+			<th scope="col" title="Field #7">Compresion Ratio</th>
+			<th scope="col" title="Field #8">Miles per gallon</th>
+			<th scope="col" title="Field #9">Price(€)</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -313,17 +322,18 @@ $(document).ready(function(){
 			</tr>
 	</tbody>
 </table>
-
-
-
-
+</smart-table>
 </section>
+
+
 
 
 <section>
 <h1>Hover Action</h1>
-<table class="hoverAction">
-	<thead>
+<div class="hoverAction">
+	<table>
+
+		<thead>
 		<tr>
 			<th title="Field #1">Car</th>
 			<th title="Field #2">Manufacturer</th>
@@ -335,10 +345,14 @@ $(document).ready(function(){
 			<th title="Field #8">Miles per gallon</th>
 			<th title="Field #9">Price(€)</th>
 		</tr>
-	</thead>
-	<tbody>
+		<tr class="detail" style="display: none">
+			<td>content will come here
+			</td>
+		</tr>
+		</thead>
+		<tbody>
 		<tr>
-			<td class="open-bext">2019 Acura RDX </td>
+			<td class="open-bext">2019 Acura RDX</td>
 			<td>Acura</td>
 			<td style="text-align: right">2.0</td>
 			<td style="text-align: right">4</td>
@@ -347,10 +361,6 @@ $(document).ready(function(){
 			<td style="text-align: right">9.8:1</td>
 			<td style="text-align: right">28</td>
 			<td style="text-align: right">33,600.00</td>
-		</tr>
-		<tr class="detail" style="display: none">
-			<td>content will come here
-			</td>
 		</tr>
 		<tr>
 			<td>2019 Ford Ranger</td>
@@ -473,24 +483,31 @@ $(document).ready(function(){
 			<td style="text-align: right">26</td>
 			<td>30,300.00</td>
 		</tr>
-	</tbody>
-</table>
+		</tbody>
+	</table>
+</div>
+	<div>
+		<br>
+		<p>References: <a href="https://mdbootstrap.com/support/angular/fixed-header-and-scrollable-body-in-table-in-html-angular/">https://mdbootstrap.com/support/angular/fixed-header-and-scrollable-body-in-table-in-html-angular/</a></p>
+	</div>
 </section>
+	
 
 <section>
 	<h1>Sortable</h1>
-	<table data-tablesaw-sortable>
+	<div class="tablesaw-overflow">
+	<table data-tablesaw-sortable >
 		<thead>
 		<tr>
-			<th title="Field #1" data-tablesaw-sortable-col data-tablesaw-sortable-default-col>Car</th>
-			<th title="Field #2" data-tablesaw-sortable-col>Manufacturer</th>
-			<th title="Field #3" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Engine Size(L)</th>
-			<th title="Field #4" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Cylinders</th>
-			<th title="Field #5" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Horsepower</th>
-			<th title="Field #6" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Torque</th>
-			<th title="Field #7" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Compresion Ratio</th>
-			<th title="Field #8" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Miles per gallon</th>
-			<th title="Field #9" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Price(€)</th>
+			<th data-tablesaw-priority="persist" title="Field #1" data-tablesaw-sortable-col data-tablesaw-sortable-default-col>Car</th>
+			<th data-tablesaw-priority="0" title="Field #2" data-tablesaw-sortable-col>Manufacturer</th>
+			<th data-tablesaw-priority="1"title="Field #3" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Engine Size(L)</th>
+			<th data-tablesaw-priority="2" title="Field #4" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Cylinders</th>
+			<th data-tablesaw-priority="3" title="Field #5" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Horsepower</th>
+			<th data-tablesaw-priority="4" title="Field #6" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Torque</th>
+			<th data-tablesaw-priority="5" title="Field #7" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Compresion Ratio</th>
+			<th data-tablesaw-priority="6" title="Field #8" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Miles per gallon</th>
+			<th data-tablesaw-priority="7" title="Field #9" data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Price(€)</th>
 		</tr>
 		</thead>
 		<tbody>
@@ -628,6 +645,7 @@ $(document).ready(function(){
 		</tr>
 		</tbody>
 	</table>
+	</div>
 </section>
 
 <section>
