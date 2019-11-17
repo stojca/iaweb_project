@@ -1,0 +1,2 @@
+table.alt tr:nth-child(even) {background: #CCC}
+table.alt tr:nth-child(odd) {background: #FFF}
