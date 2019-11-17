@@ -1137,14 +1137,14 @@ function show_hide_column(col_no, do_show) {
 	.table-scroll table {
 		width:100%;
 		margin:auto;
-		border-collapse:separate;
-		border-spacing:0;
+		border-collapse:separate; //seperate borders
+		border-spacing:0; //distance between borders
 	}
 
 	.table-scroll th, .table-scroll td {
 		width: auto;
 		padding:5px 10px;
-		white-space:nowrap;
+		white-space:nowrap;//sequences of whitespace will collapse into a single whitespace
 		vertical-align:top;
 	}
 
@@ -1159,9 +1159,8 @@ function show_hide_column(col_no, do_show) {
 		visibility:visible;
 	}
 
-	//js code
 	jQuery(document).ready(function() {
-				jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');
+				jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone'); //change context of jquery object
 	});
 </code></pre>
 </section>
@@ -1331,31 +1330,16 @@ function show_hide_column(col_no, do_show) {
 	//css
 	.fixedHeader tbody {
 		display: block;
-		overflow: auto;
+		overflow: auto; //specifies what should happen if content overflows an element's box
 		height: 100%;
 		width: 100%;
 	}
 
-	.fixedHeader thead tr {
+	.fixedHeader thead tr, .fixedHeader tbody tr {
 		display: table;
 		width: 100%;
-		table-layout: fixed;
+		table-layout: fixed; //users will see the top of the table while the browser loads and renders rest of the table
 	}
-
-	.fixedHeader thead, .fixedHeader tbody tr {
-		display: table;
-		width: 100%;
-		table-layout: fixed;
-	}
-
-	.fixedHeader td {
-		width: 100%;
-	}
-
-	//js code
-	jQuery(document).ready(function() {
-				jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');
-	});
 </code></pre>
 </section>
 
@@ -1523,7 +1507,7 @@ function show_hide_column(col_no, do_show) {
         });
 	</script>
 
-	<div class="footer">
+	<div>
 		<p style=""><a href="https://stackoverflow.com/questions/48966595/how-to-use-paging-in-a-table-in-html/48966882">https://stackoverflow.com/questions/48966595/how-to-use-paging-in-a-table-in-html/48966882</a></p>
 	</div>
 </section>
@@ -1531,12 +1515,9 @@ function show_hide_column(col_no, do_show) {
 
 <section>
 <pre><code style="background: #FAEBD7">
-	//css
-	//TODO
 
-	//js code
 	 $(document).ready(function(){
-            $('#myTable').dataTable();
+            $('#myTable').dataTable(); //this plugin provides searching, sorting and pagination
      });
 </code></pre>
 </section>
