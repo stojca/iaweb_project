@@ -1156,6 +1156,16 @@ $(document).ready(function(){
 <section>
 <h1>Horizontal Scroll Code</h1>
 <pre><code style="background: #FAEBD7">
+  .rtable {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;// optional - looks better for small cell values
+	border-collapse: collapse;
+    border-spacing: 0;
+  }
+
   .rtable--flip {
     display: flex;
     overflow: hidden;
@@ -1186,7 +1196,6 @@ $(document).ready(function(){
   .rtable--flip th {
     display: block;
   }
-
 
 </code></pre>
 </section>
