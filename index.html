@@ -53,7 +53,7 @@
 <section class="titleslide">
 <h1>Responsive Tables</h1>
 
-<h2>Mirza Kabiljagic, Stefan Rajinovic, Aleksandar Stojicic, Inti Gabriel Mendoza</h2>
+<h2>Mirza Kabiljagic, Stefan Rajinovic, Aleksandar Stojicic, Inti Gabriel Mendoza Estrada</h2>
 
 
 <div id="location">
@@ -1552,6 +1552,7 @@ $(document).ready(function(){
 
 
 <section>
+	<h1>Pagination Code</h1>
 <pre><code style="background: #FAEBD7">
 
 	 $(document).ready(function(){
@@ -1712,7 +1713,29 @@ $(document).ready(function(){
 		</tr>
 	</tbody>
 </table>
+<div>
+		<br>
+		<p>References: <a href="https://elvery.net/demo/responsive-tables/">https://elvery.net/demo/responsive-tables/</a></p>
+	</div>
 </html>
+</section>
+
+<section>
+	<h1>Flip Scroll Code</h1>
+<pre><code style="background: #FAEBD7">
+	table.flipscroll  tbody tr { 
+		display: inline-block; 
+		vertical-align: top; 
+	}
+
+	table.flipscroll  tbody { 
+		display: block; 
+		width: auto; 
+		position: relative; 
+		overflow-x: auto; 
+		white-space: nowrap; 
+	}
+</code></pre>
 </section>
 
 <section>
@@ -1867,8 +1890,49 @@ $(document).ready(function(){
 		</tr>
 	</tbody>
 </table>
+<div>
+		<br>
+		<p>References: <a href="https://www.w3schools.com/cssref/css3_pr_resize.asp">https://www.w3schools.com/cssref/css3_pr_resize.asp</a></p>
+	</div>
 	</html>
 </section>
+
+<section>
+	<h1>Flip Scroll Code</h1>
+<pre><code style="background: #1AEBD7">
+&ltthead&gt
+  &lttr&gt
+    &ltth title="Field #1"&gt
+      &ltdiv class = "resizecell"&gtCar&lt/div&gt&lt/th&gt
+    &ltth title="Field #2"&gt
+      &ltdiv class = "resizecell"&gtManufacturer&lt/div&gt&lt/th&gt
+    &ltth title="Field #3"&gt
+      &ltdiv class = "resizecell"&gtEngine Size(L)&lt/div&gt&lt/th&gt
+    &ltth title="Field #4"&gt
+      &ltdiv class = "resizecell"&gtCylinders&lt/div&gt&lt/th&gt
+    &ltth title="Field #5"&gt
+      &ltdiv class = "resizecell"&gtHorsepower&lt/div&gt&lt/th&gt
+    &ltth title="Field #6"&gt
+      &ltdiv class = "resizecell"&gtTorque&lt/div&gt&lt/th&gt
+    &ltth title="Field #7"&gt
+      &ltdiv class = "resizecell"&gtCompresion Ratio&lt/div&gt&lt/th&gt
+    &ltth title="Field #8"&gt
+      &ltdiv class = "resizecell"&gtMiles per gallon&lt/div&gt&lt/th&gt
+    &ltth title="Field #9"&gt
+      &ltdiv class = "resizecell"&gtPrice(€)&lt/div&gt&lt/th&gt
+  &lt/tr&gt
+&lt/thead&gt
+</code></pre>
+<pre><code style="background: #FAEBD7">
+.resizecell {
+	resize: horizontal;
+	overflow: auto;
+	width: 100%;
+	hyphens: auto;
+}
+</code></pre>
+</section>
+
 <section>
 	<h1>Long Two Collumn</h1>
 	<table role="table" class="test">
