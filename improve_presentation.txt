@@ -1,56 +1,42 @@
-Bigger text font size
+HTML 5 tables
+    Speed up. Don't read all. Sentences need period.
 
-HTML 5 table
-    Don't use word tag. Use element                           ---> done
-    Td defines data cells inside a row     ---> done
-    Th defines a data cell inside thead row  ---> done
-    Restructure to have nested stuff. (th after thead) ---> done
+Hover Action
+    Make font larger or red. Even more highliting. On highlight make a pop up?
 
-Good table design
-    Get rid of bold bullets ---> done
-
-Expandae Areas
-    "If you have additional info, do this"
-    It's good table design
+Sortable
+    Remove #Fields 4 when highlighting header
 
 Highlighting Color
-    "Assuming user has a pointing device"
-
-Good Table Design
-    Expandable areas: on hover action
-    Hover action: tap
-    Highlighting Color: highlighting cell on hover action
-    + Alternate row highlighting (row colors interlacing)
-    Sorting isn't responsive. It's good table design. ---> done
-    Numbers should be right-aligned. ---> done
-    Numbers with decimal are aligned with decimal point. ---> done
-    Number symbols can go in header. ---> done
-
-Responsive Tables
-    Get rid of bold bullets
-    For bullet 2.: Something about the logic about how resize itself is build into the table. Browser doesn't choose different size tables but rather table resizes itself according to screen size.
-
-Hidden column
-    Usually you have an overlay of which columns to show/hide.
-    Make responsive
-
-Fixed header
-    Show table embedded between text  ---> done
-
-Resize Columns
-    Becomes User Resizeable Columns
-    Making resizing 'button' more visible
+    Call instead Current Row Highlighting
 
 
-Show table HTML code.
-For each technique:
-    Show table
-    Then CSS (main part)
-    They must all be responsive
-    URL reference (adapted from) (underneath table)
+Hidden column - selected by user
+    Should be Hidden ColumnS
+    Add checkboxes
+    Cut enough columns out so none is cut off by screen automatically
 
-css-tricks.com/responsive-data-table-roundout/
+Horizontal scroll
+    Don't use long column when too small. Leave it scrollable
 
-Syntax highlighting: prismjs
+Horizontal scroll
+    Don't use tabs, but spaces
 
-Long Two Column (instead of collapse list)
+
+Resizeable Column
+    Rename to User Resizeable Column
+    Use JavaScript
+
+Two Long Column
+    Column has 1 L
+    Do multiple screen sizes responsiveness
+
+Two Long Column Code
+    No px
+
+Don't fullscreen during presentation
+Use a mouse
+Don't go through all lines of code. Just the important part.
+No indentation in code. Use 2 spaces instead
+Recommendation slide.
+Final slide - thank you
