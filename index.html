@@ -176,7 +176,7 @@ It consists of following elements:
 
 	<li>
 		<p>
-			<span>Highlighting color</span>
+			<span>Current Row Highlighting</span>
 		</p>
 	</li>
 
@@ -523,7 +523,7 @@ It consists of following elements:
 </section>
 
 <section>
-	<h1>Highlighting Color</h1>
+	<h1>Current Row Highlightingr</h1>
 	<p>Assuming user has a pointing device</p>
 	<table class="highlight">
 		<thead>
@@ -1314,12 +1314,16 @@ $(document).ready(function(){
 </section>
 
 <section>
-	<h1>Pagination Code</h1>
-	<pre><code style="background: #FAEBD7">
+<h1>Pagination Code</h1>
+<pre><code style="background: #FAEBD7">
+  //include these two files
+  ~/css/jquery.dataTables.min.css
+  ~/js/jquery.dataTables.min.js
 
-	 $(document).ready(function(){
-            $('#myTable').dataTable(); //this plugin provides searching, sorting and pagination
-     });
+  //call this single function
+  $(document).ready(function(){
+	$('#myTable').dataTable(); //this plugin provides searching, sorting and pagination
+  });
 </code></pre>
 </section>
 
@@ -1336,7 +1340,7 @@ $(document).ready(function(){
 <li>
 <span>Different techniques: </span>
 <ol>
-<li> Hidden Column - Selected by user</li>
+<li> Hidden Columns - Selected by user</li>
 <li> Horizontal Scroll</li>
 <li> Fixed Header</li>
 <li> Flip Scroll</li>
@@ -1350,7 +1354,7 @@ $(document).ready(function(){
 
 
 <section>
-<h1>Hidden Column - Selected by user</h1>
+<h1>Hidden Columns - Selected by user</h1>
 <div class="tablesaw-overflow">
 <table data-tablesaw-mode="columntoggle">
 	<thead>
@@ -1510,7 +1514,7 @@ $(document).ready(function(){
 </section>
 
 <section>
-<h1>Hidden Column Code</h1>
+<h1>Hidden Columns Code</h1>
 <h2> HTML Prioritization</h2>
 <pre><code style="background: #FAEBD7"><xmp>
 <div class="tablesaw-overflow">
@@ -1698,29 +1702,22 @@ $(document).ready(function(){
 <pre><code style="background: #FAEBD7">
   .rtable {
     display: inline-block;
-    vertical-align: top;
-    max-width: 100%;
     overflow-x: auto;
     white-space: nowrap;// optional - looks better for small cell values
-	border-collapse: collapse;
-    border-spacing: 0;
   }
 
   .rtable--flip {
     display: flex;
     overflow: hidden;
-    background: none;
   }
 
   .rtable--flip thead {
     display: flex;
     flex-shrink: 0;
-    min-width: min-content;
   }
 
   .rtable--flip tbody {
     display: flex;
-    position: relative;
     overflow-x: auto;
     overflow-y: hidden;
   }
@@ -1728,7 +1725,6 @@ $(document).ready(function(){
   .rtable--flip tr {
     display: flex;
     flex-direction: column;
-    min-width: min-content;
     flex-shrink: 0;
   }
 
@@ -1904,19 +1900,19 @@ $(document).ready(function(){
 <section>
 <h1>Fixed Header Code </h1>
 <pre><code style="background: #FAEBD7">
-	//css
-	.fixedHeader tbody {
-		display: block;
-		overflow: auto; //specifies what should happen if content overflows an element's box
-		height: 100%;
-		width: 100%;
-	}
+  //css
+  .fixedHeader tbody {
+	display: block;
+	overflow: auto; //specifies what should happen if content overflows an element's box
+	height: 100%;
+	width: 100%;
+  }
 
-	.fixedHeader thead tr, .fixedHeader tbody tr {
-		display: table;
-		width: 100%;
-		table-layout: fixed; //users will see the top of the table while the browser loads and renders rest of the table
-	}
+  .fixedHeader thead tr, .fixedHeader tbody tr {
+	display: table;
+	width: 100%;
+	table-layout: fixed; //users will see the top of the table while the browser loads and renders rest of the table
+  }
 </code></pre>
 </section>
 

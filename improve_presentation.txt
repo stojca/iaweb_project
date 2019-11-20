@@ -4,24 +4,9 @@ HTML 5 tables
 Hover Action
     Make font larger or red. Even more highliting. On highlight make a pop up?
 
-Sortable
-    Remove #Fields 4 when highlighting header
-
-Highlighting Color
-    Call instead Current Row Highlighting
-
-
 Hidden column - selected by user
-    Should be Hidden ColumnS
     Add checkboxes
     Cut enough columns out so none is cut off by screen automatically
-
-Horizontal scroll
-    Don't use long column when too small. Leave it scrollable
-
-Horizontal scroll
-    Don't use tabs, but spaces
-
 
 Resizeable Column
     Rename to User Resizeable Column
