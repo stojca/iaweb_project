@@ -1,6 +1,3 @@
-.resizecell {
-	resize: horizontal;
-	overflow: auto;
-	width: 100%;
-	hyphens: auto;
+.rcl th.resizing {
+    cursor: col-resize;
 }
