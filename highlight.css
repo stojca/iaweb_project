@@ -20,7 +20,9 @@ table.highlight th:hover::after {
   width: 100%;
   z-index: -1;
 }
-@media all and (max-width:768px){
+
+
+/*@media all and (max-width:768px){
   table.highlight table,tr, td, tbody, td p table div, table table{
       width:100%!important;
       float:left;
@@ -32,7 +34,7 @@ table.highlight th:hover::after {
       max-width:100%;
       height:auto;
   }
-}
+}*/
 
 
 /* =============================================================================
