@@ -12,10 +12,6 @@ Resizeable Column
     Rename to User Resizeable Column
     Use JavaScript
 
-Two Long Column
-    Column has 1 L
-    Do multiple screen sizes responsiveness
-
 Two Long Column Code
     No px
 
