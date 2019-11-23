@@ -1,0 +1,149 @@
+%----------------------------------------------------------------
+%
+%  File    :  survey-browsers.tex
+%
+%  Author  :  Keith Andrews, IICM, TU Graz, Austria
+% 
+%  Created :  27 May 1993
+% 
+%  Changed :  16 Nov 2010
+% 
+%----------------------------------------------------------------
+
+
+\chapter{HTML Tables}
+
+\label{HTML5 Tables}
+
+In case of having a lot of data to display, or data which is better of in a grid, HTML tables
+are the best solution available. Before, tables have been used mostly for the layout of 
+HTML web-sites and it is not a good practice to do so, mainly because of two things:
+
+
+$\bullet$ Semantically it is wrong
+
+$\bullet$ Tables aren't as adaptable and flexible as divs'
+
+\section{Structure of tables}
+
+The basic structure of an HTML table starts with the \textit{<table>} tag. It is the starting
+point for constructing a table. Now, HTML tables consist of columns and rows, like normal
+tables. For rows, the tag  \textit{<tr>} is used, whereas for table header \textit{<th>} tag
+is used. Normally, table headers are positioned in the center and are bold. For table cells
+\textit{<td>} tag is used [7]. 
+
+\begin{lstlisting}[%
+    language = CSS, 
+    xleftmargin=0cm,              % no extra margins for floats
+    xrightmargin=0cm,             % no extra margins for floats
+    language=biblatex,
+    basicstyle=\footnotesize\ttfamily,
+    frame=shadowbox,
+    numbers=left,
+    label=list:BibACMIEEE,
+    ,
+]
+    % An example of an HTML Table which demonstrates information about cars:
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>Best Cars 2019</title>
+</head>
+<body>
+<table class="table table-bordered table-hover table-condensed">
+	<thead>
+		<tr>
+			<th title="Field #1">Car</th>
+			<th title="Field #2">Manufacturer</th>
+			<th title="Field #3">Engine Size</th>
+			<th title="Field #4">Cylinders</th>
+			<th title="Field #5">Horsepower</th>
+			<th title="Field #6">Torque</th>
+			<th title="Field #7">Compresion Ratio</th>
+			<th title="Field #8">Miles per gallon</th>
+			<th title="Field #9">Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2019 Acura RDX</td>
+			<td>Acura</td>
+			<td>2.00L</td>
+			<td align="right">4</td>
+			<td align="right">272</td>
+			<td align="right">280</td>
+			<td>9.8:1</td>
+			<td align="right">28</td>
+			<td>€33,600.00</td>
+		</tr>
+		<tr>
+			<td>2019 Ford Ranger</td>
+			<td>Ford</td>
+			<td>2.30L</td>
+			<td align="right">4</td>
+			<td align="right">270</td>
+			<td align="right">310</td>
+			<td>10.0:1</td>
+			<td align="right">21</td>
+			<td>€21,800.00</td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>
+    
+\end{lstlisting}
+
+Now, there exist some other tags which we can use for HTML5 tables:
+
+$\bullet$ <thead> - Table header, it is used to point out single or multiple rows 
+of a table, which don't contain table data but column labels [8].
+
+$\bullet$ <tbody> - Table body, it is used to point out <tr> elements. Position this tag
+always after <thead>, but it can also come after or before <tfoot> [8].
+
+$\bullet$ <tfoot> - Table footer, it is used to point out single or multiple <tr> elements
+where those elements are presenting an overview  of the data in the table [8]. 
+
+$\bullet$ <caption> - Table caption, as the name already says, can be used to specify table caption.
+Can be put on the bottom of the CSS document.
+
+$\bullet$ <col> - While using col and some other keyword, for example, align, we can direct
+the alignment of text in the table. There are other keywords with which we can adjust colors, width
+and many other things of table columns.  
+
+\section{Responsive Tables}
+
+
+
+\subsection{Layered}
+
+\subsection{Radial}
+
+
+
+
+
+\section{Space-Filling Hierarchy Browsers}
+
+\subsection{Layered}
+
+\subsection{Radial}
+
+\subsection{Inclusive}
+
+\subsection{Overlapping}
+
+
+
+
+
+
+\section{Evaluating Hierarchy Browsers}
+
+\subsection{Formative Studies}
+
+\subsection{Comparative Studies}
+
+
