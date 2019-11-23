@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.11.3)  9 NOV 2019 12:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.11.3)  23 NOV 2019 14:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/mirza/Documents/Fax/iaweb/survey/survey.tex
-(/home/mirza/Documents/Fax/iaweb/survey/survey.tex
+**/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey.tex
+(/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey.tex
 LaTeX2e <2018-12-01>
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2018/09/03 v1.4i Standard LaTeX document class
@@ -1678,7 +1678,7 @@ Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
-) (/home/mirza/Documents/Fax/iaweb/survey/survey.aux
+) (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey.aux
 
 LaTeX Warning: Label `list:BibACMIEEE' multiply defined.
 
@@ -1818,7 +1818,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'survey.bbl' found.
- (/home/mirza/Documents/Fax/iaweb/survey/survey.bbl)
+ (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey.bbl)
 Package biblatex Info: Reference section=0 on input line 892.
 Package biblatex Info: Reference segment=0 on input line 892.
 \AtBeginShipoutBox=\box68
@@ -1833,7 +1833,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 892.
 LaTeX Info: Redefining \pageref on input line 892.
 LaTeX Info: Redefining \nameref on input line 892.
- (/home/mirza/Documents/Fax/iaweb/survey/survey.out) (/home/mirza/Documents/Fax/iaweb/survey/survey.out)
+ (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey.out) (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey.out)
 \@outlinefile=\write5
 \openout5 = `survey.out'.
 
@@ -1922,7 +1922,7 @@ LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/qhv/b/n' tried instead on input line 978.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 (Font)              scaled to size 22.39185pt on input line 978.
- (/home/mirza/Documents/Fax/iaweb/survey/survey.toc
+ (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey.toc
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
@@ -1952,7 +1952,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 
  [3] [4
 
-] (/home/mirza/Documents/Fax/iaweb/survey/survey.lof)
+] (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey.lof)
 \tf@lof=\write7
 \openout7 = `survey.lof'.
 
@@ -1960,7 +1960,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 
 ] [6
 
-] (/home/mirza/Documents/Fax/iaweb/survey/survey.lot)
+] (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey.lot)
 \tf@lot=\write8
 \openout8 = `survey.lot'.
 
@@ -1968,7 +1968,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 
 ] [8
 
-] (/home/mirza/Documents/Fax/iaweb/survey/survey.lol
+] (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey.lol
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 (Font)              scaled to size 9.0pt on input line 4.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
@@ -1998,7 +1998,7 @@ LaTeX Font Warning: Font shape `U/lasy/m/n' in size <5.5> not available
 
 ] [10
 
-] (/home/mirza/Documents/Fax/iaweb/survey/survey-intro.tex
+] (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey-intro.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/qhv/b/n' tried instead on input line 14.
@@ -2044,7 +2044,7 @@ LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <10> not available
 (Font)              Font shape `T1/qhv/b/n' tried instead on input line 214.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 214.
- [3 </home/mirza/Documents/Fax/iaweb/survey/relative.png (PNG copy)>]
+ [3 </home/mirza/Documents/iaweb_project/survey_documentation/survey/relative.png (PNG copy)>]
 <alig1.jpg, id=565, 1204.5pt x 676.5275pt>
 File: alig1.jpg Graphic file (type jpg)
 <use alig1.jpg>
@@ -2058,9 +2058,9 @@ Package pdftex.def Info: alig2.jpg  used on input line 242.
 Package csquotes Info: Input encoding change on input line 267.
  (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2018/10/05 v1.2f UTF-8 support for inputenc
-) [4 </home/mirza/Documents/Fax/iaweb/survey/alig1.jpg> </home/mirza/Documents/Fax/iaweb/survey/alig2.jpg>]) [5] [6
+) [4 </home/mirza/Documents/iaweb_project/survey_documentation/survey/alig1.jpg> </home/mirza/Documents/iaweb_project/survey_documentation/survey/alig2.jpg>]) [5] [6
 
-] (/home/mirza/Documents/Fax/iaweb/survey/survey-browsers.tex
+] (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey-tables.tex
 Chapter 2.
 LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <9> not available
 (Font)              Font shape `T1/qhv/b/n' tried instead on input line 14.
@@ -2080,7 +2080,7 @@ LaTeX Font Info:    Font shape `TS1/ntxtt/m/n' will be
 (Font)              scaled to size 9.0pt on input line 77.
  [7
 
-]) [8] (/home/mirza/Documents/Fax/iaweb/survey/survey-academic.tex
+]) [8] (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey-academic.tex
 Chapter 3.
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 27.
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
@@ -2142,7 +2142,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 Package csquotes Info: Input encoding change on input line 318.
  (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2018/10/05 v1.2f UTF-8 support for inputenc
-) (/home/mirza/Documents/Fax/iaweb/survey/listings/some.bib)
+) (/home/mirza/Documents/iaweb_project/survey_documentation/survey/listings/some.bib)
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.2pt on input line 318.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
@@ -2203,7 +2203,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 552--552
 
 [14]) [15] [16
 
-] (/home/mirza/Documents/Fax/iaweb/survey/survey-style.tex
+] (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey-style.tex
 Chapter 4.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.0pt on input line 85.
@@ -2223,12 +2223,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 753--757
 
  []
 
-) [22] (/home/mirza/Documents/Fax/iaweb/survey/survey-presentations.tex
+) [22] (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey-presentations.tex
 Chapter 5.
 [23
 
 
-]) [24] (/home/mirza/Documents/Fax/iaweb/survey/survey-tech.tex
+]) [24] (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey-tech.tex
 Chapter 6.
 <images/tugorg.png, id=963, 602.25pt x 451.6875pt>
 File: images/tugorg.png Graphic file (type png)
@@ -2298,7 +2298,7 @@ Package pdftex.def Info: images/texnic.png  used on input line 187.
 Package csquotes Info: Input encoding change on input line 208.
  (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2018/10/05 v1.2f UTF-8 support for inputenc
-) [26 </home/mirza/Documents/Fax/iaweb/survey/images/tugorg.png (PNG copy)>]
+) [26 </home/mirza/Documents/iaweb_project/survey_documentation/survey/images/tugorg.png (PNG copy)>]
 Package csquotes Info: Input encoding change on input line 265.
  (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2018/10/05 v1.2f UTF-8 support for inputenc
@@ -2310,7 +2310,7 @@ File: utf8.def 2018/10/05 v1.2f UTF-8 support for inputenc
 Package csquotes Info: Input encoding change on input line 267.
  (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2018/10/05 v1.2f UTF-8 support for inputenc
-) [27 </home/mirza/Documents/Fax/iaweb/survey/images/texnic.png (PNG copy)>]
+) [27 </home/mirza/Documents/iaweb_project/survey_documentation/survey/images/texnic.png (PNG copy)>]
 Package csquotes Info: Input encoding change on input line 288.
  (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2018/10/05 v1.2f UTF-8 support for inputenc
@@ -2322,7 +2322,7 @@ File: utf8.def 2018/10/05 v1.2f UTF-8 support for inputenc
 Package csquotes Info: Input encoding change on input line 290.
  (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2018/10/05 v1.2f UTF-8 support for inputenc
-)) [28] (/home/mirza/Documents/Fax/iaweb/survey/survey-examples.tex
+)) [28] (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey-examples.tex
 Chapter 7.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 24.88pt on input line 16.
@@ -2393,7 +2393,7 @@ LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 [29
 
 
-] [30 </home/mirza/Documents/Fax/iaweb/survey/diagrams/multi1.pdf> </home/mirza/Documents/Fax/iaweb/survey/diagrams/multi2.pdf> </home/mirza/Documents/Fax/iaweb/survey/images/pist.png>]
+] [30 </home/mirza/Documents/iaweb_project/survey_documentation/survey/diagrams/multi1.pdf> </home/mirza/Documents/iaweb_project/survey_documentation/survey/diagrams/multi2.pdf> </home/mirza/Documents/iaweb_project/survey_documentation/survey/images/pist.png>]
 <./images/icons/win-il-gen-doc.png, id=1073, 40.15pt x 40.15pt>
 File: ./images/icons/win-il-gen-doc.png Graphic file (type png)
 <use ./images/icons/win-il-gen-doc.png>
@@ -2523,7 +2523,7 @@ Package csquotes Info: Input encoding change on input line 372.
 File: utf8.def 2018/10/05 v1.2f UTF-8 support for inputenc
 )) [31] [32 <./images/icons/win-il-gen-doc.png> <./images/icons/win-il-gen-ass.png> <./images/icons/win-il-gen-tmpl.png> <./images/icons/win-il-text-doc.png> <./images/icons/win-il-spreadsheet-doc.png> <./images/icons/win-il-presentation-doc.png> <./images/icons/win-il-database-doc.png> <./images/icons/win-il-word-appl.png> <./images/icons/win-il-xls-appl.png> <./images/icons/win-il-ppt-appl.png> <./images/icons/win-il-mdb-appl.png> <./images/icons/win-il-word-doc.png> <./images/icons/win-il-xls-doc.png> <./images/icons/win-il-ppt-doc.png> <./images/icons/win-il-mdb-doc.png> <./images/icons/win-il-word-tmpl.png> <./images/icons/win-il-ppt-tmpl.png> <./images/icons/win-il-mdb-tmpl.png> <./images/icons/win-il-word-ass.png> <./images/icons/win-il-ppt-ass.png> <./images/icons/win-il-mdb-ass.png>] [33] [34
 
-] (/home/mirza/Documents/Fax/iaweb/survey/survey-concl.tex
+] (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey-concl.tex
 Chapter 8.
 ) [35
 
@@ -2538,7 +2538,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1041.
  [40]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1041.
- (/home/mirza/Documents/Fax/iaweb/survey/survey.aux)
+ (/home/mirza/Documents/iaweb_project/survey_documentation/survey/survey.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1041.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1041.
 Package rerunfilecheck Info: File `survey.out' has not changed.
@@ -2557,14 +2557,14 @@ Package logreq Info: Writing requests to 'survey.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  41907 strings out of 492609
- 730610 string characters out of 6131462
- 1584742 words of memory out of 5000000
+ 731654 string characters out of 6131462
+ 1585742 words of memory out of 5000000
  44608 multiletter control sequences out of 15000+600000
  779585 words of font info for 362 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 56i,16n,92p,1190b,4558s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,92p,1215b,4558s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/ec.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ntxsups-Regular.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/rntxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/rtxbmi-rev.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/mirza/Documents/Fax/iaweb/survey/survey.pdf (52 pages, 1182159 bytes).
+Output written on /home/mirza/Documents/iaweb_project/survey_documentation/survey/survey.pdf (52 pages, 1182308 bytes).
 PDF statistics:
  1568 PDF objects out of 1728 (max. 8388607)
  1428 compressed objects within 15 object streams
