@@ -16,7 +16,7 @@
 \label{chap:Intro}
 
 Going back, at the starting point of web development, its creators
-and designers haven't had the need to think about the look and design
+and designers have not had the need to think about the look and design
 of the page, because back then, their users and clients would mostly access
 the site via the same device, that being a personal desktop computer which would
 mostly share the same resolution and display size. That means that they mostly
@@ -33,7 +33,7 @@ Nowadays, the clients and users have a broad list of devices, which they can use
 to access a web page, be it a tablet, mobile phone, laptop and even TVs[1][2].    
 
 Basically, the most important thing is to make the web pages' user interface 
-as friendly as possible, so that the user doesn't lose much time navigating around.
+as friendly as possible, so that the user does not lose much time navigating around.
 And with that being said, web programmers need to automatically think about
 making the web pages in that way, while they are being accessed from those different
 devices mentioned[2].
@@ -62,8 +62,8 @@ $\bullet$ Fluid grid layouts
 
 \section{Media queries}
 
-Media queries are very important because with them we can specify 
-with what device we are accessing the web page. The query usually is made of
+Media queries are very important because with them it is possible to specify 
+with what device the web page is being accessed. The query usually is made of
 a media type, and some conditions which can check if the media type has some special
 property.
 \\
@@ -80,7 +80,7 @@ property.
     label=list:BibACMIEEE,
     ,
 ]
-    % An example of a media query, where we say that for a screen of size 850px or less, the background is black:
+    % An example of a media query, where one can say that for a screen of size 850px or less, the background is black:
 
     @media screen and (max-width: 600px) {
     body   {
@@ -90,17 +90,17 @@ property.
 \end{lstlisting}
 Basically it allows defining specific CSS rules, depending on the device used.
 
-From this example above, we specified with the parameter \emph{screen}
-the media type and using \emph{max-width} we determined the condition which
-affects the device of the user. Now, we have a lot of different conditions which
-we can use, and they are really helpful, because with them we can adjust our 
+From this example above, with the help of the parameter \emph{screen}
+the media type was specified and using \emph{max-width} the condition was determined which
+affects the device of the user. Now, there are many different conditions which
+can be used, and they are really helpful, because with them it is possible to adjust 
 display settings for every device there is. 
 
-For example, if the user is entering our website with his phone, we can automatically say that an image should have a lower resolution,
+For example, if the user is entering the website with his phone, it can be automatically said that an image should have a lower resolution,
 thus adjusting it better for his screen and saving some bandwith.
 
-Another example would be using \emph{display:none} with which we can completely hide some content that we do not want
-to be displayed.
+Another example would be using \emph{display:none} with which some content can completely be hidden that should not be 
+displayed.
 
 \begin{lstlisting}[%
     language = HTML, 
@@ -138,8 +138,8 @@ to be displayed.
 
 
 %
-If we would run this now in our browser, we wouldn't see the header, because
-we decided not to show it. If we changed \emph{display:none} to \emph{display:block}
+If this was ran in the browser, header would not be seen, because
+it was decided to not be shown. If \emph{display:none} was changed to \emph{display:block}
 our header would be visible.
 
 Include a list of \emph{all} the relevant papers and resources you
@@ -155,10 +155,10 @@ the bibliography.
 Normally, websites are constructed in a layout which is grid-built, because they are
 easier to handle in different kind of devices. Also what is specific
 for that kind of layout is that it is built using divs, HTML tables and so on. Now, on top of that
-responsive web design comes in play[5]. With it, we can use percentage-based element sizing which is easier than using pixels. 
+responsive web design comes in play[5]. With it, it is possible to use percentage-based element sizing which is easier than using pixels. 
 
 According by (Abdulrehman,2015) a flexible grid-layout is one of the foundations of responsive
-design. Using the term "grid" doesn't mean necessarily that a grid framework needs to be used.
+design. Using the term "grid" does not mean necessarily that a grid framework needs to be used.
 What it means is that specific CSS tricks are used for positioning. Also, he suggest that 
 using pixels for the measurement unit should be stopped, because pixels can vary. 
 
@@ -182,13 +182,13 @@ needs to be divided by the target element.
 
 With this approach, any type of media,images depending on the screen resolution
 will resize,collapse,crop and adjust accordingly to it, and to achieve this
-we can either use the same thing mentioned in the previous section, relative units,
-if the screen gets too small then hide the image completely or by cropping some parts
-of the image, again in the case if the screen gets too small[6].
+it is possible to use the same thing mentioned in the previous section, relative units,
+if the screen becomes too small then hide the image completely or by cropping some parts
+of the image, again in the case if the screen becomes too small[6].
 
 \subsection{Relative measurements} 
 
-Instead of using pixels, we use relative dimensions, percentage based. So instead of
+Instead of using pixels,relative dimensions can be used, percentage based. So instead of
 specifying the view and dimensions in pixels, one can specify for example 60\%, which would result
 in resizing or reshrinking of the image based on the resolution of the device accordingly to fill
 60\% of the page. 
@@ -218,7 +218,7 @@ in resizing or reshrinking of the image based on the resolution of the device ac
 \newpage
 \subsection{Cropping} 
 
-Also, another option that one can use is cropping, which crops the picture to a certain width
+Another option is cropping, which crops the picture to a certain width
 with the help of CSS. 
 
 \begin{figure}[h!]
@@ -249,9 +249,9 @@ with the help of CSS.
     \label{figWhol}
 \end{figure}
 
-In this Figure above, we can obviously see the result of tweaking the image a bit.
-With just a few CSS commands, we can crop the picture and if we are browsing the
-web site with a smaller device, the image doesn't have to be hidden, just its' size is changed.
+In this Figure above, it can be obviously seen that the result of tweaking the image a bit.
+With just a few CSS commands, it is possible to crop the picture and if someone is browsing the
+web site with a smaller device, the image does not have to be hidden, just its' size is changed.
 
 \begin{lstlisting}[%
     language = HTML, 
@@ -265,7 +265,7 @@ web site with a smaller device, the image doesn't have to be hidden, just its' s
      stringstyle=\color{blue}
     ,
 ]
-    % An example of a media query, where we say that for a screen of size 850px or less, the background is black:
+    % An example of a media query, where one can say that for a screen of size 850px or less, the background is black:
 
     figure{
      width:300px; /*container-width*/

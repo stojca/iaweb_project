@@ -19,40 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
-    \entry{Adobe-Illustrator}{booklet}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=71f698950c9cdadc3d19bb7411177a78}{%
-           family={{Adobe}},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{71f698950c9cdadc3d19bb7411177a78}
-      \strng{fullhash}{71f698950c9cdadc3d19bb7411177a78}
-      \strng{bibnamehash}{71f698950c9cdadc3d19bb7411177a78}
-      \strng{authorbibnamehash}{71f698950c9cdadc3d19bb7411177a78}
-      \strng{authornamehash}{71f698950c9cdadc3d19bb7411177a78}
-      \strng{authorfullhash}{71f698950c9cdadc3d19bb7411177a78}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{21}
-      \field{month}{11}
-      \field{title}{Illustrator}
-      \field{urlday}{21}
-      \field{urlmonth}{11}
-      \field{urlyear}{2016}
-      \field{year}{2016}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb http://adobe.com/products/illustrator.html
-      \endverb
-      \verb{url}
-      \verb http://adobe.com/products/illustrator.html
-      \endverb
-    \endentry
     \entry{Alley-CraftScientificPresentations-2Ed}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=d669f66c743a43cc1527e4c92005e461}{%
@@ -1209,40 +1175,6 @@
       \verb http://latex.tugraz.at/
       \endverb
     \endentry
-    \entry{Inkscape}{booklet}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=f94c773ead613bd434392fcb74685a7e}{%
-           family={{Inkscape}},
-           familyi={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{f94c773ead613bd434392fcb74685a7e}
-      \strng{fullhash}{f94c773ead613bd434392fcb74685a7e}
-      \strng{bibnamehash}{f94c773ead613bd434392fcb74685a7e}
-      \strng{authorbibnamehash}{f94c773ead613bd434392fcb74685a7e}
-      \strng{authornamehash}{f94c773ead613bd434392fcb74685a7e}
-      \strng{authorfullhash}{f94c773ead613bd434392fcb74685a7e}
-      \field{sortinit}{I}
-      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{21}
-      \field{month}{11}
-      \field{title}{Inkscape}
-      \field{urlday}{21}
-      \field{urlmonth}{11}
-      \field{urlyear}{2016}
-      \field{year}{2016}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://inkscape.org/
-      \endverb
-      \verb{url}
-      \verb https://inkscape.org/
-      \endverb
-    \endentry
     \entry{PlagiarismOrg}{booklet}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=d908fbfef371446412fc8ef592d8805d}{%
@@ -1274,6 +1206,34 @@
       \verb{url}
       \verb http://plagiarism.org/
       \endverb
+    \endentry
+    \entry{Inkscape}{booklet}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=271c375766c6387ce244b8534e37c1e3}{%
+           family={{ITU}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{271c375766c6387ce244b8534e37c1e3}
+      \strng{fullhash}{271c375766c6387ce244b8534e37c1e3}
+      \strng{bibnamehash}{271c375766c6387ce244b8534e37c1e3}
+      \strng{authorbibnamehash}{271c375766c6387ce244b8534e37c1e3}
+      \strng{authornamehash}{271c375766c6387ce244b8534e37c1e3}
+      \strng{authorfullhash}{271c375766c6387ce244b8534e37c1e3}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{11}
+      \field{title}{Internet users per 100 inhabitants 1997 to 2007}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
     \endentry
     \entry{DataAnalysisChallenges}{inproceedings}{}
       \name{author}{4}{}{%
@@ -2445,6 +2405,7 @@
       \field{dateera}{ce}
     \endentry
   \enddatalist
+  \missing{Adobe-Illustrator}
 \endrefsection
 \endinput
 
