@@ -44,7 +44,7 @@ Horizontal Scroll
 	When the allocated space is too small - horizontally, instead of hiding it, we create a horizontal scroll bar just for the table and let the user scroll away. 
 
 Horizontal Scroll Code
-	We set in the table's CSS code the attribute 'overflow-x' to the value 'auto'.
+	We set in the table's CSS code the attribute 'overflow-x' to the value 'auto' and set the table's 'max-width' attribute to some value.
 
 Fixed Header
 	When the table is vertically long, we fix the table's header to the top of the table's view. As we scroll down, we keep the table's header always visible.
@@ -71,7 +71,7 @@ Long Two Column Code
 	We set in the table tags the attribute 'display' to the value 'block', move the header rows away from the visible area, and force the table's <td> tags to behave like a 'row' instead by setting the attribute 'position' to the value 'relative'. Before this, however, we set its attribute 'position' to the value 'absolute'
 
 Recommendation
-	For responsive design and techniques you should employ on your tables, we suggest: Alternate row highlighting, sortableness, and expandable areas. 
+	For responsive design and techniques you should employ on your tables, we suggest: Alternate Row Highlighting, Long Two Column, and Fixed Header. 
 
 Thank you for your time!
 

@@ -1546,35 +1546,8 @@ $(document).ready(function(){
   display: inline-block;
   overflow-x: auto;
   white-space: nowrap;// optional - looks better for small cell values
+  max-width: 100%;
 }
-
-.rtable--flip {
-  display: flex;
-  overflow: hidden;
-}
-
-.rtable--flip thead {
-  display: flex;
-  flex-shrink: 0;
-}
-
-.rtable--flip tbody {
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
-.rtable--flip tr {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-
-.rtable--flip td,
-.rtable--flip th {
-  display: block;
-}
-
 </code></pre>
 </section>
 
@@ -2303,11 +2276,11 @@ table.flipscroll  tbody {
 <section>
   <h1>Recommendation</h1>
 
-    For responsive design and techniques we recommend:
+    For responsive design and techniques we recommend:<br><br>
 <ul>
   <li>
     <p>
-      <span>Alternate row highlighting</span>
+      <span>Alternate Row Highlighting</span>
     </p>
   </li>
   <li>
