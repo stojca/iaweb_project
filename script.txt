@@ -41,7 +41,7 @@ Hidden Columns Code
 	As you can see, we classify each column and give it a rank.
 
 Horizontal Scroll
-	When the allocated space is too small - horizontally, instead of hiding it, we create a horizontal scroll bar just for the table and let the user scroll away. 
+	When the allocated space is too small - horizontally, instead of hiding it, we create a horizontal scroll bar just for the table and let the user scroll away. This is different from viewport scrolling as we scroll _only_ through the table.
 
 Horizontal Scroll Code
 	We set in the table's CSS code the attribute 'overflow-x' to the value 'auto' and set the table's 'max-width' attribute to some value.
