@@ -25,6 +25,12 @@ Sortable
 Expandable Areas
 	Should we have any further information available about a table's object, making the row clickable and showing the extra information then, is a better alternative than trying to cram everything inside the table.
 
+Pagination
+	Were the table be too long, we can divide it into 'pages'. We view a certain amount of rows at a time. We are also able to sort through them.
+
+Pagination Code
+	We use jQuery to call the function 'dataTable()' on the table we want pagination to occur.
+
 Responsive Tables
 	Due to the increasing amount of screens and their varying shapes, sizes, and developers' space allocation when designing and implementing tables, responsive table techniques have been 'developed' by manipulating the table's columns and rows to provide an optimal experience for users across most mediums. Here are some techniques we would like to share.
 
@@ -45,12 +51,6 @@ Fixed Header
 
 Fixed Header Code
 	We set in the header rows' CSS code the attribute 'table layout' to the value 'fixed'
-
-Pagination
-	Were the table be too long, we can divide it into 'pages'. We view a certain amount of rows at a time. We are also able to sort through them.
-
-Pagination Code
-	We use jQuery to call the function 'dataTable()' on the table we want pagination to occur.
 
 Flip Scroll
 	When there are a lot of columns on an object-based table, we could instead transpose the table and allow horizontal scroll. We also fix the header to the first column. This allows us to horizontally scroll through elements and see, for example, all the features of each car at once, but one car at a time.
