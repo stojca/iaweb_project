@@ -1,0 +1,108 @@
+Responsive Tables
+	We will be presenting Responsive Tables
+
+Overview
+	These points are the sections we will be covering today: HTML table, desing, and responsive techniques.
+
+HTML Tables
+	These are the HTML tags that are used to create a table. Notice that there is a distinction between headers and body of the table. This separation is useful for table manipulation (CSS, Javascript).
+
+Example HTML Table
+	This is the basic HTML code of the table we will be using for our presentation. Notice again how we have distinguished the table's data into the <thead> and <tbody> tags.
+
+Good Table Design
+	Before any talks about responsiveness, we will be discussing some table design decisions that we believe should be in every table.
+
+Alternate Row Highlighting
+	Every even and odd row has its own color group. This allows the user to quickly gaze through a row and reduces the chance of the user going up and down row data without realizing it.
+
+Current Row Highlighting
+	When the user hovers a row, the entire row is highlighted with higher contrast from the other row. This ensures the benefit Alternate Row Highlighting tries to provide.
+
+Sortable
+	We should allow the user to sort through data, and thus we make the columns individually sortable. This increases the table's efficiency in providing information the user deems useful.
+
+Expandable Areas
+	Should we have any further information available about a table's object, making the row clickable and showing the extra information then, is a better alternative than trying to cram everything inside the table.
+
+Responsive Tables
+	Due to the increasing amount of screens and their varying shapes, sizes, and developers' space allocation when designing and implementing tables, responsive table techniques have been 'developed' by manipulating the table's columns and rows to provide an optimal experience for users across most mediums. Here are some techniques we would like to share.
+
+Hidden Columns - Selected by User
+	We allow the user to select the columns important to him, individually. We rank them ourselves first and if the space is not enough to fit the entire table, we hide columns with the lowest rank. The user, of course, can take control of this and opt to show columns we have already hidden.
+
+Hidden Columns Code
+	As you can see, we classify each column and give it a rank.
+
+Horizontal Scroll
+	When the allocated space is too small - horizontally, instead of hiding it, we create a horizontal scroll bar just for the table and let the user scroll away. 
+
+Horizontal Scroll Code
+	We set in the table's CSS code the attribute 'overflow-x' to the value 'auto'.
+
+Fixed Header
+	When the table is vertically long, we fix the table's header to the top of the table's view. As we scroll down, we keep the table's header always visible.
+
+Fixed Header Code
+	We set in the header rows' CSS code the attribute 'table layout' to the value 'fixed'
+
+Pagination
+	Were the table be too long, we can divide it into 'pages'. We view a certain amount of rows at a time. We are also able to sort through them.
+
+Pagination Code
+	We use jQuery to call the function 'dataTable()' on the table we want pagination to occur.
+
+Flip Scroll
+	When there are a lot of columns on an object-based table, we could instead transpose the table and allow horizontal scroll. We also fix the header to the first column. This allows us to horizontally scroll through elements and see, for example, all the features of each car at once, but one car at a time.
+
+Flip Scroll Code
+	The trick is to set the CSS attribute 'display' to the value 'inline-block' on the table rows, and the attribute 'white-space' to the value 'nowrap' on the table body.
+
+User Resizeable Columns
+	The main idea is to make table rows, user resizeable.
+
+User Resizeable Columns Code
+	We use jQuery to call the function 'resizeableColumns()' on the table we want resizeable columns
+
+Long Two Column
+	Just like Flip Scroll, we transpose the table. However, we do not allow vertical scroll, instead we create a 'Flip Scroll' for a single element and its features and then append to the bottom another table for the next element, and so on.
+
+Long Two Column Code
+	We set in the table tags the attribute 'display' to the value 'block', move the header rows away from the visible area, and force the table's <td> tags to behave like a 'row' instead by setting the attribute 'position' to the value 'relative'. Before this, however, we set its attribute 'position' to the value 'absolute'
+
+Recommendation
+	For responsive design and techniques you should employ on your tables, we suggest: Alternate row highlighting, sortableness, and expandable areas. 
+
+Thank you for your time!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

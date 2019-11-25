@@ -113,9 +113,7 @@ It consists of following elements:
 
 <section>
   <h1>Example HTML Table</h1>
-  <pre><code class="language-html">
-<xmp>
-  <table>
+  <pre><code class="language-html"><xmp><table>
   <thead>
     <tr>
       <th title="Car">Car</th>
@@ -993,7 +991,7 @@ $(document).ready(function(){
 <li>
 <span>Different techniques: </span>
 <ol>
-<li> Hidden Columns - Selected by user</li>
+<li> Hidden Columns - Selected by User</li>
 <li> Horizontal Scroll</li>
 <li> Fixed Header</li>
   <li>Pagination</li>
@@ -1008,7 +1006,7 @@ $(document).ready(function(){
 
 
 <section>
-<h1>Hidden Columns - Selected by user</h1>
+<h1>Hidden Columns - Selected by User</h1>
 <div class="tablesaw-overflow">
 <table class="responsiveStyle" data-tablesaw-mode="columntoggle">
   <thead>
@@ -1354,38 +1352,38 @@ $(document).ready(function(){
 
 <section>
 <h1>Horizontal Scroll Code</h1>
-<pre><code class="language-css">  .rtable {
-    display: inline-block;
-    overflow-x: auto;
-    white-space: nowrap;// optional - looks better for small cell values
-  }
+<pre><code class="language-css">.rtable {
+  display: inline-block;
+  overflow-x: auto;
+  white-space: nowrap;// optional - looks better for small cell values
+}
 
-  .rtable--flip {
-    display: flex;
-    overflow: hidden;
-  }
+.rtable--flip {
+  display: flex;
+  overflow: hidden;
+}
 
-  .rtable--flip thead {
-    display: flex;
-    flex-shrink: 0;
-  }
+.rtable--flip thead {
+  display: flex;
+  flex-shrink: 0;
+}
 
-  .rtable--flip tbody {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
+.rtable--flip tbody {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
 
-  .rtable--flip tr {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-  }
+.rtable--flip tr {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
 
-  .rtable--flip td,
-  .rtable--flip th {
-    display: block;
-  }
+.rtable--flip td,
+.rtable--flip th {
+  display: block;
+}
 
 </code></pre>
 </section>
@@ -1553,18 +1551,18 @@ $(document).ready(function(){
 
 <section>
 <h1>Fixed Header Code </h1>
-<pre><code class="language-css">  .fixedHeader tbody {
+<pre><code class="language-css">.fixedHeader tbody {
   display: block;
   overflow: auto; //specifies what should happen if content overflows an element's box
   height: 100%;
   width: 100%;
-  }
+ }
 
-  .fixedHeader thead tr, .fixedHeader tbody tr {
+.fixedHeader thead tr, .fixedHeader tbody tr {
   display: table;
   width: 100%;
   table-layout: fixed; //users will see the top of the table while the browser loads and renders rest of the table
-  }
+}
 </code></pre>
 </section>
 
@@ -1740,15 +1738,15 @@ $(document).ready(function(){
 
 <section>
   <h1>Pagination Code</h1>
-  <pre><code class="language-javascript">  //include these two files
-  ~/css/jquery.dataTables.min.css
-  ~/js/jquery.dataTables.min.js
+  <pre><code class="language-javascript">//include these two files
+~/css/jquery.dataTables.min.css
+~/js/jquery.dataTables.min.js
 
-  //call this single function
-  $(document).ready(function(){
-    //this plugin provides searching, sorting and pagination
-    $('#myTable').dataTable();
-  });
+//call this single function
+$(document).ready(function(){
+  //this plugin provides searching, sorting and pagination
+  $('#myTable').dataTable();
+});
 </code></pre>
 </section>
 
@@ -1913,18 +1911,18 @@ $(document).ready(function(){
 
 <section>
   <h1>Flip Scroll Code</h1>
-<pre><code class="language-css">  table.flipscroll  tbody tr { 
-    display: inline-block; 
-    vertical-align: top; 
-  }
+<pre><code class="language-css">table.flipscroll  tbody tr { 
+  display: inline-block; 
+  vertical-align: top; 
+}
 
-  table.flipscroll  tbody { 
-    display: block; 
-    width: auto; 
-    position: relative; 
-    overflow-x: auto; 
-    white-space: nowrap; 
-  }
+table.flipscroll  tbody { 
+  display: block; 
+  width: auto; 
+  position: relative; 
+  overflow-x: auto; 
+  white-space: nowrap; 
+}
 </code></pre>
 </section>
 
@@ -2254,45 +2252,45 @@ $(document).ready(function(){
   and (max-width: 760px), (min-device-width: 768px) 
   and (max-device-width: 1024px)  {
 
-    /* Force table to not be like tables anymore */
-    table, thead, tbody, th, td, tr {
-      display: block;
-    }
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
 
-    /* Hide table headers (but not display: none;, for accessibility) */
-    thead tr {
-      position: absolute;
-      top: -624.9375rem;
-      left: -624.9375rem;
-    }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -624.9375rem;
+    left: -624.9375rem;
+  }
 
-    tr {
-  margin: 0 0 1rem 0;
+  tr {
+    margin: 0 0 1rem 0;
   }
   
   tr:nth-child(odd) {
-  background: #ccc;
+    background: #ccc;
   }
   
   td {
-      /* Behave  like a "row" */
-      border: none;
-      border-bottom: 1px solid #eee;
-      position: relative;
-      padding-left: 50%;
-    }
-
-    td:before {
-      /* Now like a table header */
-      position: absolute;
-      /* Top/left values mimic padding */
-      top: 0;
-      left: 6px;
-      width: 45%;
-      padding-right: 0.625rem;
-      white-space: nowrap;
-    }
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
   }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 0.625rem;
+    white-space: nowrap;
+  }
+}
 </code></pre>
   </section>
 
@@ -2441,7 +2439,7 @@ $(document).ready(function(){
       </table>  
   </section>
 <section>
-  <h1>Thank you for your time!</h1>
+  <h1>Thank You for Your Time!</h1>
 </section>
 </body>
 </html>
