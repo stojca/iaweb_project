@@ -1,0 +1,25 @@
+.responsiveStyle tbody {
+    display: block;
+    overflow: auto;
+    width: 100%;
+}
+
+.responsiveStyle thead tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.responsiveStyle thead, .responsiveStyle tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.responsiveStyle thead {
+    width: 100%;
+}
+
+.responsiveStyle td {
+    width: 100%;
+}

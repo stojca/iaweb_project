@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="node_modules/tablesaw/dist/tablesaw.css">
 <link rel="stylesheet" href="horizontalscroll.css">
 <link rel="stylesheet" href="fixedHeader.css">
+<link rel="stylesheet" href="responsive-global.css">
 <link rel="stylesheet" href="fixed-table.css">
 <link rel="stylesheet" href="collapserow.css">
 <link rel="stylesheet" href="resizecolumns.css">
@@ -202,7 +203,7 @@ It consists of following elements:
 <section>
   <h1>Alternate Row Highlighting</h1>
 
-  <table class="alt">
+  <table class="alt responsiveStyle">
     <thead>
     <tr>
       <th title="Car">Car</th>
@@ -362,7 +363,7 @@ It consists of following elements:
 <section>
   <h1>Current Row Highlighting</h1>
   <p>Assuming user has a pointing device</p>
-  <table class="highlight">
+  <table class="highlight responsiveStyle">
     <thead>
     <tr>
       <th title="Car">Car</th>
@@ -520,7 +521,7 @@ It consists of following elements:
 
 <section>
   <h1>Sortable</h1>
-  <table data-tablesaw-sortable >
+  <table data-tablesaw-sortable class="responsiveStyle">
     <thead>
     <tr>
       <th title="Car" data-tablesaw-sortable-col data-tablesaw-sortable-default-col>Car</th>
@@ -696,7 +697,7 @@ $(document).ready(function(){
 
 
 <h1>Expandable Areas</h1>
-<table id="report">
+<table id="report" class="responsiveStyle">
   <thead>
     <tr>
       <th title="Car">Car</th>
@@ -986,7 +987,7 @@ $(document).ready(function(){
   <h1>Pagination</h1>
 
   <div class="table-responsive">
-    <table id="myTable" class="display table" width="100%">
+    <table id="myTable" class="display table responsiveStyle" width="100%">
       <thead>
       <tr>
         <th title="Car">Car</th>
@@ -1194,7 +1195,7 @@ $(document).ready(function(){
 <section>
 <h1>Hidden Columns - Selected by user</h1>
 <div class="tablesaw-overflow">
-<table class="fixedHeader" data-tablesaw-mode="columntoggle">
+<table class="responsiveStyle" data-tablesaw-mode="columntoggle">
   <thead>
     <tr>
       <th data-tablesaw-priority="persist">Car</th>
@@ -1931,7 +1932,7 @@ $(document).ready(function(){
 <section>
   <h1>User Resizeable Columns</h1>
   <html lang="en">
-  <table class="rcl fixedHeader" id="rcl">
+  <table class="rcl responsiveStyle" id="rcl">
   <thead>
     <tr>
       <th title="Car"><div class = "resizecell">Car</div></th>
@@ -2120,7 +2121,7 @@ $(document).ready(function(){
   <h1>Long Two Column</h1>
 
     
-      <table class="fixedHeader collapse" id="resizeablecolumns">
+      <table class="responsiveStyle collapse" id="resizeablecolumns">
         <thead role="rowgroup">
           <tr role="row">
             <th role="columnheader">Car</th>
