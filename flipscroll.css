@@ -1,5 +1,6 @@
 table.flipscroll{
-	width: 400px;
+	width: 100%;
+	overflow-x: auto;
 }
 table.flipscroll th {
 	text-align: left;
@@ -15,9 +16,10 @@ table.flipscroll td:first-child{
 
 @media only screen and (max-width: 84rem) {
 	table.flipscroll  table { 
-		width: 100%; 
+		max-width: 100%; 
 		border-collapse: collapse; 
 		border-spacing: 0; 
+		overflow-x: auto;
 	}
  
 	table.flipscroll  th,	td { 
@@ -27,12 +29,6 @@ table.flipscroll td:first-child{
 	table.flipscroll  th { 
 		text-align: left; 
 		margin-bottom: 0.138rem;
-	}
-	
-	table.flipscroll table { 
-		display: block; 
-		position: relative; 
-		width: 100%; 
 	}
 
 	table.flipscroll thead { 
@@ -44,8 +40,9 @@ table.flipscroll td:first-child{
 		display: block; 
 		width: auto; 
 		position: relative; 
-		overflow-x: auto; 
 		white-space: nowrap; 
+		overflow-x: auto;
+		max-width: 60rem;
 	}
 
 	table.flipscroll  thead tr { 
