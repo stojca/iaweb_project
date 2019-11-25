@@ -6,7 +6,7 @@ table.highlightcolumn .column1:hover ~ .column1:nth-child(5) ~ .column1:nth-chil
   background-color: #ffa;
 }
 
-table.highlightcolumn td, th {
+table.highlightcolumn td, table.highlight th {
   position: relative;
 }
 table.highlightcolumn td:hover::after,
