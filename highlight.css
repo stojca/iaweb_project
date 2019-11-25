@@ -6,7 +6,7 @@ table.highlight tr:hover {
   background-color: #ffa;
 }
 
-table.highlight td, th {
+table.highlight td, table.highlight th {
   position: relative;
 }
 table.highlight td:hover::after,
