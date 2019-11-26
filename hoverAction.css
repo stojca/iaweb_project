@@ -5,6 +5,7 @@ table.hoverAction td {
   }
   table.hoverAction td:hover {
   background-size:  100% 100%;
-  transform:scale(1.0,1.5);
+  transform:scale(1.0,1.17);
   transform-origin:center;
+  font-size: 3rem;
   }
