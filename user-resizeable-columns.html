@@ -5,10 +5,14 @@
 	<script type="text/javascript"  src="jquery.min.js"></script>
 	<script type="text/javascript"  src="colResizable-1.6.min.js"></script>
 	<script src="jQuery.resizableColumns.js"></script>
-	<link rel="stylesheet" type="text/css" href="tmp.css">
+	<link rel="stylesheet" type="text/css" href="user-resizeable-columns.css">
+  <link rel="stylesheet" href="alternate.css">
+  <script type="text/javascript"  src="prism.js"></script>
+  <link rel="stylesheet" href="prism.css">
 </head>
 <body>
-<table class="rcl" id="rcl">
+  <h1>User Resizeable Columns- JS</h1>
+<table class="rcl alt" id="rcl">
   <thead>
     <tr>
       <th title="Car">Car</th>
@@ -158,19 +162,22 @@
   </tbody>
 </table>
 <script type="text/javascript">
-    $(function() {
-  var thHeight = $(".rcl th:first").height();
-  $(".rcl th").resizable({
-      handles: "e",
-      minHeight: thHeight,
-      maxHeight: thHeight,
-      minWidth: 40,
-      resize: function (event, ui) {
-        var sizerID = "#" + $(event.target).attr("id") + "-sizer";
-        $(sizerID).width(ui.size.width);
-      }
-  });
-});
+    $(function(){
+    $('.rcl').resizableColumns();
+  })
   </script>
 </body>
+
+<section>
+<h1>User Resizeable Columns Code - JS</h1>
+<pre><code class="language-javascript">~/js/jQuery.resizableColumns.js
+
+$(function(){
+  $('.rcl').resizeableColumns();
+});
+</code></pre>
+
+<p>References: <a href="https://www.jqueryscript.net/table/jQuery-Plugin-Resizable-Table-Columns.html">https://www.jqueryscript.net/table/jQuery-Plugin-Resizable-Table-Columns.html</a></p>
+</section>
+
 </html>
