@@ -114,6 +114,219 @@ the alignment of text in the table. There are other keywords whom can be used to
 and many other things of table columns.  
  
 
+
+
+
+\section{Good Table Design}
+Now, there are certain guidelines which can help a developer, or if that person can be called that way,
+table maintainer, make a table and its design better. By that is meant that there are some interesting ways
+where a little of simple CSS can be used to your advantage to make your table stand out.
+
+
+\subsection{Alternate row highlighting}
+When presented a table with a lot of entries, it can be hard to look at. Scrolling through numerous rows can be frustrating.
+With this CSS trick, it can be a bit easier, atleast for the eyes if nothing else. The idea is to color every even row, while leaving
+the odd ones in tact. 
+As said, it is pretty simple, and requires only two lines of CSS, but also pretty useful.
+
+
+\begin{lstlisting}[%
+    language = HTML, 
+    xleftmargin=0cm,              % no extra margins for floats
+    xrightmargin=0cm,             % no extra margins for floats
+    language=biblatex,
+    basicstyle=\footnotesize\ttfamily,
+    frame=shadowbox,
+    numbers=left,
+    label=list:BibACMIEEE,
+     stringstyle=\color{blue}
+    ,
+]
+    % An example of using simple CSS to color table rows:
+
+	table.alt tr:nth-child(even) {background: #CCC}
+	table.alt tr:nth-child(odd) {background: #FFF}
+
+\end{lstlisting}
+
+\newpage
+And now, at the end, this is the final result:
+\begin{figure}[H]
+    \centering
+  
+    {%
+    \includegraphics[width=\linewidth]
+    {alt_t.jpeg}%
+    \label{alig1}%
+    }
+
+    
+    \caption[Alternate row highlighting]
+    {
+      
+    \imgcredit{Screenshot taken by the author.}
+    }
+    \label{figWhol}
+\end{figure}
+
+
+\subsection{Current Row Highlighting}
+Now again, talking about a big table, and going through it, one may 
+easily becomes lost and wouldn't know in which row he is at the moment, which can be
+pretty stressful. Again with the help of some CSS, the lives of the users' is made easier.
+
+\begin{lstlisting}[%
+    language = HTML, 
+    xleftmargin=0cm,              % no extra margins for floats
+    xrightmargin=0cm,             % no extra margins for floats
+    language=biblatex,
+    basicstyle=\footnotesize\ttfamily,
+    frame=shadowbox,
+    numbers=left,
+    label=list:BibACMIEEE,
+     stringstyle=\color{blue}
+    ,
+]
+    % An example of using simple CSS to highlight table rows:
+
+	table {
+      overflow: hidden;
+	}
+
+	tr:hover {
+	  background-color: #ffa;
+	}
+
+	td, th {
+	  position: relative;
+	}
+	td:hover::after,
+	th:hover::after {
+	  content: "";
+	  position: absolute;
+	  background-color: #ffa;
+	  left: 0;
+	  width: 100%;
+	  z-index: -1;
+	}
+
+\end{lstlisting}
+
+
+\newpage
+
+And again, it is shown how a small amount of CSS can be helpful.
+The result:
+\begin{figure}[H]
+    \centering
+  
+    {%
+    \includegraphics[width=\linewidth]
+    {current_hl.jpeg}%
+    \label{alig1}%
+    }
+
+    
+    \caption[Current Row Highlighting]
+    {
+      
+    \imgcredit{Screenshot taken by the author.}
+    }
+    \label{figWhol}
+\end{figure}
+
+
+
+
+\subsection{Pagination (With Sort and Search)}
+The amount of data increases every second, over 2.5 quintillion bytes of data are made every day and there is also estimation that in 2020 will be created 1.7MB of data in every second for each person in the world. 
+\newline 
+Tables are sometimes one of the possible places for saving large sets of data.
+This type of tables should consists of different types of features that enables users easier operations of maintaining.
+\newline
+Were the table be too long, we can divide it into 'pages'. We view a certain amount of rows at a time.
+\newline
+
+We provided this example of good table design with different features called pagination, because the most important feature of this technique is pagination.
+With this feature is possible to determine the number of rows per page, previous  and next page navigation are also available. 
+Every user has also possibility to filter results by text search and in this way find the desired row.
+There is also possibility to sort table content in an descending or ascending order.
+
+This solution works for following browsers:
+\newline $\bullet$ Google Chrome
+\newline $\bullet$ Mozzila Firefox
+\newline $\bullet$ Internet Explorer
+\newline $\bullet$ Opera
+\newline $\bullet$ Microsoft Edge
+
+For the implementation we used plug-in for the jQuery Javascript library called DataTables.
+
+
+\begin{lstlisting}[%
+    language = HTML, 
+    xleftmargin=0cm,              % no extra margins for floats
+    xrightmargin=0cm,             % no extra margins for floats
+    language=biblatex,
+    basicstyle=\footnotesize\ttfamily,
+    frame=shadowbox,
+    numbers=left,
+    label=list:BibACMIEEE,
+     stringstyle=\color{blue}
+    ,
+]
+    % An example of using Javascript plugin DataTable():
+    %Include these two files in order to include additional advanced features to any HTML table
+    %cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css
+    %cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js
+
+    $(document).ready(function(){
+        $('#myTable').dataTable(); //this plugin provides searching, sorting and pagination
+ });
+
+\end{lstlisting}
+
+Table is initilaized with "myTable" id and this id is used in ready function() to assign dataTable funcionality to our HTML table instance. 
+
+Following image represents html table with sorted Price column and 10/12 entries:
+\begin{figure}[H]
+    \centering
+  
+    {%
+    \includegraphics[width=\linewidth]
+    {pagination_2.png}%
+    \label{alig1}%
+    }
+
+    
+    \caption[Pagination with sort option]
+    {
+      
+    \imgcredit{Screenshot taken by the author.}
+    }
+    \label{figWhol}
+\end{figure}
+
+Following image represents html table with searched term:
+\begin{figure}[H]
+    \centering
+  
+    {%
+    \includegraphics[width=\linewidth]
+    {pagination_1.png}%
+    \label{alig1}%
+    }
+
+    
+    \caption[Pagination with search option]
+    {
+      
+    \imgcredit{Screenshot taken by the author.}
+    }
+    \label{figWhol}
+\end{figure}
+
+\newpage
+
 \section{Responsive Tables}
 
 Data tables can contain many information, which makes displaying that data quite messy and hard to
@@ -132,7 +345,7 @@ to view the whole table [9].
     }
 
     
-    \caption[]
+    \caption[Before reponsive]
     {
       
     \imgcredit{https://css-tricks.com/responsive-data-tables/.}
@@ -209,7 +422,7 @@ And now, the end result would be the following one:
     }
 
     
-    \caption[Abstract Clock Towers]
+    \caption[After reposnsive]
     {
       
     \imgcredit{https://css-tricks.com/responsive-data-tables/.}
@@ -218,63 +431,29 @@ And now, the end result would be the following one:
 \end{figure}
 
 
-\section{Good Table Design}
-Now, there are certain guidelines which can help a developer, or if that person can be called that way,
-table maintainer, make a table and its design better. By that is meant that there are some interesting ways
-where a little of simple CSS can be used to your advantage to make your table stand out.
+\subsection{Horizontal Scroll}
+When the allocated space is too small - horizontally, instead of hiding it, we create a horizontal scroll bar just for the table and let the user scroll away. 
+\newline 
+
+Horizontal Scrolling represents a technique that resizes the table  
+into columns at small screen resoultion. The rows can be scrolled from left to right with fixed first row.
+This is different from viewport scrolling as we scroll only through the table.
+\newline 
+
+It is very useful technique when presenting large data sets with identifiers in the first column. Then is very easy for every user to compare data content with multiple identifiers.
 
 
-\subsection{Alternate row highlighting}
-When presented a table with a lot of entries, it can be hard to look at. Scrolling through numerous rows can be frustrating.
-With this CSS trick, it can be a bit easier, atleast for the eyes if nothing else. The idea is to color every even row, while leaving
-the odd ones in tact. 
-As said, it is pretty simple, and requires only two lines of CSS, but also pretty useful.
-
-
-\begin{lstlisting}[%
-    language = HTML, 
-    xleftmargin=0cm,              % no extra margins for floats
-    xrightmargin=0cm,             % no extra margins for floats
-    language=biblatex,
-    basicstyle=\footnotesize\ttfamily,
-    frame=shadowbox,
-    numbers=left,
-    label=list:BibACMIEEE,
-     stringstyle=\color{blue}
-    ,
-]
-    % An example of using simple CSS to color table rows:
-
-	table.alt tr:nth-child(even) {background: #CCC}
-	table.alt tr:nth-child(odd) {background: #FFF}
-
-\end{lstlisting}
-
-\newpage
-And now, at the end, this is the final result:
-\begin{figure}[H]
-    \centering
-  
-    {%
-    \includegraphics[width=\linewidth]
-    {alt_t.jpeg}%
-    \label{alig1}%
-    }
-
-    
-    \caption[Abstract Clock Towers]
-    {
-      
-    \imgcredit{Screenshot taken by the author.}
-    }
-    \label{figWhol}
-\end{figure}
-
-
-\subsection{Current Row Highlighting}
-Now again, talking about a big table, and going through it, one may 
-easily becomes lost and wouldn't know in which row he is at the moment, which can be
-pretty stressful. Again with the help of some CSS, the lives of the users' is made easier.
+This solution works for following browsers:
+\newline $\bullet$ Google Chrome
+\newline $\bullet$ Mozzila Firefox
+\newline $\bullet$ Internet Explorer
+\newline $\bullet$ Opera
+\newline $\bullet$ Microsoft Edge
+\newline
+\newline It is impossible to find one size that fits all solution. Data comparing is very difficult on the small screens.
+There are a lot of possible workarounds for this issue, but no one can solve this problem. 
+Our implementation of horizontal scrolling creates table elements scrollable, but also can not solve the issue to the end.
+We will explain all important css-properties that creates a responsive table with horizontal scrolling.
 
 \begin{lstlisting}[%
     language = HTML, 
@@ -288,47 +467,43 @@ pretty stressful. Again with the help of some CSS, the lives of the users' is ma
      stringstyle=\color{blue}
     ,
 ]
-    % An example of using simple CSS to highlight table rows:
+.rtable {
 
-	table {
-      overflow: hidden;
-	}
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
 
-	tr:hover {
-	  background-color: #ffa;
-	}
+    overflow-x: auto;
 
-	td, th {
-	  position: relative;
-	}
-	td:hover::after,
-	th:hover::after {
-	  content: "";
-	  position: absolute;
-	  background-color: #ffa;
-	  left: 0;
-	  width: 100%;
-	  z-index: -1;
-	}
+    // optional - looks better for small cell values
+    white-space: nowrap;
+
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 \end{lstlisting}
 
+This css code represents css class .rtable used in the case when container is not resized.
+With display: inline-block all items are listed horizontally instead of vertically.
+Vertical-align property maintains how elements set next to each other in a line.
+The overflow property determines whether to crop content or to add scroll bars (along the x-axis) when a table's content is too big to satisfy some screen resolution.
+We can use white-space: nowrap property as optional for small cell values.
+Css border properties are used to control borders into a table.  
 
-\newpage
+Following image represents html table with horizontal scroll:
 
-And again, it is shown how a small amount of CSS can be helpful.
-The result:
 \begin{figure}[H]
     \centering
   
     {%
-    \includegraphics[width=\linewidth]
-    {current_hl.jpeg}%
+    \includegraphics[width=1\linewidth]
+    {horizontal.png}%
     \label{alig1}%
     }
 
     
-    \caption[Abstract Clock Towers]
+    \caption[Horizontal Scroll]
     {
       
     \imgcredit{Screenshot taken by the author.}
@@ -337,19 +512,86 @@ The result:
 \end{figure}
 
 
-\subsection{Inclusive}
+\subsection{Fixed Header}
+When the table is vertically long, we fix the table's header to the top of the table's view.
+As we scroll down, we keep the table's header always visible.
+\newline
 
-\subsection{Overlapping}
+It is very useful to have the fixed header (first row fixed) on the top of the table, when presenting tables with a particularly larage data set. 
+This helps users to quickly determine what every column identify rather than need to scroll back to the top of the table every time. 
+\newline Fixed Header provides background on what column the user is on.
+This is very effective feature that makes our life easier.
 
+This solution works for following browsers:
+\newline $\bullet$ Google Chrome
+\newline $\bullet$ Mozzila Firefox
+\newline $\bullet$ Internet Explorer
+\newline $\bullet$ Opera
+\newline $\bullet$ Microsoft Edge
 
+\begin{lstlisting}[%
+    language = HTML, 
+    xleftmargin=0cm,              % no extra margins for floats
+    xrightmargin=0cm,             % no extra margins for floats
+    language=biblatex,
+    basicstyle=\footnotesize\ttfamily,
+    frame=shadowbox,
+    numbers=left,
+    label=list:BibACMIEEE,
+     stringstyle=\color{blue}
+    ,
+]
+.fixedHeader tbody {
+    display: block;
+    overflow: auto;
+    width: 100%;
+}
 
+.fixedHeader thead tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
 
+.fixedHeader thead, .fixedHeader tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
 
+.fixedHeader thead {
+    width: calc( 100% - 0.6em )
+}
 
-\section{Evaluating Hierarchy Browsers}
+.fixedHeader td {
+    width: 100%;
+}
 
-\subsection{Formative Studies}
+\end{lstlisting}
 
-\subsection{Comparative Studies}
+Tbody element is determined with the type of rendering box. 
+With overflow: auto scrollbar will appear along y-axis.
+All thead and tbody rows will behave as table elements.
+Fixed table layout algorithm is used to control table and column widths.
+Width for almost every table element is static, just the header has non-static width.
+The width of header is determined with calc() function and in this way is solved the main issue in this responsive technique.
 
+Following image represents html table with fixed header:
 
+\begin{figure}[H]
+    \centering
+  
+    {%
+    \includegraphics[width=1\linewidth]
+    {fixed_header.png}%
+    \label{alig1}%
+    }
+
+    
+    \caption[Fixed Header]
+    {
+      
+    \imgcredit{Screenshot taken by the author.}
+    }
+    \label{figWhol}
+\end{figure}
