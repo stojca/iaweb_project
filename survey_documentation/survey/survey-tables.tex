@@ -31,6 +31,7 @@ point for constructing a table. Now, HTML tables consist of columns and rows, li
 tables. For rows, the tag  \textit{<tr>} is used, whereas for table header \textit{<th>} tag
 is used. Normally, table headers are positioned in the center and are bold. For table cells
 \textit{<td>} tag is used [7]. 
+\newpage
 
 \begin{lstlisting}[%
     language = CSS, 
@@ -149,7 +150,7 @@ As said, it is pretty simple, and requires only two lines of CSS, but also prett
 
 \end{lstlisting}
 
-\newpage
+
 And now, at the end, this is the final result:
 \begin{figure}[H]
     \centering
@@ -170,6 +171,7 @@ And now, at the end, this is the final result:
 \end{figure}
 
 
+\newpage
 \subsection{Current Row Highlighting}
 Now again, talking about a big table, and going through it, one may 
 easily becomes lost and wouldn't know in which row he is at the moment, which can be
@@ -213,8 +215,6 @@ pretty stressful. Again with the help of some CSS, the lives of the users' is ma
 \end{lstlisting}
 
 
-\newpage
-
 And again, it is shown how a small amount of CSS can be helpful.
 The result:
 \begin{figure}[H]
@@ -235,8 +235,173 @@ The result:
     \label{figWhol}
 \end{figure}
 
+\subsection{Expandable Areas}
+Should we have any further information available about a table's object, 
+making the row clickable and showing the extra information then, is a better 
+alternative than trying to cram everything inside the table. In the following code sipped
+we see how we put addtion data in html code.
+\newpage
+\begin{lstlisting}[%
+    language = HTML, 
+    xleftmargin=0cm,              % no extra margins for floats
+    xrightmargin=0cm,             % no extra margins for floats
+    language=biblatex,
+    basicstyle=\footnotesize\ttfamily,
+    frame=shadowbox,
+    numbers=left,
+    label=list:BibACMIEEE,
+     stringstyle=\color{blue}
+    ,
+]
+<tr>
+      <td>2019 Acura RDX</td>
+      <td>Acura</td>
+      <td style="text-align: right">2.0</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">272</td>
+      <td style="text-align: right">280</td>
+      <td style="text-align: right">9.8:1</td>
+      <td style="text-align: right">28</td>
+      <td style="text-align: right">33,600.00</td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <h4>Additional information about the car</h4>
 
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Acura_RDX">Acura RDX</a>
+          </li>
+          <li><a href="https://www.acura.ca/rdx">Acura RDX official webpage</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+\end{lstlisting}
+To implement this table feature we need to implement the combination of javascript and 
+css. In the further codes sipped the javascript and css code can be reviewed. 
+JavaScript Code
+\begin{lstlisting}[%
+    language = HTML, 
+    xleftmargin=0cm,              % no extra margins for floats
+    xrightmargin=0cm,             % no extra margins for floats
+    language=biblatex,
+    basicstyle=\footnotesize\ttfamily,
+    frame=shadowbox,
+    numbers=left,
+    label=list:BibACMIEEE,
+     stringstyle=\color{blue}
+    ,
+]
+<script type="text/javascript">
+$(document).ready(function(){
 
+  $("#report tr:odd").addClass("odd");
+  $("#report tr:not(.odd)").hide();
+  $("#report tr:first-child").show();
+
+  $("#report tr.odd").click(function () {
+    var trToToggle = $(this).next("tr");
+    $("#report tr:not(.odd)").not(trToToggle).hide();
+    $("#report tr:first-child").show();
+    $(trToToggle).toggle();
+    $(this).find(".arrow").toggleClass("up");
+  });
+})
+</script>
+
+\end{lstlisting}
+\newpage
+
+\begin{lstlisting}[%
+    language = HTML, 
+    xleftmargin=0cm,              % no extra margins for floats
+    xrightmargin=0cm,             % no extra margins for floats
+    language=biblatex,
+    basicstyle=\footnotesize\ttfamily,
+    frame=shadowbox,
+    numbers=left,
+    label=list:BibACMIEEE,
+     stringstyle=\color{blue}
+    ,
+]
+#report {
+    border-collapse:collapse;
+}
+#report h4 {
+    margin:0px;
+    padding:0px;
+}
+#report img {
+    float:right;
+}
+#report ul {
+    margin:10px 0 10px 40px;
+    padding:0px;
+}
+#report th {
+    background:#7CB8E2  repeat-x scroll center left;
+    color:#fff;
+    padding:7px 15px;
+    text-align:left;
+}
+#report td {
+    background:#C7DDEE none repeat-x scroll center left;
+    color:#000;
+    padding:7px 15px;
+}
+#report tr.odd td {
+    cursor:pointer;
+}
+#report div.arrow {
+    background:transparent url(arrows.png) no-repeat scroll 0px -16px;
+    width:16px;
+    height:16px;
+    display:block;
+}
+#report div.up {
+    background-position:0px 0px;
+}
+\end{lstlisting}
+
+Now we will see how it look like in partice on html page. It is compiled localy. In the figure 2.3 
+we can see how our table look when we see it in html page.
+\begin{figure}[H]
+    \centering
+  
+    {%
+    \includegraphics[width=\linewidth]
+    {expandable_area_before.png}%
+    \label{alig1}%
+    }
+
+    
+    \caption[Expandable Areas]
+    {
+      
+    \imgcredit{Screenshot taken by the author.}
+    }
+    \label{figWhol}
+\end{figure}
+Pressing to some of cell in row or colums we get the additional infomrmation, that we defined
+in html code. This is shown in the figure 2.4.
+\begin{figure}[H]
+    \centering
+  
+    {%
+    \includegraphics[width=\linewidth]
+    {expandable_areas_after.png}%
+    \label{alig1}%
+    }
+
+    
+    \caption[Expandable Areas]
+    {
+      
+    \imgcredit{Screenshot taken by the author.}
+    }
+    \label{figWhol}
+\end{figure}
 
 \subsection{Pagination (With Sort and Search)}
 The amount of data increases every second, over 2.5 quintillion bytes of data are made every day and there is also estimation that in 2020 will be created 1.7MB of data in every second for each person in the world. 
@@ -328,6 +493,30 @@ Following image represents html table with searched term:
 \newpage
 
 \section{Responsive Tables}
+
+Due to the increasing amount of screens and their varying shapes, sizes, 
+and developers' space allocation when designing and implementing tables, 
+responsive table techniques have been 'developed' by manipulating the table's 
+columns and rows to provide an optimal experience for users across most mediums. It means the row and 
+columns can be repositioned, 
+resized, collapsed, minimized, etc..
+Here are some techniques we would like to decsribe in the following chapter:
+\newline
+\newline $\bullet$ Hidden Columns - Selected by User
+\newline $\bullet$ Horizontal Scroll
+\newline $\bullet$ Fixed Header
+\newline $\bullet$ Flip Scroll
+\newline $\bullet$ User Resizeable Columns
+\newline $\bullet$ Long Two Column
+
+In literatury the mostly is find online("on internet") there are a lot of techniques i.e. 
+there are a lot of names for very similar or the same techniques. We tried to take the best ones, 
+to name it on most resonable way and to describe them. 
+
+\newpage
+\section{Responsive Tables Techniques}
+
+
 
 Data tables can contain many information, which makes displaying that data quite messy and hard to
 look at. So by using responsive design, a big favor is done to the clients,
@@ -430,8 +619,8 @@ And now, the end result would be the following one:
     \label{figWhol}
 \end{figure}
 
-
-\subsection{Horizontal Scroll}
+\newpage
+\section{Horizontal Scroll}
 When the allocated space is too small - horizontally, instead of hiding it, we create a horizontal scroll bar just for the table and let the user scroll away. 
 \newline 
 
@@ -511,8 +700,8 @@ Following image represents html table with horizontal scroll:
     \label{figWhol}
 \end{figure}
 
-
-\subsection{Fixed Header}
+\newpage
+\section{Fixed Header}
 When the table is vertically long, we fix the table's header to the top of the table's view.
 As we scroll down, we keep the table's header always visible.
 \newline
@@ -595,3 +784,5 @@ Following image represents html table with fixed header:
     }
     \label{figWhol}
 \end{figure}
+
+

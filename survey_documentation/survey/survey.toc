@@ -1,6 +1,7 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {british}{}
 \contentsline {chapter}{Contents}{i}{chapter*.1}% 
+\contentsline {chapter}{List of Figures}{iii}{chapter*.2}% 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}How to achieve Responsive Web Design}{1}{section.1.1}% 
 \contentsline {section}{\numberline {1.2}Media queries}{1}{section.1.2}% 
@@ -8,13 +9,17 @@
 \contentsline {section}{\numberline {1.4}Flexible images and media}{3}{section.1.4}% 
 \contentsline {subsection}{\numberline {1.4.1}Relative measurements}{3}{subsection.1.4.1}% 
 \contentsline {subsection}{\numberline {1.4.2}Cropping}{4}{subsection.1.4.2}% 
-\contentsline {chapter}{\numberline {2}HTML Tables}{7}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Structure of tables}{7}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Good Table Design}{8}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Alternate row highlighting}{8}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Current Row Highlighting}{9}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}Pagination (With Sort and Search)}{10}{subsection.2.2.3}% 
-\contentsline {section}{\numberline {2.3}Responsive Tables}{12}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Horizontal Scroll}{14}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Fixed Header}{15}{subsection.2.3.2}% 
+\contentsline {chapter}{\numberline {2}HTML Tables}{5}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Structure of tables}{5}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Good Table Design}{7}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Alternate row highlighting}{7}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Current Row Highlighting}{8}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Expandable Areas}{8}{subsection.2.2.3}% 
+\contentsline {subsection}{\numberline {2.2.4}Pagination (With Sort and Search)}{11}{subsection.2.2.4}% 
+\contentsline {section}{\numberline {2.3}Responsive Tables}{13}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}Responsive Tables Techniques}{14}{section.2.4}% 
+\contentsline {section}{\numberline {2.5}Horizontal Scroll}{17}{section.2.5}% 
+\contentsline {section}{\numberline {2.6}Fixed Header}{19}{section.2.6}% 
+\contentsline {chapter}{\numberline {3}Recommendation}{21}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Recommendation}{21}{section.3.1}% 
 \contentsfinish 

@@ -1,17 +1,21 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {british}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Relative Image Dimensions}}{3}{figure.caption.6}% 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Image Cropping}}{4}{figure.caption.7}% 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Relative Image Dimensions}}{3}{figure.caption.4}% 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Image Cropping}}{4}{figure.caption.5}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Picture with original size }}}{4}{subfigure.2.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Picture when cropped }}}{4}{subfigure.2.2}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Alternate row highlighting}}{9}{figure.caption.8}% 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Current Row Highlighting}}{10}{figure.caption.9}% 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Pagination with sort option}}{11}{figure.caption.10}% 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Pagination with search option}}{11}{figure.caption.11}% 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Before reponsive}}{12}{figure.caption.12}% 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces After reposnsive}}{14}{figure.caption.13}% 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Horizontal Scroll}}{15}{figure.caption.14}% 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Fixed Header}}{17}{figure.caption.15}% 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Alternate row highlighting}}{7}{figure.caption.6}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Current Row Highlighting}}{8}{figure.caption.7}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Expandable Areas}}{11}{figure.caption.8}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Expandable Areas}}{11}{figure.caption.9}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Pagination with sort option}}{12}{figure.caption.10}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Pagination with search option}}{12}{figure.caption.11}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Before reponsive}}{14}{figure.caption.12}% 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces After reposnsive}}{16}{figure.caption.13}% 
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Horizontal Scroll}}{18}{figure.caption.14}% 
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Fixed Header}}{20}{figure.caption.15}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Recommendation Techniques}}{21}{figure.caption.16}% 
 \contentsfinish 
