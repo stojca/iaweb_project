@@ -3,11 +3,11 @@
 %  File    :  survey-browsers.tex
 %
 %  Author  :  Keith Andrews, IICM, TU Graz, Austria
-% 
+%
 %  Created :  27 May 1993
-% 
+%
 %  Changed :  16 Nov 2010
-% 
+%
 %----------------------------------------------------------------
 
 
@@ -16,9 +16,9 @@
 \label{HTML5 Tables}
 
 In case of having much data to display, or data which is better of in a grid, HTML tables
-are the best solution available. Before, tables have been used mostly for the layout of 
+are the best solution available. Before, tables have been used mostly for the layout of
 HTML web-sites and it is not a good practice to do so, mainly because of two things:
- 
+
 
 $\bullet$ Semantically it is wrong
 
@@ -30,11 +30,11 @@ The basic structure of an HTML table starts with the \textit{<table>} tag. It is
 point for constructing a table. Now, HTML tables consist of columns and rows, like normal
 tables. For rows, the tag  \textit{<tr>} is used, whereas for table header \textit{<th>} tag
 is used. Normally, table headers are positioned in the center and are bold. For table cells
-\textit{<td>} tag is used \parencite{7}. 
+\textit{<td>} tag is used \parencite{7}.
 \newpage
 
 \begin{lstlisting}[%
-    language = CSS, 
+    language = CSS,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
@@ -93,27 +93,27 @@ is used. Normally, table headers are positioned in the center and are bold. For 
 
 </body>
 </html>
-    
+
 \end{lstlisting}
 
 Now, there exist some other tags which can be used for HTML5 tables:
 
-$\bullet$ <thead> - Table header, it is used to point out single or multiple rows 
+$\bullet$ <thead> - Table header, it is used to point out single or multiple rows
 of a table, which do not contain table data but column labels \parencite{8}.
 
 $\bullet$ <tbody> - Table body, it is used to point out <tr> elements. Position this tag
 always after <thead>, but it can also come after or before <tfoot> \parencite{8}.
 
 $\bullet$ <tfoot> - Table footer, it is used to point out single or multiple <tr> elements
-where those elements are presenting an overview  of the data in the table \parencite{8}. 
+where those elements are presenting an overview  of the data in the table \parencite{8}.
 
 $\bullet$ <caption> - Table caption, as the name already says, can be used to specify table caption.
 Can be put on the bottom of the CSS document.
 
 $\bullet$ <col> - While using col and some other keyword, for example, align, it is possible direct
 the alignment of text in the table. There are other keywords whom can be used to adjust colors, width
-and many other things of table columns.  
- 
+and many other things of table columns.
+
 
 
 
@@ -127,12 +127,12 @@ where a little of simple CSS can be used to your advantage to make your table st
 \subsection{Alternate row highlighting}
 When presented a table with a lot of entries, it can be hard to look at. Scrolling through numerous rows can be frustrating.
 With this CSS trick, it can be a bit easier, atleast for the eyes if nothing else. The idea is to color every even row, while leaving
-the odd ones in tact. 
+the odd ones in tact.
 As said, it is pretty simple, and requires only two lines of CSS, but also pretty useful.
 
 
 \begin{lstlisting}[%
-    language = HTML, 
+    language = HTML,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
@@ -154,17 +154,17 @@ As said, it is pretty simple, and requires only two lines of CSS, but also prett
 And now, at the end, this is the final result:
 \begin{figure}[H]
     \centering
-  
+
     {%
     \includegraphics[width=\linewidth]
     {alt_t.jpeg}%
     \label{alig1}%
     }
 
-    
+
     \caption[Alternate row highlighting]
     {
-      
+
     \imgcredit{Screenshot taken by the author.}
     }
     \label{figWhol}
@@ -173,12 +173,12 @@ And now, at the end, this is the final result:
 
 \newpage
 \subsection{Current Row Highlighting}
-Now again, talking about a big table, and going through it, one may 
+Now again, talking about a big table, and going through it, one may
 easily becomes lost and wouldn't know in which row he is at the moment, which can be
 pretty stressful. Again with the help of some CSS, the lives of the users' is made easier.
 
 \begin{lstlisting}[%
-    language = HTML, 
+    language = HTML,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
@@ -219,30 +219,30 @@ And again, it is shown how a small amount of CSS can be helpful.
 The result:
 \begin{figure}[H]
     \centering
-  
+
     {%
     \includegraphics[width=\linewidth]
     {current_hl.jpeg}%
     \label{alig1}%
     }
 
-    
+
     \caption[Current Row Highlighting]
     {
-      
+
     \imgcredit{Screenshot taken by the author.}
     }
     \label{figWhol}
 \end{figure}
 
 \subsection{Expandable Areas}
-Should we have any further information available about a table's object, 
-making the row clickable and showing the extra information then, is a better 
+Should we have any further information available about a table's object,
+making the row clickable and showing the extra information then, is a better
 alternative than trying to cram everything inside the table. In the following code sipped
 we see how we put addtion data in html code.
 \newpage
 \begin{lstlisting}[%
-    language = HTML, 
+    language = HTML,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
@@ -278,11 +278,11 @@ we see how we put addtion data in html code.
     </tr>
     <tr>
 \end{lstlisting}
-To implement this table feature we need to implement the combination of javascript and 
-css. In the further codes sipped the javascript and css code can be reviewed. 
+To implement this table feature we need to implement the combination of javascript and
+css. In the further codes sipped the javascript and css code can be reviewed.
 JavaScript Code
 \begin{lstlisting}[%
-    language = HTML, 
+    language = HTML,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
@@ -314,7 +314,7 @@ $(document).ready(function(){
 \newpage
 
 \begin{lstlisting}[%
-    language = HTML, 
+    language = HTML,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
@@ -364,21 +364,21 @@ $(document).ready(function(){
 }
 \end{lstlisting}
 
-Now we will see how it look like in partice on html page. It is compiled localy. In the figure 2.3 
+Now we will see how it look like in partice on html page. It is compiled localy. In the figure 2.3
 we can see how our table look when we see it in html page.
 \begin{figure}[H]
     \centering
-  
+
     {%
     \includegraphics[width=\linewidth]
     {expandable_area_before.png}%
     \label{alig1}%
     }
 
-    
+
     \caption[Expandable Areas]
     {
-      
+
     \imgcredit{Screenshot taken by the author.}
     }
     \label{figWhol}
@@ -387,17 +387,17 @@ Pressing to some of cell in row or colums we get the additional infomrmation, th
 in html code. This is shown in the figure 2.4.
 \begin{figure}[H]
     \centering
-  
+
     {%
     \includegraphics[width=\linewidth]
     {expandable_areas_after.png}%
     \label{alig1}%
     }
 
-    
+
     \caption[Expandable Areas]
     {
-      
+
     \imgcredit{Screenshot taken by the author.}
     }
     \label{figWhol}
@@ -405,16 +405,16 @@ in html code. This is shown in the figure 2.4.
 
 \subsection{Pagination (With Sort and Search)}
 The amount of data increases every second, over 2.5 quintillion bytes of data are made every day and there is also estimation
- that in 2020 will be created 1.7MB of data in every second for each person in the world\parencite{PG_2}. 
-\newline 
+ that in 2020 will be created 1.7MB of data in every second for each person in the world\parencite{PG_2}.
+\newline
 Tables are sometimes one of the possible places for saving large sets of data.
 This type of tables should consists of different types of features that enables users easier operations of maintaining.
 \newline
-Were the table be too long, we can divide it into 'pages'. We view a certain amount of rows at a time.
+Were the table be too long, it can be divided into 'pages', and then certain amount of rows is viewed at a time.
 \newline
 
-We provided this example of good table design with different features called pagination, because the most important feature of this technique is pagination.
-With this feature is possible to determine the number of rows per page, previous  and next page navigation are also available. 
+An example of good table design with different features is called pagination, because the most important feature of this technique is pagination.
+With this feature is possible to determine the number of rows per page, previous  and next page navigation are also available.
 Every user has also possibility to filter results by text search and in this way find the desired row.
 There is also possibility to sort table content in an descending or ascending order.
 
@@ -425,11 +425,11 @@ This solution works for following browsers:
 \newline $\bullet$ Opera
 \newline $\bullet$ Microsoft Edge
 
-For the implementation we used plug-in for the jQuery Javascript library called DataTables \parencite{PG_1}.
+For the implementation plug-in for the jQuery Javascript library called DataTables is used\parencite{PG_1}.
 
 
 \begin{lstlisting}[%
-    language = HTML, 
+    language = HTML,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
@@ -452,22 +452,22 @@ For the implementation we used plug-in for the jQuery Javascript library called 
 \end{lstlisting}
 
 Table is initilaized with "myTable" id and this id is used in
- ready function() to assign dataTable funcionality to our HTML table instance\parencite{PG}. 
+ ready function() to assign dataTable funcionality to our HTML table instance\parencite{PG}.
 
 Following image represents html table with sorted Price column and 10/12 entries:
 \begin{figure}[H]
     \centering
-  
+
     {%
     \includegraphics[width=\linewidth]
     {pagination_2.png}%
     \label{alig1}%
     }
 
-    
+
     \caption[Pagination with sort option]
     {
-      
+
     \imgcredit{Screenshot taken by the author.}
     }
     \label{figWhol}
@@ -476,17 +476,17 @@ Following image represents html table with sorted Price column and 10/12 entries
 Following image represents html table with searched term:
 \begin{figure}[H]
     \centering
-  
+
     {%
     \includegraphics[width=\linewidth]
     {pagination_1.png}%
     \label{alig1}%
     }
 
-    
+
     \caption[Pagination with search option]
     {
-      
+
     \imgcredit{Screenshot taken by the author.}
     }
     \label{figWhol}
@@ -496,11 +496,11 @@ Following image represents html table with searched term:
 
 \section{Responsive Tables}
 
-Due to the increasing amount of screens and their varying shapes, sizes, 
-and developers' space allocation when designing and implementing tables, 
-responsive table techniques have been 'developed' by manipulating the table's 
-columns and rows to provide an optimal experience for users across most mediums. It means the row and 
-columns can be repositioned, 
+Due to the increasing amount of screens and their varying shapes, sizes,
+and developers' space allocation when designing and implementing tables,
+responsive table techniques have been 'developed' by manipulating the table's
+columns and rows to provide an optimal experience for users across most mediums. It means the row and
+columns can be repositioned,
 resized, collapsed, minimized, etc..
 Here are some techniques we would like to decsribe in the following chapter:
 \newline
@@ -511,9 +511,9 @@ Here are some techniques we would like to decsribe in the following chapter:
 \newline $\bullet$ User Resizeable Columns
 \newline $\bullet$ Long Two Column
 
-In literatury the mostly is find online("on internet") there are a lot of techniques i.e. 
-there are a lot of names for very similar or the same techniques. We tried to take the best ones, 
-to name it on most resonable way and to describe them. 
+In literatury the mostly is find online("on internet") there are a lot of techniques i.e.
+there are a lot of names for very similar or the same techniques. We tried to take the best ones,
+to name it on most resonable way and to describe them.
 
 \newpage
 \section{Responsive Tables Techniques}
@@ -528,17 +528,17 @@ to view the whole table \parencite{9}.
 
 \begin{figure}[H]
     \centering
-  
+
     {%
     \includegraphics[width=\linewidth]
     {zoom_1.png}%
     \label{alig1}%
     }
 
-    
+
     \caption[Before reponsive]
     {
-      
+
     \imgcredit{https://css-tricks.com/responsive-data-tables/.}
     }
     \label{figWhol}
@@ -546,10 +546,10 @@ to view the whole table \parencite{9}.
 
 As seen in the figure above, both options do not really look nor do as any good.
 So, by using some simple CSS it is possible to fix that problem. With the help of the mentioned
-media queries, it is possible to specify for which device sizes, which settings should be used. 
+media queries, it is possible to specify for which device sizes, which settings should be used.
 
 \begin{lstlisting}[%
-    language = HTML, 
+    language = HTML,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
@@ -562,33 +562,33 @@ media queries, it is possible to specify for which device sizes, which settings 
 ]
     % An example of using simple CSS with media queries on how to achieve Responsive Design:
 
-    @media 
+    @media
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
 	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr { 
-		display: block; 
+	table, thead, tbody, th, td, tr {
+		display: block;
 	}
-	
+
 	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr { 
+	thead tr {
 		position: absolute;
 		top: -624.9375rem;
 		left: -624.9375rem;
 	}
-	
+
 	tr { border: 1px solid #ccc; }
-	
-	td { 
+
+	td {
 		/* Behave  like a "row" */
 		border: none;
-		border-bottom: 1px solid #eee; 
+		border-bottom: 1px solid #eee;
 		position: relative;
-		padding-left: 50%; 
+		padding-left: 50%;
 	}
-	
-	td:before { 
+
+	td:before {
 		/* Now like a table header */
 		position: absolute;
 		/* Top/left values mimic padding */
@@ -605,17 +605,17 @@ only screen and (max-width: 760px),
 And now, the end result would be the following one:
 \begin{figure}[H]
     \centering
-  
+
     {%
     \includegraphics[width=0.45\linewidth]
     {zoom_3.png}%
     \label{alig1}%
     }
 
-    
+
     \caption[After reposnsive]
     {
-      
+
     \imgcredit{https://css-tricks.com/responsive-data-tables/.}
     }
     \label{figWhol}
@@ -623,13 +623,13 @@ And now, the end result would be the following one:
 
 \newpage
 \section{Horizontal Scroll}
-When the allocated space is too small - horizontally, instead of hiding it, we create a horizontal scroll bar just for the table and let the user scroll away. 
-\newline 
+When the allocated space is too small - horizontally, instead of hiding it, horizontal scroll bar just for the table is created and let the user scroll away.
+\newline
 
-Horizontal Scrolling represents a technique that resizes the table  
+Horizontal Scrolling represents a technique that resizes the table
 into columns at small screen resoultion \parencite{HS_1}. The rows can be scrolled from left to right with fixed first row.
 This is different from viewport scrolling as we scroll only through the table.
-\newline 
+\newline
 
 It is very useful technique when presenting large data
  sets with identifiers in the first column. Then is very easy for every user to compare data content with multiple identifiers\parencite{HS}.
@@ -643,12 +643,12 @@ This solution works for following browsers:
 \newline $\bullet$ Microsoft Edge
 \newline
 \newline It is impossible to find one size that fits all solution. Data comparing is very difficult on the small screens.
-There are a lot of possible workarounds for this issue, but no one can solve this problem \parencite{HS_1}. 
+There are a lot of possible workarounds for this issue, but no one can solve this problem \parencite{HS_1}.
 Our implementation of horizontal scrolling creates table elements scrollable, but also can not solve the issue to the end\parencite{HS_1}.
-We will explain all important css-properties that creates a responsive table with horizontal scrolling.
+All important css-properties that creates a responsive table with horizontal scrolling are explained.
 
 \begin{lstlisting}[%
-    language = HTML, 
+    language = HTML,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
@@ -681,23 +681,23 @@ With display: inline-block all items are listed horizontally instead of vertical
 Vertical-align property maintains how elements set next to each other in a line.
 The overflow property determines whether to crop content or to add scroll bars (along the x-axis) when a table's content is too big to satisfy some screen resolution.
 We can use white-space: nowrap property as optional for small cell values.
-Css border properties are used to control borders into a table\parencite{HS_1}.  
+Css border properties are used to control borders into a table\parencite{HS_1}.
 
 Following image represents html table with horizontal scroll:
 
 \begin{figure}[H]
     \centering
-  
+
     {%
     \includegraphics[width=1\linewidth]
     {horizontal.png}%
     \label{alig1}%
     }
 
-    
+
     \caption[Horizontal Scroll]
     {
-      
+
     \imgcredit{Screenshot taken by the author.}
     }
     \label{figWhol}
@@ -705,12 +705,12 @@ Following image represents html table with horizontal scroll:
 
 \newpage
 \section{Fixed Header}
-When the table is vertically long, we fix the table's header to the top of the table's view.
-As we scroll down, we keep the table's header always visible.
+When the table is vertically long, the table's header is fixed to the top of the table's view.
+As we scroll down, the table's header is kept always visible.
 \newline
 
-It is very useful to have the fixed header (first row fixed) on the top of the table, when presenting tables with a particularly larage data set. 
-This helps users to quickly determine what every column identify rather than need to scroll back to the top of the table every time. 
+It is very useful to have the fixed header (first row fixed) on the top of the table, when presenting tables with a particularly larage data set.
+This helps users to quickly determine what every column identify rather than need to scroll back to the top of the table every time.
 \newline Fixed Header provides background on what column the user is on.
 This is very effective feature that makes our life easier \parencite{HS}.
 
@@ -722,7 +722,7 @@ This solution works for following browsers:
 \newline $\bullet$ Microsoft Edge
 
 \begin{lstlisting}[%
-    language = HTML, 
+    language = HTML,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
@@ -761,7 +761,7 @@ This solution works for following browsers:
 
 \end{lstlisting}
 
-Tbody element is determined with the type of rendering box. 
+Tbody element is determined with the type of rendering box.
 With overflow: auto scrollbar will appear along y-axis.
 All thead and tbody rows will behave as table elements.
 Fixed table layout algorithm is used to control table and column widths.
@@ -772,17 +772,17 @@ Following image represents html table with fixed header:
 
 \begin{figure}[H]
     \centering
-  
+
     {%
     \includegraphics[width=1\linewidth]
     {fixed_header.png}%
     \label{alig1}%
     }
 
-    
+
     \caption[Fixed Header]
     {
-      
+
     \imgcredit{Screenshot taken by the author.}
     }
     \label{figWhol}
