@@ -1,0 +1,118 @@
+table.highlight {
+  overflow: hidden;
+}
+
+table.highlight tr:hover {
+  background-color: #ffa;
+}
+
+table.highlight td, table.highlight th {
+  position: relative;
+}
+table.highlight td:hover::after,
+table.highlight th:hover::after {
+  content: "";
+  position: absolute;
+  background-color: #ffa;
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
+}
+
+
+/*@media all and (max-width:768px){
+  table.highlight table,tr, td, tbody, td p table div, table table{
+      width:100%!important;
+      float:left;
+      clear:both;
+      display:block;
+      text-align:center;
+  }
+  table.highlight table img {
+      max-width:100%;
+      height:auto;
+  }
+}*/
+
+
+/* =============================================================================
+   Responsive Table CSS
+   ========================================================================== */
+   /**/
+/*.dataTable {*/
+  /*display: block;*/
+  /*width: 100%;*/
+  /*margin: 1em 0;*/
+/*}*/
+
+/*.dataTable thead, .dataTable tbody, .dataTable thead tr, .dataTable th {*/
+  /*display: block;*/
+/*}*/
+
+/*.dataTable thead {*/
+  /*float: left;*/
+/*}*/
+
+/*.dataTable tbody {*/
+  /*width: auto;*/
+  /*position: relative;*/
+  /*overflow-x: auto;*/
+/*}*/
+
+/*.dataTable td, .dataTable th {*/
+  /*padding: .625em;*/
+  /*line-height: 1.5em;*/
+  /*border-bottom: 1px dashed #ccc;*/
+  /*box-sizing: border-box;*/
+  /*overflow-x: hidden;*/
+  /*overflow-y: auto;*/
+/*}*/
+
+/*.dataTable th {*/
+  /*text-align: left;*/
+  /*background: rgba(0, 0, 0, 0.14);*/
+  /*border-bottom: 1px dashed #aaa;*/
+/*}*/
+
+/*.dataTable tbody tr {*/
+  /*display: table-cell;*/
+/*}*/
+
+/*.dataTable tbody td {*/
+  /*display: block;*/
+/*}*/
+
+/*.dataTable tr:nth-child(odd) {*/
+	/*background: rgba(0, 0, 0, 0.07);*/
+/*}*/
+
+/*@media screen and (min-width: 50em) {*/
+
+  /*.dataTable {*/
+    /*display: table;*/
+  /*}*/
+  /**/
+  /*.dataTable thead {*/
+    /*display: table-header-group;*/
+    /*float: none;*/
+  /*}*/
+  /**/
+  /*.dataTable tbody {*/
+    /*display: table-row-group;*/
+  /*}*/
+  /**/
+  /*.dataTable thead tr, .dataTable tbody tr {*/
+    /*display: table-row;*/
+  /*}*/
+  /**/
+  /*.dataTable th, .dataTable tbody td {*/
+    /*display: table-cell;*/
+  /*}*/
+  /**/
+  /*.dataTable td, .dataTable th {*/
+    /*width: auto;*/
+  /*}*/
+  /**/
+/*}*/

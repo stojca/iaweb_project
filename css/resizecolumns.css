@@ -1,0 +1,18 @@
+.rcl .resizecell {
+  resize: horizontal;
+  overflow: auto;
+  width: 100%;
+  hyphens: auto;
+  height: 100%;
+  padding-bottom: 1rem;
+}
+
+.rcl .resizecell:hover {
+	cursor: col-resize;
+}
+
+#rcl {
+	display: inline-block;
+	max-width: 100%;
+	overflow-x: auto;
+}
