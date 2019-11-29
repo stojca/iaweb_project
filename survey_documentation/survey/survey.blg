@@ -1,9 +1,25 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'survey.blg'
-[34] biber:315> INFO - === Do Nov 28, 2019, 15:40:22
-[54] Biber.pm:371> INFO - Reading 'survey.bcf'
-[121] Biber.pm:889> INFO - Found 0 citekeys in bib section 0
-[126] Utils.pm:193> WARN - The file 'survey.bcf' does not contain any citations!
-[133] bbl.pm:636> INFO - Writing 'survey.bbl' with encoding 'UTF-8'
-[133] bbl.pm:739> INFO - Output to survey.bbl
-[133] Biber.pm:110> INFO - WARNINGS: 1
+[33] biber:315> INFO - === Fr Nov 29, 2019, 11:18:46
+[56] Biber.pm:371> INFO - Reading 'survey.bcf'
+[122] Biber.pm:889> INFO - Found 9 citekeys in bib section 0
+[133] Biber.pm:4093> INFO - Processing section 0
+[143] Biber.pm:4254> INFO - Looking for bibtex format file 'writing.bib' for section 0
+[146] bibtex.pm:1512> INFO - LaTeX decoding ...
+[196] bibtex.pm:1329> INFO - Found BibTeX data source 'writing.bib'
+[200] Utils.pm:193> WARN - BibTeX subsystem: /tmp/2Jtqs5t2AF/writing.bib_1618.utf8, line 562, warning: 189 characters of junk seen at toplevel
+[200] Utils.pm:193> WARN - BibTeX subsystem: /tmp/2Jtqs5t2AF/writing.bib_1618.utf8, line 574, warning: 132 characters of junk seen at toplevel
+[200] Utils.pm:193> WARN - BibTeX subsystem: /tmp/2Jtqs5t2AF/writing.bib_1618.utf8, line 586, warning: 82 characters of junk seen at toplevel
+[200] Biber.pm:4254> INFO - Looking for bibtex format file 'presentations.bib' for section 0
+[201] bibtex.pm:1512> INFO - LaTeX decoding ...
+[208] bibtex.pm:1329> INFO - Found BibTeX data source 'presentations.bib'
+[209] Biber.pm:4254> INFO - Looking for bibtex format file 'latex.bib' for section 0
+[210] bibtex.pm:1512> INFO - LaTeX decoding ...
+[230] bibtex.pm:1329> INFO - Found BibTeX data source 'latex.bib'
+[275] UCollate.pm:68> INFO - Overriding locale 'en' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[275] UCollate.pm:68> INFO - Overriding locale 'en' defaults 'variable = shifted' with 'variable = non-ignorable'
+[275] Biber.pm:3921> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en'
+[276] Biber.pm:3927> INFO - No sort tailoring available for locale 'en'
+[286] bbl.pm:636> INFO - Writing 'survey.bbl' with encoding 'UTF-8'
+[290] bbl.pm:739> INFO - Output to survey.bbl
+[291] Biber.pm:110> INFO - WARNINGS: 3
