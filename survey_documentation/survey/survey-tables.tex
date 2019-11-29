@@ -404,7 +404,8 @@ in html code. This is shown in the figure 2.4.
 \end{figure}
 
 \subsection{Pagination (With Sort and Search)}
-The amount of data increases every second, over 2.5 quintillion bytes of data are made every day and there is also estimation that in 2020 will be created 1.7MB of data in every second for each person in the world. 
+The amount of data increases every second, over 2.5 quintillion bytes of data are made every day and there is also estimation
+ that in 2020 will be created 1.7MB of data in every second for each person in the world\parencite{PG_2}. 
 \newline 
 Tables are sometimes one of the possible places for saving large sets of data.
 This type of tables should consists of different types of features that enables users easier operations of maintaining.
@@ -424,7 +425,7 @@ This solution works for following browsers:
 \newline $\bullet$ Opera
 \newline $\bullet$ Microsoft Edge
 
-For the implementation we used plug-in for the jQuery Javascript library called DataTables.
+For the implementation we used plug-in for the jQuery Javascript library called DataTables \parencite{PG_1}.
 
 
 \begin{lstlisting}[%
@@ -450,7 +451,8 @@ For the implementation we used plug-in for the jQuery Javascript library called 
 
 \end{lstlisting}
 
-Table is initilaized with "myTable" id and this id is used in ready function() to assign dataTable funcionality to our HTML table instance. 
+Table is initilaized with "myTable" id and this id is used in
+ ready function() to assign dataTable funcionality to our HTML table instance\parencite{PG}. 
 
 Following image represents html table with sorted Price column and 10/12 entries:
 \begin{figure}[H]
@@ -625,11 +627,12 @@ When the allocated space is too small - horizontally, instead of hiding it, we c
 \newline 
 
 Horizontal Scrolling represents a technique that resizes the table  
-into columns at small screen resoultion. The rows can be scrolled from left to right with fixed first row.
+into columns at small screen resoultion \parencite{HS_1}. The rows can be scrolled from left to right with fixed first row.
 This is different from viewport scrolling as we scroll only through the table.
 \newline 
 
-It is very useful technique when presenting large data sets with identifiers in the first column. Then is very easy for every user to compare data content with multiple identifiers.
+It is very useful technique when presenting large data
+ sets with identifiers in the first column. Then is very easy for every user to compare data content with multiple identifiers\parencite{HS}.
 
 
 This solution works for following browsers:
@@ -640,8 +643,8 @@ This solution works for following browsers:
 \newline $\bullet$ Microsoft Edge
 \newline
 \newline It is impossible to find one size that fits all solution. Data comparing is very difficult on the small screens.
-There are a lot of possible workarounds for this issue, but no one can solve this problem. 
-Our implementation of horizontal scrolling creates table elements scrollable, but also can not solve the issue to the end.
+There are a lot of possible workarounds for this issue, but no one can solve this problem \parencite{HS_1}. 
+Our implementation of horizontal scrolling creates table elements scrollable, but also can not solve the issue to the end\parencite{HS_1}.
 We will explain all important css-properties that creates a responsive table with horizontal scrolling.
 
 \begin{lstlisting}[%
@@ -678,7 +681,7 @@ With display: inline-block all items are listed horizontally instead of vertical
 Vertical-align property maintains how elements set next to each other in a line.
 The overflow property determines whether to crop content or to add scroll bars (along the x-axis) when a table's content is too big to satisfy some screen resolution.
 We can use white-space: nowrap property as optional for small cell values.
-Css border properties are used to control borders into a table.  
+Css border properties are used to control borders into a table\parencite{HS_1}.  
 
 Following image represents html table with horizontal scroll:
 
@@ -709,7 +712,7 @@ As we scroll down, we keep the table's header always visible.
 It is very useful to have the fixed header (first row fixed) on the top of the table, when presenting tables with a particularly larage data set. 
 This helps users to quickly determine what every column identify rather than need to scroll back to the top of the table every time. 
 \newline Fixed Header provides background on what column the user is on.
-This is very effective feature that makes our life easier.
+This is very effective feature that makes our life easier \parencite{HS}.
 
 This solution works for following browsers:
 \newline $\bullet$ Google Chrome
@@ -762,8 +765,8 @@ Tbody element is determined with the type of rendering box.
 With overflow: auto scrollbar will appear along y-axis.
 All thead and tbody rows will behave as table elements.
 Fixed table layout algorithm is used to control table and column widths.
-Width for almost every table element is static, just the header has non-static width.
-The width of header is determined with calc() function and in this way is solved the main issue in this responsive technique.
+Width for almost every table element is static, just the header has non-static width \parencite{FH_1}.
+The width of header is determined with calc() function and in this way is solved the main issue in this responsive technique\parencite{FH}.
 
 Following image represents html table with fixed header:
 
