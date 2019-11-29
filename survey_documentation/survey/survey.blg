@@ -1,0 +1,41 @@
+[0] Config.pm:304> INFO - This is Biber 2.13
+[1] Config.pm:307> INFO - Logfile is 'survey.blg'
+[37] biber-MSWIN64:315> INFO - === 
+[59] Biber.pm:375> INFO - Reading 'survey.bcf'
+[159] Biber.pm:905> INFO - Found 21 citekeys in bib section 0
+[173] Biber.pm:4196> INFO - Processing section 0
+[174] Utils.pm:75> INFO - Globbing data source 'writing.bib'
+[182] Utils.pm:91> INFO - Globbed data source 'writing.bib' to writing.bib
+[182] Utils.pm:75> INFO - Globbing data source 'presentations.bib'
+[182] Utils.pm:91> INFO - Globbed data source 'presentations.bib' to presentations.bib
+[183] Utils.pm:75> INFO - Globbing data source 'kandrews.bib'
+[183] Utils.pm:91> INFO - Globbed data source 'kandrews.bib' to kandrews.bib
+[183] Utils.pm:75> INFO - Globbing data source 'ivis.bib'
+[183] Utils.pm:91> INFO - Globbed data source 'ivis.bib' to ivis.bib
+[183] Utils.pm:75> INFO - Globbing data source 'latex.bib'
+[184] Utils.pm:91> INFO - Globbed data source 'latex.bib' to latex.bib
+[195] Biber.pm:4373> INFO - Looking for bibtex format file 'writing.bib' for section 0
+[205] bibtex.pm:1462> INFO - LaTeX decoding ...
+[255] bibtex.pm:1281> INFO - Found BibTeX data source 'writing.bib'
+[266] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\intig\AppData\Local\Temp\OKqbJDT5OF\writing.bib_23788.utf8, line 562, warning: 189 characters of junk seen at toplevel
+[267] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\intig\AppData\Local\Temp\OKqbJDT5OF\writing.bib_23788.utf8, line 574, warning: 132 characters of junk seen at toplevel
+[268] Utils.pm:300> WARN - BibTeX subsystem: C:\Users\intig\AppData\Local\Temp\OKqbJDT5OF\writing.bib_23788.utf8, line 586, warning: 82 characters of junk seen at toplevel
+[269] Biber.pm:4373> INFO - Looking for bibtex format file 'presentations.bib' for section 0
+[273] bibtex.pm:1462> INFO - LaTeX decoding ...
+[281] bibtex.pm:1281> INFO - Found BibTeX data source 'presentations.bib'
+[289] Biber.pm:4373> INFO - Looking for bibtex format file 'kandrews.bib' for section 0
+[294] bibtex.pm:1462> INFO - LaTeX decoding ...
+[324] bibtex.pm:1281> INFO - Found BibTeX data source 'kandrews.bib'
+[329] Biber.pm:4373> INFO - Looking for bibtex format file 'ivis.bib' for section 0
+[339] bibtex.pm:1462> INFO - LaTeX decoding ...
+[344] bibtex.pm:1281> INFO - Found BibTeX data source 'ivis.bib'
+[348] Biber.pm:4373> INFO - Looking for bibtex format file 'latex.bib' for section 0
+[362] bibtex.pm:1462> INFO - LaTeX decoding ...
+[405] bibtex.pm:1281> INFO - Found BibTeX data source 'latex.bib'
+[519] UCollate.pm:68> INFO - Overriding locale 'en' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[519] UCollate.pm:68> INFO - Overriding locale 'en' defaults 'variable = shifted' with 'variable = non-ignorable'
+[519] Biber.pm:4024> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en'
+[520] Biber.pm:4030> INFO - No sort tailoring available for locale 'en'
+[540] bbl.pm:648> INFO - Writing 'survey.bbl' with encoding 'UTF-8'
+[548] bbl.pm:751> INFO - Output to survey.bbl
+[553] Biber.pm:110> INFO - WARNINGS: 3

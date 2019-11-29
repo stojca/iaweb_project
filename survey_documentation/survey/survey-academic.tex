@@ -17,37 +17,73 @@
 
 \section{Recommendation}
 
-For responsive design and techniques you should employ on your 
-tables, we suggest: Alternate Row Highlighting, Long Two Column, and Fixed Header. As well 
-the developer i.e. designer show take consist different techniques to different screen size. For 
-example like it is on Figure 1.1 the three different screen sizes. For the biggest one 
-you define the height and weight of yout table to 100\% of container. For Tablets we recomand the 
-fixed header, and for small screen size like mobile devices  we recommand the Long Two Column technique. 
-This is done in order to cover all posible screen(container) sizes. As well to be much easier to find
-wanted data in table, please use Alternate Row Highlighting. To take a look how each of this 
-techniques is working take a look on previous chapters. How our recommentation table look like, 
-you can see in following figure. 
+Responsive tables must be able to efficiently and effectively display data. It is only through a combination of good table design and responsive techniques one is able to achieve this. 
+
+For good table design, it is imperative that you include Alternate Row Highlighting. This is a very simple technique that works on every browser and is not only helpful to the user but to the developer as it adds positively to the aesthetics. 
+
+For a ``Jack of all trades'' approach, we suggest the following responsive techniques: Long Two Column, and Fixed Header. You are able to apply this for the 3 main screen sizes: PC, tablet, and phone. Being able to apply Long Two Column to phone-sized screens (or tablets in vertical mode) and leave Fixed Header on the remaining two sizes (PC and tablets in horizontal mode) automatically eliminates one of the 3 sizes you have to take care of. 
+
+Another thing to keep in mind is to attach the vertical scrollable feature of Fixed Header to the Long Two Column. This ensures that the space the table is taking up is exactly the one allocated to it. It goes without saying that if the table is too wide (horizontally), it should be horizontally scrollable.
+
+The figure below shows these techniques working together.
 
 \begin{figure}[H]
     \centering
   
     {%
     \includegraphics[width=1\linewidth]
-    {recommendation.png}%
+    {recommendation_1.png}%
     \label{alig1}%
     }
 
     
-    \caption[Recommendation Techniques]
+    \caption[Recommendation Techniques 1]
     {
       
     \imgcredit{Screenshot taken by the author.}
     }
-    \label{figWhol}
+    \label{figRecc1}
 \end{figure}
 
+As you scroll through the table, notice the Fixed Header Technique in the image below.
 
+\begin{figure}[H]
+    \centering
+  
+    {%
+    \includegraphics[width=1\linewidth]
+    {recommendation_2.png}%
+    \label{alig1}%
+    }
 
+    
+    \caption[Recommendation Techniques 2]
+    {
+      
+    \imgcredit{Screenshot taken by the author.}
+    }
+    \label{figRecc2}
+\end{figure}
+
+For small-sized screens, the technique that would ``kick in'' is shown in the image below. Notice the `creeping' second `minitable' in the bottom part.
+
+\begin{figure}[H]
+    \centering
+  
+    {%
+    \includegraphics[width=1\linewidth]
+    {recommendation_3.png}%
+    \label{alig1}%
+    }
+
+    
+    \caption[Recommendation Techniques 3]
+    {
+      
+    \imgcredit{Screenshot taken by the author.}
+    }
+    \label{figRecc3}
+\end{figure}
 
 
 
