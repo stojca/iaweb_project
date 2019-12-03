@@ -1,0 +1,242 @@
+
+Survey Feedback G4
+==================
+
+
+Survey Paper
+------------
+
+
+o does not compile
+
+
+! Package Listings Error: Couldn't load requested language.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...
+
+l.960 ]
+
+?
+
+The following languages weren't loadable:
+    ,javascript$
+
+survey-tables.tex line 952
+
+Solution using JavaScript (jQuery):
+\begin{lstlisting}[%
+    language = JavaScript,
+
+
+https://tex.stackexchange.com/questions/99500/listings-code-style-for-html5-css-html-javascript
+
+
+
+
+
+! LaTeX Error: \begin{itemize} on input line 99 ended by \end{document}.
+
+
+survey-tables.tex  line 99
+
+\begin{itemize}
+
+is not ended
+
+then comes new chapter
+
+
+
+
+
+
+o Superfluous files
+
+    diagrams/multi.*
+    images/icons/
+    listings/*.bib
+
+    bib-files.txt
+    missfont.log
+    README.txt
+
+
+
+o .tex file names are still my old names, some superfluous
+
+
+
+o one chapter per tex file !!!
+
+  \chapter{Good Table Design}
+
+
+o wrap long lines at 72 chars
+
+
+
+o still loading all my example bib files
+
+
+o 23 warnings from biber
+
+  \parencite{1}  ??
+  \parencite{2}
+
+
+o Where is your own bib file ??
+
+
+
+
+
+o bulleted list
+
+If a programmer wants his web site to be responsive, he has to use 
+following techniques:
+
+$\bullet$ Media queries 
+
+$\bullet$ Flexible images and media
+
+$\bullet$ Fluid grid layouts
+
+
+
+
+o Never use newlines  \\
+
+o Never use \newpage
+
+
+o always use [tp] for floats
+
+  \begin{figure}[h!]
+
+
+
+
+o p 2  listings should be numbered (= floats)
+
+
+
+o p 9  listing cut in two
+
+
+
+o p 11  single line of flowing text
+
+
+
+
+o p 21, 23, 25 ...   figures have no captions
+
+
+
+o p 28  Fig 4.8  way too big
+
+
+
+o All figures must be referred to in the running text.
+
+
+
+
+o define macro for HTML elements  based on my \vname macro
+
+  \textit{<table>}    \elname{}
+
+
+o define macro for CSS properties
+
+   \propname{}
+
+
+
+
+o survey-tables.tex   tabs in listing
+
+
+
+o why do examples use px   should be responsive
+
+
+
+
+
+
+
+
+
+Presentation / Code
+-------------------
+
+
+
+o  why node_modules ?
+
+no package.json file
+
+Remove any dependency on npm and include
+necessary packages directly !!
+
+<link rel="stylesheet" href="node_modules/tablesaw/dist/tablesaw.css">
+
+
+
+
+o include libraries locally, not over http
+
+<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+
+<script type="text/javascript"  src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+o Why is bootstrap needed?
+
+
+
+o Include unminified libraries as well (for me to read / debug)
+
+
+
+o very messy  not clear which libraries are needed for what
+
+
+
+
+
+
+o xmp is obsolete in HTML5
+
+<xmp><table></xmp>
+
+
+
+
+
+
+o does not validate  203 errors found !!
+
+
+
+e.g. at bottom of index.html
+
+
+<section>
+  <h1>Recommendation</h1>
+
+    For responsive design and techniques we recommend:<br><br>
+<ul>
+
+
+<td role="cell" >  ??
+
+
+

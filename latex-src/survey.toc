@@ -1,0 +1,30 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {british}{}
+\contentsline {chapter}{Contents}{i}{chapter*.1}% 
+\contentsline {chapter}{List of Figures}{iii}{chapter*.2}% 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}How to achieve Responsive Web Design}{1}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Media queries}{1}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}Fluid Grid Layouts}{2}{section.1.3}% 
+\contentsline {section}{\numberline {1.4}Flexible images and media}{3}{section.1.4}% 
+\contentsline {subsection}{\numberline {1.4.1}Relative measurements}{3}{subsection.1.4.1}% 
+\contentsline {subsection}{\numberline {1.4.2}Cropping}{3}{subsection.1.4.2}% 
+\contentsline {chapter}{\numberline {2}HTML Tables}{5}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Structure of Tables}{5}{section.2.1}% 
+\contentsline {chapter}{\numberline {3}Good Table Design}{8}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Alternate row highlighting}{8}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Current Row Highlighting}{9}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Expandable Areas}{9}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Pagination (With Sort and Search)}{12}{section.3.4}% 
+\contentsline {chapter}{\numberline {4}Responsive Tables}{14}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Horizontal Scroll}{18}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Fixed Header}{20}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Flip Scroll}{22}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}User Resizeable Columns}{24}{section.4.4}% 
+\contentsline {section}{\numberline {4.5}Long Two Column}{27}{section.4.5}% 
+\contentsline {chapter}{\numberline {5}Recommendation}{29}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Recommendation}{29}{section.5.1}% 
+\babel@toc {english}{}
+\contentsline {chapter}{Bibliography}{33}{chapter*.23}% 
+\babel@toc {british}{}
+\contentsfinish 
