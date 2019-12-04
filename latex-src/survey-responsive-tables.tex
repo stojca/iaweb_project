@@ -12,17 +12,20 @@
 %----------------------------------------------------------------
 \chapter{Responsive Tables}
 
-Due to the increasing amount of screens and their varying shapes, sizes,
-and developers' space allocation when designing and implementing tables,
-responsive table techniques have been `developed' by manipulating the table's
-columns and rows to provide an optimal experience for users across most mediums. It means the row and
-columns can be repositioned,
-resized, collapsed, minimized, etc..
+Due to the increasing amount of screens and their varying shapes,
+sizes, and developers' space allocation when designing and
+implementing tables, responsive table techniques have been `developed'
+by manipulating the table's columns and rows to provide an optimal
+experience for users across most mediums. It means the row and columns
+can be repositioned, resized, collapsed, minimized, etc..
 
-Data tables can contain many information, which makes displaying that data quite messy and hard to
-look at. So by using responsive design, a big favor is done to the clients,
-by adjusting the table according to their devices. One idea would be to minimize the table, but if the user is looking
-at the table from his mobile device, he would have to zoom in, which is not that useful to him, because then again he would need to scroll
+Data tables can contain many information, which makes displaying that
+data quite messy and hard to look at. So by using responsive design, a
+big favor is done to the clients, by adjusting the table according to
+their devices. One idea would be to minimize the table, but if the
+user is looking at the table from his mobile device, he would have to
+zoom in, which is not that useful to him, because then again he would
+need to scroll
 to view the whole table \parencite{Alligator}.
 
 \begin{figure}[tp]
@@ -43,9 +46,10 @@ to view the whole table \parencite{Alligator}.
     \label{before_responsive}
 \end{figure}
 
-As seen in the figure above, both options do not really look nor perform well.
-So, by using some simple CSS it is possible to fix that problem. With the help of the mentioned
-media queries, it is possible to specify for which device sizes, which settings should be used.
+As seen in the figure above, both options do not really look nor
+perform well. So, by using some simple CSS it is possible to fix that
+problem. With the help of the mentioned media queries, it is possible
+to specify for which device sizes, which settings should be used.
 
 \begin{lstlisting}[%
     language = HTML,
@@ -59,7 +63,8 @@ media queries, it is possible to specify for which device sizes, which settings 
      stringstyle=\color{blue}
     ,
 ]
-    % An example of using simple CSS with media queries on how to achieve Responsive Design:
+    % An example of using simple CSS with media queries on how to 
+    achieve Responsive Design:
 
     @media
 only screen and (max-width: 760px),
@@ -130,17 +135,25 @@ Some of the most popular techniques are:
     \item[--] Long Two Column
 \end{itemize}
 
-In the following sections we will try to give a brief but detailed description of what exactly each technique consists of, as well as the reason to include this techniques on tables, and the code required to implement such techniques.
+In the following sections we will try to give a brief but detailed
+description of what exactly each technique consists of, as well as the
+reason to include this techniques on tables, and the code required to
+implement such techniques.
 
 \section{Horizontal Scroll}
-When the allocated space is too small - horizontally, instead of hiding it, a horizontal scroll bar (just for the table) is created. The user can then scroll away.
+When the allocated space is too small - horizontally, instead of
+hiding it, a horizontal scroll bar (just for the table) is created.
+The user can then scroll away.
 
 Horizontal Scrolling represents a technique that resizes the table
 into columns at small screen resoultion \parencite{HS_1}. 
-This is different from viewport scrolling as we scroll only through the table.
+This is different from viewport scrolling as we scroll only through 
+the table.
 
 It is very useful technique when presenting large data
- sets with identifiers in the first column. Then is very easy for every user to compare data content with multiple identifiers\parencite{HS}.
+ sets with identifiers in the first column. Then is very easy for 
+ every user to compare data content with 
+ multiple identifiers\parencite{HS}.
 
 This solution works for following browsers:
 \begin{itemize}
@@ -151,11 +164,16 @@ This solution works for following browsers:
     \item[--] Microsoft Edge
 \end{itemize}
 
-It is impossible to find one size that fits all solution. Data comparing is very difficult on the small screens.
-There are a lot of possible workarounds for this issue, but no one can solve this problem \parencite{HS_1}.
-Our implementation of horizontal scrolling creates table elements scrollable, but also can not solve the issue to the end\parencite{HS_1}.
+It is impossible to find one size that fits all solution. Data 
+comparing is very difficult on the small screens.
+There are a lot of possible workarounds for this issue, but no 
+one can solve this problem \parencite{HS_1}.
+Our implementation of horizontal scrolling creates table elements
+ scrollable, but also can not solve the issue 
+ to the end\parencite{HS_1}.
 
-The code required to implement this technique on a table is shown below.
+The code required to implement this technique 
+on a table is shown below.
 
 \begin{lstlisting}[%
     language = HTML,
@@ -186,15 +204,21 @@ The code required to implement this technique on a table is shown below.
 
 \end{lstlisting}
 
-This CSS code represents CSS class \texttt{.rtable} used in the case when container is not resized.
-With display: inline-block all items are listed horizontally instead of vertically.
+This CSS code represents CSS class \texttt{.rtable} used in the case
+when container is not resized. With display: inline-block all items
+are listed horizontally instead of vertically.
 
-\texttt{vertical-align} property maintains how elements set next to each other in a line.
+\texttt{vertical-align} property maintains how elements set next to
+each other in a line.
 
-The \texttt{overflow} property determines whether to crop content or to add scroll bars (along the x-axis) when a table's content is too big to satisfy some screen resolution.
+The \texttt{overflow} property determines whether to crop content or
+to add scroll bars (along the x-axis) when a table's content is too
+big to satisfy some screen resolution.
 
-We can use \texttt{white-space: nowrap} property as optional for small cell values.
-Css border properties are used to control borders into a table\parencite{HS_1}.
+We can use \texttt{white-space: nowrap} property as optional for small
+cell values.
+Css border properties are used to control borders into a 
+table\parencite{HS_1}.
 
 An example HTML table with this technique is shown below.
 \begin{figure}[tp]
@@ -216,14 +240,21 @@ An example HTML table with this technique is shown below.
 \end{figure}
 
 \section{Fixed Header}
-When the table is vertically long, the table's header is fixed to the top of the table's view.
-As we scroll down, the table's header is kept always visible.
+When the table is vertically long, the table's header is fixed to the
+top of the table's view. As we scroll down, the table's header is kept
+always visible.
 
-It is very useful to have the fixed header (first row containing the header cells) fixed on the top of the table, when presenting tables with a particularly larage data set. This helps users to quickly determine what every column identify rather than need to scroll back to the top of the table every time.
+It is very useful to have the fixed header (first row containing the
+header cells) fixed on the top of the table, when presenting tables
+with a particularly larage data set. This helps users to quickly
+determine what every column identify rather than need to scroll back
+to the top of the table every time.
 
-Fixed Header provides information that allows the user to always know in what column the cell the user is looking at is in.
+Fixed Header provides information that allows the user to always know
+in what column the cell the user is looking at is in.
 
-This is very effective feature that makes our life easier \parencite{HS}.
+This is very effective feature that makes our life easier
+\parencite{HS}.
 
 This solution works for following browsers:
 \begin{itemize}
@@ -274,17 +305,22 @@ This solution works for following browsers:
 
 \end{lstlisting}
 
-$<$\texttt{tbody}$>$ element is determined with the type of rendering box.
+$<$\texttt{tbody}$>$ element is determined with the type of rendering
+box.
 
 With \texttt{overflow: auto}, a scrollbar will appear along y-axis.
 
-All $<$\texttt{thead}$>$ and $<$\texttt{tbody}$>$ rows will behave as table elements.
+All $<$\texttt{thead}$>$ and $<$\texttt{tbody}$>$ rows will behave as
+table elements.
 
-Fixed table layout algorithm is used to control table and column widths.
+Fixed table layout algorithm is used to control table and column
+widths.
 
-Width for almost every table element is static, just the header has non-static width \parencite{FH_1}.
+Width for almost every table element is static, just the header has
+non-static width \parencite{FH_1}.
 
-The width of header is determined with the \texttt{calc()} function to allow responsiveness \parencite{FH}.
+The width of header is determined with the \texttt{calc()} function to
+allow responsiveness \parencite{FH}.
 
 An example HTML table with this technique is shown below.
 
@@ -308,12 +344,22 @@ An example HTML table with this technique is shown below.
 
  
 \section{Flip Scroll}
-This technique is useful for an object-based table; one where each row is populated by a single `object' where each column represents a different feature of the object. If all features -- columns -- cannot be seen at once, it is sometimes more desireable to be able to show all features of an object rather than a good amount of (incomplete) features for a good amount of objects.
+This technique is useful for an object-based table; one where each row
+is populated by a single `object' where each column represents a
+different feature of the object. If all features -- columns -- cannot
+be seen at once, it is sometimes more desireable to be able to show
+all features of an object rather than a good amount of (incomplete)
+features for a good amount of objects.
 \newline
 
-Rather than having the user scroll through features, the user is now able to scroll through objects horizontally instead. This is the result of transposing the table. The first column will now house the (previously column) headers and each column will be devoted to an object, rather than each row.
+Rather than having the user scroll through features, the user is now
+able to scroll through objects horizontally instead. This is the
+result of transposing the table. The first column will now house the
+(previously column) headers and each column will be devoted to an
+object, rather than each row.
 
-Flip scroll also `promises' to keep the table in the allocated space -- by allowing table horizontal scrolling.
+Flip scroll also `promises' to keep the table in the allocated space
+-- by allowing table horizontal scrolling.
 
 This solution works for following browsers:
 \begin{itemize}
@@ -356,9 +402,12 @@ table.flipscroll  tbody {
 
 \end{lstlisting}
 
-Setting \texttt{width: 100\%} and \texttt{overflow-x: auto} makes the table horizontally scrollable and stick to the allocated space.
+Setting \texttt{width: 100\%} and \texttt{overflow-x: auto} makes the
+table horizontally scrollable and stick to the allocated space.
 
-The trick is setting the attribute \texttt{display: inline-block} on the \texttt{tbody tr} HTML tag and \texttt{white-space: nowrap} on the \texttt{tbody} HTML tag \parencite{FS}.
+The trick is setting the attribute \texttt{display: inline-block} on
+the \texttt{tbody tr} HTML tag and \texttt{white-space: nowrap} on the
+\texttt{tbody} HTML tag \parencite{FS}.
 
 Following image represents an HTML table with Flip Scroll:
 
@@ -382,11 +431,18 @@ Following image represents an HTML table with Flip Scroll:
 
 
 \section{User Resizeable Columns}
-This technique empowers the user quite significantly. As the title suggests, the user is able to manipulate the size of a table's columns. 
+This technique empowers the user quite significantly. As the title
+suggests, the user is able to manipulate the size of a table's
+columns. 
 
-This technique is useful when the user is immune to space limitation penalties the table might have on most other users. For example, if a user has a screen big enough that space between columns is wasted to keep column sizes consistent, being able to resize this column to bring other columns into view is highly desireable.
+This technique is useful when the user is immune to space limitation
+penalties the table might have on most other users. For example, if a
+user has a screen big enough that space between columns is wasted to
+keep column sizes consistent, being able to resize this column to
+bring other columns into view is highly desireable.
 
-User Resizeable Columns allows the user to tailor the table's experience to his/her own preferences. 
+User Resizeable Columns allows the user to tailor the table's
+experience to his/her own preferences. 
 
 There are two possible solutions. Both work for following browsers:
 \begin{itemize}
@@ -446,9 +502,13 @@ Solution using only CSS and HTML:
 }
 \end{lstlisting}
 
-Encapsulating every header cell (or every single cell) with a \texttt{$<$div$>$} tag allows CSS to enable resizeability by setting the attribute \texttt{resize: horizontal} to these divs \parencite{URC_1}.
+Encapsulating every header cell (or every single cell) with a
+\texttt{$<$div$>$} tag allows CSS to enable resizeability by setting
+the attribute \texttt{resize: horizontal} to these divs
+\parencite{URC_1}.
 
-Following image represents an HTML table with User Resizeable Columns using only HTML and CSS:
+Following image represents an HTML table with User Resizeable Columns
+using only HTML and CSS:
 
 \begin{figure}[tp]
     \centering
@@ -488,7 +548,8 @@ $(function(){
 }); 
 \end{lstlisting}
 
-The trick is calling the \texttt{resizeableColumns()} on the table of your choice \parencite{URC_2}.
+The trick is calling the \texttt{resizeableColumns()} on the table of
+your choice \parencite{URC_2}.
 
 \begin{figure}[tp]
     \centering
@@ -509,14 +570,26 @@ The trick is calling the \texttt{resizeableColumns()} on the table of your choic
 \end{figure}
 
 \section{Long Two Column}
-Just like Flip Scroll, this technique is useful for an object-based table; one where each row is populated by a single `object' where each column represents a different feature of the object. 
+Just like Flip Scroll, this technique is useful for an object-based
+table; one where each row is populated by a single `object' where each
+column represents a different feature of the object. 
 \newline
 
-Rather than having the user scroll through features, the user is now able to scroll through objects vertically instead. This is the result of transposing the table. The first column will now house the (previously column) headers and the second column will house the data previously housed in the first row. This creates a `minitable' for the (previously) first row. For the next object (and row), another `minitable' is created like with the first one and then appended below. This approach creates a `minitable' for each object and appends it to the previous object. 
+Rather than having the user scroll through features, the user is now
+able to scroll through objects vertically instead. This is the result
+of transposing the table. The first column will now house the
+(previously column) headers and the second column will house the data
+previously housed in the first row. This creates a `minitable' for the
+(previously) first row. For the next object (and row), another
+`minitable' is created like with the first one and then appended
+below. This approach creates a `minitable' for each object and appends
+it to the previous object. 
 
-As the name suggest, you end up with a long table of 2 columns, the first of which is 'always the same'.
+As the name suggest, you end up with a long table of 2 columns, the
+first of which is 'always the same'.
 
-Unlike Flip scroll, it does not keep the table in the allocated space, unless you set vertical scrolling.
+Unlike Flip scroll, it does not keep the table in the allocated space,
+unless you set vertical scrolling.
 
 This solution works for following browsers:\begin{itemize}
     \item[--] Google Chrome
@@ -562,7 +635,9 @@ td:before {
 }
 \end{lstlisting}
 
-The trick is setting the table's elements to \texttt{display: block} and the $<$\texttt{td}$>$ tag's attribute to \texttt{position: relative} \parencite{L2C}.
+The trick is setting the table's elements to
+ \texttt{display: block} and the $<$\texttt{td}$>$ 
+ tag's attribute to \texttt{position: relative} \parencite{L2C}.
 
 Following image represents an HTML table with Long Two Column:
 

@@ -17,9 +17,11 @@
 
 \label{HTML5 Tables}
 
-In case of having too much data to display, or data which is inherently better in a grid, HTML tables
-are the best solution available. Before, tables have been used mostly for the layout of
-HTML websites (and is now an example of bad website development pracices) mainly due to two reasons:
+In case of having too much data to display, or data which is
+inherently better in a grid, HTML tables are the best solution
+available. Before, tables have been used mostly for the layout of HTML
+websites (and is now an example of bad website development pracices)
+mainly due to two reasons:
 \begin{itemize}
     \item[--] Semantically, it is wrong.
     \item[--] Tables aren't as adaptable and flexible as divs'
@@ -27,11 +29,12 @@ HTML websites (and is now an example of bad website development pracices) mainly
 
 \section{Structure of Tables}
 
-The basic structure of an HTML table starts with the \textit{<table>} tag. It is the starting
-point for constructing a table. Now, HTML tables consist of columns and rows, like normal
-tables. For rows, the tag  \textit{<tr>} is used, whereas for table header \textit{<th>} tag
-is used. Normally, table headers are positioned in the center and are bold. For table cells
-\textit{<td>} tag is used \parencite{AdamWood}.
+The basic structure of an HTML table starts with the \textit{<table>}
+tag. It is the starting point for constructing a table. Now, HTML
+tables consist of columns and rows, like normal tables. For rows, the
+tag  \textit{<tr>} is used, whereas for table header \textit{<th>} tag
+is used. Normally, table headers are positioned in the center and are
+bold. For table cells \textit{<td>} tag is used \parencite{AdamWood}.
 
 \begin{lstlisting}[%
     language = HTML,
@@ -44,7 +47,8 @@ is used. Normally, table headers are positioned in the center and are bold. For 
     label=list:Structure,
     ,
 ]
-    % An example of an HTML Table which demonstrates information about cars:
+    % An example of an HTML Table which demonstrates information
+     about cars:
     <!DOCTYPE html>
 <html>
 <head>
@@ -98,19 +102,26 @@ is used. Normally, table headers are positioned in the center and are bold. For 
 
 Now, there exist more tags which can be used for HTML5 tables:
 \begin{itemize}
-    \item[--] $<$\texttt{thead}$>$ - Table header, it is used to point out single or multiple rows
-of a table, which do not contain table data but column labels \parencite{ChrisCoyier}.
+    \item[--] $<$\texttt{thead}$>$ - Table header, it is used to point
+out single or multiple rows of a table, which do not contain table
+data but column labels \parencite{ChrisCoyier}.
 
-    \item[--] $<$\texttt{tbody}$>$ - Table body, it is used to point out $<$\texttt{tr}$>$ elements. Position this tag
-always after $<$\texttt{thead}$>$, but it can also come after or before $<$\texttt{tfoot}$>$ \parencite{ChrisCoyier}.
+    \item[--] $<$\texttt{tbody}$>$ - Table body, it is used to point
+out $<$\texttt{tr}$>$ elements. Position this tag always after
+$<$\texttt{thead}$>$, but it can also come after or before
+$<$\texttt{tfoot}$>$ \parencite{ChrisCoyier}.
 
-    \item[--] $<$\texttt{tfoot}$>$ - Table footer, it is used to point out single or multiple $<$\texttt{tr}$>$ elements
-where those elements are presenting an overview  of the data in the table \parencite{ChrisCoyier}.
+    \item[--] $<$\texttt{tfoot}$>$ - Table footer, it is used to point
+out single or multiple $<$\texttt{tr}$>$ elements where those elements
+are presenting an overview  of the data in the table
+\parencite{ChrisCoyier}.
 
-    \item[--] $<$\texttt{caption}$>$ - Table caption, as the name already says, can be used to specify table caption.
-Can be put on the bottom of the CSS document.
+    \item[--] $<$\texttt{caption}$>$ - Table caption, as the name
+already says, can be used to specify table caption. Can be put on the
+bottom of the CSS document.
 
-    \item[--] $<$\texttt{col}$>$ - While using col and some other keyword, for example, align, it is possible direct
-the alignment of text in the table. There are other keywords whom can be used to adjust colors, width
-and many other things of table columns.
+    \item[--] $<$\texttt{col}$>$ - While using col and some other
+keyword, for example, align, it is possible direct the alignment of
+text in the table. There are other keywords whom can be used to adjust
+colors, width and many other things of table columns.
 \end{itemize}
