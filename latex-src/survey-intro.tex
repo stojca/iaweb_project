@@ -1,15 +1,16 @@
-%----------------------------------------------------------------
-%
-%  File    :  survey-intro.tex
-%
-%  Author  :  Keith Andrews, IICM, TU Graz, Austria
-% 
-%  Created :  27 May 1993
-% 
-%  Changed :  16 Nov 2010
-% 
-%----------------------------------------------------------------
 
+%----------------------------------------------------------------
+%
+%  File    :  survey-recc.tex
+%
+%  Author  :  Mirza Kabiljagic, Stefan Rajinovic, Aleksandar Stojicic,
+%             Inti Gabriel Mendoza Estrada
+%
+%  Created :  27 May 20xx
+%
+%  Changed :  4 Dez 2019
+%
+%----------------------------------------------------------------
 
 \chapter{Introduction}
 
@@ -17,31 +18,38 @@
 
 Going back, at the starting point of web development, its creators
 and designers have not had the need to think about the look and design
-of the page, because back then, their users and clients would mostly access
-the site via the same device, that being a personal desktop computer which would
-mostly share the same resolution and display size. That means that they mostly
-needed to design and work around the same concept. Also, they didn’t need to think
-about things like what if an user entered the site with this device or this, so
+of the page, because back then, their users and clients would mostly
+access
+the site via the same device, that being a personal desktop computer
+which would
+mostly share the same resolution and display size. That means that
+they mostly
+needed to design and work around the same concept. Also, they didn’t
+need to think
+about things like what if an user entered the site with this device 
+or this, so
 they could basically use static and fixed positioning of elements.
 
-However, todays' technologies, be it the mobile industry or technical industry
-in general, the devices have come a long way, and are being worked on really
-fast. What does that mean is that the programmers and designers need 
-to consider that people will have different ways of using and browsing their 
+However, todays' technologies, be it the mobile industry or technical 
+industry
+in general, the devices have come a long way, and are being worked on
+ really
+fast. What does that mean is that the programmers and designers need
+to consider that people will have different ways of using and browsing their
 pages, which require different approaches to design their web pages.
 Nowadays, the clients and users have a broad list of devices, which they can use
-to access a web page, be it a tablet, mobile phone, laptop and even TVs \parencite{1}.    
+to access a web page, be it a tablet, mobile phone, laptop and even TVs \parencite{ITU}.
 
-Basically, the most important thing is to make the web pages' user interface 
+Basically, the most important thing is to make the web pages' user interface
 as friendly as possible, so that the user does not lose much time navigating around.
 And with that being said, web programmers need to automatically think about
 making the web pages in that way, while they are being accessed from those different
-devices mentioned \parencite{2}.
+devices mentioned \parencite{SharkiFisher}.
 
 Responsive Web Design is an approach, or more rather a technique, which is used
 to construct a self-adapting web page, meaning that it adapts, resizes, shrink
 and changes its' form in any way needed to perfectly fit the web-accessing device
-used to visit it \parencite{3}.   
+used to visit it \parencite{HimanshuNegi}.
 
 
 
@@ -49,21 +57,21 @@ used to visit it \parencite{3}.
 
 \section{How to achieve Responsive Web Design}
 
-If a programmer wants his web site to be responsive, he has to use 
+If a programmer wants his web site to be responsive, he has to use
 following techniques:
 \begin{itemize}
-\item Media queries 
-\item Flexible images and media
-\item Fluid grid layouts
+    \item Media queries
+    \item Flexible images and media
+    \item Fluid grid layouts
 \end{itemize}
 
 
 \section{Media queries}
 
-Media queries are very important because with them it is possible to specify 
+Media queries are very important because with them it is possible to specify
 with what device the web page is being accessed. The query usually is made of
 a media type, and some conditions which can check if the media type has some special
-property \parencite{4}.
+property \parencite{A.A.Mohamed}.
 
 
 
@@ -76,7 +84,7 @@ property \parencite{4}.
     basicstyle=\footnotesize\ttfamily,
     frame=shadowbox,
     numbers=left,
-    label=list:BibACMIEEE,
+    label=list:MediaQueries,
     ,
 ]
     % An example of a media query, where one can say that for a screen of size 850px or less, the background is black:
@@ -94,13 +102,13 @@ Basically it allows defining specific CSS rules, depending on the device used.
 From this example above, with the help of the parameter \emph{screen}
 the media type was specified and using \emph{max-width} the condition was determined which
 affects the device of the user. Now, there are many different conditions which
-can be used, and they are really helpful, because with them it is possible to adjust 
-display settings for every device there is. 
+can be used, and they are really helpful, because with them it is possible to adjust
+display settings for every device there is.
 
 For example, if the user is entering the website with his phone, it can be automatically said that an image should have a lower resolution,
 thus adjusting it better for his screen and saving some bandwith.
 
-Another example would be using \emph{display:none} with which some content can completely be hidden that should not be 
+Another example would be using \emph{display:none} with which some content can completely be hidden that should not be
 displayed.
 
 \begin{lstlisting}[%
@@ -111,7 +119,7 @@ displayed.
     basicstyle=\footnotesize\ttfamily,
     frame=shadowbox,
     numbers=left,
-    label=list:BibACMIEEE,
+    label=list:MediaQueries2,
      stringstyle=\color{blue}
     ,
 ]
@@ -156,26 +164,25 @@ the bibliography.
 Normally, websites are constructed in a layout which is grid-built, because they are
 easier to handle in different kind of devices. Also what is specific
 for that kind of layout is that it is built using divs, HTML tables and so on. Now, on top of that
-responsive web design comes in play\parencite{5}. With it, it is possible to use percentage-based element sizing which is easier than using pixels. 
+responsive web design comes in play\parencite{B.Frain}. With it, it is possible to use percentage-based element sizing which is easier than using pixels.
 
 According by (Abdulrehman,2015) a flexible grid-layout is one of the foundations of responsive
 design. Using the term "grid" does not mean necessarily that a grid framework needs to be used.
-What it means is that specific CSS tricks are used for positioning. Also, he suggest that 
-using pixels for the measurement unit should be stopped, because pixels can vary. 
+What it means is that specific CSS tricks are used for positioning. Also, he suggest that
+using pixels for the measurement unit should be stopped, because pixels can vary.
 
 For example, on one device they can be one point or dot, on another device it can be a few more, and therefore
 unreliable. So, what needs to be done is that, if pixels are used, they should be converted using
 a formula stated by (Marcotte, 2010) in  Dan Cederholm's book named "Handcrafted CSS":
 
 \begin{ceqn}
-\begin{align}
-    Target \div Context = Result
-\end{align}
+    \begin{align}
+        Target \div Context = Result
+    \end{align}
 \end{ceqn}
 
 It is asserted by (Pettit, 2012) that, to use this formula, the context of the element
 needs to be divided by the target element.
-%TODO -> Example and how to achieve/use Fluid Grid Mirza
 
 
 
@@ -185,71 +192,60 @@ With this approach, any type of media,images depending on the screen resolution
 will resize,collapse,crop and adjust accordingly to it, and to achieve this
 it is possible to use the same thing mentioned in the previous section, relative units,
 if the screen becomes too small then hide the image completely or by cropping some parts
-of the image, again in the case if the screen becomes too small\parencite{6}.
+of the image, again in the case if the screen becomes too small\parencite{HTML5Tutorial}.
 
-\subsection{Relative measurements} 
+\subsection{Relative measurements}
 
 Instead of using pixels,relative dimensions can be used, percentage based. So instead of
 specifying the view and dimensions in pixels, one can specify for example 60\%, which would result
 in resizing or reshrinking of the image based on the resolution of the device accordingly to fill
-60\% of the page. 
+60\% of the page.
 
-%\begin{figure}[h!]
-  %  \centering
-  %  \includegraphics[keepaspectratio,width=\linewidth,height=\halfh]
-  %  {relative.png}
-    
-  %  \caption[Relative Image]{
-  %  The web site of the TeX Users Group \parencite{TUG}.
-    
-   % \label{fig:TUG}
-    %\end{figure}
-    \begin{figure}[h!]
-        \centering
-        \includegraphics[keepaspectratio,width=\linewidth,height=\halfh]
-        {images/relative.png}
-        
-        \caption[Relative Image Dimensions]{
-            Relative Image Dimensions.
+\begin{figure}[tp]
+    \centering
+    \includegraphics[keepaspectratio,width=\linewidth,height=\halfh]
+    {images/relative.png}
+
+    \caption[Relative Image Dimensions]{
+        Relative Image Dimensions.
         \imgcredit{Taken from research paper.}
-        }
-        \label{fig:TUG}
-        \end{figure}
-%TODO SPECIFY LINK AL NE RADI MAMU MU
+    }
+    \label{fig:TUG}
+\end{figure}
 
 
 
-\subsection{Cropping} 
+\subsection{Cropping}
 
 Another option is cropping, which crops the picture to a certain width
-with the help of CSS. 
+with the help of CSS.
 
 \begin{figure}[tp]
     \centering
     \subfloat[%  the % chars remove implicit spacing
-    Picture with original size
+        Picture with original size
     ]
     {%
-    \includegraphics[width=0.85\linewidth]
-    {images/alig1.jpg}%
-    \label{alig1}%
+        \includegraphics[width=0.85\linewidth]
+        {images/alig1.jpg}%
+        \label{alig1}%
     }
     \hfill
     \subfloat[%
-    Picture when cropped 
+        Picture when cropped
     ]
     {%
-    \includegraphics[width=0.45\linewidth]
-    {images/alig2.jpg}%
-    \label{alig2}%
+        \includegraphics[width=0.45\linewidth]
+        {images/alig2.jpg}%
+        \label{alig2}%
     }
-    
+
     \caption[Image Cropping]
     {
-      Image cropping.
-    \imgcredit{https://alligator.io/css/cropping-images-object-fit/.}
+        Image cropping.
+        \imgcredit{https://alligator.io/css/cropping-images-object-fit/.}
     }
-    \label{figWhol}
+    \label{img_cropping}
 \end{figure}
 
 In this Figure above, it can be obviously seen that the result of tweaking the image a bit.
@@ -264,14 +260,14 @@ web site with a smaller device, the image does not have to be hidden, just its' 
     basicstyle=\footnotesize\ttfamily,
     frame=shadowbox,
     numbers=left,
-    label=list:BibACMIEEE,
+    label=list:ImgCrop,
      stringstyle=\color{blue}
     ,
 ]
     % An example of a media query, where one can say that for a screen of size 850px or less, the background is black:
 
     figure{
-     width:300px; /*container-width*/
+     width:18.75rem; /*container-width*/
      overflow:hidden; /*hide bounds of image */
      margin:0;   /*reset margin of figure tag*/
    }
@@ -281,4 +277,4 @@ web site with a smaller device, the image does not have to be hidden, just its' 
 }
 \end{lstlisting}
 Taken from
-\imgcredit{https://medium.com/@elad/how-to-crop-images-with-css-b8471d402b16.}   
+\imgcredit{https://medium.com/@elad/how-to-crop-images-with-css-b8471d402b16.}
