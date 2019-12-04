@@ -24,10 +24,6 @@ o p 21, 23, 25 ...   figures have no captions
 
 
 
-o p 28  Fig 4.8  way too big
-
-
-
 o All figures must be referred to in the running text.
 
 
@@ -46,9 +42,6 @@ o define macro for CSS properties
 
 o survey-tables.tex   tabs in listing
 
-
-
-o why do examples use px   should be responsive
 
 
 
