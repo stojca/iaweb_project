@@ -8,7 +8,7 @@
 %
 %  Created :  27 May 20xx
 %
-%  Changed :  4 Dez 2019
+%  Changed :  05 Dec 2019
 %
 %----------------------------------------------------------------
 
@@ -61,6 +61,7 @@ the web-accessing device used to visit it \parencite{HimanshuNegi}.
 
 If a programmer wants his web site to be responsive, he has to use
 following techniques:
+
 \begin{itemize}
     \item Media queries
     \item Flexible images and media
@@ -77,7 +78,7 @@ the media type has some special property \parencite{A.A.Mohamed}.
 
 
 
-\begin{lstlisting}[%
+\begin{lstlisting}[
     language = CSS, 
     float=tp,
     xleftmargin=0cm,              % no extra margins for floats
@@ -89,20 +90,21 @@ the media type has some special property \parencite{A.A.Mohamed}.
     label=list:MediaQueries,
     ,
 ]
-    % An example of a media query, where one can say that for a screen of size 850px or less, the background is black:
+% An example of a media query, where one can say that for a screen of size 600px or less, the 
+% background color is olive:
 
-    @media screen and (max-width: 600px) {
-    body   {
-          background-color: olive;
-        }
-    }
+@media screen and (max-width: 600px) {
+  body   {
+    background-color: olive;
+  }
+}
 \end{lstlisting}
 
 
 
 Basically it allows defining specific CSS rules, depending on the device
-used. From this example above, with the help of the parameter
-\emph{screen} the media type was specified and using \emph{max-width}
+used. From the example in \ref{list:MediaQueries}, with the help of the parameter
+\propname{screen} the media type was specified and using \propname{max-width}
 the condition was determined which affects the device of the user. Now,
 there are many different conditions which can be used, and they are
 really helpful, because with them it is possible to adjust display
@@ -112,53 +114,49 @@ For example, if the user is entering the website with his phone, it can
 be automatically said that an image should have a lower resolution, thus
 adjusting it better for his screen and saving some bandwith.
 
-Another example would be using \emph{display:none} with which some
+Another example would be using \propname{display:none} with which some
 content can completely be hidden that should not be displayed.
 
 \begin{lstlisting}[%
-    language = HTML, 
+    language = CSS, 
+    float=tp,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
     basicstyle=\footnotesize\ttfamily,
     frame=shadowbox,
     numbers=left,
-    label=list:MediaQueries2,
-     stringstyle=\color{blue}
-    ,
+    label={list:MediaQueries2},
+    stringstyle=\color{blue},
 ]
-    % An example of using display: none:
-
-    <!DOCTYPE html>
-    <html>
-    <head>
+% An example of using display: none:
+<!DOCTYPE html>
+<html>
+  <head>
     <style>
-    h1.none {
-      display: none;
-    }
+      h1.none {
+        display: none;
+      }
     </style>
-    </head>
-    <body>
+  </head>
 
+  <body>
     <h1 class="none">This will not be displayed</h1>
-
-    </body>
-    </html>
-
+  </body>
+</html>
 \end{lstlisting}
 
 
 
 
 %
-If this was ran in the browser, header would not be seen, because
-it was decided to not be shown. If \emph{display:none} was changed to 
-\emph{display:block}
-our header would be visible.
+If this Listing \ref{list:MediaQueries2} was ran in the browser, the header would not 
+be seen, because it was decided to not be shown. If \propname{display:none} was changed to 
+\propname{display:block}, our header would be visible.
 
-Include a list of \emph{all} the relevant papers and resources you
+Include a list of \propname{all} the relevant papers and resources you
 have found and mark those you have chosen to focus on. Make sure
-\emph{all} the papers and resources you found or were given appear in
+\propname{all} the papers and resources you found or were given appear in
 the bibliography.
 
 
@@ -223,7 +221,7 @@ accordingly to fill 60\% of the page.
         Relative Image Dimensions.
         \imgcredit{Taken from research paper.}
     }
-    \label{fig:TUG}
+    \label{fig:relative}
 \end{figure}
 
 
@@ -235,22 +233,18 @@ with the help of CSS.
 
 \begin{figure}[tp]
     \centering
-    \subfloat[%  the % chars remove implicit spacing
-        Picture with original size
-    ]
     {%
         \includegraphics[width=0.85\linewidth]
         {images/alig1.jpg}%
         \label{alig1}%
+        \caption{Picture with original size}
     }
     \hfill
-    \subfloat[%
-        Picture when cropped
-    ]
     {%
         \includegraphics[width=0.45\linewidth]
         {images/alig2.jpg}%
         \label{alig2}%
+        \caption{Picture when cropped}
     }
 
     \caption[Image Cropping]
@@ -261,14 +255,15 @@ with the help of CSS.
     \label{img_cropping}
 \end{figure}
 
-In this Figure above, it can be obviously seen that the result of
-tweaking the image a bit. With just a few CSS commands, it is possible
-to crop the picture and if someone is browsing the web site with a
-smaller device, the image does not have to be hidden, just its' size is
+In Figure \ref{img_cropping}, we see the result of
+tweaking the image a bit with just a few CSS commands. It enables us 
+to crop the picture. If someone is browsing the website with a
+smaller device, the image does not have to be hidden, just its size is
 changed.
 
 \begin{lstlisting}[%
-    language = HTML, 
+    float=tp,
+    language = CSS, 
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
@@ -279,17 +274,17 @@ changed.
      stringstyle=\color{blue}
     ,
 ]
-    % An example of a media query, where one can say that for a screen 
-    % of size 850px or less, the background is black:
+% An example of a media query, where one can say that for a screen 
+% of size 850px or less, the background is black:
+figure{
+  width:18.75rem; /*container-width*/
+  overflow:hidden; /*hide bounds of image */
+  margin:0;   /*reset margin of figure tag*/
+}
 
-    figure{
-     width:18.75rem; /*container-width*/
-     overflow:hidden; /*hide bounds of image */
-     margin:0;   /*reset margin of figure tag*/
-   }
-   figure img{
-     display:block; /*remove inline-block spaces*/
-     width:100%; /*make image streatch*/
+figure img{
+  display:block; /*remove inline-block spaces*/
+  width:100%; /*make image streatch*/
 }
 \end{lstlisting}
 Taken from

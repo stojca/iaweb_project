@@ -70,24 +70,7 @@ o Include unminified libraries as well (for me to read / debug)
 o very messy  not clear which libraries are needed for what
 
 
-
-
-o xmp is obsolete in HTML5
-
-<xmp><table></xmp>
-
-
-
-
-
-
 o does not validate  203 errors found !!
-
-
-
-e.g. at bottom of index.html
-
-
 
 
 

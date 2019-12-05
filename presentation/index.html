@@ -17,20 +17,20 @@
 <link rel="stylesheet" href="css/flipscroll.css"/>
 <link rel="stylesheet" href="css/highlight.css"/>
 <link rel="stylesheet" href="css/report.css"/>
-<link rel="stylesheet" href="node_modules/tablesaw/dist/tablesaw.css">
-<link rel="stylesheet" href="css/horizontalscroll.css">
-<link rel="stylesheet" href="css/fixedHeader.css">
-<link rel="stylesheet" href="css/responsive-global.css">
-<link rel="stylesheet" href="css/fixed-table.css">
-<link rel="stylesheet" href="css/collapserow.css">
-<link rel="stylesheet" href="css/resizecolumns.css">
-<link rel="stylesheet" href="css/highlightcolumn.css">
-<link rel="stylesheet" href="css/test.css">
-<link rel="stylesheet" href="css/alternate.css">
-<link rel="stylesheet" href="css/prism.css">
+<link rel="stylesheet" href="node_modules/tablesaw/dist/tablesaw.css"/>
+<link rel="stylesheet" href="css/horizontalscroll.css"/>
+<link rel="stylesheet" href="css/fixedHeader.css"/>
+<link rel="stylesheet" href="css/responsive-global.css"/>
+<link rel="stylesheet" href="css/fixed-table.css"/>
+<link rel="stylesheet" href="css/collapserow.css"/>
+<link rel="stylesheet" href="css/resizecolumns.css"/>
+<link rel="stylesheet" href="css/highlightcolumn.css"/>
+<link rel="stylesheet" href="css/test.css"/>
+<link rel="stylesheet" href="css/alternate.css"/>
+<link rel="stylesheet" href="css/prism.css"/>
 
 
-<link rel="stylesheet" href="css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="css/jquery.dataTables.min.css"/>
 
 <script src="js/fixed-table.js"></script>
 <script src="node_modules/tablesaw/dist/tablesaw.js"></script>
@@ -42,9 +42,8 @@
 <script type="text/javascript"  src="js/jquery.dataTables.min.js"></script>
 <script type="text/javascript"  src="js/bootstrap.min.js"></script>
 <script type="text/javascript"  src="js/horizontalscroll.js"></script>
-<script type="text/javascript"  src="js/prism.js"></script>
+<script type="text/javascript"  src="js/prism.min.js"></script>
 <script type="text/javascript"  src="js/resizeablecolumns.js"></script>
-<script type="text/javascript"  src="js/colResizable-1.6.min.js"></script>
 <script src="jQuery.resizableColumns.js"></script>
 </head>
 
@@ -95,13 +94,13 @@ Usage of HTML tables is recommended for data which normally belongs to a grid.
 It consists of following elements:
 </p>
 <ul class="compact">
-<li> <xmp><table></xmp> Main element which defines what comes in the table</li>
-<li> <xmp><thead></xmp> Element which groups header content in the table </li>
-<li> <xmp><tr></xmp> Element which defines rows inside the table </li>
-<li> <xmp><th></xmp> Element which defines a data cell inside thead row</li>
-<li> <xmp><tbody></xmp> Element which groups body content in the table </li>
-<li> <xmp><td></xmp> Element which defines data cells inside a row </li>
-<li> <xmp><tfoot></xmp> Element which groups footer content in the table  </li>
+<li> &lttable&gt Main element which defines what comes in the table</li>
+<li> &ltthead&gt Element which groups header content in the table </li>
+<li> &lttr&gt Element which defines rows inside the table </li>
+<li> &ltth&gt Element which defines a data cell inside thead row</li>
+<li> &lttbody&gt Element which groups body content in the table </li>
+<li> &lttd&gt Element which defines data cells inside a row </li>
+<li> &lttfoot&gt Element which groups footer content in the table  </li>
 
 </ul>
 
@@ -109,53 +108,52 @@ It consists of following elements:
 
 <section>
   <h1>Example HTML Table</h1>
-  <pre><code class="language-html"><xmp><table>
-  <thead>
-    <tr>
-      <th title="Car">Car</th>
-      <th title="Manufacturer">Manufacturer</th>
-      <th title="Engine Size(L)">Engine Size(L)</th>
-      <th title="Cylinders">Cylinders</th>
-      <th title="Horsepower">Horsepower</th>
-      <th title="Torque">Torque</th>
-      <th title="Compresion Ratio">Compresion Ratio</th>
-      <th title="Miles per gallon">Miles per gallon</th>
-      <th title="Price(€)">Price(€)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2019 Acura RDX</td>
-      <td>Acura</td>
-      <td style="text-align: right">2.0</td>
-      <td style="text-align: right">4</td>
-      <td style="text-align: right">272</td>
-      <td style="text-align: right">280</td>
-      <td style="text-align: right">9.8:1</td>
-      <td style="text-align: right">28</td>
-      <td style="text-align: right">33,600.00</td>
-    </tr>
-    <tr>
-      <td colspan="5">
-          <h4>Additional information about the car</h4>
+  <pre><code class="language-html">&lttable&gt
+  &ltthead&gt
+    &lttr&gt
+      &ltth title="Car"&gtCar&lt/th&gt
+      &ltth title="Manufacturer"&gtManufacturer&lt/th&gt
+      &ltth title="Engine Size(L)"&gtEngine Size(L)&lt/th&gt
+      &ltth title="Cylinders"&gtCylinders&lt/th&gt
+      &ltth title="Horsepower"&gtHorsepower&lt/th&gt
+      &ltth title="Torque"&gtTorque&lt/th&gt
+      &ltth title="Compresion Ratio"&gtCompresion Ratio&lt/th&gt
+      &ltth title="Miles per gallon"&gtMiles per gallon&lt/th&gt
+      &ltth title="Price(€)"&gtPrice(€)&lt/th&gt
+    &lt/tr&gt
+  &lt/thead&gt
+  &lttbody&gt
+    &lttr&gt
+      &lttd&gt2019 Acura RDX&lt/td&gt
+      &lttd&gtAcura&lt/td&gt
+      &lttd style="text-align: right"&gt2.0&lt/td&gt
+      &lttd style="text-align: right"&gt4&lt/td&gt
+      &lttd style="text-align: right"&gt272&lt/td&gt
+      &lttd style="text-align: right"&gt280&lt/td&gt
+      &lttd style="text-align: right"&gt9.8:1&lt/td&gt
+      &lttd style="text-align: right"&gt28&lt/td&gt
+      &lttd style="text-align: right"&gt33,600.00&lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
+      &lttd colspan="5"&gt
+          &lth4&gtAdditional information about the car&lt/h4&gt
 
-        <ul>
-          <li><a href="https://en.wikipedia.org/wiki/Acura_RDX">Acura RDX</a>
-          </li>
-          <li><a href="https://www.acura.ca/rdx">Acura RDX official webpage</a>
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
+        &ltul&gt
+          &ltli&gt&lta href="https://en.wikipedia.org/wiki/Acura_RDX"&gtAcura RDX&lt/a&gt
+          &lt/li&gt
+          &ltli&gt&lta href="https://www.acura.ca/rdx"&gtAcura RDX official webpage&lt/a&gt
+          &lt/li&gt
+        &lt/ul&gt
+      &lt/td&gt
+    &lt/tr&gt
+    &lttr&gt
     ...
-    <tr>
+    &lttr&gt
     ...
 
-    <tbody>
+    &lttbody&gt
 
-  </table>
-  </xmp>
+  &lt/table&gt
 </code></pre>
 </section>
 
@@ -1191,24 +1189,23 @@ $(document).ready(function(){
 <section>
 <h1>Hidden Columns Code</h1>
 <h2> HTML Prioritization</h2>
-<pre><code class="language-html"><xmp><div class="tablesaw-overflow">
-  <table data-tablesaw-mode="columntoggle">
-    <thead>
-      <tr>
-        <th data-tablesaw-priority="persist">Car</th>
-        <th data-tablesaw-priority="0">Manufacturer</th>
-        <th data-tablesaw-priority="1">Engine Size(L)</th>
-        <th data-tablesaw-priority="2">Cylinders</th>
-        <th data-tablesaw-priority="3">Horsepower</th>
-        <th data-tablesaw-priority="4">Torque</th>
-        <th data-tablesaw-priority="5">Compresion Ratio</th>
-        <th data-tablesaw-priority="6">Miles per gallon</th>
-        <th data-tablesaw-priority="7">Price(€)</th>
-      </tr>
-    </thead>
-  </table>
-</div>
-</xmp>
+<pre><code class="language-html">&ltdiv class="tablesaw-overflow"&gt
+  &lttable data-tablesaw-mode="columntoggle"&gt
+    &ltthead&gt
+      &lttr&gt
+        &ltth data-tablesaw-priority="persist"&gtCar&lt/th&gt
+        &ltth data-tablesaw-priority="0"&gtManufacturer&lt/th&gt
+        &ltth data-tablesaw-priority="1"&gtEngine Size(L)&lt/th&gt
+        &ltth data-tablesaw-priority="2"&gtCylinders&lt/th&gt
+        &ltth data-tablesaw-priority="3"&gtHorsepower&lt/th&gt
+        &ltth data-tablesaw-priority="4"&gtTorque&lt/th&gt
+        &ltth data-tablesaw-priority="5"&gtCompresion Ratio&lt/th&gt
+        &ltth data-tablesaw-priority="6"&gtMiles per gallon&lt/th&gt
+        &ltth data-tablesaw-priority="7"&gtPrice(€)&lt/th&gt
+      &lt/tr&gt
+    &lt/thead&gt
+  &lt/table&gt
+&lt/div&gt
 </code><pre>  
 </section>
 

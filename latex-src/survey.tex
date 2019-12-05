@@ -7,7 +7,7 @@
 %
 %  Created :  24 Mar 2010
 %
-%  Changed :  04 Mar 2019
+%  Changed :  05 Dec 2019
 %
 %----------------------------------------------------------------
 
@@ -806,7 +806,8 @@ doi:\protect\nolinkurl{#1}%
 
 % vname is for variable names, domain names, email addresses
 \newrobustcmd{\vname}[1]{\ttname{#1}}
-
+\newrobustcmd{\elname}[1]{\texttt{#1}}
+\newrobustcmd{\propname}[1]{\texttt{#1}}
 
 
 
@@ -922,7 +923,7 @@ A-8010 Graz, Austria \\[1cm]
 
 \vspace{1cm}
 
-{29 Nov 2019}
+{05 Dec 2019}
 
 \end{center}
 
@@ -998,12 +999,12 @@ Creative Commons Attribution 4.0 International
 %\end{spacing}
 %\addcontentsline{toc}{chapter}{List of Tables}
 
-%\cleardoublepage
-%\begin{spacing}{0.8}
-%\renewcommand{\lstlistlistingname}{List of Listings}
-%\lstlistoflistings
-%\end{spacing}
-%\addcontentsline{toc}{chapter}{List of Listings}
+\cleardoublepage
+\begin{spacing}{0.8}
+\renewcommand{\lstlistlistingname}{List of Listings}
+\lstlistoflistings
+\end{spacing}
+\addcontentsline{toc}{chapter}{List of Listings}
 
 
 

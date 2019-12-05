@@ -29,15 +29,16 @@ mainly due to two reasons:
 
 \section{Structure of Tables}
 
-The basic structure of an HTML table starts with the \textit{<table>}
+The basic structure of an HTML table starts with the \elname{<table>}
 tag. It is the starting point for constructing a table. Now, HTML
 tables consist of columns and rows, like normal tables. For rows, the
-tag  \textit{<tr>} is used, whereas for table header \textit{<th>} tag
+tag  \elname{<tr>} is used, whereas for table header \elname{<th>} tag
 is used. Normally, table headers are positioned in the center and are
-bold. For table cells \textit{<td>} tag is used \parencite{AdamWood}.
+bold. For table cells \elname{<td>} tag is used \parencite{AdamWood}.
 
 \begin{lstlisting}[%
-    language = HTML,
+    float = tp,
+    language = CSS,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
@@ -45,54 +46,52 @@ bold. For table cells \textit{<td>} tag is used \parencite{AdamWood}.
     frame=shadowbox,
     numbers=left,
     label=list:Structure,
-    ,
 ]
-    % An example of an HTML Table which demonstrates information
-     about cars:
-    <!DOCTYPE html>
+% An example of an HTML Table which demonstrates information about cars:
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Best Cars 2019</title>
+  <title>Best Cars 2019</title>
 </head>
 <body>
 <table class="table table-bordered table-hover table-condensed">
-	<thead>
-		<tr>
-			<th title="Field #1">Car</th>
-			<th title="Field #2">Manufacturer</th>
-			<th title="Field #3">Engine Size</th>
-			<th title="Field #4">Cylinders</th>
-			<th title="Field #5">Horsepower</th>
-			<th title="Field #6">Torque</th>
-			<th title="Field #7">Compresion Ratio</th>
-			<th title="Field #8">Miles per gallon</th>
-			<th title="Field #9">Price</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>2019 Acura RDX</td>
-			<td>Acura</td>
-			<td>2.00L</td>
-			<td align="right">4</td>
-			<td align="right">272</td>
-			<td align="right">280</td>
-			<td>9.8:1</td>
-			<td align="right">28</td>
-			<td>€33,600.00</td>
-		</tr>
-		<tr>
-			<td>2019 Ford Ranger</td>
-			<td>Ford</td>
-			<td>2.30L</td>
-			<td align="right">4</td>
-			<td align="right">270</td>
-			<td align="right">310</td>
-			<td>10.0:1</td>
-			<td align="right">21</td>
-			<td>€21,800.00</td>
-		</tr>
-	</tbody>
+  <thead>
+    <tr>
+      <th title="Field #1">Car</th>
+      <th title="Field #2">Manufacturer</th>
+      <th title="Field #3">Engine Size</th>
+      <th title="Field #4">Cylinders</th>
+      <th title="Field #5">Horsepower</th>
+      <th title="Field #6">Torque</th>
+      <th title="Field #7">Compresion Ratio</th>
+      <th title="Field #8">Miles per gallon</th>
+      <th title="Field #9">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2019 Acura RDX</td>
+      <td>Acura</td>
+      <td>2.00L</td>
+      <td align="right">4</td>
+      <td align="right">272</td>
+      <td align="right">280</td>
+      <td>9.8:1</td>
+      <td align="right">28</td>
+      <td>€33,600.00</td>
+    </tr>
+    <tr>
+      <td>2019 Ford Ranger</td>
+      <td>Ford</td>
+      <td>2.30L</td>
+      <td align="right">4</td>
+      <td align="right">270</td>
+      <td align="right">310</td>
+      <td>10.0:1</td>
+      <td align="right">21</td>
+      <td>€21,800.00</td>
+    </tr>
+  </tbody>
 </table>
 
 </body>
@@ -102,26 +101,28 @@ bold. For table cells \textit{<td>} tag is used \parencite{AdamWood}.
 
 Now, there exist more tags which can be used for HTML5 tables:
 \begin{itemize}
-    \item[--] $<$\texttt{thead}$>$ - Table header, it is used to point
+    \item[--] $<$\elname{thead}$>$ - Table header, it is used to point
 out single or multiple rows of a table, which do not contain table
 data but column labels \parencite{ChrisCoyier}.
 
-    \item[--] $<$\texttt{tbody}$>$ - Table body, it is used to point
-out $<$\texttt{tr}$>$ elements. Position this tag always after
-$<$\texttt{thead}$>$, but it can also come after or before
-$<$\texttt{tfoot}$>$ \parencite{ChrisCoyier}.
+    \item[--] $<$\elname{tbody}$>$ - Table body, it is used to point
+out $<$\elname{tr}$>$ elements. Position this tag always after
+$<$\elname{thead}$>$, but it can also come after or before
+$<$\elname{tfoot}$>$ \parencite{ChrisCoyier}.
 
-    \item[--] $<$\texttt{tfoot}$>$ - Table footer, it is used to point
-out single or multiple $<$\texttt{tr}$>$ elements where those elements
+    \item[--] $<$\elname{tfoot}$>$ - Table footer, it is used to point
+out single or multiple $<$\elname{tr}$>$ elements where those elements
 are presenting an overview  of the data in the table
 \parencite{ChrisCoyier}.
 
-    \item[--] $<$\texttt{caption}$>$ - Table caption, as the name
+    \item[--] $<$\elname{caption}$>$ - Table caption, as the name
 already says, can be used to specify table caption. Can be put on the
 bottom of the CSS document.
 
-    \item[--] $<$\texttt{col}$>$ - While using col and some other
+    \item[--] $<$\elname{col}$>$ - While using col and some other
 keyword, for example, align, it is possible direct the alignment of
 text in the table. There are other keywords whom can be used to adjust
 colors, width and many other things of table columns.
 \end{itemize}
+
+An example HTML table code can be seen in Listing \ref{list:Structure}.

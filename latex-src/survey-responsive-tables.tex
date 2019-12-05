@@ -1,16 +1,18 @@
 %----------------------------------------------------------------
 %
-%  File    :  survey-recc.tex
+%  File    :  survey-responsive-tables.tex
 %
 %  Author  :  Mirza Kabiljagic, Stefan Rajinovic, Aleksandar Stojicic,
 %             Inti Gabriel Mendoza Estrada
 %
 %  Created :  27 May 20xx
 %
-%  Changed :  4 Dez 2019
+%  Changed :  05 Dec 2019
 %
 %----------------------------------------------------------------
+
 \chapter{Responsive Tables}
+\label{chap:respt}
 
 Due to the increasing amount of screens and their varying shapes,
 sizes, and developers' space allocation when designing and
@@ -25,14 +27,13 @@ big favor is done to the clients, by adjusting the table according to
 their devices. One idea would be to minimize the table, but if the
 user is looking at the table from his mobile device, he would have to
 zoom in, which is not that useful to him, because then again he would
-need to scroll
-to view the whole table \parencite{Alligator}.
+need to scroll to view the whole table \parencite{Alligator}.
 
 \begin{figure}[tp]
     \centering
 
     {%
-    \includegraphics[width=\linewidth]
+    \includegraphics[width=0.30\linewidth]
     {images/zoom_1.png}%
     \label{zoom_1}%
     }
@@ -43,69 +44,70 @@ to view the whole table \parencite{Alligator}.
 
     \imgcredit{https://css-tricks.com/responsive-data-tables/.}
     }
-    \label{before_responsive}
+    \label{fig:before_responsive}
 \end{figure}
 
-As seen in the figure above, both options do not really look nor
+As seen in Figure \ref{fig:before_responsive}, both options do not really look nor
 perform well. So, by using some simple CSS it is possible to fix that
 problem. With the help of the mentioned media queries, it is possible
 to specify for which device sizes, which settings should be used.
 
 \begin{lstlisting}[%
-    language = HTML,
+    float=tp,
+    language = CSS,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
     basicstyle=\footnotesize\ttfamily,
     frame=shadowbox,
     numbers=left,
-    label=list:BibACMIEEE,
+    label=list:mediaq_on_table,
      stringstyle=\color{blue}
     ,
 ]
-    % An example of using simple CSS with media queries on how to 
-    achieve Responsive Design:
+% An example of using simple CSS with media queries on how to 
+% achieve Responsive Design:
 
-    @media
+@media
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr {
-		display: block;
-	}
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
 
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr {
-		position: absolute;
-		top: -624.9375rem;
-		left: -624.9375rem;
-	}
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -624.9375rem;
+    left: -624.9375rem;
+  }
 
-	tr { border: 0.0625rem solid #ccc; }
+  tr { border: 0.0625rem solid #ccc; }
 
-	td {
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 0.0625rem solid #eee;
-		position: relative;
-		padding-left: 50%;
-	}
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 0.0625rem solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
 
-	td:before {
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 0;
-		left: 0.375rem;
-		width: 45%;
-		padding-right: 0.625rem;
-		white-space: nowrap;
-	}
-
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0;
+    left: 0.375rem;
+    width: 45%;
+    padding-right: 0.625rem;
+    white-space: nowrap;
+  }
+}
 \end{lstlisting}
 
-And now, the end result is seen in the image below.
+And now, the end result is seen in the Figure \ref{fig:figZoom3}.
 \begin{figure}[tp]
     \centering
 
@@ -121,11 +123,11 @@ And now, the end result is seen in the image below.
 
     \imgcredit{https://css-tricks.com/responsive-data-tables/.}
     }
-    \label{figZoom3}
+    \label{fig:figZoom3}
 \end{figure}
 
 
-Some of the most popular techniques are:
+Some of the most popular responsive techniques are:
 \begin{itemize}
     \item[--] Hidden Columns - Selected by User
     \item[--] Horizontal Scroll
@@ -173,10 +175,11 @@ Our implementation of horizontal scrolling creates table elements
  to the end\parencite{HS_1}.
 
 The code required to implement this technique 
-on a table is shown below.
+on a table is shown in Listing \ref{list:HScroll}.
 
 \begin{lstlisting}[%
-    language = HTML,
+    float=tp,
+    language = CSS,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
@@ -188,39 +191,32 @@ on a table is shown below.
     ,
 ]
 .rtable {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
 
-    display: inline-block;
-    vertical-align: top;
-    max-width: 100%;
+  overflow-x: auto;
 
-    overflow-x: auto;
+  // optional - looks better for small cell values
+  white-space: nowrap;
 
-    // optional - looks better for small cell values
-    white-space: nowrap;
-
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 \end{lstlisting}
 
-This CSS code represents CSS class \texttt{.rtable} used in the case
+This CSS code represents CSS class \propname{.rtable} used in the case
 when container is not resized. With display: inline-block all items
-are listed horizontally instead of vertically.
-
-\texttt{vertical-align} property maintains how elements set next to
-each other in a line.
-
-The \texttt{overflow} property determines whether to crop content or
+are listed horizontally instead of vertically. \propname{vertical-align} 
+property maintains how elements set next to each other in a line. The 
+\propname{overflow} property determines whether to crop content or
 to add scroll bars (along the x-axis) when a table's content is too
-big to satisfy some screen resolution.
+big to satisfy some screen resolution. We can use \propname{white-space: nowrap} 
+property as optional for small cell values. CSS border properties are used 
+to control borders into a table\parencite{HS_1}.
 
-We can use \texttt{white-space: nowrap} property as optional for small
-cell values.
-Css border properties are used to control borders into a 
-table\parencite{HS_1}.
-
-An example HTML table with this technique is shown below.
+An example HTML table with this technique is shown in Figure \ref{fig:horiz_scroll}.
 \begin{figure}[tp]
     \centering
 
@@ -236,27 +232,22 @@ An example HTML table with this technique is shown below.
 
     \imgcredit{Screenshot taken by the author.}
     }
-    \label{horiz_scroll}
+    \label{fig:horiz_scroll}
 \end{figure}
 
 \section{Fixed Header}
 When the table is vertically long, the table's header is fixed to the
 top of the table's view. As we scroll down, the table's header is kept
-always visible.
-
-It is very useful to have the fixed header (first row containing the
+always visible. It is very useful to have the fixed header (first row containing the
 header cells) fixed on the top of the table, when presenting tables
 with a particularly larage data set. This helps users to quickly
 determine what every column identify rather than need to scroll back
 to the top of the table every time.
 
 Fixed Header provides information that allows the user to always know
-in what column the cell the user is looking at is in.
-
-This is very effective feature that makes our life easier
-\parencite{HS}.
-
-This solution works for following browsers:
+in what column the cell the user is looking at is in. This is very effective feature 
+that makes our life easier \parencite{HS}. An implementation can be seen in Listing
+\ref{list:FixedHeader2}. This solution works for following browsers:
 \begin{itemize}
     \item[--] Google Chrome
     \item[--] Mozzila Firefox
@@ -266,7 +257,8 @@ This solution works for following browsers:
 \end{itemize}
 
 \begin{lstlisting}[%
-    language = HTML,
+    float=tp,
+    language = CSS,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
@@ -278,51 +270,42 @@ This solution works for following browsers:
     ,
 ]
 .fixedHeader tbody {
-    display: block;
-    overflow: auto;
-    width: 100%;
+  display: block;
+  overflow: auto;
+  width: 100%;
 }
 
 .fixedHeader thead tr {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
 }
 
 .fixedHeader thead, .fixedHeader tbody tr {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
 }
 
 .fixedHeader thead {
-    width: calc( 100% - 0.6em )
+  width: calc( 100% - 0.6em )
 }
 
 .fixedHeader td {
-    width: 100%;
+  width: 100%;
 }
 
 \end{lstlisting}
 
-$<$\texttt{tbody}$>$ element is determined with the type of rendering
-box.
+$<$\propname{tbody}$>$ element is determined with the type of rendering
+box. With \propname{overflow: auto}, a scrollbar will appear along y-axis.
+All $<$\propname{thead}$>$ and $<$\propname{tbody}$>$ rows will behave as
+table elements. Fixed table layout algorithm is used to control table and column
+widths. Width for almost every table element is static, just the header has
+non-static width \parencite{FH_1}. The width of header is determined with 
+the \propname{calc()} function to allow responsiveness \parencite{FH}.
 
-With \texttt{overflow: auto}, a scrollbar will appear along y-axis.
-
-All $<$\texttt{thead}$>$ and $<$\texttt{tbody}$>$ rows will behave as
-table elements.
-
-Fixed table layout algorithm is used to control table and column
-widths.
-
-Width for almost every table element is static, just the header has
-non-static width \parencite{FH_1}.
-
-The width of header is determined with the \texttt{calc()} function to
-allow responsiveness \parencite{FH}.
-
-An example HTML table with this technique is shown below.
+An example HTML table with this technique is shown in Figure \ref{fig:fixed_header2}.
 
 \begin{figure}[tp]
     \centering
@@ -339,7 +322,7 @@ An example HTML table with this technique is shown below.
 
     \imgcredit{Screenshot taken by the author.}
     }
-    \label{fixed_header2}
+    \label{fig:fixed_header2}
 \end{figure}
 
  
@@ -356,12 +339,11 @@ Rather than having the user scroll through features, the user is now
 able to scroll through objects horizontally instead. This is the
 result of transposing the table. The first column will now house the
 (previously column) headers and each column will be devoted to an
-object, rather than each row.
+object, rather than each row. Flip scroll also `promises' to keep the 
+table in the allocated space -- by allowing table horizontal scrolling.
 
-Flip scroll also `promises' to keep the table in the allocated space
--- by allowing table horizontal scrolling.
-
-This solution works for following browsers:
+An implementation can bee seen in Listing \ref{list:FlipScroll}. This 
+solution works for following browsers:
 \begin{itemize}
     \item[--] Google Chrome
     \item[--] Mozzila Firefox
@@ -371,6 +353,7 @@ This solution works for following browsers:
 \end{itemize}
 
 \begin{lstlisting}[%
+    float=tp,
     language = CSS,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
@@ -383,33 +366,31 @@ This solution works for following browsers:
     ,
 ]
 table.flipscroll{
-    width: 100%;
-    overflow-x: auto;
+  width: 100%;
+  overflow-x: auto;
 }
   
 table.flipscroll  tbody tr { 
-    display: inline-block; 
-    vertical-align: top; 
+  display: inline-block; 
+  vertical-align: top; 
 }
   
 table.flipscroll  tbody { 
-    display: block; 
-    width: auto; 
-    position: relative; 
-    overflow-x: auto; 
-    white-space: nowrap; 
+  display: block; 
+  width: auto; 
+  position: relative; 
+  overflow-x: auto; 
+  white-space: nowrap; 
 }
-
 \end{lstlisting}
 
-Setting \texttt{width: 100\%} and \texttt{overflow-x: auto} makes the
-table horizontally scrollable and stick to the allocated space.
+Setting \propname{width: 100\%} and \propname{overflow-x: auto} makes the
+table horizontally scrollable and stick to the allocated space. The trick 
+is setting the attribute \propname{display: inline-block} on the 
+\propname{tbody tr} HTML tag and \propname{white-space: nowrap} on the
+\propname{tbody} HTML tag \parencite{FS}.
 
-The trick is setting the attribute \texttt{display: inline-block} on
-the \texttt{tbody tr} HTML tag and \texttt{white-space: nowrap} on the
-\texttt{tbody} HTML tag \parencite{FS}.
-
-Following image represents an HTML table with Flip Scroll:
+Figure \ref{fig:FlipScroll} represents an HTML table with Flip Scroll.
 
 \begin{figure}[tp]
     \centering
@@ -426,7 +407,7 @@ Following image represents an HTML table with Flip Scroll:
 
     \imgcredit{Screenshot taken by the author.}
     }
-    \label{figFlipScroll}
+    \label{fig:FlipScroll}
 \end{figure}
 
 
@@ -442,9 +423,10 @@ keep column sizes consistent, being able to resize this column to
 bring other columns into view is highly desireable.
 
 User Resizeable Columns allows the user to tailor the table's
-experience to his/her own preferences. 
-
-There are two possible solutions. Both work for following browsers:
+experience to his/her own preferences. There are two possible solutions. 
+The solution using only CSS can be seen in Listings \ref{list:UserRColumns} 
+and the solution using JQuery can be seen in Listing \ref{list:URC2}. 
+Both work for following browsers:
 \begin{itemize}
     \item[--] Google Chrome
     \item[--] Mozzila Firefox
@@ -453,9 +435,9 @@ There are two possible solutions. Both work for following browsers:
     \item[--] Microsoft Edge
 \end{itemize}
 
-Solution using only CSS and HTML:
 \begin{lstlisting}[%
-    language = HTML,
+    float=tp,
+    language = CSS,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
@@ -479,36 +461,26 @@ Solution using only CSS and HTML:
         </th>
         [...]
     </tr>
-</thead>
-\end{lstlisting}
 
-\begin{lstlisting}[%
-    language = CSS,
-    xleftmargin=0cm,              % no extra margins for floats
-    xrightmargin=0cm,             % no extra margins for floats
-    language=biblatex,
-    basicstyle=\footnotesize\ttfamily,
-    frame=shadowbox,
-    numbers=left,
-    label=list:URC2,
-     stringstyle=\color{blue}
-    ,
-]
-.resizecell {
+</thead>
+  .resizecell {
     resize: horizontal;
     overflow: auto;
     width: 100%;
     hyphens: auto;
-}
+  }
+<style>
+
+</style>
 \end{lstlisting}
 
 Encapsulating every header cell (or every single cell) with a
-\texttt{$<$div$>$} tag allows CSS to enable resizeability by setting
-the attribute \texttt{resize: horizontal} to these divs
+\propname{$<$div$>$} tag allows CSS to enable resizeability by setting
+the attribute \propname{resize: horizontal} to these divs
 \parencite{URC_1}.
 
-Following image represents an HTML table with User Resizeable Columns
-using only HTML and CSS:
+Figure \ref{fig:URCCSS} represents an HTML table with User Resizeable Columns
+using only HTML and CSS.
 
 \begin{figure}[tp]
     \centering
@@ -525,21 +497,20 @@ using only HTML and CSS:
 
     \imgcredit{Screenshot taken by the author.}
     }
-    \label{figURCCSS}
+    \label{fig:URCCSS}
 \end{figure}
 
-Solution using JavaScript (jQuery):
 \begin{lstlisting}[%
-%    language = JavaScript,
+    float=tp,
+    language = CSS,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
     language=biblatex,
     basicstyle=\footnotesize\ttfamily,
     frame=shadowbox,
     numbers=left,
-    label=list:UCR3,
-     stringstyle=\color{blue}
-    ,
+    label=list:URC2,
+    stringstyle=\color{blue},
 ]
 ~/js/jQuery.resizableColumns.js
 
@@ -548,8 +519,9 @@ $(function(){
 }); 
 \end{lstlisting}
 
-The trick is calling the \texttt{resizeableColumns()} on the table of
-your choice \parencite{URC_2}.
+The trick to use this technique using JQuery is calling the 
+\propname{resizeableColumns()} on the table of your choice \parencite{URC_2}.
+The resulting image can be seen in Figure \ref{fig:URCJS}.
 
 \begin{figure}[tp]
     \centering
@@ -566,14 +538,13 @@ your choice \parencite{URC_2}.
 
     \imgcredit{Screenshot taken by the author.}
     }
-    \label{figURCJS}
+    \label{fig:URCJS}
 \end{figure}
 
 \section{Long Two Column}
 Just like Flip Scroll, this technique is useful for an object-based
 table; one where each row is populated by a single `object' where each
 column represents a different feature of the object. 
-\newline
 
 Rather than having the user scroll through features, the user is now
 able to scroll through objects vertically instead. This is the result
@@ -586,11 +557,8 @@ below. This approach creates a `minitable' for each object and appends
 it to the previous object. 
 
 As the name suggest, you end up with a long table of 2 columns, the
-first of which is 'always the same'.
-
-Unlike Flip scroll, it does not keep the table in the allocated space,
-unless you set vertical scrolling.
-
+first of which is 'always the same'. Unlike Flip scroll, it does not 
+keep the table in the allocated space, unless you set vertical scrolling.
 This solution works for following browsers:\begin{itemize}
     \item[--] Google Chrome
     \item[--] Mozzila Firefox
@@ -600,6 +568,7 @@ This solution works for following browsers:\begin{itemize}
 \end{itemize}
 
 \begin{lstlisting}[%
+    float=tp,
     language = CSS,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
@@ -612,40 +581,40 @@ This solution works for following browsers:\begin{itemize}
     ,
 ]
 table, thead, tbody, th, td, tr {
-    display: block;
+  display: block;
 }
 
 td {
-    /* Behave  like a "row" */
-    border: none;
-    border-bottom: 0.0625rem solid #eee;
-    position: relative;
-    padding-left: 50%;
+  /* Behave  like a "row" */
+  border: none;
+  border-bottom: 0.0625rem solid #eee;
+  position: relative;
+  padding-left: 50%;
 }
 
 td:before {
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 0;
-    left: 0.375rem;
-    width: 45%;
-    padding-right: 0.625rem;
-    white-space: nowrap;
+  /* Now like a table header */
+  position: absolute;
+  /* Top/left values mimic padding */
+  top: 0;
+  left: 0.375rem;
+  width: 45%;
+  padding-right: 0.625rem;
+  white-space: nowrap;
 }
 \end{lstlisting}
 
-The trick is setting the table's elements to
- \texttt{display: block} and the $<$\texttt{td}$>$ 
- tag's attribute to \texttt{position: relative} \parencite{L2C}.
-
-Following image represents an HTML table with Long Two Column:
+As seen in Listing \ref{list:LongTwoColumn}, trick is setting the 
+table's elements to \propname{display: block} and the $<$\propname{td}$>$ 
+ tag's attribute to \propname{position: relative} \parencite{L2C}.
+ Figure \ref{fig:LongTwoColumn} shows an HTML table with Long Two Column
+ technique applied to it.
 
 \begin{figure}[tp]
     \centering
 
     {%
-    \includegraphics[width=0.65\linewidth]
+    \includegraphics[width=0.5\linewidth]
     {images/long_two_column.png}%
     \label{long_two_column}%
     }
@@ -656,5 +625,5 @@ Following image represents an HTML table with Long Two Column:
 
     \imgcredit{Screenshot taken by the author.}
     }
-    \label{figLongTwoColumn}
+    \label{fig:LongTwoColumn}
 \end{figure}

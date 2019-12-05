@@ -19,52 +19,69 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
-    \entry{8}{online}{}
+    \entry{PG_2}{online}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=1a5ac2942f99ff6389e1503e45b10e29}{%
-           family={{Adam Wood}},
-           familyi={A\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=1351272bf465699b51ebfd9a95cdcecf}{%
+           family={Ahmad},
+           familyi={A\bibinitperiod},
+           given={Irfan},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{1a5ac2942f99ff6389e1503e45b10e29}
-      \strng{fullhash}{1a5ac2942f99ff6389e1503e45b10e29}
-      \strng{bibnamehash}{1a5ac2942f99ff6389e1503e45b10e29}
-      \strng{authorbibnamehash}{1a5ac2942f99ff6389e1503e45b10e29}
-      \strng{authornamehash}{1a5ac2942f99ff6389e1503e45b10e29}
-      \strng{authorfullhash}{1a5ac2942f99ff6389e1503e45b10e29}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{labeldatesource}{nodate}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{HTML Tags}
-      \verb{urlraw}
-      \verb https://html.com/tags/tbody/
-      \endverb
-      \verb{url}
-      \verb https://html.com/tags/tbody/
-      \endverb
-    \endentry
-    \entry{10}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=e678484c8c1bbf0bdd3f7760c1c2bf17}{%
-           family={{Alligator.io LLC}},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{e678484c8c1bbf0bdd3f7760c1c2bf17}
-      \strng{fullhash}{e678484c8c1bbf0bdd3f7760c1c2bf17}
-      \strng{bibnamehash}{e678484c8c1bbf0bdd3f7760c1c2bf17}
-      \strng{authorbibnamehash}{e678484c8c1bbf0bdd3f7760c1c2bf17}
-      \strng{authornamehash}{e678484c8c1bbf0bdd3f7760c1c2bf17}
-      \strng{authorfullhash}{e678484c8c1bbf0bdd3f7760c1c2bf17}
+      \strng{namehash}{1351272bf465699b51ebfd9a95cdcecf}
+      \strng{fullhash}{1351272bf465699b51ebfd9a95cdcecf}
+      \strng{bibnamehash}{1351272bf465699b51ebfd9a95cdcecf}
+      \strng{authorbibnamehash}{1351272bf465699b51ebfd9a95cdcecf}
+      \strng{authornamehash}{1351272bf465699b51ebfd9a95cdcecf}
+      \strng{authorfullhash}{1351272bf465699b51ebfd9a95cdcecf}
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{month}{6}
+      \field{title}{Fixed header and scrollable body in table in html angular}
+      \field{urlday}{15}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.socialmediatoday.com/news/how-much-data-is-generated-every-minute-infographic-1/525692/
+      \endverb
+      \verb{url}
+      \verb https://www.socialmediatoday.com/news/how-much-data-is-generated-every-minute-infographic-1/525692/
+      \endverb
+    \endentry
+    \entry{Alligator}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2f397f9000ff85bacdb382332d827148}{%
+           family={Alligator},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f397f9000ff85bacdb382332d827148}
+      \strng{fullhash}{2f397f9000ff85bacdb382332d827148}
+      \strng{bibnamehash}{2f397f9000ff85bacdb382332d827148}
+      \strng{authorbibnamehash}{2f397f9000ff85bacdb382332d827148}
+      \strng{authornamehash}{2f397f9000ff85bacdb382332d827148}
+      \strng{authorfullhash}{2f397f9000ff85bacdb382332d827148}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Alligator}
       \field{title}{Implementing A Pure CSS Collapsible}
+      \field{urlday}{3}
+      \field{urlmonth}{12}
+      \field{urlyear}{2019}
       \field{year}{2019}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://alligator.io/css/collapsible/
       \endverb
@@ -72,20 +89,92 @@
       \verb https://alligator.io/css/collapsible/
       \endverb
     \endentry
+    \entry{HS_1}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=59837f5f8592042a4259c47ef4730e11}{%
+           family={Bushell},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{59837f5f8592042a4259c47ef4730e11}
+      \strng{fullhash}{59837f5f8592042a4259c47ef4730e11}
+      \strng{bibnamehash}{59837f5f8592042a4259c47ef4730e11}
+      \strng{authorbibnamehash}{59837f5f8592042a4259c47ef4730e11}
+      \strng{authornamehash}{59837f5f8592042a4259c47ef4730e11}
+      \strng{authorfullhash}{59837f5f8592042a4259c47ef4730e11}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{4}
+      \field{month}{3}
+      \field{title}{CSS only Responsive Tables}
+      \field{urlday}{4}
+      \field{urlmonth}{3}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://dbushell.com/2016/03/04/css-only-responsive-tables/
+      \endverb
+      \verb{url}
+      \verb https://dbushell.com/2016/03/04/css-only-responsive-tables/
+      \endverb
+    \endentry
+    \entry{ChrisCoyier}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d33f3a40f4849e0684f177ef73b62f3e}{%
+           family={Coyier},
+           familyi={C\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d33f3a40f4849e0684f177ef73b62f3e}
+      \strng{fullhash}{d33f3a40f4849e0684f177ef73b62f3e}
+      \strng{bibnamehash}{d33f3a40f4849e0684f177ef73b62f3e}
+      \strng{authorbibnamehash}{d33f3a40f4849e0684f177ef73b62f3e}
+      \strng{authornamehash}{d33f3a40f4849e0684f177ef73b62f3e}
+      \strng{authorfullhash}{d33f3a40f4849e0684f177ef73b62f3e}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{title}{Responsive Data Tables}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://css-tricks.com/responsive-data-tables/
+      \endverb
+      \verb{url}
+      \verb https://css-tricks.com/responsive-data-tables/
+      \endverb
+    \endentry
     \entry{HS}{online}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=4338ffdb7864361d42ba506b07a7f450}{%
-           family={{Andrew Coyle}},
-           familyi={A\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=1e73cb1c121ada5b4548af0b29e88879}{%
+           family={Coyle},
+           familyi={C\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{4338ffdb7864361d42ba506b07a7f450}
-      \strng{fullhash}{4338ffdb7864361d42ba506b07a7f450}
-      \strng{bibnamehash}{4338ffdb7864361d42ba506b07a7f450}
-      \strng{authorbibnamehash}{4338ffdb7864361d42ba506b07a7f450}
-      \strng{authornamehash}{4338ffdb7864361d42ba506b07a7f450}
-      \strng{authorfullhash}{4338ffdb7864361d42ba506b07a7f450}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \strng{namehash}{1e73cb1c121ada5b4548af0b29e88879}
+      \strng{fullhash}{1e73cb1c121ada5b4548af0b29e88879}
+      \strng{bibnamehash}{1e73cb1c121ada5b4548af0b29e88879}
+      \strng{authorbibnamehash}{1e73cb1c121ada5b4548af0b29e88879}
+      \strng{authornamehash}{1e73cb1c121ada5b4548af0b29e88879}
+      \strng{authorfullhash}{1e73cb1c121ada5b4548af0b29e88879}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -106,74 +195,11 @@
       \verb https://uxdesign.cc/design-better-data-tables-4ecc99d23356
       \endverb
     \endentry
-    \entry{PG}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=27d959962b7b543f9a4c475fb3b03fc4}{%
-           family={{Brian Tompsett}},
-           familyi={B\bibinitperiod}}}%
-      }
-      \strng{namehash}{27d959962b7b543f9a4c475fb3b03fc4}
-      \strng{fullhash}{27d959962b7b543f9a4c475fb3b03fc4}
-      \strng{bibnamehash}{27d959962b7b543f9a4c475fb3b03fc4}
-      \strng{authorbibnamehash}{27d959962b7b543f9a4c475fb3b03fc4}
-      \strng{authornamehash}{27d959962b7b543f9a4c475fb3b03fc4}
-      \strng{authorfullhash}{27d959962b7b543f9a4c475fb3b03fc4}
-      \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{2}
-      \field{month}{2}
-      \field{title}{How to use paging in a table in html}
-      \field{urlday}{2}
-      \field{urlmonth}{2}
-      \field{urlyear}{2018}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://stackoverflow.com/questions/48966595/how-to-use-paging-in-a-table-in-html/48966882
-      \endverb
-      \verb{url}
-      \verb https://stackoverflow.com/questions/48966595/how-to-use-paging-in-a-table-in-html/48966882
-      \endverb
-    \endentry
-    \entry{9}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=59289bbfae3f35038ba2bf9b77b6fadf}{%
-           family={{Chris Coyier}},
-           familyi={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{59289bbfae3f35038ba2bf9b77b6fadf}
-      \strng{fullhash}{59289bbfae3f35038ba2bf9b77b6fadf}
-      \strng{bibnamehash}{59289bbfae3f35038ba2bf9b77b6fadf}
-      \strng{authorbibnamehash}{59289bbfae3f35038ba2bf9b77b6fadf}
-      \strng{authornamehash}{59289bbfae3f35038ba2bf9b77b6fadf}
-      \strng{authorfullhash}{59289bbfae3f35038ba2bf9b77b6fadf}
-      \field{sortinit}{C}
-      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{6}
-      \field{title}{Responsive Data Tables}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \verb{urlraw}
-      \verb https://css-tricks.com/responsive-data-tables/
-      \endverb
-      \verb{url}
-      \verb https://css-tricks.com/responsive-data-tables/
-      \endverb
-    \endentry
     \entry{L2C}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d982f412f23f7e67c314fbff3779f683}{%
-           family={{CSS-Tricks}},
-           familyi={C\bibinitperiod}}}%
+           family={CSS-Tricks},
+           familyi={C\bibinithyphendelim T\bibinitperiod}}}%
       }
       \strng{namehash}{d982f412f23f7e67c314fbff3779f683}
       \strng{fullhash}{d982f412f23f7e67c314fbff3779f683}
@@ -219,41 +245,35 @@
       \verb https://datatables.net/
       \endverb
     \endentry
-    \entry{HS_1}{online}{}
+    \entry{FS}{online}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=48ff2735d243bb81d0ffd75714aec823}{%
-           family={{David Bushell}},
-           familyi={D\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=45d37b20d92a02e7e16ade2a9550bdbf}{%
+           family={Elvery},
+           familyi={E\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{48ff2735d243bb81d0ffd75714aec823}
-      \strng{fullhash}{48ff2735d243bb81d0ffd75714aec823}
-      \strng{bibnamehash}{48ff2735d243bb81d0ffd75714aec823}
-      \strng{authorbibnamehash}{48ff2735d243bb81d0ffd75714aec823}
-      \strng{authornamehash}{48ff2735d243bb81d0ffd75714aec823}
-      \strng{authorfullhash}{48ff2735d243bb81d0ffd75714aec823}
-      \field{sortinit}{D}
-      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \strng{namehash}{45d37b20d92a02e7e16ade2a9550bdbf}
+      \strng{fullhash}{45d37b20d92a02e7e16ade2a9550bdbf}
+      \strng{bibnamehash}{45d37b20d92a02e7e16ade2a9550bdbf}
+      \strng{authorbibnamehash}{45d37b20d92a02e7e16ade2a9550bdbf}
+      \strng{authornamehash}{45d37b20d92a02e7e16ade2a9550bdbf}
+      \strng{authorfullhash}{45d37b20d92a02e7e16ade2a9550bdbf}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{day}{4}
-      \field{month}{3}
-      \field{title}{CSS only Responsive Tables}
-      \field{urlday}{4}
-      \field{urlmonth}{3}
-      \field{urlyear}{2016}
-      \field{year}{2016}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
+      \field{title}{Responsive Tables Demo}
       \verb{urlraw}
-      \verb https://dbushell.com/2016/03/04/css-only-responsive-tables/
+      \verb https://elvery.net/demo/responsive-tables/
       \endverb
       \verb{url}
-      \verb https://dbushell.com/2016/03/04/css-only-responsive-tables/
+      \verb https://elvery.net/demo/responsive-tables/
       \endverb
     \endentry
-    \entry{6}{booklet}{}
+    \entry{B.Frain}{booklet}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=3de02376eec55417db0fd9d9aecdf124}{%
            family={Frain},
@@ -281,7 +301,7 @@
     \entry{FH_1}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f78e235f1b1fe3f89f7f6e9714a80b9c}{%
-           family={{Frederic}},
+           family={Frederic},
            familyi={F\bibinitperiod}}}%
       }
       \strng{namehash}{f78e235f1b1fe3f89f7f6e9714a80b9c}
@@ -306,8 +326,8 @@
     \entry{URC_2}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=eae2c9e2a5624990c2c2a9117fc53e1c}{%
-           family={{Jo-Geek}},
-           familyi={J\bibinitperiod}}}%
+           family={Jo-Geek},
+           familyi={J\bibinithyphendelim G\bibinitperiod}}}%
       }
       \strng{namehash}{eae2c9e2a5624990c2c2a9117fc53e1c}
       \strng{fullhash}{eae2c9e2a5624990c2c2a9117fc53e1c}
@@ -333,98 +353,10 @@
       \verb https://www.jqueryscript.net/table/jQuery-Plugin-Resizable-Table-Columns.html
       \endverb
     \endentry
-    \entry{4}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9349d26158bd633cbeb7b4f9f4c176d1}{%
-           family={{Himanshu Negi}},
-           familyi={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{9349d26158bd633cbeb7b4f9f4c176d1}
-      \strng{fullhash}{9349d26158bd633cbeb7b4f9f4c176d1}
-      \strng{bibnamehash}{9349d26158bd633cbeb7b4f9f4c176d1}
-      \strng{authorbibnamehash}{9349d26158bd633cbeb7b4f9f4c176d1}
-      \strng{authornamehash}{9349d26158bd633cbeb7b4f9f4c176d1}
-      \strng{authorfullhash}{9349d26158bd633cbeb7b4f9f4c176d1}
-      \field{sortinit}{H}
-      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{5}
-      \field{title}{Using MediaQueries}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \verb{urlraw}
-      \verb https://medium.com/beginners-guide-to-mobile-web-development/media-queries-54a1a463356f
-      \endverb
-      \verb{url}
-      \verb https://medium.com/beginners-guide-to-mobile-web-development/media-queries-54a1a463356f
-      \endverb
-    \endentry
-    \entry{7}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=86c8a7cedab2c0e7c3a27a659e32d753}{%
-           family={{HTML5 Tutorial}},
-           familyi={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{86c8a7cedab2c0e7c3a27a659e32d753}
-      \strng{fullhash}{86c8a7cedab2c0e7c3a27a659e32d753}
-      \strng{bibnamehash}{86c8a7cedab2c0e7c3a27a659e32d753}
-      \strng{authorbibnamehash}{86c8a7cedab2c0e7c3a27a659e32d753}
-      \strng{authornamehash}{86c8a7cedab2c0e7c3a27a659e32d753}
-      \strng{authorfullhash}{86c8a7cedab2c0e7c3a27a659e32d753}
-      \field{sortinit}{H}
-      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
-      \field{labeldatesource}{nodate}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Basics of Tables}
-      \verb{urlraw}
-      \verb https://html5-tutorial.net/tables/basics-of-tables/
-      \endverb
-      \verb{url}
-      \verb https://html5-tutorial.net/tables/basics-of-tables/
-      \endverb
-    \endentry
-    \entry{PG_2}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=73ebcb7f645cd27b965d6c6c42aa03ad}{%
-           family={{Irfan Ahmad}},
-           familyi={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{73ebcb7f645cd27b965d6c6c42aa03ad}
-      \strng{fullhash}{73ebcb7f645cd27b965d6c6c42aa03ad}
-      \strng{bibnamehash}{73ebcb7f645cd27b965d6c6c42aa03ad}
-      \strng{authorbibnamehash}{73ebcb7f645cd27b965d6c6c42aa03ad}
-      \strng{authornamehash}{73ebcb7f645cd27b965d6c6c42aa03ad}
-      \strng{authorfullhash}{73ebcb7f645cd27b965d6c6c42aa03ad}
-      \field{sortinit}{I}
-      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{15}
-      \field{month}{6}
-      \field{title}{Fixed header and scrollable body in table in html angular}
-      \field{urlday}{15}
-      \field{urlmonth}{6}
-      \field{urlyear}{2018}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.socialmediatoday.com/news/how-much-data-is-generated-every-minute-infographic-1/525692/
-      \endverb
-      \verb{url}
-      \verb https://www.socialmediatoday.com/news/how-much-data-is-generated-every-minute-infographic-1/525692/
-      \endverb
-    \endentry
-    \entry{1}{online}{}
+    \entry{ITU}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9ff5df1aceb925f51c499f4fe90c25f3}{%
-           family={{ITU.int}},
+           family={ITU.int},
            familyi={I\bibinitperiod}}}%
       }
       \list{organization}{1}{%
@@ -453,21 +385,21 @@
       \verb https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx
       \endverb
     \endentry
-    \entry{5}{booklet}{}
+    \entry{A.A.Mohamed}{booklet}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=432231bb9dc163697701d6e03d537705}{%
-           family={MOHAMED},
+        {{un=0,uniquepart=base,hash=e34f83d51588cefa9456e2664ad9ddec}{%
+           family={Mohamed},
            familyi={M\bibinitperiod},
-           given={A.A.},
-           giveni={A\bibinitperiod},
+           given={A.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{432231bb9dc163697701d6e03d537705}
-      \strng{fullhash}{432231bb9dc163697701d6e03d537705}
-      \strng{bibnamehash}{432231bb9dc163697701d6e03d537705}
-      \strng{authorbibnamehash}{432231bb9dc163697701d6e03d537705}
-      \strng{authornamehash}{432231bb9dc163697701d6e03d537705}
-      \strng{authorfullhash}{432231bb9dc163697701d6e03d537705}
+      \strng{namehash}{e34f83d51588cefa9456e2664ad9ddec}
+      \strng{fullhash}{e34f83d51588cefa9456e2664ad9ddec}
+      \strng{bibnamehash}{e34f83d51588cefa9456e2664ad9ddec}
+      \strng{authorbibnamehash}{e34f83d51588cefa9456e2664ad9ddec}
+      \strng{authornamehash}{e34f83d51588cefa9456e2664ad9ddec}
+      \strng{authorfullhash}{e34f83d51588cefa9456e2664ad9ddec}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
       \field{extradatescope}{labelyear}
@@ -478,7 +410,39 @@
       \field{year}{2015}
       \field{dateera}{ce}
     \endentry
-    \entry{3}{booklet}{}
+    \entry{HimanshuNegi}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a05017d658bfe82711c55e96d41ca8c9}{%
+           family={Negi},
+           familyi={N\bibinitperiod},
+           given={Himanshu},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a05017d658bfe82711c55e96d41ca8c9}
+      \strng{fullhash}{a05017d658bfe82711c55e96d41ca8c9}
+      \strng{bibnamehash}{a05017d658bfe82711c55e96d41ca8c9}
+      \strng{authorbibnamehash}{a05017d658bfe82711c55e96d41ca8c9}
+      \strng{authornamehash}{a05017d658bfe82711c55e96d41ca8c9}
+      \strng{authorfullhash}{a05017d658bfe82711c55e96d41ca8c9}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Using MediaQueries}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/beginners-guide-to-mobile-web-development/media-queries-54a1a463356f
+      \endverb
+      \verb{url}
+      \verb https://medium.com/beginners-guide-to-mobile-web-development/media-queries-54a1a463356f
+      \endverb
+    \endentry
+    \entry{SharkiFisher}{booklet}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=7990a8a0e189fe77ade2da282e16d2e4}{%
            family={Sharki},
@@ -507,35 +471,75 @@
       \field{year}{2013}
       \field{dateera}{ce}
     \endentry
-    \entry{FS}{online}{}
+    \entry{PG}{online}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=e4cae275780cc42ae968f2bf4d6a1786}{%
-           family={{Simon Elvery}},
-           familyi={S\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=8f891d974bf0c9d8878ff2b0604dcc96}{%
+           family={Tompsett},
+           familyi={T\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{e4cae275780cc42ae968f2bf4d6a1786}
-      \strng{fullhash}{e4cae275780cc42ae968f2bf4d6a1786}
-      \strng{bibnamehash}{e4cae275780cc42ae968f2bf4d6a1786}
-      \strng{authorbibnamehash}{e4cae275780cc42ae968f2bf4d6a1786}
-      \strng{authornamehash}{e4cae275780cc42ae968f2bf4d6a1786}
-      \strng{authorfullhash}{e4cae275780cc42ae968f2bf4d6a1786}
-      \field{sortinit}{S}
-      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \strng{namehash}{8f891d974bf0c9d8878ff2b0604dcc96}
+      \strng{fullhash}{8f891d974bf0c9d8878ff2b0604dcc96}
+      \strng{bibnamehash}{8f891d974bf0c9d8878ff2b0604dcc96}
+      \strng{authorbibnamehash}{8f891d974bf0c9d8878ff2b0604dcc96}
+      \strng{authornamehash}{8f891d974bf0c9d8878ff2b0604dcc96}
+      \strng{authorfullhash}{8f891d974bf0c9d8878ff2b0604dcc96}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{2}
+      \field{month}{2}
+      \field{title}{How to use paging in a table in html}
+      \field{urlday}{2}
+      \field{urlmonth}{2}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://stackoverflow.com/questions/48966595/how-to-use-paging-in-a-table-in-html/48966882
+      \endverb
+      \verb{url}
+      \verb https://stackoverflow.com/questions/48966595/how-to-use-paging-in-a-table-in-html/48966882
+      \endverb
+    \endentry
+    \entry{HTML5Tutorial}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2e417384ec8a72698499a468e55290b0}{%
+           family={Tutorial},
+           familyi={T\bibinitperiod},
+           given={HTML5},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2e417384ec8a72698499a468e55290b0}
+      \strng{fullhash}{2e417384ec8a72698499a468e55290b0}
+      \strng{bibnamehash}{2e417384ec8a72698499a468e55290b0}
+      \strng{authorbibnamehash}{2e417384ec8a72698499a468e55290b0}
+      \strng{authornamehash}{2e417384ec8a72698499a468e55290b0}
+      \strng{authorfullhash}{2e417384ec8a72698499a468e55290b0}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
       \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Responsive Tables Demo}
+      \field{title}{Basics of Tables}
       \verb{urlraw}
-      \verb https://elvery.net/demo/responsive-tables/
+      \verb https://html5-tutorial.net/tables/basics-of-tables/
       \endverb
       \verb{url}
-      \verb https://elvery.net/demo/responsive-tables/
+      \verb https://html5-tutorial.net/tables/basics-of-tables/
       \endverb
     \endentry
     \entry{FH}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b376917c340c73752995d1ed194f0ec1}{%
-           family={{w3schools.com}},
+           family={w3schools.com},
            familyi={w\bibinitperiod}}}%
       }
       \strng{namehash}{b376917c340c73752995d1ed194f0ec1}
@@ -562,7 +566,7 @@
     \entry{URC_1}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b376917c340c73752995d1ed194f0ec1}{%
-           family={{w3schools.com}},
+           family={w3schools.com},
            familyi={w\bibinitperiod}}}%
       }
       \strng{namehash}{b376917c340c73752995d1ed194f0ec1}
@@ -586,36 +590,32 @@
       \verb https://www.w3schools.com/cssref/css3_pr_resize.asp
       \endverb
     \endentry
-    \entry{2}{online}{}
+    \entry{AdamWood}{online}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=e0dedb40dda8df32fd056b6b6551502b}{%
-           family={{Wikimedia Commons}},
-           familyi={W\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=b0de7dedbb027a6d75f36d5f8f26e752}{%
+           family={Wood},
+           familyi={W\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
       }
-      \list{organization}{1}{%
-        { ICT Data and Statistics (IDS)}%
-      }
-      \strng{namehash}{e0dedb40dda8df32fd056b6b6551502b}
-      \strng{fullhash}{e0dedb40dda8df32fd056b6b6551502b}
-      \strng{bibnamehash}{e0dedb40dda8df32fd056b6b6551502b}
-      \strng{authorbibnamehash}{e0dedb40dda8df32fd056b6b6551502b}
-      \strng{authornamehash}{e0dedb40dda8df32fd056b6b6551502b}
-      \strng{authorfullhash}{e0dedb40dda8df32fd056b6b6551502b}
+      \strng{namehash}{b0de7dedbb027a6d75f36d5f8f26e752}
+      \strng{fullhash}{b0de7dedbb027a6d75f36d5f8f26e752}
+      \strng{bibnamehash}{b0de7dedbb027a6d75f36d5f8f26e752}
+      \strng{authorbibnamehash}{b0de7dedbb027a6d75f36d5f8f26e752}
+      \strng{authornamehash}{b0de7dedbb027a6d75f36d5f8f26e752}
+      \strng{authorfullhash}{b0de7dedbb027a6d75f36d5f8f26e752}
       \field{sortinit}{W}
       \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{11}
-      \field{title}{Internet users per 100 inhabitants 1997 to 2007}
-      \field{year}{2011}
-      \field{dateera}{ce}
+      \field{title}{HTML Tags}
       \verb{urlraw}
-      \verb https://commons.wikimedia.org/wiki/File:Internet_users_per_100_inhabitants_1997-2007_ITU.svg
+      \verb https://html.com/tags/tbody/
       \endverb
       \verb{url}
-      \verb https://commons.wikimedia.org/wiki/File:Internet_users_per_100_inhabitants_1997-2007_ITU.svg
+      \verb https://html.com/tags/tbody/
       \endverb
     \endentry
   \enddatalist
