@@ -20,10 +20,6 @@ o p 11  single line of flowing text
 
 
 
-o p 21, 23, 25 ...   figures have no captions
-
-
-
 o All figures must be referred to in the running text.
 
 
@@ -41,13 +37,6 @@ o define macro for CSS properties
 
 
 o survey-tables.tex   tabs in listing
-
-
-
-
-
-
-
 
 
 
@@ -73,9 +62,6 @@ o include libraries locally, not over http
 <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
 
 <script type="text/javascript"  src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-
-
 
 
 
