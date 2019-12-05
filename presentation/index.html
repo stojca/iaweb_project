@@ -94,13 +94,13 @@ Usage of HTML tables is recommended for data which normally belongs to a grid.
 It consists of following elements:
 </p>
 <ul class="compact">
-<li> &lttable&gt Main element which defines what comes in the table</li>
-<li> &ltthead&gt Element which groups header content in the table </li>
-<li> &lttr&gt Element which defines rows inside the table </li>
-<li> &ltth&gt Element which defines a data cell inside thead row</li>
-<li> &lttbody&gt Element which groups body content in the table </li>
-<li> &lttd&gt Element which defines data cells inside a row </li>
-<li> &lttfoot&gt Element which groups footer content in the table  </li>
+<li> &lt;table&gt; Main element which defines what comes in the table</li>
+<li> &lt;thead&gt; Element which groups header content in the table </li>
+<li> &lt;tr&gt; Element which defines rows inside the table </li>
+<li> &lt;th&gt; Element which defines a data cell inside thead row</li>
+<li> &lt;tbody&gt; Element which groups body content in the table </li>
+<li> &lt;td&gt; Element which defines data cells inside a row </li>
+<li> &lt;tfoot&gt; Element which groups footer content in the table  </li>
 
 </ul>
 
@@ -108,52 +108,52 @@ It consists of following elements:
 
 <section>
   <h1>Example HTML Table</h1>
-  <pre><code class="language-html">&lttable&gt
-  &ltthead&gt
-    &lttr&gt
-      &ltth title="Car"&gtCar&lt/th&gt
-      &ltth title="Manufacturer"&gtManufacturer&lt/th&gt
-      &ltth title="Engine Size(L)"&gtEngine Size(L)&lt/th&gt
-      &ltth title="Cylinders"&gtCylinders&lt/th&gt
-      &ltth title="Horsepower"&gtHorsepower&lt/th&gt
-      &ltth title="Torque"&gtTorque&lt/th&gt
-      &ltth title="Compresion Ratio"&gtCompresion Ratio&lt/th&gt
-      &ltth title="Miles per gallon"&gtMiles per gallon&lt/th&gt
-      &ltth title="Price(€)"&gtPrice(€)&lt/th&gt
-    &lt/tr&gt
-  &lt/thead&gt
-  &lttbody&gt
-    &lttr&gt
-      &lttd&gt2019 Acura RDX&lt/td&gt
-      &lttd&gtAcura&lt/td&gt
-      &lttd style="text-align: right"&gt2.0&lt/td&gt
-      &lttd style="text-align: right"&gt4&lt/td&gt
-      &lttd style="text-align: right"&gt272&lt/td&gt
-      &lttd style="text-align: right"&gt280&lt/td&gt
-      &lttd style="text-align: right"&gt9.8:1&lt/td&gt
-      &lttd style="text-align: right"&gt28&lt/td&gt
-      &lttd style="text-align: right"&gt33,600.00&lt/td&gt
-    &lt/tr&gt
-    &lttr&gt
-      &lttd colspan="5"&gt
-          &lth4&gtAdditional information about the car&lt/h4&gt
+  <pre><code class="language-html">&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th title="Car"&gt;Car&lt;/th&gt;
+      &lt;th title="Manufacturer"&gt;Manufacturer&lt;/th&gt;
+      &lt;th title="Engine Size(L)"&gt;Engine Size(L)&lt;/th&gt;
+      &lt;th title="Cylinders"&gt;Cylinders&lt;/th&gt;
+      &lt;th title="Horsepower"&gt;Horsepower&lt;/th&gt;
+      &lt;th title="Torque"&gt;Torque&lt;/th&gt;
+      &lt;th title="Compresion Ratio"&gt;Compresion Ratio&lt;/th&gt;
+      &lt;th title="Miles per gallon"&gt;Miles per gallon&lt;/th&gt;
+      &lt;th title="Price(€)"&gt;Price(€)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2019 Acura RDX&lt;/td&gt;
+      &lt;td&gt;Acura&lt;/td&gt;
+      &lt;td style="text-align: right"&gt;2.0&lt;/td&gt;
+      &lt;td style="text-align: right"&gt;4&lt;/td&gt;
+      &lt;td style="text-align: right"&gt;272&lt;/td&gt;
+      &lt;td style="text-align: right"&gt;280&lt;/td&gt;
+      &lt;td style="text-align: right"&gt;9.8:1&lt;/td&gt;
+      &lt;td style="text-align: right"&gt;28&lt;/td&gt;
+      &lt;td style="text-align: right"&gt;33,600.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td colspan="5"&gt;
+          &lt;h4&gt;Additional information about the car&lt;/h4&gt;
 
-        &ltul&gt
-          &ltli&gt&lta href="https://en.wikipedia.org/wiki/Acura_RDX"&gtAcura RDX&lt/a&gt
-          &lt/li&gt
-          &ltli&gt&lta href="https://www.acura.ca/rdx"&gtAcura RDX official webpage&lt/a&gt
-          &lt/li&gt
-        &lt/ul&gt
-      &lt/td&gt
-    &lt/tr&gt
-    &lttr&gt
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Acura_RDX"&gt;Acura RDX&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href="https://www.acura.ca/rdx"&gt;Acura RDX official webpage&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
     ...
-    &lttr&gt
+    &lt;tr&gt;
     ...
 
-    &lttbody&gt
+    &lt;tbody&gt;
 
-  &lt/table&gt
+  &lt;/table&gt;
 </code></pre>
 </section>
 
@@ -1189,23 +1189,23 @@ $(document).ready(function(){
 <section>
 <h1>Hidden Columns Code</h1>
 <h2> HTML Prioritization</h2>
-<pre><code class="language-html">&ltdiv class="tablesaw-overflow"&gt
-  &lttable data-tablesaw-mode="columntoggle"&gt
-    &ltthead&gt
-      &lttr&gt
-        &ltth data-tablesaw-priority="persist"&gtCar&lt/th&gt
-        &ltth data-tablesaw-priority="0"&gtManufacturer&lt/th&gt
-        &ltth data-tablesaw-priority="1"&gtEngine Size(L)&lt/th&gt
-        &ltth data-tablesaw-priority="2"&gtCylinders&lt/th&gt
-        &ltth data-tablesaw-priority="3"&gtHorsepower&lt/th&gt
-        &ltth data-tablesaw-priority="4"&gtTorque&lt/th&gt
-        &ltth data-tablesaw-priority="5"&gtCompresion Ratio&lt/th&gt
-        &ltth data-tablesaw-priority="6"&gtMiles per gallon&lt/th&gt
-        &ltth data-tablesaw-priority="7"&gtPrice(€)&lt/th&gt
-      &lt/tr&gt
-    &lt/thead&gt
-  &lt/table&gt
-&lt/div&gt
+<pre><code class="language-html">&lt;div class="tablesaw-overflow"&gt;
+  &lt;table data-tablesaw-mode="columntoggle"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th data-tablesaw-priority="persist"&gt;Car&lt;/th&gt;
+        &lt;th data-tablesaw-priority="0"&gt;Manufacturer&lt;/th&gt;
+        &lt;th data-tablesaw-priority="1"&gt;Engine Size(L)&lt;/th&gt;
+        &lt;th data-tablesaw-priority="2"&gt;Cylinders&lt;/th&gt;
+        &lt;th data-tablesaw-priority="3"&gt;Horsepower&lt;/th&gt;
+        &lt;th data-tablesaw-priority="4"&gt;Torque&lt;/th&gt;
+        &lt;th data-tablesaw-priority="5"&gt;Compresion Ratio&lt;/th&gt;
+        &lt;th data-tablesaw-priority="6"&gt;Miles per gallon&lt;/th&gt;
+        &lt;th data-tablesaw-priority="7"&gt;Price(€)&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
 </code><pre>  
 </section>
 
@@ -1905,17 +1905,17 @@ $(document).ready(function(){
 
   <section>
     <h1>User Resizeable Columns Code</h1>
-  <pre><code class="language-html">&ltthead&gt
-    &lttr&gt
-      &ltth title="Car"&gt
-        &ltdiv class = "resizecell"&gtCar&lt/div&gt&lt/th&gt
-      &ltth title="Manufacturer"&gt
-        &ltdiv class = "resizecell"&gtManufacturer&lt/div&gt&lt/th&gt
-      &ltth title="Engine Size(L)"&gt
-        &ltdiv class = "resizecell"&gtEngine Size(L)&lt/div&gt&lt/th&gt
+  <pre><code class="language-html">&lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th title="Car"&gt;
+        &lt;div class = "resizecell"&gt;Car&lt;/div&gt;&lt;/th&gt;
+      &lt;th title="Manufacturer"&gt;
+        &lt;div class = "resizecell"&gt;Manufacturer&lt;/div&gt;&lt;/th&gt;
+      &lt;th title="Engine Size(L)"&gt;
+        &lt;div class = "resizecell"&gt;Engine Size(L)&lt;/div&gt;&lt;/th&gt;
       [...]
-    &lt/tr&gt
-  &lt/thead&gt
+    &lt;/tr&gt;
+  &lt;/thead&gt;
   </code></pre>
   <pre><code class="language-cssa">
   .resizecell {
