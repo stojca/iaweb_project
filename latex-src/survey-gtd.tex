@@ -42,6 +42,8 @@ objectively useful. This can be seen in Listing \ref{AltH}.
     label=list:AltH,
      stringstyle=\color{blue}
     ,
+    caption={[Alternate Row Highlighting]
+    },
 ]
 % An example of using simple CSS to color table rows:
 table.alt tr:nth-child(even) {
@@ -94,6 +96,8 @@ in Listing \ref{list:CurrentRow}
     label=list:CurrentRow,
      stringstyle=\color{blue}
     ,
+    caption={[Current Row Highlighting]
+    },
 ]
 % An example of using simple CSS to highlight table rows:
 table {
@@ -157,6 +161,8 @@ an HTML table can be implemented \parencite{Alligator}.
     label=list:ExpArea,
      stringstyle=\color{blue}
     ,
+    caption={[Expandable Area Before]
+    },
 ]
 <tr>
   <td>2019 Acura RDX</td>
@@ -198,6 +204,8 @@ CSS code can be reviewed.
     label=list:ExpArea2,
      stringstyle=\color{blue}
     ,
+    caption={[Expandable Area After]
+    },
 ]
 <script type="text/javascript">
 $(document).ready(function(){
@@ -230,6 +238,8 @@ $(document).ready(function(){
     label=list:ExpArea3,
      stringstyle=\color{blue}
     ,
+    caption={[Expandable Area ]
+    },
 ]
 #report {
   border-collapse:collapse;
@@ -336,16 +346,18 @@ DataTables is used \parencite{PG_1}. This can be seen in Listing \ref{list:Pagin
 
 
 \begin{lstlisting}[%
-language = CSS,
-xleftmargin=0cm,              % no extra margins for floats
-xrightmargin=0cm,             % no extra margins for floats
-language=biblatex,
-basicstyle=\footnotesize\ttfamily,
-frame=shadowbox,
-numbers=left,
-label=list:Pagination,
-    stringstyle=\color{blue}
-,
+  language = CSS,
+  xleftmargin=0cm,              % no extra margins for floats
+  xrightmargin=0cm,             % no extra margins for floats
+  language=biblatex,
+  basicstyle=\footnotesize\ttfamily,
+  frame=shadowbox,
+  numbers=left,
+  label=list:Pagination,
+  stringstyle=\color{blue}
+  ,
+  caption={[Pagination ]
+    },
 ]
 % An example of using Javascript plugin DataTable():
 %Include these two files in order to include additional advanced features to any HTML table
