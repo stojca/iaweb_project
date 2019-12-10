@@ -6,7 +6,7 @@
 %  Author  :  Mirza Kabiljagic, Stefan Rajinovic, Aleksandar Stojicic,
 %             Inti Gabriel Mendoza Estrada
 %
-%  Created :  27 May 20xx
+%  Created :  27 May 2019
 %
 %  Changed :  05 Dec 2019
 %
@@ -16,30 +16,24 @@
 
 \label{chap:Intro}
 
-Going back, at the starting point of web development, its creators
-and designers have not had the need to think about the look and design
-of the page, because back then, their users and clients would mostly
-access
-the site via the same device, that being a personal desktop computer
-which would
-mostly share the same resolution and display size. That means that
-they mostly
-needed to design and work around the same concept. Also, they didn’t
-need to think
-about things like what if an user entered the site with this device 
-or this, so
-they could basically use static and fixed positioning of elements.
+Going back, at the starting point of web development, its creators and
+designers have not had the need to think about the look and design of
+the page, because back then, their users and clients would mostly
+access the site via the same device, that being a personal desktop
+computer which would mostly share the same resolution and display
+size. That means that they mostly needed to design and work around the
+same concept. Also, they didn’t need to think about things like what
+if an user entered the site with this device or this, so they could
+basically use static and fixed positioning of elements.
 
-However, todays' technologies, be it the mobile industry or technical 
-industry
-in general, the devices have come a long way, and are being worked on
- really
-fast. What does that mean is that the programmers and designers need to
-consider that people will have different ways of using and browsing
-their pages, which require different approaches to design their web
-pages. Nowadays, the clients and users have a broad list of devices,
-which they can use to access a web page, be it a tablet, mobile phone,
-laptop and even TVs \parencite{ITU}.
+However, todays' technologies, be it the mobile industry or technical
+industry in general, the devices have come a long way, and are being
+worked on really fast. What does that mean is that the programmers and
+designers need to consider that people will have different ways of
+using and browsing their pages, which require different approaches to
+design their web pages. Nowadays, the clients and users have a broad
+list of devices, which they can use to access a web page, be it a
+tablet, mobile phone, laptop and even TVs \parencite{ITU}.
 
 Basically, the most important thing is to make the web pages' user
 interface as friendly as possible, so that the user does not lose much
@@ -79,7 +73,7 @@ the media type has some special property \parencite{A.A.Mohamed}.
 
 
 \begin{lstlisting}[
-    language = CSS, 
+    language=CSS, 
     float=tp,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
@@ -88,7 +82,6 @@ the media type has some special property \parencite{A.A.Mohamed}.
     frame=shadowbox,
     numbers=left,
     label=list:MediaQueries,
-    ,
     caption={[Media Queries]
     },
 ]
@@ -104,13 +97,14 @@ the media type has some special property \parencite{A.A.Mohamed}.
 
 
 
-Basically it allows defining specific CSS rules, depending on the device
-used. From the example in \ref{list:MediaQueries}, with the help of the parameter
-\propname{screen} the media type was specified and using \propname{max-width}
-the condition was determined which affects the device of the user. Now,
-there are many different conditions which can be used, and they are
-really helpful, because with them it is possible to adjust display
-settings for every device there is.
+Basically it allows defining specific CSS rules, depending on the
+device used. From the example in Listing~\ref{list:MediaQueries}, with the
+help of the parameter \propname{screen} the media type was specified
+and using \propname{max-width} the condition was determined which
+affects the device of the user. Now, there are many different
+conditions which can be used, and they are really helpful, because
+with them it is possible to adjust display settings for every device
+there is.
 
 For example, if the user is entering the website with his phone, it can
 be automatically said that an image should have a lower resolution, thus
@@ -120,7 +114,7 @@ Another example would be using \propname{display:none} with which some
 content can completely be hidden that should not be displayed.
 
 \begin{lstlisting}[%
-    language = CSS, 
+    language=CSS, 
     float=tp,
     xleftmargin=0cm,              % no extra margins for floats
     xrightmargin=0cm,             % no extra margins for floats
@@ -128,9 +122,10 @@ content can completely be hidden that should not be displayed.
     basicstyle=\footnotesize\ttfamily,
     frame=shadowbox,
     numbers=left,
-    label={list:MediaQueries2},
     stringstyle=\color{blue},
-]
+    label=list:Media2,
+    caption={[Media Queries 2]
+    },]
 % An example of using display: none:
 <!DOCTYPE html>
 <html>
@@ -150,11 +145,10 @@ content can completely be hidden that should not be displayed.
 
 
 
-
-%
-If this Listing \ref{list:MediaQueries2} was ran in the browser, the header would not 
-be seen, because it was decided to not be shown. If \propname{display:none} was changed to 
-\propname{display:block}, our header would be visible.
+If this Listing~\ref{list:Media2} was ran in the browser, the
+header would not be seen, because it was decided to not be shown. If
+\propname{display:none} was changed to \propname{display:block}, our
+header would be visible.
 
 Include a list of \propname{all} the relevant papers and resources you
 have found and mark those you have chosen to focus on. Make sure
