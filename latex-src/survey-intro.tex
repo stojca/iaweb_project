@@ -215,7 +215,9 @@ accordingly to fill 60\% of the page.
 
     \caption[Relative Image Dimensions]{
         Relative Image Dimensions.
-        \imgcredit{Taken from research paper.}
+        \imgcredit{ Image taken from
+          \href{https://www.researchgate.net/publication/308182637_Responsive_Web_Design_Techniques}{research paper}.
+        , author was asked for permission.}
     }
     \label{fig:relative}
 \end{figure}
@@ -230,15 +232,15 @@ with the help of CSS.
 \begin{figure}[tp]
     \centering
     {%
-        \includegraphics[width=0.85\linewidth]
-        {images/alig1.jpg}%
+        \includegraphics[width=0.65\linewidth]
+        {images/alig1.png}%
         \label{alig1}%
         \caption{Picture with original size}
     }
     \hfill
     {%
-        \includegraphics[width=0.45\linewidth]
-        {images/alig2.jpg}%
+        \includegraphics[width=0.3\linewidth]
+        {images/alig1.png}%
         \label{alig2}%
         \caption{Picture when cropped}
     }
@@ -246,7 +248,7 @@ with the help of CSS.
     \caption[Image Cropping]
     {
         Image cropping.
-        \imgcredit{https://alligator.io/css/cropping-images-object-fit/.}
+        \imgcredit{Photo taken by author.}
     }
     \label{img_cropping}
 \end{figure}
@@ -285,5 +287,3 @@ figure img{
   width:100%; /*make image streatch*/
 }
 \end{lstlisting}
-Taken from
-\imgcredit{https://medium.com/@elad/how-to-crop-images-with-css-b8471d402b16.}
