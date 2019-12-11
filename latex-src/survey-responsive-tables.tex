@@ -41,14 +41,14 @@ need to scroll to view the whole table \parencite{Alligator}.
 
     \caption[Before reponsive]
     {
-
-    \imgcredit{How an unresponsive table looks like. Images from  \href{https://css-tricks.com/responsive-data-tables/} {here}.
+    Before responsive.
+    \imgcredit{How an unresponsive table looks like. Images from \href{https://css-tricks.com/responsive-data-tables/} {https://css-tricks.com/responsive-data-tables/}.
     Under the free license of \href{ https://css-tricks.com/license//}{CSS tricks} }
     }
     \label{fig:before_responsive}
 \end{figure}
 
-As seen in Figure \ref{fig:before_responsive}, both options do not really look nor
+As seen in Figure~\ref{fig:before_responsive}, both options do not really look nor
 perform well. So, by using some simple CSS it is possible to fix that
 problem. With the help of the mentioned media queries, it is possible
 to specify for which device sizes, which settings should be used.
@@ -110,7 +110,7 @@ only screen and (max-width: 760px),
 }
 \end{lstlisting}
 
-And now, the end result is seen in the Figure \ref{fig:figZoom3}.
+And now, the end result is seen in the Figure~\ref{fig:figZoom3}.
 \begin{figure}[tp]
     \centering
 
@@ -123,7 +123,7 @@ And now, the end result is seen in the Figure \ref{fig:figZoom3}.
 
     \caption[After responsive]
     {
-
+    After responsive.
       \imgcredit{How a responsive table looks like. Images from  \href{https://css-tricks.com/responsive-data-tables/} {here}.
       Under the free license of \href{ https://css-tricks.com/license//}{CSS tricks} }
       
@@ -180,7 +180,7 @@ Our implementation of horizontal scrolling creates table elements
  to the end\parencite{HS_1}.
 
 The code required to implement this technique 
-on a table is shown in Listing \ref{list:HScroll}.
+on a table is shown in Listing~\ref{list:HScroll}.
 
 \begin{lstlisting}[%
     float=tp,
@@ -223,7 +223,7 @@ big to satisfy some screen resolution. We can use \propname{white-space: nowrap}
 property as optional for small cell values. CSS border properties are used 
 to control borders into a table\parencite{HS_1}.
 
-An example HTML table with this technique is shown in Figure \ref{fig:horiz_scroll}.
+An example HTML table with this technique is shown in Figure~\ref{fig:horiz_scroll}.
 \begin{figure}[tp]
     \centering
 
@@ -236,7 +236,7 @@ An example HTML table with this technique is shown in Figure \ref{fig:horiz_scro
 
     \caption[Horizontal Scroll]
     {
-
+    Horizontal Scroll.
     \imgcredit{Screenshot taken by the author.}
     }
     \label{fig:horiz_scroll}
@@ -253,8 +253,7 @@ to the top of the table every time.
 
 Fixed Header provides information that allows the user to always know
 in what column the cell the user is looking at is in. This is very effective feature 
-that makes our life easier \parencite{HS}. An implementation can be seen in Listing
-\ref{list:FixedHeader2}. This solution works for following browsers:
+that makes our life easier \parencite{HS}. An implementation can be seen in Listing~\ref{list:FixedHeader2}. This solution works for following browsers:
 \begin{itemize}
     \item[--] Google Chrome
     \item[--] Mozzila Firefox
@@ -314,7 +313,7 @@ widths. Width for almost every table element is static, just the header has
 non-static width \parencite{FH_1}. The width of header is determined with 
 the \propname{calc()} function to allow responsiveness \parencite{FH}.
 
-An example HTML table with this technique is shown in Figure \ref{fig:fixed_header2}.
+An example HTML table with this technique is shown in Figure~\ref{fig:fixed_header2}.
 
 \begin{figure}[tp]
     \centering
@@ -328,7 +327,7 @@ An example HTML table with this technique is shown in Figure \ref{fig:fixed_head
 
     \caption[Fixed Header]
     { 
-
+    Fixed Header.
     \imgcredit{Screenshot taken by the author.}
     }
     \label{fig:fixed_header2}
@@ -351,7 +350,7 @@ result of transposing the table. The first column will now house the
 object, rather than each row. Flip scroll also `promises' to keep the 
 table in the allocated space -- by allowing table horizontal scrolling.
 
-An implementation can bee seen in Listing \ref{list:FlipScroll}. This 
+An implementation can bee seen in Listing~\ref{list:FlipScroll}. This 
 solution works for following browsers:
 \begin{itemize}
     \item[--] Google Chrome
@@ -401,7 +400,7 @@ is setting the attribute \propname{display: inline-block} on the
 \propname{tbody tr} HTML tag and \propname{white-space: nowrap} on the
 \propname{tbody} HTML tag \parencite{FS}.
 
-Figure \ref{fig:FlipScroll} represents an HTML table with Flip Scroll.
+Figure~\ref{fig:FlipScroll} represents an HTML table with Flip Scroll.
 
 \begin{figure}[tp]
     \centering
@@ -415,7 +414,7 @@ Figure \ref{fig:FlipScroll} represents an HTML table with Flip Scroll.
 
     \caption[Flip Scroll]
     {
-
+    Flip Scroll.
     \imgcredit{Screenshot taken by the author.}
     }
     \label{fig:FlipScroll}
@@ -435,8 +434,8 @@ bring other columns into view is highly desireable.
 
 User Resizeable Columns allows the user to tailor the table's
 experience to his/her own preferences. There are two possible solutions. 
-The solution using only CSS can be seen in Listings \ref{list:UserRColumns} 
-and the solution using JQuery can be seen in Listing \ref{list:URC2}. 
+The solution using only CSS can be seen in Listings~\ref{list:UserRColumns} 
+and the solution using JQuery can be seen in Listing~\ref{list:URC2}. 
 Both work for following browsers:
 \begin{itemize}
     \item[--] Google Chrome
@@ -492,7 +491,7 @@ Encapsulating every header cell (or every single cell) with a
 the attribute \propname{resize: horizontal} to these divs
 \parencite{URC_1}.
 
-Figure \ref{fig:URCCSS} represents an HTML table with User Resizeable Columns
+Figure~\ref{fig:URCCSS} represents an HTML table with User Resizeable Columns
 using only HTML and CSS.
 
 \begin{figure}[tp]
@@ -507,7 +506,7 @@ using only HTML and CSS.
 
     \caption[User Resizeable Columns using only HTML and CSS]
     {
-
+    User Resizeable Columns using only HTML and CSS.
     \imgcredit{Screenshot taken by the author.}
     }
     \label{fig:URCCSS}
@@ -536,7 +535,7 @@ $(function(){
 
 The trick to use this technique using JQuery is calling the 
 \propname{resizeableColumns()} on the table of your choice \parencite{URC_2}.
-The resulting image can be seen in Figure \ref{fig:URCJS}.
+The resulting image can be seen in Figure~\ref{fig:URCJS}.
 
 \begin{figure}[tp]
     \centering
@@ -550,7 +549,7 @@ The resulting image can be seen in Figure \ref{fig:URCJS}.
 
     \caption[User Resizeable Columns using JS (jQuery)]
     {
-
+    User Resizeable Columns using JS (jQuery).
     \imgcredit{Screenshot taken by the author.}
     }
     \label{fig:URCJS}
@@ -621,10 +620,10 @@ td:before {
 }
 \end{lstlisting}
 
-As seen in Listing \ref{list:LongTwoColumn}, trick is setting the 
+As seen in Listing~\ref{list:LongTwoColumn}, trick is setting the 
 table's elements to \propname{display: block} and the $<$\propname{td}$>$ 
  tag's attribute to \propname{position: relative} \parencite{L2C}.
- Figure \ref{fig:LongTwoColumn} shows an HTML table with Long Two Column
+ Figure~\ref{fig:LongTwoColumn} shows an HTML table with Long Two Column
  technique applied to it.
 
 \begin{figure}[tp]
@@ -639,7 +638,7 @@ table's elements to \propname{display: block} and the $<$\propname{td}$>$
 
     \caption[Long Two Column] 
     {
-
+    Long Two Column.
     \imgcredit{Screenshot taken by the author.}
     }
     \label{fig:LongTwoColumn}
